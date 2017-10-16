@@ -12,7 +12,7 @@
     
     <title>
         
-            标签云 | 
+            Categories: essay | 
         
         Jinning Li&#39;s Blog
     </title>
@@ -35,7 +35,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#455A64">
     <meta name="author" content="Jinning Li">
-    <meta name="description" itemprop="description" content="neoFelhz&#39;s Blog 的标签云">
+    <meta name="description" itemprop="description" content="Undergraduate Student major Computer Science">
     <meta name="keywords" content="Jinning Li, blog, hexo, CS, SJTU, ACM,博客">
 
     <!-- Site Verification -->
@@ -65,23 +65,23 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="jinningli.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签云 | Jinning Li&#39;s Blog">
+    <meta property="og:title" content="Categories: essay | Jinning Li&#39;s Blog">
     <meta property="og:image" content="favicon.png" />
-    <meta property="og:description" content="neoFelhz&#39;s Blog 的标签云">
+    <meta property="og:description" content="Undergraduate Student major Computer Science">
     
 
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="标签云 | Jinning Li&#39;s Blog">
-    <meta name="twitter:description" content="neoFelhz&#39;s Blog 的标签云">
+    <meta name="twitter:title" content="Categories: essay | Jinning Li&#39;s Blog">
+    <meta name="twitter:description" content="Undergraduate Student major Computer Science">
     <meta name="twitter:image" content="favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="jinningli.github.io" />
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="jinningli.github.io/tags.html" />
+        <link rel="canonical" href="jinningli.github.io/categories/essay/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -265,63 +265,96 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
 
+    <!-- Pin on top -->
+    
 
-<!-- Layouts -->
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
 
-    <!-- Tags Cloud -->
-    <style>
-    #bottom{
-        position: relative;
-    }
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/archives/hello World.html">Hello World!</a></p>
+    </div>
 
-    @media screen and (max-width: 480px) {
-        .material-tagscloud{
-            margin: 6em 2em 0;
-        }
-    }
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            Hello Wor...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/archives/hello World.html" target="_self">Read more</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Jinning Li's avatar">
+            </div>
+            <div>
+                <strong>Jinning Li</strong>
+                <span>Oct 16, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                <a class="post_category-link" href="/categories/essay/">essay</a>
+            </span>
 
-    .material-tagscloud a{
-        text-decoration:none;
-        padding: 1px 9px;
-        margin: 9px 1px;
-        line-height: 40px;
-        white-space: nowrap;
-        transition: .6s;
-        opacity: .85;
-    }
+            
 
-    .material-tagscloud a:hover{
-        transition: .6s;
-        opacity: 1;
-        background: #FAFAFA;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    }
-</style>
+            
 
-<div class=" material-tagscloud">
-    <div class="material-post mdl-grid">
-        <a href="/tags/Establishment-of-this-blog/" style="font-size: 16px; color: #757575">Establishment of this blog</a> <a href="/tags/First-Essay/" style="font-size: 16px; color: #757575">First Essay</a> <a href="/tags/Hello-World/" style="font-size: 16px; color: #757575">Hello World!</a>
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
     </div>
 </div>
 
+            
+            
+        
+    
 
-<script type="text/ls-javascript" id="page-tagcloud-script">
-    var adjustFooter = function() {
-        if( ($('#bottom').offset().top + $('#bottom').outerHeight() ) < $(window).height() ) {
-            var footerBottom = $(window).height() - $('#bottom').outerHeight() - $('#bottom').offset().top;
-            $('#bottom').css('bottom', '-' + footerBottom + 'px');
-        }
-    };
+    
 
-    $(document).ready(function() {
-        adjustFooter();
-    });
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 5; i++) {
+        randomNum = Math.floor(Math.random() * 14 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
 </script>
 
-
-
+    
+</div>
 
 
                     
@@ -523,6 +556,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 

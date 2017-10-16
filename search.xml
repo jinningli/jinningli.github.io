@@ -5,23 +5,28 @@
     <entry>
       <title><![CDATA[Hello World!]]></title>
       <url>/archives/hello%20World.html</url>
-      <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><ul>
-<li>Hello</li>
-<li>world</li>
-</ul>
-<pre><code>int main()
-</code></pre>]]></content>
+      <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>My Website has successfully constructed<br>The URL of my blog is</p>
+<pre><code>jinningli.github.io/blog.html
+</code></pre><p>The URL of my website is</p>
+<pre><code>jinningli.github.io/index.html
+</code></pre><p>The URL of my CV is</p>
+<pre><code>jinningli.github.io/cv/cv.html
+</code></pre><h4 id="Welcome-to-my-websites"><a href="#Welcome-to-my-websites" class="headerlink" title="Welcome to my websites!"></a>Welcome to my websites!</h4><h4 id="w"><a href="#w" class="headerlink" title="=w="></a>=w=</h4>]]></content>
       
         <categories>
             
-            <category> Notes </category>
+            <category> essay </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> Hello World </tag>
+            <tag> Hello World! </tag>
+            
+            <tag> First Essay </tag>
+            
+            <tag> Establishment of this blog </tag>
             
         </tags>
         
