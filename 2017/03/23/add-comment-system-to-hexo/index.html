@@ -12,7 +12,7 @@
     
     <title>
         
-            归档 | 
+            为 Hexo 博客添加评论系统 | 
         
         Personal Webpage
     </title>
@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Jinning Li">
     <meta name="description" itemprop="description" content="built in 2017.10.13">
-    <meta name="keywords" content="JinningLi, Blog, CV">
+    <meta name="keywords" content="JinningLi, Blog, CV,博客,评论,Hexo,多说">
 
     <!-- Site Verification -->
     
@@ -65,15 +65,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://jinningli.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | Personal Webpage">
+    <meta property="og:title" content="为 Hexo 博客添加评论系统 | Personal Webpage">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="built in 2017.10.13">
-    
+    <meta property="og:article:tag" content="博客"> <meta property="og:article:tag" content="评论"> <meta property="og:article:tag" content="Hexo"> <meta property="og:article:tag" content="多说"> 
 
+    
+        <meta property="article:published_time" content="3月 23, 2017" />
+        <meta property="article:modified_time" content="3月 23, 2017" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档 | Personal Webpage">
+    <meta name="twitter:title" content="为 Hexo 博客添加评论系统 | Personal Webpage">
     <meta name="twitter:description" content="built in 2017.10.13">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -81,13 +84,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://jinningli.github.io/archives/index.html" />
+        <link rel="canonical" href="http://jinningli.github.io/2017/03/23/add-comment-system-to-hexo/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Personal Webpage",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Jinning Li",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "headline": "为 Hexo 博客添加评论系统",
+    "url": "http://jinningli.github.io/2017/03/23/add-comment-system-to-hexo/index.html",
+    "datePublished": "3月 23, 2017",
+    "dateModified": "3月 23, 2017",
+    "description": "built in 2017.10.13",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://jinningli.github.io"
+    }
+}
+</script>
 
 
     
@@ -281,384 +314,286 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#修改主题配置文件"><span class="post-toc-number">1.</span> <span class="post-toc-text">修改主题配置文件</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#添加评论-ejs"><span class="post-toc-number">2.</span> <span class="post-toc-text">添加评论 ejs</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在文章页面添加评论"><span class="post-toc-number">3.</span> <span class="post-toc-text">在文章页面添加评论</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#实践"><span class="post-toc-number">4.</span> <span class="post-toc-text">实践</span></a></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://s.nfz.yecdn.com/img/thumbnails/2016-blog-analytics.png!blogth">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://s.nfz.yecdn.com/img/thumbnails/add-comment-system-to-hexo.png!blogth)">
+    
+            <p class="article-headline-p">
+                为 Hexo 博客添加评论系统
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Jinning Li</strong>
+        <span>3月 23, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/07/03/2016-blog-analytics/">博客统计报告（2016.11.26-2017.07.02）</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Hexo/">Hexo</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/博客/">博客</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/多说/">多说</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/评论/">评论</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            我的博客到现在快 300 天了，期间我的域名换了两次，博客程序也换了 Hexo。如今我即将使用 Google Analytics 统计访问数据，本文将公布从 2016.11.26 至 2017.07.02 的访问情况。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/07/03/2016-blog-analytics/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jinning Li's avatar">
-            </div>
-            <div>
-                <strong>Jinning Li</strong>
-                <span>7月 03, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/博客栈/">博客栈</a>
-            </span>
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
-            
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=为 Hexo 博客添加评论系统&url=http://jinningli.github.io/2017/03/23/add-comment-system-to-hexo/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=为 Hexo 博客添加评论系统&url=http://jinningli.github.io/2017/03/23/add-comment-system-to-hexo/index.html&via=Jinning Li" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://jinningli.github.io/2017/03/23/add-comment-system-to-hexo/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://jinningli.github.io/2017/03/23/add-comment-system-to-hexo/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Personal Webpage&title=为 Hexo 博客添加评论系统&summary=built in 2017.10.13&pics=http://jinningli.github.io/img/favicon.png&url=http://jinningli.github.io/2017/03/23/add-comment-system-to-hexo/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
 </div>
 
-            
-            
-        
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://s.nfz.yecdn.com/img/thumbnails/add-comment-system-to-hexo.png!blogth">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/03/23/add-comment-system-to-hexo/">为 Hexo 博客添加评论系统</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
- 由于 Hexo 本身已经弃用了 swig 支持，所以本文教程是根据 ejs 语言来写的。如果使用了如 NexT 等基于 ...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/03/23/add-comment-system-to-hexo/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jinning Li's avatar">
-            </div>
-            <div>
-                <strong>Jinning Li</strong>
-                <span>3月 23, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/实验室/">实验室</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/12/26/a-fork-in-the-road-cyangenmod/">A Fork in the Road — CM&#39;s last blog</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Cyanogenmod 在他们的官网发布了最后一篇博客 A Fork in the Road 后，Cyanogenmod 官网和博客域名的 DNS 解析就被停了。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/12/26/a-fork-in-the-road-cyangenmod/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jinning Li's avatar">
-            </div>
-            <div>
-                <strong>Jinning Li</strong>
-                <span>12月 26, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/异闻堂/">异闻堂</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://s.nfz.yecdn.com/img/thumbnails/android-captive-portal-min.png!blogth">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/12/20/android-captive-portal/">Android 的网络感叹号</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            从 Android L 开始，原生和 CM 的 ROM 用户就会发现，状态栏的网络信号莫名多了一个感叹号。而且，有的时候明明连着 WIFI 用得好好的，却突然跳到数据流量。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/12/20/android-captive-portal/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jinning Li's avatar">
-            </div>
-            <div>
-                <strong>Jinning Li</strong>
-                <span>12月 20, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/实验室/">实验室</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://s.nfz.yecdn.com/img/thumbnails/after-the-acquisition-of-supersu-by-ccmt.jpg!blogth">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/09/05/after-the-acquisition-of-supersu-by-ccmt/">CCMT收购SuperSU以后</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            大概没有比 SuperSU 声誉更好、认可度最高的软件。无论是移动设备、平板电脑，亦或者机顶盒、智能手表，只要是基于 Android 的设备，大家都会想到使用 Chainfire 的 SuperSU 来接管 Android 系统的 Root 权限。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/09/05/after-the-acquisition-of-supersu-by-ccmt/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jinning Li's avatar">
-            </div>
-            <div>
-                <strong>Jinning Li</strong>
-                <span>9月 05, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/异闻堂/">异闻堂</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://s.nfz.yecdn.com/img/thumbnails/coding-snapdragon-810-down.jpg!blogth">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/08/30/coding-snapdragon-810-down/">制服火龙——为骁龙810降温</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-“高通骁龙 810 是我们的一款失败的产品”——高通工程师
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/08/30/coding-snapdragon-810-down/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jinning Li's avatar">
-            </div>
-            <div>
-                <strong>Jinning Li</strong>
-                <span>8月 30, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/实验室/">实验室</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
+        <blockquote>
+<p> 由于 Hexo 本身已经弃用了 swig 支持，所以本文教程是根据 ejs 语言来写的。如果使用了如 NexT 等基于 swig 的 Hexo 主题，请自行切换。</p>
+</blockquote>
+<p>Hexo 是一款静态博客，所以不像 WordPress 或者 Typecho 这类动态博客一样支持原生评论系统，所以一般需要引入第三方评论系统。国内常见的评论系统有多说、友言、畅言等，国外的有 Disqus 和 Moss。</p>
+<blockquote>
+<p>在写作本文的时候，多说已经宣布即将暂停服务，很多使用多说的人都在寻找解决方案；加上网络上找到的解决方案大多都不具备通用性，而且也不具备太多指导意义，这也是为什么我写作本文的原因。</p>
+<p><strong>强烈建议：</strong>在阅读本文并根据本文进行操作前，请仔细阅读 Hexo 的 API 和主题开发的有关文档！</p>
+</blockquote>
+<h1 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h1><p>在主题文件夹下的 <code>_config.yml</code> （以下简称主题配置文件）合适位置中加入以下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">comment:</span> </div><div class="line"><span class="attr">    use:</span> <span class="literal">true</span></div><div class="line"><span class="attr">    shortname:</span> <span class="string">&#123;YOUR_SHORTNAME&#125;</span></div><div class="line"><span class="attr">    thread_key:</span> <span class="string">&#123;IDENTIFIER&#125;</span></div></pre></td></tr></table></figure>
+<p>注意，这些评论系统的配置内容仅供参考。有的评论系统可能需要配置更多信息或者不需要配置某些信息（如友言需要配置 conf、appid 而不是 shortname），请自行根据需求进行修改。</p>
+<blockquote>
+<p>如果你的修改只是给你一个人使用，这一步可以忽略。但是如果你想把你的成果分享出去或提交给上游，建议通过主题配置文件的方法配置这些属性，这样可以方便更多人使用。</p>
+</blockquote>
+<h1 id="添加评论-ejs"><a href="#添加评论-ejs" class="headerlink" title="添加评论 ejs"></a>添加评论 ejs</h1><p>在主题内的合适位置新建一个 ejs 文件，命名如 <code>comment.ejs</code>，填入评论框的公共代码（即包括引用有关 js 文件等的代码）加上评论框的代码。</p>
+<blockquote>
+<p>对于评论系统的公共代码，你也可以插入在其它位置。以 Material 主题为例，typecho-theme-material 的评论公共代码在侧边栏，hexo-theme-material 的评论公共代码在 footer。</p>
+</blockquote>
+<p>然后，替换提供的代码中的有关变量。常见的变量有 shortname、page_identifier 等。这些变量可以通过 Hexo 的 API 进行调用。比如你可以使用 <code>&lt;%= theme.comment.shortname %&gt;</code> 这样的 API  即可调用你在主题配置文件中的 <code>comment.hortname</code> 属性中赋的值。</p>
+<blockquote>
+<p>当然，正如我在上一步所说，如果你的修改只是供你一个人使用，你可以直接将你的变量值替换到这段代码中，而不需要额外通过主题配置文件进行调用。</p>
+</blockquote>
+<h1 id="在文章页面添加评论"><a href="#在文章页面添加评论" class="headerlink" title="在文章页面添加评论"></a>在文章页面添加评论</h1><p>在类似于 <code>post.ejs</code> 的文件中，在文章结尾处插入<code>&lt;%- partial(&#39;/THE_PATH_TO/comment&#39;) %&gt;</code> 来调用 <code>/YOUR PATH/comment.ejs</code> 文件。这样在 Hexo 生成静态页面时就会把评论部分插入进去。</p>
+<h1 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h1><p>以上内容是 Hexo 主题加入评论系统的方法。现在介绍一下 <a href="https://material.viosey.com" target="_blank" rel="external">Material</a> 主题的评论系统是如何添加的。</p>
+<p>Material 主题涉及到评论系统的组件有：</p>
+<ul>
+<li>post.ejs（文章页面，引用评论系统）</li>
+<li>layout/_partial/comment.ejs（评论框）</li>
+<li>layout/_partial/footer-option.ejs（评论系统公共代码）</li>
+<li>layout/_widget/disqus.ejs（Disqus 评论框组件）</li>
+<li>layout/_widget/duoshuo.ejs（多说评论框组件）</li>
+</ul>
+<p>首先，我们在主题配置文件中，写入以下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Comment Systems</span></div><div class="line"><span class="comment"># Available value of "use":</span></div><div class="line"><span class="comment">#     duoshuo | disqus</span></div><div class="line"><span class="attr">comment:</span></div><div class="line"><span class="attr">    use:</span></div><div class="line"><span class="attr">    shortname:</span></div><div class="line"><span class="attr">    duoshuo_thread_key_type:</span> <span class="string">path</span></div><div class="line"><span class="attr">    duoshuo_embed_js_url:</span> <span class="string">"https://static.duoshuo.com/embed.js"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>这些用来定义评论系统在主题配置文件中的变量。</p>
+</blockquote>
+<p>然后，在 <code>footer-options.ejs</code> 加入下述代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.comment.use</span> === <span class="string">'duoshuo'</span>) &#123; %&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共 js 代码 start --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">        queue.offer(function()&#123;</span></div><div class="line"><span class="undefined">            var duoshuoQuery = &#123;</span></div><div class="line"><span class="xml">                short_name: '<span class="tag">&lt;<span class="name">%=</span> <span class="attr">theme.comment.shortname</span> %&gt;</span>'</span></div><div class="line"><span class="undefined">            &#125;;</span></div><div class="line"><span class="undefined">            (function() &#123;</span></div><div class="line"><span class="undefined">                var ds = document.createElement('script');</span></div><div class="line"><span class="undefined">                ds.type = 'text/javascript';</span></div><div class="line"><span class="undefined">                ds.async = true;</span></div><div class="line"><span class="xml">                ds.src = '<span class="tag">&lt;<span class="name">%=</span> <span class="attr">theme.comment.duoshuo_embed_js_url</span> %&gt;</span>';</span></div><div class="line"><span class="undefined">                ds.charset = 'UTF-8';</span></div><div class="line"><span class="undefined">                (document.getElementsByTagName('head')[0]</span></div><div class="line"><span class="undefined">                 || document.getElementsByTagName('body')[0]).appendChild(ds);</span></div><div class="line"><span class="undefined">            &#125;)();</span></div><div class="line"><span class="undefined">        &#125;);</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共 js 代码 end --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.comment.use</span> === <span class="string">'disqus'</span>) &#123; %&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 使用 DISQUS js 代码 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"dsq-count-scr"</span> <span class="attr">src</span>=<span class="string">"//&lt;%= theme.comment.shortname %&gt;.disqus.com/count.js"</span> <span class="attr">async</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>这一段包括了一个判断，那就是通过判断用户在主题配置文件里配置的值来判断用户选择的评论系统，并选择加载哪一段代码。</p>
+</blockquote>
+<p>接下来是创建 <a href="https://github.com/viosey/hexo-theme-material/blob/master/layout/_widget/disqus.ejs" target="_blank" rel="external"><code>duoshuo.ejs</code></a> 和 <a href="https://github.com/viosey/hexo-theme-material/blob/master/layout/_widget/duoshuo.ejs" target="_blank" rel="external"><code>disqus.ejs</code></a>。这个是评论框的组件。里面的一些变量换成了由 Hexo 的主题配置文件里的变量。</p>
+<blockquote>
+<p>下面这个是 <code>duoshuo.ejs</code> 的内容。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">css</span>('<span class="attr">css</span>/<span class="attr">duoshuo.min</span>') %&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    #ds-thread #ds-reset .ds-post-button&#123;</span></div><div class="line"><span class="xml">        background-color: <span class="tag">&lt;<span class="name">%=</span> <span class="attr">theme.uiux.theme_color</span> %&gt;</span> !important;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined">    #ds-wrapper #ds-reset .ds-icons-32&#123;</span></div><div class="line"><span class="xml">        background-color: <span class="tag">&lt;<span class="name">%=</span> <span class="attr">theme.uiux.theme_color</span> %&gt;</span> !important;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined">    #ds-reset .ds-highlight &#123;</span></div><div class="line"><span class="xml">        color: <span class="tag">&lt;<span class="name">%=</span> <span class="attr">theme.uiux.theme_color</span> %&gt;</span> !important;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 start --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ds-thread"</span></span></div><div class="line"><span class="tag">        <span class="attr">data-thread-key</span>=<span class="string">"&lt;%= theme.comment.duoshuo_thread_key_type === 'id' ? page.id : page.path %&gt;"</span></span></div><div class="line"><span class="tag">        <span class="attr">data-url</span>=<span class="string">"&lt;%- config.url + config.root + page.path %&gt;"</span></span></div><div class="line"><span class="tag">        <span class="attr">data-title</span>=<span class="string">"&lt;%= page.title %&gt;"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 end --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>下面这个是 <code>disqus.ejs</code> 的内容。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"disqus_thread"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    queue.offer(function() &#123;</span></div><div class="line"><span class="undefined">            var disqus_config = function () &#123;</span></div><div class="line"><span class="xml">                this.page.url = '<span class="tag">&lt;<span class="name">%-</span> <span class="attr">config.url</span> + <span class="attr">url_for</span>(<span class="attr">path</span>) %&gt;</span>';  // Replace PAGE_URL with your page's canonical URL variable</span></div><div class="line"><span class="undefined">                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable</span></div><div class="line"><span class="undefined">            &#125;;</span></div><div class="line"><span class="undefined">            (function() &#123; // DON'T EDIT BELOW THIS LINE</span></div><div class="line"><span class="undefined">                var d = document;</span></div><div class="line"><span class="undefined">                var s = d.createElement('script');</span></div><div class="line"><span class="xml">                s.src = '//<span class="tag">&lt;<span class="name">%=</span> <span class="attr">theme.comment.shortname</span> %&gt;</span>.disqus.com/embed.js';</span></div><div class="line"><span class="undefined">                s.setAttribute('data-timestamp', + new Date());</span></div><div class="line"><span class="undefined">                (d.head || d.body).appendChild(s);</span></div><div class="line"><span class="undefined">            &#125;)();</span></div><div class="line"><span class="undefined">        &#125;);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>本文给了这两个文件在 Github 的链接。大家可以直接参考。</p>
+</blockquote>
+<p>然后我们创建了 <code>comment.ejs</code>，根据用户的配置，判断加载哪一个评论框。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.comment.use</span> === <span class="string">'duoshuo'</span>) &#123; %&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 使用多说评论 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_widget</span>/<span class="attr">duoshuo</span>') %&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.comment.use</span> === <span class="string">'disqus'</span>) &#123; %&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 使用 DISQUS --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"disqus-comment"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_widget</span>/<span class="attr">disqus</span>') %&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">        #disqus-comment&#123;</span></div><div class="line"><span class="undefined">            background-color: #eee;</span></div><div class="line"><span class="undefined">            padding: 2pc;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.comment.use</span> === <span class="string">'disqus_click'</span>) &#123; %&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 使用 DISQUS_CLICK --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"disqus-comment"</span>&gt;</span>	</div><div class="line">        <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_widget</span>/<span class="attr">disqus_click</span>') %&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">        #disqus-comment&#123;</span></div><div class="line"><span class="undefined">            background-color: #eee;</span></div><div class="line"><span class="undefined">            padding: 2pc;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></div></pre></td></tr></table></figure>
+<p>最后就是在 <code>post.ejs</code> 里引用这个模块加载评论。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- partial(&apos;_partial/comment&apos;) %&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>在 Material 主题现有的框架基础上添加评论系统可以参考 Material 主题的 <a href="https://github.com/viosey/hexo-theme-material/pull/247" target="_blank" rel="external">Pull Request #247</a>，这是一位 Contributer 为 Material 主题添加了畅言评论系统的支持。</p>
+</blockquote>
+<p>由于多说的关闭，Material 主题接下来也会去除对多说评论系统的支持。 大家可以根据本文的思路自己更换为新的评论系统。我们也欢迎大家把你的改动贡献到给 Material 主题，来 Open a new pull request 吧！</p>
 
     
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
-</script>
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/07/03/2016-blog-analytics/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/12/26/a-fork-in-the-road-cyangenmod/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
