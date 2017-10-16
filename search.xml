@@ -290,14 +290,14 @@
     </entry>
     
     <entry>
-      <title><![CDATA[「时间轴」]]></title>
-      <url>/timeline.html</url>
+      <title><![CDATA[标签云]]></title>
+      <url>/tags.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
-      <title><![CDATA[标签云]]></title>
-      <url>/tags.html</url>
+      <title><![CDATA[「时间轴」]]></title>
+      <url>/timeline.html</url>
       <content type="html"></content>
     </entry>
     
