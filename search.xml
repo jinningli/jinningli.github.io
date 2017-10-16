@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[博客统计报告（2016.11.26-2017.07.02）]]></title>
+      <url>/archives/2016-blog-analytics.html</url>
+      <content type="html"><![CDATA[<p>我的博客到现在快 300 天了，期间我的域名换了两次，博客程序也换了 Hexo。如今我即将使用 Google Analytics 统计访问数据，本文将公布从 2016.11.26 至 2017.07.02 的访问情况。</p>
+<a id="more"></a>
+<h1 id="PV-amp-UV"><a href="#PV-amp-UV" class="headerlink" title="PV &amp; UV"></a>PV &amp; UV</h1><p><img src="https://bbs-static.nfz.yecdn.com/i/0000131.png" alt="0000131.png"></p>
+<p>在这过去的 220 天中，我的博客总共迎来了 21557 名访客，总共访问了 86729 次页面。每位访客平均在我的页面上驻留 346s，跳出率平均为 40%。</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000130.png" alt="0000130.png"></p>
+<p>上图的几个波峰颇有意思。</p>
+<ul>
+<li>2016.12.22 第一次访问高峰，是我在酷安“玩机技巧”话题推广了我的博客。那一次访问高峰跑掉了我七牛 2 个 G 的流量、将近 2 块钱。这一次访问高峰持续了三天，累计带来了 641PV。</li>
+<li>2017.1.23 这是第二次访问高峰。之前酷安发生了一起有人打包绿色守护、App Settings 等 Xposed 模块为木马的恶性事件，我写了一篇博客解析这个病毒。这篇博客我分享到了酷安和知乎，后来被多次转载。</li>
+<li>2017.1.26 接下来我乘胜追击，写了《阻止运行、猎鹰网络、黑域 始末》，延续了这一次高峰。</li>
+<li>2017.1.31 怒怼妮乎，又痛批了中国的开源环境。这几次的访问高峰总共为我带来了 3992PV。</li>
+<li>2017.2.11 在怒几次事件中，我看清了酷安，选择离开。有感而发的文章引发了之后的一次访问高峰，累计带来 992PV。</li>
+<li>之后的访问量便趋于平稳，图表中一些比较小的波峰一般是当天发表了新的文章。</li>
+</ul>
+<h1 id="地理位置与语言"><a href="# 地理位置与语言" class="headerlink" title="地理位置与语言"></a>地理位置与语言</h1><p><img src="https://bbs-static.nfz.yecdn.com/i/0000132.png" alt="0000132.png"></p>
+<p>毫无疑问，我的博客绝大部分访问量都来自中国，主要访客以使用简体中文为主。也就是说，并不是国内用户都会选择使用中文系统。</p>
+<h1 id="设备类型"><a href="# 设备类型" class="headerlink" title="设备类型"></a>设备类型</h1><p><img src="https://bbs-static.nfz.yecdn.com/i/0000133.png" alt="0000133.png"></p>
+<p>我的博客主要流量还是来自于移动端，主要和我之前主要在酷安推广我的博客有关。<br>我的博客通过桌面浏览器访问能获得最好的体验；移动端的优势是方便，可以随时随地阅读，我的博客的主题的响应式设计也对移动端友好；而随着手机屏幕越来越大，平板已经被逐渐边缘化。</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000134.png" alt="0000134.png"></p>
+<p>除去 UA 中未知的部分（应该是桌面端的访问），绝大部分访客都使用 Android，小米和一加位居第一和第二。联想到我之前在酷安推广博客，这并不奇怪。排在第三、第四和第五的是三星、苹果和华为。它们也的确是非常热销的品牌。</p>
+<h1 id="操作系统"><a href="# 操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><p><img src="https://bbs-static.nfz.yecdn.com/i/0000135.png" alt="00000135.png"></p>
+<p>从操作系统来看，使用 Android 的占绝对优势，Windows 紧随其后。但是，使用 Mac 和 Linux 的访客数量加起来只是略多于 iOS 用户。看来我博客的访问依然不是以开发者为主。</p>
+<h1 id="浏览器"><a href="# 浏览器" class="headerlink" title="浏览器"></a>浏览器</h1><p><img src="https://bbs-static.nfz.yecdn.com/i/0000136.png" alt="0000136.png"></p>
+<p>访问我的博客的浏览者中，使用 Chrome 的占绝大多数。接下来是 QQ 浏览器，我认为应该是使用 QQ 或者微信上的内置 TencentX5 内核的访客。<br>Chrome 浏览器性能优异，而且有很多 Web 前沿的特性。我的博客在 Chrome 上有最好的性能表现。<br>对于那微乎其微的 UC 浏览器用户，博客的主题甚至专门为 UC 内置了一整套样式。<br>由于来自 IE 的份额极低以至于都没有出现在报表中，这意味着我可以尽情尝试各种新的技术。</p>
+<h1 id="流量来源"><a href="# 流量来源" class="headerlink" title="流量来源"></a>流量来源</h1><p><img src="https://bbs-static.nfz.yecdn.com/i/0000137.png" alt="0000137.png"></p>
+<p>我博客的大部分流量来自于我在社交媒体和社区上的推广，所以以直接访问为主。同时，我也欣喜地发现有多个搜索引擎收录了我的博客，并为我的博客带来了访客。</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000138.png" alt="0000138.png"></p>
+<p>可以看到，我的博客的引荐流量主要来自我的个人主页、知乎跳转、酷安跳转、Google+ 转发和 Telegram。<br>还可以看到，我的友链在流量引荐中占了很大一部分。<br>同时，我也注意到一些特定搜索引擎的关键词来的流量，这意味着我的 SEO 做的不错，有被搜索引擎收录。</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000139.png" alt="0000139.png"></p>
+<p>同时也需要注意，就是直接访客和引荐访客，网页平均停留时间较长、跳出率明显较低，但是从搜索引擎到来的访客则相反。这符合人们使用搜索引擎的习惯，找到有用的信息便不再继续探索，但同时也说明了我的博客对于这一类访客保活度还不够。</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000140.png" alt="0000140.png"></p>
+<p>Google 对原创博客非常友好，使用 HTTPS、提高访问速度、对移动端友好、结构化数据等也很有利于提高在 Google 的权重，最终绝大部分搜索引擎流量来自于 Google 搜索。而百度对原创博客就没有这么友好了，但基于其在国内庞大的市场份额，本博客也有部分的流量来自于百度。不过最近我使用 CloudXNS 分线路解析功能，刻意将百度爬虫的线路解析到 127.0.0.1 来阻止百度爬虫的到访，以后应该不会有从百度到访的人了。</p>
+<h1 id="后记"><a href="# 后记" class="headerlink" title="后记"></a>后记 </h1><p> 我快要高三了，到高考结束以前，更新博客只会越来越少。很多事情在刚开始时，并不能预料到它最终会有什么结果。写博客也是一样。但是只要长期投入，最终一定能从中找到乐趣和成就感。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 博客栈 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 访问统计 </tag>
+            
+            <tag> Piwik </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[为 Hexo 博客添加评论系统]]></title>
+      <url>/archives/add-comment-system-to-hexo.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p> 由于 Hexo 本身已经弃用了 swig 支持，所以本文教程是根据 ejs 语言来写的。如果使用了如 NexT 等基于 swig 的 Hexo 主题，请自行切换。</p>
+</blockquote>
+<p>Hexo 是一款静态博客，所以不像 WordPress 或者 Typecho 这类动态博客一样支持原生评论系统，所以一般需要引入第三方评论系统。国内常见的评论系统有多说、友言、畅言等，国外的有 Disqus 和 Moss。</p>
+<blockquote>
+<p>在写作本文的时候，多说已经宣布即将暂停服务，很多使用多说的人都在寻找解决方案；加上网络上找到的解决方案大多都不具备通用性，而且也不具备太多指导意义，这也是为什么我写作本文的原因。</p>
+<p><strong>强烈建议：</strong>在阅读本文并根据本文进行操作前，请仔细阅读 Hexo 的 API 和主题开发的有关文档！</p>
+</blockquote>
+<h1 id="修改主题配置文件"><a href="# 修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件 </h1><p> 在主题文件夹下的 <code>_config.yml</code> （以下简称主题配置文件）合适位置中加入以下内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">comment</span><span class="token punctuation">:</span> 
+    <span class="token key atrule">use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">shortname</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>YOUR_SHORTNAME<span class="token punctuation">}</span>
+    <span class="token key atrule">thread_key</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>IDENTIFIER<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意，这些评论系统的配置内容仅供参考。有的评论系统可能需要配置更多信息或者不需要配置某些信息（如友言需要配置 conf、appid 而不是 shortname），请自行根据需求进行修改。</p>
+<blockquote>
+<p>如果你的修改只是给你一个人使用，这一步可以忽略。但是如果你想把你的成果分享出去或提交给上游，建议通过主题配置文件的方法配置这些属性，这样可以方便更多人使用。</p>
+</blockquote>
+<h1 id="添加评论 -ejs"><a href="# 添加评论 -ejs" class="headerlink" title="添加评论 ejs"></a>添加评论 ejs</h1><p>在主题内的合适位置新建一个 ejs 文件，命名如 <code>comment.ejs</code>，填入评论框的公共代码（即包括引用有关 js 文件等的代码）加上评论框的代码。</p>
+<blockquote>
+<p>对于评论系统的公共代码，你也可以插入在其它位置。以 Material 主题为例，typecho-theme-material 的评论公共代码在侧边栏，hexo-theme-material 的评论公共代码在 footer。</p>
+</blockquote>
+<p>然后，替换提供的代码中的有关变量。常见的变量有 shortname、page_identifier 等。这些变量可以通过 Hexo 的 API 进行调用。比如你可以使用 <code>&lt;%= theme.comment.shortname %&gt;</code> 这样的 API  即可调用你在主题配置文件中的 <code>comment.hortname</code> 属性中赋的值。</p>
+<blockquote>
+<p>当然，正如我在上一步所说，如果你的修改只是供你一个人使用，你可以直接将你的变量值替换到这段代码中，而不需要额外通过主题配置文件进行调用。</p>
+</blockquote>
+<h1 id="在文章页面添加评论"><a href="# 在文章页面添加评论" class="headerlink" title="在文章页面添加评论"></a>在文章页面添加评论 </h1><p> 在类似于 <code>post.ejs</code> 的文件中，在文章结尾处插入<code>&lt;%- partial(&#39;/THE_PATH_TO/comment&#39;) %&gt;</code> 来调用 <code>/YOUR PATH/comment.ejs</code> 文件。这样在 Hexo 生成静态页面时就会把评论部分插入进去。</p>
+<h1 id="实践"><a href="# 实践" class="headerlink" title="实践"></a>实践 </h1><p> 以上内容是 Hexo 主题加入评论系统的方法。现在介绍一下 <a href="https://material.viosey.com" target="_blank" rel="external">Material</a> 主题的评论系统是如何添加的。</p>
+<p>Material 主题涉及到评论系统的组件有：</p>
+<ul>
+<li>post.ejs（文章页面，引用评论系统）</li>
+<li>layout/_partial/comment.ejs（评论框）</li>
+<li>layout/_partial/footer-option.ejs（评论系统公共代码）</li>
+<li>layout/_widget/disqus.ejs（Disqus 评论框组件）</li>
+<li>layout/_widget/duoshuo.ejs（多说评论框组件）</li>
+</ul>
+<p>首先，我们在主题配置文件中，写入以下内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Comment Systems</span>
+<span class="token comment" spellcheck="true"># Available value of "use":</span>
+<span class="token comment" spellcheck="true">#     duoshuo | disqus</span>
+<span class="token key atrule">comment</span><span class="token punctuation">:</span>
+    <span class="token key atrule">use</span><span class="token punctuation">:</span>
+    <span class="token key atrule">shortname</span><span class="token punctuation">:</span>
+    <span class="token key atrule">duoshuo_thread_key_type</span><span class="token punctuation">:</span> path
+    <span class="token key atrule">duoshuo_embed_js_url</span><span class="token punctuation">:</span> <span class="token string">"https://static.duoshuo.com/embed.js"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>这些用来定义评论系统在主题配置文件中的变量。</p>
+</blockquote>
+<p>然后，在 <code>footer-options.ejs</code> 加入下述代码：</p>
+<pre class="line-numbers language-html"><code class="language-html">&lt;% if(theme.comment.use === 'duoshuo') { %>
+    <span class="token comment" spellcheck="true">&lt;!-- 多说公共 js 代码 start --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        queue.offer(function(){
+            var duoshuoQuery = {short_name: '&lt;%= theme.comment.shortname %>'};
+            (function() {var ds = document.createElement('script');
+                ds.type = 'text/javascript';
+                ds.async = true;
+                ds.src = '&lt;%= theme.comment.duoshuo_embed_js_url %>';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0]
+                 || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();});
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!-- 多说公共 js 代码 end --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+
+&lt;% if(theme.comment.use === 'disqus') { %>
+    <span class="token comment" spellcheck="true">&lt;!-- 使用 DISQUS js 代码 --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dsq-count-scr<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//&lt;%<span class="token punctuation">=</span> theme.comment.shortname %<span class="token punctuation">></span>.disqus.com/count.js<span class="token punctuation">"</span></span> <span class="token attr-name">async</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>这一段包括了一个判断，那就是通过判断用户在主题配置文件里配置的值来判断用户选择的评论系统，并选择加载哪一段代码。</p>
+</blockquote>
+<p>接下来是创建 <a href="https://github.com/viosey/hexo-theme-material/blob/master/layout/_widget/disqus.ejs" target="_blank" rel="external"><code>duoshuo.ejs</code></a> 和 <a href="https://github.com/viosey/hexo-theme-material/blob/master/layout/_widget/duoshuo.ejs" target="_blank" rel="external"><code>disqus.ejs</code></a>。这个是评论框的组件。里面的一些变量换成了由 Hexo 的主题配置文件里的变量。</p>
+<blockquote>
+<p>下面这个是 <code>duoshuo.ejs</code> 的内容。</p>
+</blockquote>
+<pre class="line-numbers language-html"><code class="language-html">&lt;%- css('css/duoshuo.min') %>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+    <span class="token selector"><span class="token id">#ds-thread</span> <span class="token id">#ds-reset</span> <span class="token class">.ds-post-button</span></span><span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> &lt;<span class="token number">%</span>= theme<span class="token number">.</span>uiux<span class="token number">.</span>theme_color <span class="token number">%</span>> <span class="token important">!important</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+    <span class="token selector"><span class="token id">#ds-wrapper</span> <span class="token id">#ds-reset</span> <span class="token class">.ds-icons-32</span></span><span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> &lt;<span class="token number">%</span>= theme<span class="token number">.</span>uiux<span class="token number">.</span>theme_color <span class="token number">%</span>> <span class="token important">!important</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+    <span class="token selector"><span class="token id">#ds-reset</span> <span class="token class">.ds-highlight</span> </span><span class="token punctuation">{</span><span class="token property">color</span><span class="token punctuation">:</span> &lt;<span class="token number">%</span>= theme<span class="token number">.</span>uiux<span class="token number">.</span>theme_color <span class="token number">%</span>> <span class="token important">!important</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>comments<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!-- 多说评论框 start --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ds-thread<span class="token punctuation">"</span></span>
+        <span class="token attr-name">data-thread-key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>&lt;%<span class="token punctuation">=</span> theme.comment.duoshuo_thread_key_type <span class="token punctuation">=</span><span class="token punctuation">=</span><span class="token punctuation">=</span> <span class="token punctuation">'</span>id<span class="token punctuation">'</span> ? page.id : page.path %<span class="token punctuation">></span><span class="token punctuation">"</span></span>
+        <span class="token attr-name">data-url</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>&lt;%- config.url + config.root + page.path %<span class="token punctuation">></span><span class="token punctuation">"</span></span>
+        <span class="token attr-name">data-title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>&lt;%<span class="token punctuation">=</span> page.title %<span class="token punctuation">></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!-- 多说评论框 end --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>下面这个是 <code>disqus.ejs</code> 的内容。</p>
+</blockquote>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disqus_thread<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span>
+    queue.offer(function() {var disqus_config = function () {this.page.url = '<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%-</span> <span class="token attr-name">config.url</span> <span class="token attr-name">+</span> <span class="token attr-name">url_for(path)</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//&lt;%= theme.comment.shortname %>.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();});
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>本文给了这两个文件在 Github 的链接。大家可以直接参考。</p>
+</blockquote>
+<p>然后我们创建了 <code>comment.ejs</code>，根据用户的配置，判断加载哪一个评论框。</p>
+<pre class="line-numbers language-html"><code class="language-html">&lt;% if(theme.comment.use === 'duoshuo') { %>
+    <span class="token comment" spellcheck="true">&lt;!-- 使用多说评论 --></span>
+    &lt;%- partial('_widget/duoshuo') %>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+
+&lt;% if(theme.comment.use === 'disqus') { %>
+    <span class="token comment" spellcheck="true">&lt;!-- 使用 DISQUS --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disqus-comment<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        &lt;%- partial('_widget/disqus') %>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector"><span class="token id">#disqus-comment</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#eee</span><span class="token punctuation">;</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">2</span>pc<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+
+&lt;% if(theme.comment.use === 'disqus_click') { %>
+    <span class="token comment" spellcheck="true">&lt;!-- 使用 DISQUS_CLICK --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disqus-comment<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    
+        &lt;%- partial('_widget/disqus_click') %>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector"><span class="token id">#disqus-comment</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#eee</span><span class="token punctuation">;</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">2</span>pc<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最后就是在 <code>post.ejs</code> 里引用这个模块加载评论。</p>
+<pre class="line-numbers language-ejs"><code class="language-ejs"><%- partial('_partial/comment') %>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>在 Material 主题现有的框架基础上添加评论系统可以参考 Material 主题的 <a href="https://github.com/viosey/hexo-theme-material/pull/247" target="_blank" rel="external">Pull Request #247</a>，这是一位 Contributer 为 Material 主题添加了畅言评论系统的支持。</p>
+</blockquote>
+<p>由于多说的关闭，Material 主题接下来也会去除对多说评论系统的支持。 大家可以根据本文的思路自己更换为新的评论系统。我们也欢迎大家把你的改动贡献到给 Material 主题，来 Open a new pull request 吧！</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 实验室 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 评论 </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 多说 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[A Fork in the Road — CM's last blog]]></title>
+      <url>/archives/a-fork-in-the-road-cyangenmod.html</url>
+      <content type="html"><![CDATA[<p>Cyanogenmod 在他们的官网发布了最后一篇博客 <em>A Fork in the Road</em> 后，Cyanogenmod 官网和博客域名的 DNS 解析就被停了。</p>
+<a id="more"></a>
+<p> 所以仅有少数人读了 Cyanogenmod 这篇告别的博客。于是我将 CM 的这一篇博客转载到这里，同时衷心祝愿 Lineage OS 能够凤凰涅槃。</p>
+<hr>
+<p>Last week, we released the final CM-13.0 releases, updated to the latest security patches, in anticipation of what follows.</p>
+<p>Yesterday, Cyanogen Inc (Cyngn) announced that they were shutting down the infrastructure behind CyanogenMod (CM). This is an action that was not unpredictable given the public departure of Kondik (cyanogen himself) from the company, and with him our last remaining advocate inside Cyngn’s leadership.</p>
+<p>In addition to infrastructure being retired, we in the CM community have lost our voice in the future direction of CM – the brand could be sold to a third party entity as it was an asset that Kondik risked to start his business and dream. Even if we were to regroup and rebuild our own infrastructure, continuing development of CM would mean to operate with the threat of sale of the brand looming over our heads. Then there is the stigma that has grown to be attached to anything named ‘Cyanogen’. Many of you reading this have been champions of clarifying that the CM product and CyngnOS were distinct, yet the stain of many PR actions from Cyngn is a hard one to remove from CM. Given CM’s reliance on Cyngn for monetary support and the shared source base, it’s not hard to understand why the confusion remains.</p>
+<p>It will come as no surprise that this most recent action from Cyngn is definitely a death blow for CyanogenMod.</p>
+<p>However, CM has always been more than the name and more than the infrastructure. CM has been a success based on the spirit, ingenuity and effort of its individual contributors – back when it was Kondik in his home, to the now thousands of contributors past and present.</p>
+<p>Embracing that spirit, we the community of developers, designers, device maintainers and translators have taken the steps necessary to produce a fork of the CM source code and pending patches. This is more than just a ‘rebrand’. This fork will return to the grassroots community effort that used to define CM while maintaining the professional quality and reliability you have come to expect more recently.</p>
+<p>CM has served the community well over its 8 long years. It has been our home, bringing together friends from all over the world to celebrate our joy of building and giving. Its apt then that on this Eve of a holiday we pay our respects. We will take pride in our Lineage as we move forward and continue to build on its legacy.</p>
+<p>Thank you &amp; Goodbye,<br>The CyanogenMod Team</p>
+<p><a href="https://www.cyanogenmod.org/blog/a-fork-in-the-road" target="_blank" rel="external">https://www.cyanogenmod.org/blog/a-fork-in-the-road</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 异闻堂 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> CM </tag>
+            
+            <tag> ROM </tag>
+            
+            <tag> Android </tag>
+            
+            <tag> Cyangenmod </tag>
+            
+            <tag> LineageOS </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Android 的网络感叹号]]></title>
+      <url>/archives/android-captive-portal.html</url>
+      <content type="html"><![CDATA[<p>从 Android L 开始，原生和 CM 的 ROM 用户就会发现，状态栏的网络信号莫名多了一个感叹号。而且，有的时候明明连着 WIFI 用得好好的，却突然跳到数据流量。</p>
+<a id="more"></a>
+<h1 id="“感叹号”出现的原因和作用"><a href="#“感叹号”出现的原因和作用" class="headerlink" title="“感叹号”出现的原因和作用"></a>“感叹号”出现的原因和作用</h1><p>Android 5.0 开始引入了一种新的网络评估机制来评估网络状况，当你有网络请求时会自动选择网络连接条件最好的一个网络进行连接（也就是 WIFI 和数据之间自动切换）。自然，验证方法是连接到 Google 自家的服务器进行检查。</p>
+<blockquote>
+<p>这个检测的作用除了可以检查该网络是否能够使用以外，还能检查该网络是否需要登陆（就是运营商的 WiFi 如 CCMC，或者其它公共场所的免费 WiFi 的那个认证）。</p>
+</blockquote>
+<hr>
+<p>正是这个 google 被 Wall 掉了以后导致安卓没有办法评估网络。所以，系统每隔一定时间都会重新尝试连接，就在不知不觉中消耗了数据流量。更恐怖的就是 Android 认为在 WiFi 下无法连接互联网，就让联网的程序通通走流量。于是这样就导致了那个蛋碎的感叹号一直存在，以及 WiFi 用着用着突然自动连回数据连接了。</p>
+<h1 id="解决方法"><a href="# 解决方法" class="headerlink" title="解决方法"></a>解决方法 </h1><h2 id="Android-5-0-6-0"><a href="#Android-5-0-6-0" class="headerlink" title="Android 5.0-6.0"></a>Android 5.0-6.0</h2><h3 id="直接禁用验证"><a href="# 直接禁用验证" class="headerlink" title="直接禁用验证"></a> 直接禁用验证 </h3><p> 手机连接电脑开启 USB 调试，输入以下 ADB 命令：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token string">"settings put global captive_portal_detection_enabled 0"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>重启设备或者开关一下飞行模式就行。</p>
+<blockquote>
+<p>但是，还记得我说过么，这个感叹号可以用来判断网络可用性，还可以用来判断网络是否需要登录。</p>
+</blockquote>
+<h3 id="更换验证地址"><a href="# 更换验证地址" class="headerlink" title="更换验证地址"></a>更换验证地址 </h3><p> 当然还有另外一个方法，就是直接把这个服务地址切换到国内的可用的地址就行了。这样既可以去除叹号，也可以检查网络可用情况。</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token string">"settings put global captive_portal_server your.domain"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="恢复方法"><a href="# 恢复方法" class="headerlink" title="恢复方法"></a>恢复方法 </h3><p> 如果你用的是第一种方法，恢复方法是：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token string">"settings put global captive_portal_detection_enabled 1"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果你用的是第二种方法，那么你需要输入的是：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token string">"settings delete global captive_portal_server"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Android-7-0-7-1-0"><a href="#Android-7-0-7-1-0" class="headerlink" title="Android 7.0-7.1.0"></a>Android 7.0-7.1.0</h2><p>与 Android 5.0-6.0 所用的方法相同，只是验证要求从 443 端口进行，也就是说必须要支持通过 HTTPS 正常访问。</p>
+<p>也可以通过 ADB 输入以下指令禁用 HTTPS：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token string">"settings put global captive_portal_use_https 0"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>恢复 HTTPS 的方法是用 ADB 输入以下指令：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token string">"settings put global captive_portal_use_https 1"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>或者</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token string">"settings delete global captive_portal_use_https"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Android-7-1"><a href="#Android-7-1" class="headerlink" title="Android 7.1+"></a>Android 7.1+</h2><p>从 Android 7.1.1 开始，系统在验证时不会自动加入 <code>generate_204</code> 的后缀了，这意味着 url 可以设计的更加灵活，同时也意味着在设置的时候需要填入完整的 url，即需要在现有的 url 验证地址后面加上 <code>/generate_204</code></p>
+<p>同时也默认要求使用 HTTPS 的方法进行验证。禁用和恢复 HTTPS 检查的方法同 <a href="#Android-7-0-7-1-0">Android 7.0 ~ 7.1.0</a> 的方法。</p>
+<p>在 Android 7.1+ 上配置 Captive Portal 地址需要两行指令：</p>
+<pre><code>adb shell &quot;settings put global captive_portal_http_url http://yourdomain&quot;; 
+adb shell &quot;settings put global captive_portal_https_url https://]]yourdomain&quot;;
+</code></pre><h2 id="手机端应用"><a href="# 手机端应用" class="headerlink" title="手机端应用"></a>手机端应用 </h2><p><a href="www.noisyfox.cn"> 小狐狸 </a> 开发了这款“叹号杀手”应用实现了这个：<a href="http://www.coolapk.com/apk/org.foxteam.noisyfox.noexclamation" target="_blank" rel="external">酷安下载地址</a></p>
+<p>用这款应用可以快速设置禁用验证或者更换验证地址。<del>可能 </del> 需要 root，如果没 root <del>可能 </del> 会导致修改失败。</p>
+<h1 id="架设自己的验证服务"><a href="# 架设自己的验证服务" class="headerlink" title="架设自己的验证服务"></a>架设自己的验证服务 </h1><p> 这个验证机制是访问所给地址的 <code>generate_204</code> 子目录看返回值，所以可以这么解决：</p>
+<h2 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a>Apache</h2><p>开启 Rewrite 模块（大部分虚拟主机商都会帮你开好），在 <code>.htaccess</code> 文件中最末写入以下值：</p>
+<pre class="line-numbers language-apacheconf"><code class="language-apacheconf"><span class="token directive-block tag"><span class="token directive-block tag"><span class="token punctuation">&lt;</span>IfModule</span><span class="token directive-block-parameter attr-value"> mod_rewrite.c</span><span class="token punctuation">></span></span>
+  <span class="token directive-inline property">RewriteEngine</span> On
+  <span class="token directive-inline property">RewriteCond</span> <span class="token variable">%{REQUEST_URI}</span><span class="token regex"> /generate_204$</span>
+  <span class="token directive-inline property">RewriteRule</span><span class="token regex"> $</span> / [R=204]
+<span class="token directive-block tag"><span class="token directive-block tag"><span class="token punctuation">&lt;/</span>IfModule</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Nignx"><a href="#Nignx" class="headerlink" title="Nignx"></a>Nignx</h2><p>直接在配置文件中写入：</p>
+<pre class="line-numbers language-nginx"><code class="language-nginx"><span class="token keyword">location</span> <span class="token operator">/</span>generate_204 <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token number">204</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Workaround"><a href="#Workaround" class="headerlink" title="Workaround"></a>Workaround</h2><p><del>如果你没有服务器（比如你只用 pages 服务），或者上述设置方法全部无效，还有一个 workaround 的方法——直接建立一个名字叫做“generate_204”的空文件，因为空文件也会被 Android 当做是 204 返回（毕竟空文件绝对不会是网络登录验证咯）</del> 经测试，这种方法已经不能生效了。</p>
+<h2 id="验证服务地址"><a href="# 验证服务地址" class="headerlink" title="验证服务地址"></a>验证服务地址</h2><ul>
+<li>www.qualcomm.com/generate_204（高通）</li>
+<li>noisyfox.cn/generate_204（小狐狸）</li>
+<li><del>www.v2ex.com</del>（V2EX 旧 Captive 地址，已弃用）</li>
+<li>captive.v2ex.co/generate_204（V2EX 新 Captive 地址）</li>
+<li><del>bbs.mfunz.com</del>（魔趣开源项目，已弃用）</li>
+<li>g.cn/generate_204（谷歌中国，一个不存在的网站）</li>
+<li>google.cn</li>
+<li>developer.google.cn/generate_204（谷歌开发者文档中国）</li>
+<li>http204.sinaapp.com/generate_204（Tink 提供，运行在 SAE 上）</li>
+</ul>
+<h1 id="分析 -NetWorkMonitor- 的工作原理"><a href="# 分析 -NetWorkMonitor- 的工作原理" class="headerlink" title="分析 NetWorkMonitor 的工作原理"></a>分析 NetWorkMonitor 的工作原理 </h1><h2 id="Android-5-0-6-0-1"><a href="#Android-5-0-6-0-1" class="headerlink" title="Android 5.0~6.0"></a>Android 5.0~6.0</h2><p> 以下代码摘自 <a href="https://android.googlesource.com/platform/frameworks/base/+/android-6.0.1_r70/services/core/java/com/android/server/connectivity/NetworkMonitor.java" target="_blank" rel="external">Android 6.0.1_r70 分支</a> 的 <code>NetworkMonitor</code> 第 384 行至第 425 行</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token annotation punctuation">@Override</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">processMessage</span><span class="token punctuation">(</span>Message message<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">switch</span> <span class="token punctuation">(</span>message<span class="token punctuation">.</span>what<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> CMD_REEVALUATE<span class="token operator">:</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>message<span class="token punctuation">.</span>arg1 <span class="token operator">!=</span> mReevaluateToken <span class="token operator">||</span> mUserDoesNotWant<span class="token punctuation">)</span>
+                <span class="token keyword">return</span> HANDLED<span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">// Don't bother validating networks that don't satisify the default request.</span>
+            <span class="token comment" spellcheck="true">// This includes:</span>
+            <span class="token comment" spellcheck="true">//  - VPNs which can be considered explicitly desired by the user and the</span>
+            <span class="token comment" spellcheck="true">//    user's desire trumps whether the network validates.</span>
+            <span class="token comment" spellcheck="true">//  - Networks that don't provide internet access.  It's unclear how to</span>
+            <span class="token comment" spellcheck="true">//    validate such networks.</span>
+            <span class="token comment" spellcheck="true">//  - Untrusted networks.  It's unsafe to prompt the user to sign-in to</span>
+            <span class="token comment" spellcheck="true">//    such networks and the user didn't express interest in connecting to</span>
+            <span class="token comment" spellcheck="true">//    such networks (an app did) so the user may be unhappily surprised when</span>
+            <span class="token comment" spellcheck="true">//    asked to sign-in to a network they didn't want to connect to in the</span>
+            <span class="token comment" spellcheck="true">//    first place.  Validation could be done to adjust the network scores</span>
+            <span class="token comment" spellcheck="true">//    however these networks are app-requested and may not be intended for</span>
+            <span class="token comment" spellcheck="true">//    general usage, in which case general validation may not be an accurate</span>
+            <span class="token comment" spellcheck="true">//    measure of the network's quality.  Only the app knows how to evaluate</span>
+            <span class="token comment" spellcheck="true">//    the network so don't bother validating here.  Furthermore sending HTTP</span>
+            <span class="token comment" spellcheck="true">//    packets over the network may be undesirable, for example an extremely</span>
+            <span class="token comment" spellcheck="true">//    expensive metered network, or unwanted leaking of the User Agent string.</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>mDefaultRequest<span class="token punctuation">.</span>networkCapabilities<span class="token punctuation">.</span><span class="token function">satisfiedByNetworkCapabilities</span><span class="token punctuation">(</span>mNetworkAgentInfo<span class="token punctuation">.</span>networkCapabilities<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token function">transitionTo</span><span class="token punctuation">(</span>mValidatedState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> HANDLED<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            mAttempts<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">// Note: This call to isCaptivePortal() could take up to a minute. Resolving the</span>
+            <span class="token comment" spellcheck="true">// server's IP addresses could hit the DNS timeout, and attempting connections</span>
+            <span class="token comment" spellcheck="true">// to each of the server's several IP addresses (currently one IPv4 and one</span>
+            <span class="token comment" spellcheck="true">// IPv6) could each take SOCKET_TIMEOUT_MS.  During this time this StateMachine</span>
+            <span class="token comment" spellcheck="true">// will be unresponsive. isCaptivePortal() could be executed on another Thread</span>
+            <span class="token comment" spellcheck="true">// if this is found to cause problems.</span>
+            <span class="token keyword">int</span> httpResponseCode <span class="token operator">=</span> <span class="token function">isCaptivePortal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>httpResponseCode <span class="token operator">==</span> <span class="token number">204</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token function">transitionTo</span><span class="token punctuation">(</span>mValidatedState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>httpResponseCode <span class="token operator">>=</span> <span class="token number">200</span> <span class="token operator">&amp;&amp;</span> httpResponseCode <span class="token operator">&lt;=</span> <span class="token number">399</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token function">transitionTo</span><span class="token punctuation">(</span>mCaptivePortalState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当安卓设备联网后，如果该网络是 VPN，那么直接使用这个网络进行连接，否则调用 <code>isCaptivePortal()</code> 函数进行网络状况的判定，再根据判定结果决定是否选用此网络。这个函数就会先访问系统内指定的网址并根据返回结果来判断网络状况，而这个网址如字面所说，会产生一个 204 返回值。204 返回值的意思就是空内容。如果当 WiFi 是需要登录才可以连接，那么当试图访问 google 的服务器的链接就一定会自动跳转到一个登录页面，这个时候 http 请求的返回值就必然不是 204。就是通过这一机制，便可以区分当前 WiFi 是否需要验证，不得不佩服想出这个办法的人来。</p>
+<h2 id="Android-7-0-7-1-0-1"><a href="#Android-7-0-7-1-0-1" class="headerlink" title="Android 7.0-7.1.0"></a>Android 7.0-7.1.0</h2><p>以下代码摘自 <a href="https://android.googlesource.com/platform/frameworks/base/+/android-7.1.0_r2/services/core/java/com/android/server/connectivity/NetworkMonitor.java" target="_blank" rel="external">Android 7.1.0_r2 分支</a> 的 <code>NetworkMonitor</code> 第 336 行至第 386 行。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token annotation punctuation">@Override</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">processMessage</span><span class="token punctuation">(</span>Message message<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">switch</span> <span class="token punctuation">(</span>message<span class="token punctuation">.</span>what<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> CMD_LAUNCH_CAPTIVE_PORTAL_APP<span class="token operator">:</span>
+            <span class="token keyword">final</span> Intent intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span>ConnectivityManager<span class="token punctuation">.</span>ACTION_CAPTIVE_PORTAL_SIGN_IN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            intent<span class="token punctuation">.</span><span class="token function">putExtra</span><span class="token punctuation">(</span>ConnectivityManager<span class="token punctuation">.</span>EXTRA_NETWORK<span class="token punctuation">,</span> mNetworkAgentInfo<span class="token punctuation">.</span>network<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            intent<span class="token punctuation">.</span><span class="token function">putExtra</span><span class="token punctuation">(</span>ConnectivityManager<span class="token punctuation">.</span>EXTRA_CAPTIVE_PORTAL<span class="token punctuation">,</span>
+                    <span class="token keyword">new</span> <span class="token class-name">CaptivePortal</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ICaptivePortal<span class="token punctuation">.</span>Stub</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token annotation punctuation">@Override</span>
+                        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">appResponse</span><span class="token punctuation">(</span><span class="token keyword">int</span> response<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">if</span> <span class="token punctuation">(</span>response <span class="token operator">==</span> APP_RETURN_WANTED_AS_IS<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                mContext<span class="token punctuation">.</span><span class="token function">enforceCallingPermission</span><span class="token punctuation">(</span>
+                                        android<span class="token punctuation">.</span>Manifest<span class="token punctuation">.</span>permission<span class="token punctuation">.</span>CONNECTIVITY_INTERNAL<span class="token punctuation">,</span>
+                                        <span class="token string">"CaptivePortal"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                            <span class="token function">sendMessage</span><span class="token punctuation">(</span>CMD_CAPTIVE_PORTAL_APP_FINISHED<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            intent<span class="token punctuation">.</span><span class="token function">setFlags</span><span class="token punctuation">(</span>Intent<span class="token punctuation">.</span>FLAG_ACTIVITY_BROUGHT_TO_FRONT <span class="token operator">|</span> Intent<span class="token punctuation">.</span>FLAG_ACTIVITY_NEW_TASK<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            mContext<span class="token punctuation">.</span><span class="token function">startActivityAsUser</span><span class="token punctuation">(</span>intent<span class="token punctuation">,</span> UserHandle<span class="token punctuation">.</span>CURRENT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> HANDLED<span class="token punctuation">;</span>
+        <span class="token keyword">default</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> NOT_HANDLED<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token annotation punctuation">@Override</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Message message <span class="token operator">=</span> <span class="token function">obtainMessage</span><span class="token punctuation">(</span>EVENT_PROVISIONING_NOTIFICATION<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            mNetworkAgentInfo<span class="token punctuation">.</span>network<span class="token punctuation">.</span>netId<span class="token punctuation">,</span> null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mConnectivityServiceHandler<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">/**
+* Result of calling isCaptivePortal().
+* @hide
+*/</span>
+<span class="token annotation punctuation">@VisibleForTesting</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">CaptivePortalProbeResult</span> <span class="token punctuation">{</span><span class="token keyword">static</span> <span class="token keyword">final</span> CaptivePortalProbeResult FAILED <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CaptivePortalProbeResult</span><span class="token punctuation">(</span><span class="token number">599</span><span class="token punctuation">,</span> null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">final</span> <span class="token keyword">int</span> mHttpResponseCode<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// HTTP response code returned from Internet probe.</span>
+<span class="token keyword">final</span> String mRedirectUrl<span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// Redirect destination returned from Internet probe.</span>
+<span class="token keyword">public</span> <span class="token function">CaptivePortalProbeResult</span><span class="token punctuation">(</span><span class="token keyword">int</span> httpResponseCode<span class="token punctuation">,</span> String redirectUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    mHttpResponseCode <span class="token operator">=</span> httpResponseCode<span class="token punctuation">;</span>
+    mRedirectUrl <span class="token operator">=</span> redirectUrl<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">boolean</span> <span class="token function">isSuccessful</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> mHttpResponseCode <span class="token operator">==</span> <span class="token number">204</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token keyword">boolean</span> <span class="token function">isPortal</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token operator">!</span><span class="token function">isSuccessful</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> mHttpResponseCode <span class="token operator">>=</span> <span class="token number">200</span> <span class="token operator">&amp;&amp;</span> mHttpResponseCode <span class="token operator">&lt;=</span> <span class="token number">399</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Android-7-1-1"><a href="#Android-7-1-1" class="headerlink" title="Android 7.1.1"></a>Android 7.1.1</h2><p>以下代码摘自 <a href="https://android.googlesource.com/platform/frameworks/base/+/android-7.1.1_r4/services/core/java/com/android/server/connectivity/NetworkMonitor.java" target="_blank" rel="external">Android 7.1.1_r4 分支 </a> 的 <code>NetworkMonitor</code> 第 611 行至第 631 行。<br> 可以看到 Android 7.1.1 开始已经不会再自动给验证 url 加上 <code>generate_204</code>。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">static</span> String <span class="token function">getCaptivePortalServerHttpsUrl</span><span class="token punctuation">(</span>Context context<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token function">getSetting</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> Settings<span class="token punctuation">.</span>Global<span class="token punctuation">.</span>CAPTIVE_PORTAL_HTTPS_URL<span class="token punctuation">,</span> DEFAULT_HTTPS_URL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> String <span class="token function">getCaptivePortalServerHttpUrl</span><span class="token punctuation">(</span>Context context<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token function">getSetting</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> Settings<span class="token punctuation">.</span>Global<span class="token punctuation">.</span>CAPTIVE_PORTAL_HTTP_URL<span class="token punctuation">,</span> DEFAULT_HTTP_URL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token keyword">private</span> <span class="token keyword">static</span> String <span class="token function">getCaptivePortalFallbackUrl</span><span class="token punctuation">(</span>Context context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">getSetting</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span>
+  Settings<span class="token punctuation">.</span>Global<span class="token punctuation">.</span>CAPTIVE_PORTAL_FALLBACK_URL<span class="token punctuation">,</span> DEFAULT_FALLBACK_URL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token keyword">private</span> <span class="token keyword">static</span> String <span class="token function">getCaptivePortalUserAgent</span><span class="token punctuation">(</span>Context context<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token function">getSetting</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> Settings<span class="token punctuation">.</span>Global<span class="token punctuation">.</span>CAPTIVE_PORTAL_USER_AGENT<span class="token punctuation">,</span> DEFAULT_USER_AGENT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token keyword">private</span> <span class="token keyword">static</span> String <span class="token function">getSetting</span><span class="token punctuation">(</span>Context context<span class="token punctuation">,</span> String symbol<span class="token punctuation">,</span> String defaultValue<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">final</span> String value <span class="token operator">=</span> Settings<span class="token punctuation">.</span>Global<span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">getContentResolver</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> symbol<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> value <span class="token operator">!=</span> null <span class="token operator">?</span> value <span class="token operator">:</span> defaultValue<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      
+        <categories>
+            
+            <category> 实验室 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Root </tag>
+            
+            <tag> Captive </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[CCMT 收购 SuperSU 以后]]></title>
+      <url>/archives/after-the-acquisition-of-supersu-by-ccmt.html</url>
+      <content type="html"><![CDATA[<p> 大概没有比 SuperSU 声誉更好、认可度最高的软件。无论是移动设备、平板电脑，亦或者机顶盒、智能手表，只要是基于 Android 的设备，大家都会想到使用 Chainfire 的 SuperSU 来接管 Android 系统的 Root 权限。</p>
+<a id="more"></a>
+<h1 id="从 2015-09-29 开始谈起"><a href="# 从 2015-09-29 开始谈起" class="headerlink" title="从 2015.09.29 开始谈起"></a> 从 2015.09.29 开始谈起 </h1><p>SuperSU 的作者 Chainfire 在近一年前（2015 年 09 月 29 日）的时候，将 SuperSU 项目移交给了一家叫 Coding Code Mobile Technology LLC 的公司（简称 CCMT）。包括 SuperSU 源码、签名以及 Chainfire 自己的 Google play 开发者账号。xda 上发布了一些有关的声明：<a href="http://www.xda-developers.com/chainfire-makes-important-announcement-about-supersus-future" target="_blank" rel="external">Chainfire Makes Important Announcement About SuperSU’s Future</a></p>
+<p>Chainfire 也在 Google+ 发表声明称，将此项目移交给 CCMT 以便让自己更好的去处理别的事情。</p>
+<p>Chainfire 指出 CCMT 是一个用于接管 SuperSU 的全新公司。Chainfire 还表示 SuperSU 不会立即发生变化，它仍然是可以免费下载并再发布的（只要不经过修改）。将 SuperSU 移交给 CCMT 后，SuperSU 项目将会有更多的资金和更多的开发者参与，以利于 SuperSU 继续完善功能并更好的运行在众多 Android 设备上。</p>
+<p> 之后，Chainfire 仍然在继续维护 SuperSU 项目，并在其个人网站 <a href="https://chainfire.eu/" target="_blank" rel="external">chainfire.eu</a><br> 上发布。</p>
+<p> 在 2016 年 09 月 02 日（北京时间）的时候，CCMT 通过 Google Play 商店发布了第一个由 CCMT 基于原 SuperSU 源码进行开发的第一个版本 v2.78。</p>
+<blockquote>
+<p> 实际上，截止到本博客发布，Google play 上共发布过两个 CCMT 提供的 SuperSU 版本，一个是 2.73，另一个则是 2.78。</p>
+</blockquote>
+<p> 在酷安上，曾经有两次应用被收购引起了轩然大波，一次是 xposed 模块“阻止运行”被 liudongmiao 卖给了上海猎鹰网络的工作室，另一次就是这次 SuperSU 被一家来自中国的公司收购。</p>
+<h1 id="博主个人的冷眼旁观"><a href="# 博主个人的冷眼旁观" class="headerlink" title="博主个人的冷眼旁观"></a> 博主个人的冷眼旁观 </h1><p>Chainfire 自己也没有构建，CCMT 就自行发布了新版本；</p>
+<p> 严重怀疑是不是 Chainfire 说的来自纽约州的全新公司，而不是中国控制的空壳公司。<br> 更新 logo 动不动就全球、率先、首发、第一…国产软件就这尿性么…</p>
+<blockquote>
+<p> 连 SuperSU 主页都把自己公司名字拼错了（目前已经修改）<br><img src="https://bbs-static.nfz.yecdn.com/i/0000006.jpg" alt="0000006.jpg"></p>
+</blockquote>
+<h1 id="目前似乎一切正常"><a href="# 目前似乎一切正常" class="headerlink" title="目前似乎一切正常"></a> 目前似乎一切正常 </h1><ol>
+<li> 目前为止没有任何证据表明 CCMT 正在利用 SuperSU 做危害 Android 系统安全的事情。</li>
+<li> 并不表明使用了由 CCMT 发布的 SuperSU 以后，系统就变的不再安全。</li>
+<li> 获取 root 权限只是 Android 的一种使用方式； root 本身即存在风险。</li>
+</ol>
+<p>CCMT 公司是由谁控制的并不重要，如果一家美国公司通过 root 级别植入广告和跟踪工具，它仍然是坏公司。某些营销号和网站总想搞个大新闻，报道一些夸大且危言耸听的东西。恶意软件远比 SuperSU 亦或者 Root 权限本身更可怕。</p>
+<hr>
+<p>2017.03.08 更新：CCMT 用 Chainfire 的 Play 帐号发布了一个新的手机管理软件 <code>AppMaster</code>，用户体验后说该应用在获取了 root 权限后会自动重启并把自己转成 <code>priv-app</code> 应用。</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000069.png" alt="0000069.png" style="width:50%"></p>
+<p> 有网友认为这并不是 Chainfire 的一贯风格，所以在 xda 上询问 Chainfire，答复如下：</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000070.jpg" alt="0000070.jpg" style="width:50%"></p>
+<blockquote>
+<p>SuperSU 被收购以后，也并没有太多兼容性、功能性的改动。我自己已经在用 MagiskSU，以后会发生什么，也只能 Wait and see 罢了。</p>
+</blockquote>
+<hr>
+<p>2017.05.26 再度更新：</p>
+<p> 嗯，SuperSU 最终还是开始作恶了。还是同样老套的“统计和信息采集”的理由，增加不必要的权限，如定位权限。</p>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000115.png" style="width:50%" alt="0000115.png"></p>
+<blockquote>
+<p> 在这里我顺便挂一个大言不惭的人。说真的，我还以为他只是跟我过不去呢。要不是在酷安我和他有过过节，我还真的以为他是 CCMT 请来的水军。</p>
+</blockquote>
+<p><img src="https://bbs-static.nfz.yecdn.com/i/0000116.png" style="width:50%" alt="0000116.png"></p>
+<hr>
+<p><strong> 对了，至于大家关心的、这个中国公司是否可靠的问题，可以参考前文。是的，这是一个曾经把自己官网页脚公司的英文名字的单词都拼错过的公司。我想，没必要再对这家公司做更多评价了。</strong></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 异闻堂 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Root </tag>
+            
+            <tag> SuperSU </tag>
+            
+            <tag> CCMT </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[制服火龙——为骁龙 810 降温]]></title>
+      <url>/archives/coding-snapdragon-810-down.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>“高通骁龙 810 是我们的一款失败的产品”——高通工程师</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="骁龙 -810"><a href="# 骁龙 -810" class="headerlink" title="骁龙 810"></a>骁龙 810</h1><h2 id="基本参数"><a href="# 基本参数" class="headerlink" title="基本参数"></a>基本参数 </h2><p> 首先给一下 Qualcomm MSM8994 Snapdragon 810 的基本参数：</p>
+<blockquote>
+<p>4x Quad-core 2.0 GHz ARM®Cortex™ A57 （big）@ 1.96GHz and 4x quad-core 1.5 GHz ARM®Cortex™ A53（LITTLE）@ 1.56GHz；Adreno 430 GPU；X10 LTE modem；20nm LMP。</p>
+</blockquote>
+<h2 id="温控数据"><a href="# 温控数据" class="headerlink" title="温控数据"></a>温控数据 </h2><p> 根据高通工程师高通设定的原厂限制是核心温度达到 95℃ 的时候 A57 开始降频，105℃ 核心强制下线，115℃ 设备重启。<br>nubiaUI 来自原厂的温控二进制内的 system/bin/thermal-engine 做了优先级更高的进一步限制： GeekBench 和安兔兔类跑分类应用加入了“白名单”在 95℃ 降频，而非白名单的应用运行在 75℃就开始降频了。<br>高通吧的吧主炮神就拿 Nubia z9 max （这也正是我的主力机）做过拷机测试，测试结果是如果只有一颗 A57 进行开机的话，满载直接超过 100 度，两颗 A57 开机满载直接爆机重启。</p>
+<blockquote>
+<p>单个 2GHz A57 核心，满载坚持 1 分多钟后达到 105℃ 左右，没有降频，但直接就重启了。两个 2GHz A57 核心，最多不到 5 秒钟就冲到 105℃ ，然后重启。A53 核心就好多了，1.56GHz 频率下单个满载不超过 50℃，双核大约 50℃ ，四核也才 61℃ ，都过得去。<br>经过计算可知，骁龙 810 里边单个 1.56GHz A53 核心的满载功耗大约是 400-470mW ，看起来不高但经不起对比啊：海思 930 1.5GHz 350mW、2.0GHz 570mW，联发科 MT6752 1.7GHz 400mW，而且它俩都还是 28nm 。A57 就太恐怖了，2GHz 频率下单个就达到了 4.9W ，双核直接爆机没法测试——是手机处理器啊亲！20nm 工艺啊亲！ Intel Core M 都能做到 TDP 4.5W 啊！</p>
+</blockquote>
+<p>所以 A57 才是骁龙 810 发热的罪魁祸首。但是 A57 的性能不容小觑。用 z9 max 进行圆周率测试来测试性能——跑 1000 万位圆周率，只开 4 颗 A53，需要 72 秒，但是开着 4 颗 A53 和 2 颗 A57 只要 31 秒，A57 间断开启的话（温控限制）也只要 42 秒。</p>
+<h1 id="一些事实"><a href="# 一些事实" class="headerlink" title="一些事实"></a>一些事实 </h1><p> 我有一次有幸和高通（中国）的工程师在微信上交流过。最后结论就是：</p>
+<ul>
+<li>CPU 频率越高，CPU 电压越高，发热越多，越耗电</li>
+<li>kyro 架构的 CPU 分体质（801、805、820），体质越高，相同频率电压可以更低，但一些 CPU 电压太低会重启</li>
+<li>ARM 公版架构的 CPU 没有体质这一说法，但是仅仅只是说法不同罢了。</li>
+<li>因为频率越高，核心间电压也要升高，所以就会越来越耗电。 </li>
+<li>核心之间电压越高，发热越多耗电越快。</li>
+</ul>
+<blockquote>
+<p> 比如一加一的内核支持 CPU 修改电压，很多加油都选择 CPU 降压解决发热（很多用户都选择每个频率降压 20-30mV）</p>
+</blockquote>
+<p>nubia 的内核就不支持修改电压。怎么办？<br>控制频率调整机制呗，既然电压和频率有关。<br>真正的关键并不是现在很多人认为的那样去限制最大频率，而是不要让频率升的太快。对于 CPU ，如果想要省电，那么频率就要尽可能低，升频要慢，降频要快。<br>当然对于性能的需求来说恰恰相反，追求更好的性能就要求较高的频率需求。<br>其次另外还有一个矛盾，就是在待机的时候， CPU 核心数越少越好。这个时候多核待机就耗电了。</p>
+<blockquote>
+<p>通俗点、简单点说就是——多核高频如尿崩，多核低频很省电，多核待机很耗电，少核高频很耗电，少核低频跑不动，少核待机不耗电。</p>
+<p>当然，耗电大户一般都是屏幕，屏幕的功率有 50W 左右。关掉屏幕应该就会省电多了。也可以理解关屏听音乐，虽然唤醒锁没被释放，但是耗电却比开屏少了一半。</p>
+<p>再补充一下，虽然联发科已经被人嘲笑一核有难，九核围观，然而基于 corepilot 的异构异步多核会根据负载开关核心，虽然性能不怎么地，但是省电倒是真的。</p>
+</blockquote>
+<h1 id="基本思路"><a href="# 基本思路" class="headerlink" title="基本思路"></a>基本思路</h1><ol>
+<li>在待机时核心数要少，操作时核心数要多。</li>
+<li>尽量让 CPU 运行在较低频率。</li>
+<li>根据频率区间不同调整升频间隔，尽可能解决省电与性能的矛盾。</li>
+</ol>
+<h1 id="操刀，上！"><a href="# 操刀，上！" class="headerlink" title="操刀，上！"></a>操刀，上！</h1><p>来我们来分析 init.qcom.post_boot.sh 脚本中 <br> 的几个调速器有关的片段，来看看如何实现基本思路。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># ensure at most one A57 is online when thermal hotplug is disabled</span>
+<span class="token keyword">echo</span> 0 <span class="token operator">></span> /sys/devices/system/cpu/cpu5/online
+<span class="token keyword">echo</span> 0 <span class="token operator">></span> /sys/devices/system/cpu/cpu6/online
+<span class="token keyword">echo</span> 0 <span class="token operator">></span> /sys/devices/system/cpu/cpu7/online
+<span class="token comment" spellcheck="true"># Limit A57 max freq from msm_perf module in case CPU 4 is offline</span>
+<span class="token keyword">echo</span> <span class="token string">"4:960000 5:960000 6:960000 7:960000"</span> <span class="token operator">></span> /sys/module/msm_performance/parameters/cpu_max_freq
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这是保护措施，即当 hotplug 温控机制失效的时候，仅保留一颗 A57 以防止温度过高；当控制大核心簇的 CPU4 离线的时候，就控制 A57 的最大频率防止过热。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># configure governor settings for little cluster</span>
+<span class="token keyword">echo</span> <span class="token string">"interactive"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif
+<span class="token keyword">echo</span> 39000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
+<span class="token keyword">echo</span> 95 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+<span class="token keyword">echo</span> 20000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
+<span class="token keyword">echo</span> 960000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
+<span class="token keyword">echo</span> 85 960000:90 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
+<span class="token keyword">echo</span> 40000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
+<span class="token keyword">echo</span> 80000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis
+<span class="token keyword">echo</span> 384000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+<span class="token comment" spellcheck="true"># online CPU4</span>
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/online
+<span class="token comment" spellcheck="true"># configure governor settings for big cluster</span>
+<span class="token keyword">echo</span> <span class="token string">"interactive"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_migration_notif
+<span class="token keyword">echo</span> 39000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay
+<span class="token keyword">echo</span> 90 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
+<span class="token keyword">echo</span> 20000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
+<span class="token keyword">echo</span> 768000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
+<span class="token keyword">echo</span> <span class="token string">"85 1248000:95"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads
+<span class="token keyword">echo</span> 40000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time
+<span class="token keyword">echo</span> 0 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/max_freq_hysteresis
+<span class="token keyword">echo</span> 384000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这个是对 CPU 调速器的参数控制。</p>
+<p>这些参数的含义是：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token keyword">echo</span> 0 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/online
+// 暴力关核或者开核（有的 romer 就是这么优化 CPU 的，所以用户老是抱怨卡的要命）
+<span class="token keyword">echo</span> x <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+// 当 CPU 负载超过 x 时升频，CM 和魔趣默认都用 99。
+<span class="token keyword">echo</span> x <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
+// 当 go_hispeed_load 达到或超过设定值时，CPU 调到 x 频率。
+<span class="token keyword">echo</span> x <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
+// 定义了前台应用程序对 CPU 的负载达到多少时进入预订频率 语法是 <span class="token string">"m1 n1:m2 n2:。。。:m n:z"</span> m 指的是负载值，n 指的是预设频率，z 是上限。
+即负载在 m1-m2 之间运行在 n1 频率，负载在 m2-m3 之间运行在 n2 频率。
+当负载超过 z 时，该规则不再生效（即使用内核默认的缺省数值）。
+<span class="token keyword">echo</span> x <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay
+// 升频之间的间隔时间, 单位是微秒 语法是 <span class="token string">"m1 n1:m2 n2:。。。:z"</span>
+m 指的是时间间隔，n 指的是频率（单位为 Hz），z 是上限
+即频率在 n1 时间隔为 m1，n2 时间隔为 m2
+当频率没有被 n 定义时，间隔统一为 z
+<span class="token keyword">echo</span> x <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
+// 采样时间，单位微秒。（内核探看 CPU 负载的间隔时间）
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
+// 对于 big.LITTLE 大小核架构，建议只对强劲的 CPU 开启！ 比如 615 高通默认大小核都不开，810 高通默认大小核都开。
+<span class="token keyword">echo</span> x <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+//CPU 的最低频率。建议用内核给定的最低值而不是自定义。
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>根据我的要求，把这些改成了。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># configure governor settings for little cluster</span>
+<span class="token keyword">echo</span> <span class="token string">"interactive"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif
+<span class="token keyword">echo</span> 39000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
+<span class="token keyword">echo</span> 99 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+<span class="token keyword">echo</span> 20000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
+<span class="token keyword">echo</span> 960000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
+<span class="token keyword">echo</span> <span class="token string">"75 460800:85 960000:90"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
+<span class="token keyword">echo</span> 40000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
+<span class="token keyword">echo</span> 80000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis
+<span class="token keyword">echo</span> 384000 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+<span class="token comment" spellcheck="true"># online CPU4</span>
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/online <span class="token comment" spellcheck="true"># configure governor settings for big cluster</span>
+<span class="token keyword">echo</span> <span class="token string">"interactive"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_migration_notif
+<span class="token keyword">echo</span> <span class="token string">"19000 1400000:39000 1700000:19000"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay
+<span class="token keyword">echo</span> 99 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
+<span class="token keyword">echo</span> 20000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
+<span class="token keyword">echo</span> 960000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
+<span class="token keyword">echo</span> <span class="token string">"70 960000:80 1248000:85 1500000:90"</span> <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads
+<span class="token keyword">echo</span> 40000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time
+<span class="token keyword">echo</span> 80000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/interactive/max_freq_hysteresis
+<span class="token keyword">echo</span> 384000 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>接下来是 core_ctl 参数。</p>
+<blockquote>
+<p>core_ctl 是由 /system/lib/modules/core_ctl.ko 文件控制的 CPU 控制机制，根据 CPU 的负载和温度控制 CPU 上线和离线。</p>
+<p>在 core_ctl 的帮助下可以解决待机低负载少核与操作时负载上升时启动多核的矛盾。</p>
+</blockquote>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># configure core_ctl module parameters</span>
+<span class="token keyword">echo</span> 4 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
+<span class="token keyword">echo</span> 2 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+<span class="token keyword">echo</span> 60 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
+<span class="token keyword">echo</span> 30 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
+<span class="token keyword">echo</span> 100 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
+<span class="token keyword">echo</span> 4 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/task_thres
+<span class="token comment" spellcheck="true"># ztemt:rm core_ctl module rmmod /system/lib/modules/core_ctl.ko</span>
+<span class="token keyword">echo</span> 4 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/task_thres
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>这些意思是当平均负载大于 60 时，会有一颗 A57 上线；平均负载小于 30 时，要有 A57 离线；最多只有 4 颗 A57 上线，最少会有 2 颗 A57 在线；在 A57 离线之前至少需要 100 毫秒；A57 能承受大负载长线程。</p>
+</blockquote>
+<p>然而与此同时，我很痛扁一下努比亚的工程师。因为他们直接把 core_ctl 关闭了。。。core_ctl 有什么用我也说了，所以为什么要关掉呢？</p>
+<p>于是我修改成这样——给 A53 也定义了 core_ctl，并且修改了参数，去掉了 rmmod 指令。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># core_ctl module</span>
+<span class="token keyword">echo</span> 4 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/core_ctl/max_cpus
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
+<span class="token keyword">echo</span> 70 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
+<span class="token keyword">echo</span> 20 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
+<span class="token keyword">echo</span> 100 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
+<span class="token keyword">echo</span> 0 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
+<span class="token keyword">echo</span> 4 <span class="token operator">></span> /sys/devices/system/cpu/cpu0/core_ctl/task_thres
+<span class="token keyword">echo</span> 4 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
+<span class="token keyword">echo</span> 0 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+<span class="token keyword">echo</span> 72 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
+<span class="token keyword">echo</span> 28 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
+<span class="token keyword">echo</span> 100 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
+<span class="token keyword">echo</span> 1 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
+<span class="token keyword">echo</span> 4 <span class="token operator">></span> /sys/devices/system/cpu/cpu4/core_ctl/task_thres
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>最后讲一点，有些 romer 宣称用 ondemand 调速器可以省电降温，宣称“发热 = 耗电，耗电≠发热”，这样的想法显然是错误的。ondemand 调速器的特点就是升频快降频也快，但是如果出现负载较高，而且没有调整好 ondemand 参数的阈值，就会引起频率只升不降，耗电也没法解决，而且频率较高，电压较大，功率较大，发热同样随之而来。Ondemand 如果经过参数调整，也是可以很省电的，就是把 ondemand 里面改个 powersaving 的参数，实现频率等阶梯降低 10% ，并且根据负载和所在频率梯度修改 sampling_time 就行。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 实验室 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> 温控 </tag>
+            
+            <tag> 骁龙 810 </tag>
+            
+            <tag> CPU </tag>
+            
+            <tag> 省电 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title></title>
+      <url>/sw.js</url>
+      <content type="html"><![CDATA["use strict";
+(function() {
+    var cacheVersion = "-170816";
+    var staticImageCacheName = "image" + cacheVersion;
+    var staticAssetsCacheName = "assets" + cacheVersion;
+    var contentCacheName = "content" + cacheVersion;
+    var vendorCacheName = "vendor" + cacheVersion;
+    var maxEntries = 100;
+    self.importScripts("https://s.nfz.yecdn.com/static/js/sw-t.js");
+    self.toolbox.options.debug = false;
+    self.toolbox.options.networkTimeoutSeconds = 5;
+
+    /* staticImageCache */
+    self.toolbox.router.get("/img/(.*)", self.toolbox.cacheFirst, {
+        origin: /blog\.nfz\.yecdn\.com/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/img/(.*)", self.toolbox.cacheFirst, {
+        origin: /bbs-static\.nfz\.yecdn\.com/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /p0\.ssl\.qhmsg\.com/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /img1\.nfz\.yecdn\.com/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /img2\.nfz\.yecdn\.com/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /i\.nfz\.yecdn\.com/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /ooo\.0o0\.ooo/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /i\.loli\.net/,
+        cache: {
+            name: staticImageCacheName,
+            maxEntries: maxEntries
+        }
+    });
+
+    /* StaticAssetsCache */
+    self.toolbox.router.get("/css/(.*)", self.toolbox.networkFirst, {origin: /blog\.nfz\.yecdn\.com/,});
+    self.toolbox.router.get("/js/(.*)", self.toolbox.networkFirst, {origin: /blog\.nfz\.yecdn\.com/,});
+    self.toolbox.router.get("/static/(.*)", self.toolbox.networkFirst, {
+        origin: /blog\.nfz\.yecdn\.com/,
+        cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/fonts/(.*)", self.toolbox.cacheFirst, {
+        origin: /blog\.nfz\.yecdn\.com/,
+        cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /cdnjs\.cat\.net/,
+        cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries
+        }
+    });
+
+    /* ContentCache */
+    self.toolbox.router.get("/archives/(.*).html(.*)", self.toolbox.networkFirst, {
+        cache: {
+            name: contentCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(tags|about|gallery|archives|links|timeline)(.*)", self.toolbox.networkFirst, {
+        cache: {
+            name: contentCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/$", self.toolbox.networkFirst, {
+        cache: {
+            name: contentCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/\?(.*)$", self.toolbox.networkFirst, {
+        cache: {
+            name: contentCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/", self.toolbox.networkFirst, {
+        cache: {
+            name: contentCacheName,
+            maxEntries: maxEntries
+        }
+    });
+
+    /* VendorCache */
+    self.toolbox.router.get("/next/config.json", self.toolbox.networkOnly, {origin: /disqus\.com/,});
+    self.toolbox.router.get("/api/(.*)", self.toolbox.networkOnly, {origin: /disqus\.com/,});
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /a\.disquscdn\.com/,
+        cache: {
+            name: vendorCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /c\.disquscdn\.com/,
+        cache: {
+            name: vendorCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /uploads\.disquscdn\.com/,
+        cache: {
+            name: vendorCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /media\.disquscdn\.com/,
+        cache: {
+            name: vendorCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /referrer\.disqus\.com/,
+        cache: {
+            name: vendorCacheName,
+            maxEntries: maxEntries
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.networkOnly, {origin: /(www\.google-analytics\.com|ssl\.google-analytics\.com)/,
+        cache: {
+            name: vendorCacheName,
+            maxEntries: maxEntries
+        }
+    });
+
+    /* NoCache */
+    self.toolbox.router.get("/sw.js", self.toolbox.networkFirst),
+    self.toolbox.router.get("/(.*).php(.*)", self.toolbox.networkOnly),
+	self.toolbox.router.get("/(.*)", self.toolbox.networkOnly, {origin: /ga\.fir\.im/,});
+
+    self.addEventListener("install",
+        function(event) {return event.waitUntil(self.skipWaiting())
+        });
+    self.addEventListener("activate",
+        function(event) {return event.waitUntil(self.clients.claim())
+        })
+})();]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[本博客的知识共享协议说明]]></title>
+      <url>/creativecommons.html</url>
+      <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明"><a href="# 关于知识共享协议的说明" class="headerlink" title="关于知识共享协议的说明"></a>关于知识共享协议的说明 </h1><p>neoFelhz（以下简称本人），是“neoFelhz’s blog”博客（以下简称本博客）的拥有者。本博客上创造和发布的内容可用于传播和共享，对于本人发布的原创内容（包含图片、文字、音乐、视频）采用 <strong>CreativeCommons 3.0 Unported</strong> 协议，即 <strong> 知识共享许可协议 3.0 未本地化版本 </strong> 加以许可保护。作者在发布内容时，如果没有特殊注明，默认将会采用 <strong> 知识共享协议 署名 - 非商业性使用 - 相同方式共享 3.0 未本地化版本</strong> (<strong>CC BY-NC-SA 3.0 Unported</strong>) 对原创内容进行保护。</p>
+<h1 id="关于知识共享协议的补充说明"><a href="# 关于知识共享协议的补充说明" class="headerlink" title="关于知识共享协议的补充说明"></a>关于知识共享协议的补充说明 </h1><h2 id="侵权有关"><a href="# 侵权有关" class="headerlink" title="侵权有关"></a> 侵权有关 </h2><p> 如个人或单位发现本博客上存在侵犯其自身合法权益的内容，请及时与本人取得联系，并提供具有法律效力的证明材料，以便本人作出处理。</p>
+<h2 id="非原创作品商业使用有关"><a href="# 非原创作品商业使用有关" class="headerlink" title="非原创作品商业使用有关"></a>非原创作品商业使用有关 </h2><p> 任何被本博客划收录的非原创作品，原作者依然持有商业使用其作品的权利。<br>如果您希望商业使用这些被收录的内容，请与所有 <strong>参与此作品创作的原作者 </strong> 和 / 或 <strong> 版权持有者</strong> 进行协商。在与所有人达成协议后，方可商业使用。<br>（本博客及其本人不进行任何商业接洽工作，请自行与作者联系）</p>
+<h1 id="CC-3-0-Unported- 协议概要"><a href="#CC-3-0-Unported- 协议概要" class="headerlink" title="CC 3.0 Unported 协议概要"></a>CC 3.0 Unported 协议概要 </h1><h2 id="语言：中文"><a href="# 语言：中文" class="headerlink" title="语言：中文"></a><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank" rel="external"> 语言：中文</a></h2><blockquote>
+<p>该 <code> 协议摘要 </code> 摘抄于 Sat Sep 03 2016 22:30:57 GMT+0800 (中国标准时间)<br>这是一份普通人可以理解的许可协议概要 (但不是替代) 。</p>
+</blockquote>
+<p><strong>您可以自由地：</strong></p>
+<ul>
+<li><strong>分享</strong> — 在任何媒介以任何形式复制、发行本作品</li>
+<li><strong>演绎</strong> — 修改、转换或以本作品为基础进行创作</li>
+<li>只要你遵守许可协议条款，许可人就无法收回你的这些权利。</li>
+</ul>
+<p><strong>惟须遵守下列条件：</strong></p>
+<ul>
+<li><strong>署名 </strong> — 你必须遵守信用，注明来源链接和演绎内容，并提供一个通往与 <strong> 原作所用协议并不冲突的知识共享协议</strong> 许可证页面的链接。你可以用任何合适的方式实现这个，但这并不暗示许可证拥有者和原作者认可该分享方式。</li>
+<li><strong>非商业性使用</strong> — 您不得将本作品用于商业目的。</li>
+<li><strong>相同方式共享 </strong> — 如果你节选、翻译、重排版，或基于本作品二次创作，你必须将你的贡献用 <strong> 相同的协议</strong> 进行分享，并分别注明原作者与你的贡献。</li>
+<li><strong>没有附加限制</strong> — 虽然您可能依旧不适用那些法律上限制的任何关于知识产权的法律条款或技术措施，即使你的行为符合知识共享协议。</li>
+</ul>
+<h2 id="Language-English"><a href="#Language-English" class="headerlink" title="Language:English"></a><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed" target="_blank" rel="external">Language:English</a></h2><blockquote>
+<p>This copy was copied at Sat Sep 03 2016 22:36:47 GMT+0800 (Asia/Beijing)<br>This is a human-readable summary of (and not a substitute for) the license.</p>
+</blockquote>
+<p><strong>You are free to:</strong></p>
+<ul>
+<li><strong>Share</strong> — copy and redistribute the material in any medium or format</li>
+<li><strong>Adapt</strong> — remix, transform, and build upon the material</li>
+<li>The licensor cannot revoke these freedoms as long as you follow the license terms.</li>
+</ul>
+<p><strong>Under the following terms:</strong></p>
+<ul>
+<li><strong>Attribution</strong> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
+<li><strong>NonCommercial</strong> — You may not use the material for commercial purposes.</li>
+<li><strong>ShareAlike</strong> — If you remix, transform, or build upon the material, you must distribute your contributions under the <strong>same license</strong> as the original.</li>
+<li><strong>No additional restrictions</strong> — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</li>
+</ul>
+<blockquote>
+<p>商业目的指的是通过使用分享来的内容用于商业活动当中或用于获得经济上的补偿。<br>Commercial purposes refers to the use of shared content to be used in business or to obtain economic compensation.</p>
+</blockquote>
+<h1 id="CC-3-0-Unported- 完整协议"><a href="#CC-3-0-Unported- 完整协议" class="headerlink" title="CC 3.0 Unported 完整协议"></a>CC 3.0 Unported 完整协议</h1><h2 id="Language-English-1"><a href="#Language-English-1" class="headerlink" title="Language:English"></a>Language:English</h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank" rel="external">CC by-nc-sa 3.0 Unported Legalcode</a></p>
+<h2 id="语言：中文 -1"><a href="# 语言：中文 -1" class="headerlink" title="语言：中文"></a>语言：中文 </h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode" target="_blank" rel="external"> 知识共享协议署名 - 非商业性使用 - 相同方式共享 3.0 中国大陆 许可协议</a></p>
+<blockquote>
+<p>请注意， <strong>CC 3.0 BY-NC-SA 中国大陆 </strong> 版本协议由于其与本博客使用的 <strong>CC 3.0 BY-NC-SA Unported</strong> 协议仅具有相同要素(BY-NC-SA) 而非同一司法管辖区（互相不适用两个地区分别的著作权保护有关的法律），<strong>故属于不同协议</strong>，但 <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议可作为 <strong>CC 3.0 BY-NC-SA Unported</strong> 的翻译进行参考阅读。</p>
+</blockquote>
+<h1 id="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"><a href="# 您如何在不违反知识共享协议条约的基础上使用本博客的原创内容" class="headerlink" title="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"></a>您如何在不违反知识共享协议条约的基础上使用本博客的原创内容 </h1><h2 id="商业使用"><a href="# 商业使用" class="headerlink" title="商业使用"></a> 商业使用 </h2><p><strong> CC 3.0 BY-NC-SA Unported</strong> 协议规定，只要他人注明本人的姓名并在以本人的作品为基础创作的新作品上适用同一类型的许可协议，该他人就可基于非商业目的对您的作品重新编排、节选或者以本人的作品为基础进行创作。基于本人的作品创作的所有新作品都要适用同一类型的许可协议，因此适用该项协议则对任何以您的原作为基础创作的演绎作品自然同样<strong> 都不得进行商业性使用</strong>。</p>
+<h2 id="署名方法"><a href="# 署名方法" class="headerlink" title="署名方法"></a>署名方法 </h2><p> 在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“neoFelhz’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证；<br>如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议 </strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external"> 许可证</a></p>
+<h2 id="演绎政策"><a href="# 演绎政策" class="headerlink" title="演绎政策"></a>演绎政策 </h2><p> 本博客属于所有在网络上公开发表的，任何人可访问的作品，故本人在这里明确声明 <strong>所有原创内容均 允许演绎</strong>。</p>
+<blockquote>
+<p>知识共享协议中对 <em>演绎</em> 的定义是：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
+</blockquote>
+<hr>
+<p>你将会在我的博客的每一篇文章结尾，看到如下所示的版权说明：</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签云]]></title>
+      <url>/tags.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[「时间轴」]]></title>
+      <url>/timeline.html</url>
+      <content type="html"></content>
+    </entry>
+    
+  
+</search>

@@ -5,8 +5,34 @@
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.4.0 -->
-    <script>window.materialVersion = "1.4.0"</script>
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "150g"
+        window.oldVersion = [
+            "1.5.0",
+            "1.5.0a",
+            "1.5.0b",
+            "1.5.0c",
+            "150d",
+            "150e",
+			"150f"
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Title -->
     
@@ -17,39 +43,29 @@
         Jinning Li&#39;s Blog
     </title>
 
-    <!-- dns prefetch -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     <!-- Meta & Info -->
-    <meta http-equiv="X-UA-Compatible">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
     <meta name="theme-color" content="#455A64">
     <meta name="author" content="Jinning Li">
     <meta name="description" itemprop="description" content="neoFelhz&#39;s Blog 的版权声明">
     <meta name="keywords" content="Jinning Li, blog, hexo, CS, SJTU, ACM,博客">
 
-    <!-- Site Verification -->
-    
-    
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="favicon.png">
-    <link rel="icon" sizes="192x192" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon shortcut" type="image/ico" href="/favicon.png">
+    <link rel="icon" sizes="192x192" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
 
     <!--iOS -->
-    <meta name="apple-mobile-web-app-title" content="Title">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Jinning Li&#39;s Blog">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="480">
@@ -57,79 +73,41 @@
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Jinning Li&#39;s Blog">
-
-    <!-- The Open Graph protocol -->
-    <meta property="og:url" content="jinningli.github.io">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="本博客的知识共享协议说明 | Jinning Li&#39;s Blog">
-    <meta property="og:image" content="favicon.png" />
-    <meta property="og:description" content="neoFelhz&#39;s Blog 的版权声明">
+    <!-- Site Verification -->
+    
     
 
-    
-
-    <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="本博客的知识共享协议说明 | Jinning Li&#39;s Blog">
-    <meta name="twitter:description" content="neoFelhz&#39;s Blog 的版权声明">
-    <meta name="twitter:image" content="favicon.png">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="jinningli.github.io" />
-
-    <!-- Add canonical link for SEO -->
-    
-        <link rel="canonical" href="jinningli.github.io/creativecommons.html" />
-    
-
-    <!-- Structured-data for SEO -->
+    <!-- RSS -->
     
         
-
-
-
+            <link rel=alternate type="application/atom+xml" href="atom.xml">
+        
     
 
-    <!--[if lte IE 9]>
-        <link rel="stylesheet" href="/css/ie-blocker.css">
+<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie-blocker.css"><script src="/js/ie-blocker.zhCN.js"></script><![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
-            <script src="/js/ie-blocker.zhCN.js"></script>
-        
-    <![endif]-->
 
-    <!-- Import lsloader -->
-    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+materialVersion+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(data&&data.indexOf(versionString)===-1){lsloader.removeLS(key)}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload){cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}code=code.split(versionString)[1];if(/\.js?.+$/.test(versionNumber)){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload)}};lsloader.requestResource=function(name,path,cssonload){var that=this;if(/\.js?.+$/.test(path)){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else if(/\.css?.+$/.test(path)){this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+    
 
-    <!-- Import CSS & jQuery -->
     
-        <style id="css/material.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/material.min.css","/css/material.min.css?fJTiM/K1J3dWIruo3pxtAw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
-        <style id="css/style.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/style.min.css","/css/style.min.css?oCSEO3ST+aEypEwttTDI9g==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
-        
-        
-            <style>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</style>
 
-        
-        <!-- Config CSS -->
+    <!-- Config CSS -->
 
 <!-- Other Styles -->
 <style>
   body, html {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   }
 
   a {
@@ -211,17 +189,47 @@
 
 
 <!-- Import Font -->
+<!-- Import Roboto -->
+<!-- Import Material Icon -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
 
-        <script>lsloader.load("js/jquery.min.js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==")</script>
+
+    <!-- Import jQuery -->
     
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
     
-    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="jinningli.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="本博客的知识共享协议说明 | Jinning Li&#39;s Blog">
+    <meta property="og:image" content="favicon.png" />
+    <meta property="og:description" content="neoFelhz&#39;s Blog 的版权声明">
+    
+
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="jinningli.github.io/creativecommons.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+
+    
 
     <!-- Analytics -->
+    
+    
     
 
     <!-- Custom Head -->
@@ -236,7 +244,9 @@
             <script>window.ga=window.ga||function()  {(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-83054354-3','auto');ga('send','pageview');</script><script async src='https://s.nfz.yecdn.com/static/js/jquery.ag.1.0.js'></script>
         
     
-</head>
+
+<link rel="stylesheet" href="/css/prism-solarizedlight.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -278,7 +288,7 @@
             <script type="text/ls-javascript" id="post-thumbnail-script">
     var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png!t');
     $('.post_thumbnail-random').addClass('lazy');
 </script>
 
@@ -335,7 +345,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=本博客的知识共享协议说明&url=jinningli.github.io/creativecommons.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=本博客的知识共享协议说明&url=jinningli.github.io/creativecommons.html&pic=favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -353,12 +363,6 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=jinningli.github.io/creativecommons.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
 
     <!-- Share Google+ -->
     
@@ -374,7 +378,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Jinning Li&#39;s Blog&title=本博客的知识共享协议说明&summary=Undergraduate Student major Computer Science&pics=jinningli.github.iofavicon.png&url=jinningli.github.io/creativecommons.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Jinning Li&#39;s Blog&title=本博客的知识共享协议说明&summary=Undergraduate Student major Computer Science&pics=favicon.png&url=jinningli.github.io/creativecommons.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -382,6 +386,12 @@
     
 
     <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=jinningli.github.io/creativecommons.html&text=本博客的知识共享协议说明" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
     
 </ul>
 
@@ -392,11 +402,11 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="关于知识共享协议的说明"><a href="#关于知识共享协议的说明" class="headerlink" title="关于知识共享协议的说明"></a>关于知识共享协议的说明</h1><p>neoFelhz（以下简称本人），是“neoFelhz’s blog”博客（以下简称本博客）的拥有者。本博客上创造和发布的内容可用于传播和共享，对于本人发布的原创内容（包含图片、文字、音乐、视频）采用 <strong>CreativeCommons 3.0 Unported</strong> 协议，即 <strong>知识共享许可协议 3.0 未本地化版本</strong> 加以许可保护。作者在发布内容时，如果没有特殊注明，默认将会采用 <strong>知识共享协议 署名-非商业性使用-相同方式共享 3.0 未本地化版本</strong> (<strong>CC BY-NC-SA 3.0 Unported</strong>) 对原创内容进行保护。</p>
-<h1 id="关于知识共享协议的补充说明"><a href="#关于知识共享协议的补充说明" class="headerlink" title="关于知识共享协议的补充说明"></a>关于知识共享协议的补充说明</h1><h2 id="侵权有关"><a href="#侵权有关" class="headerlink" title="侵权有关"></a>侵权有关</h2><p>如个人或单位发现本博客上存在侵犯其自身合法权益的内容，请及时与本人取得联系，并提供具有法律效力的证明材料，以便本人作出处理。</p>
-<h2 id="非原创作品商业使用有关"><a href="#非原创作品商业使用有关" class="headerlink" title="非原创作品商业使用有关"></a>非原创作品商业使用有关</h2><p>任何被本博客划收录的非原创作品，原作者依然持有商业使用其作品的权利。<br>如果您希望商业使用这些被收录的内容，请与所有 <strong>参与此作品创作的原作者</strong> 和/或 <strong>版权持有者</strong> 进行协商。在与所有人达成协议后，方可商业使用。<br>（本博客及其本人不进行任何商业接洽工作，请自行与作者联系）</p>
-<h1 id="CC-3-0-Unported-协议概要"><a href="#CC-3-0-Unported-协议概要" class="headerlink" title="CC 3.0 Unported 协议概要"></a>CC 3.0 Unported 协议概要</h1><h2 id="语言：中文"><a href="#语言：中文" class="headerlink" title="语言：中文"></a><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank" rel="external">语言：中文</a></h2><blockquote>
-<p>该<code>协议摘要</code>摘抄于Sat Sep 03 2016 22:30:57 GMT+0800 (中国标准时间)<br>这是一份普通人可以理解的许可协议概要 (但不是替代) 。</p>
+        <h1 id="关于知识共享协议的说明"><a href="# 关于知识共享协议的说明" class="headerlink" title="关于知识共享协议的说明"></a>关于知识共享协议的说明 </h1><p>neoFelhz（以下简称本人），是“neoFelhz’s blog”博客（以下简称本博客）的拥有者。本博客上创造和发布的内容可用于传播和共享，对于本人发布的原创内容（包含图片、文字、音乐、视频）采用 <strong>CreativeCommons 3.0 Unported</strong> 协议，即 <strong> 知识共享许可协议 3.0 未本地化版本 </strong> 加以许可保护。作者在发布内容时，如果没有特殊注明，默认将会采用 <strong> 知识共享协议 署名 - 非商业性使用 - 相同方式共享 3.0 未本地化版本</strong> (<strong>CC BY-NC-SA 3.0 Unported</strong>) 对原创内容进行保护。</p>
+<h1 id="关于知识共享协议的补充说明"><a href="# 关于知识共享协议的补充说明" class="headerlink" title="关于知识共享协议的补充说明"></a>关于知识共享协议的补充说明 </h1><h2 id="侵权有关"><a href="# 侵权有关" class="headerlink" title="侵权有关"></a> 侵权有关 </h2><p> 如个人或单位发现本博客上存在侵犯其自身合法权益的内容，请及时与本人取得联系，并提供具有法律效力的证明材料，以便本人作出处理。</p>
+<h2 id="非原创作品商业使用有关"><a href="# 非原创作品商业使用有关" class="headerlink" title="非原创作品商业使用有关"></a>非原创作品商业使用有关 </h2><p> 任何被本博客划收录的非原创作品，原作者依然持有商业使用其作品的权利。<br>如果您希望商业使用这些被收录的内容，请与所有 <strong>参与此作品创作的原作者 </strong> 和 / 或 <strong> 版权持有者</strong> 进行协商。在与所有人达成协议后，方可商业使用。<br>（本博客及其本人不进行任何商业接洽工作，请自行与作者联系）</p>
+<h1 id="CC-3-0-Unported- 协议概要"><a href="#CC-3-0-Unported- 协议概要" class="headerlink" title="CC 3.0 Unported 协议概要"></a>CC 3.0 Unported 协议概要 </h1><h2 id="语言：中文"><a href="# 语言：中文" class="headerlink" title="语言：中文"></a><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank" rel="external"> 语言：中文</a></h2><blockquote>
+<p>该 <code> 协议摘要 </code> 摘抄于 Sat Sep 03 2016 22:30:57 GMT+0800 (中国标准时间)<br>这是一份普通人可以理解的许可协议概要 (但不是替代) 。</p>
 </blockquote>
 <p><strong>您可以自由地：</strong></p>
 <ul>
@@ -406,9 +416,9 @@
 </ul>
 <p><strong>惟须遵守下列条件：</strong></p>
 <ul>
-<li><strong>署名</strong> — 你必须遵守信用，注明来源链接和演绎内容，并提供一个通往与 <strong>原作所用协议并不冲突的知识共享协议</strong> 许可证页面的链接。你可以用任何合适的方式实现这个，但这并不暗示许可证拥有者和原作者认可该分享方式。</li>
+<li><strong>署名 </strong> — 你必须遵守信用，注明来源链接和演绎内容，并提供一个通往与 <strong> 原作所用协议并不冲突的知识共享协议</strong> 许可证页面的链接。你可以用任何合适的方式实现这个，但这并不暗示许可证拥有者和原作者认可该分享方式。</li>
 <li><strong>非商业性使用</strong> — 您不得将本作品用于商业目的。</li>
-<li><strong>相同方式共享</strong> — 如果你节选、翻译、重排版，或基于本作品二次创作，你必须将你的贡献用 <strong>相同的协议</strong> 进行分享，并分别注明原作者与你的贡献。</li>
+<li><strong>相同方式共享 </strong> — 如果你节选、翻译、重排版，或基于本作品二次创作，你必须将你的贡献用 <strong> 相同的协议</strong> 进行分享，并分别注明原作者与你的贡献。</li>
 <li><strong>没有附加限制</strong> — 虽然您可能依旧不适用那些法律上限制的任何关于知识产权的法律条款或技术措施，即使你的行为符合知识共享协议。</li>
 </ul>
 <h2 id="Language-English"><a href="#Language-English" class="headerlink" title="Language:English"></a><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed" target="_blank" rel="external">Language:English</a></h2><blockquote>
@@ -430,20 +440,21 @@
 <blockquote>
 <p>商业目的指的是通过使用分享来的内容用于商业活动当中或用于获得经济上的补偿。<br>Commercial purposes refers to the use of shared content to be used in business or to obtain economic compensation.</p>
 </blockquote>
-<h1 id="CC-3-0-Unported-完整协议"><a href="#CC-3-0-Unported-完整协议" class="headerlink" title="CC 3.0 Unported 完整协议"></a>CC 3.0 Unported 完整协议</h1><h2 id="Language-English-1"><a href="#Language-English-1" class="headerlink" title="Language:English"></a>Language:English</h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank" rel="external">CC by-nc-sa 3.0 Unported Legalcode</a></p>
-<h2 id="语言：中文-1"><a href="#语言：中文-1" class="headerlink" title="语言：中文"></a>语言：中文</h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode" target="_blank" rel="external">知识共享协议署名-非商业性使用-相同方式共享 3.0 中国大陆 许可协议</a></p>
+<h1 id="CC-3-0-Unported- 完整协议"><a href="#CC-3-0-Unported- 完整协议" class="headerlink" title="CC 3.0 Unported 完整协议"></a>CC 3.0 Unported 完整协议</h1><h2 id="Language-English-1"><a href="#Language-English-1" class="headerlink" title="Language:English"></a>Language:English</h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank" rel="external">CC by-nc-sa 3.0 Unported Legalcode</a></p>
+<h2 id="语言：中文 -1"><a href="# 语言：中文 -1" class="headerlink" title="语言：中文"></a>语言：中文 </h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode" target="_blank" rel="external"> 知识共享协议署名 - 非商业性使用 - 相同方式共享 3.0 中国大陆 许可协议</a></p>
 <blockquote>
-<p>请注意， <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议由于其与本博客使用的 <strong>CC 3.0 BY-NC-SA Unported</strong> 协议仅具有相同要素(BY-NC-SA)而非同一司法管辖区（互相不适用两个地区分别的著作权保护有关的法律），<strong>故属于不同协议</strong>，但 <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议可作为 <strong>CC 3.0 BY-NC-SA Unported</strong> 的翻译进行参考阅读。</p>
+<p>请注意， <strong>CC 3.0 BY-NC-SA 中国大陆 </strong> 版本协议由于其与本博客使用的 <strong>CC 3.0 BY-NC-SA Unported</strong> 协议仅具有相同要素(BY-NC-SA) 而非同一司法管辖区（互相不适用两个地区分别的著作权保护有关的法律），<strong>故属于不同协议</strong>，但 <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议可作为 <strong>CC 3.0 BY-NC-SA Unported</strong> 的翻译进行参考阅读。</p>
 </blockquote>
-<h1 id="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"><a href="#您如何在不违反知识共享协议条约的基础上使用本博客的原创内容" class="headerlink" title="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"></a>您如何在不违反知识共享协议条约的基础上使用本博客的原创内容</h1><h2 id="商业使用"><a href="#商业使用" class="headerlink" title="商业使用"></a>商业使用</h2><p><strong> CC 3.0 BY-NC-SA Unported</strong> 协议规定，只要他人注明本人的姓名并在以本人的作品为基础创作的新作品上适用同一类型的许可协议，该他人就可基于非商业目的对您的作品重新编排、节选或者以本人的作品为基础进行创作。基于本人的作品创作的所有新作品都要适用同一类型的许可协议，因此适用该项协议则对任何以您的原作为基础创作的演绎作品自然同样<strong>都不得进行商业性使用</strong>。</p>
-<h2 id="署名方法"><a href="#署名方法" class="headerlink" title="署名方法"></a>署名方法</h2><p>在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“neoFelhz’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证；<br>如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议</strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external">许可证</a></p>
-<h2 id="演绎政策"><a href="#演绎政策" class="headerlink" title="演绎政策"></a>演绎政策</h2><p>本博客属于所有在网络上公开发表的，任何人可访问的作品，故本人在这里明确声明 <strong>所有原创内容均 允许演绎</strong>。</p>
+<h1 id="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"><a href="# 您如何在不违反知识共享协议条约的基础上使用本博客的原创内容" class="headerlink" title="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"></a>您如何在不违反知识共享协议条约的基础上使用本博客的原创内容 </h1><h2 id="商业使用"><a href="# 商业使用" class="headerlink" title="商业使用"></a> 商业使用 </h2><p><strong> CC 3.0 BY-NC-SA Unported</strong> 协议规定，只要他人注明本人的姓名并在以本人的作品为基础创作的新作品上适用同一类型的许可协议，该他人就可基于非商业目的对您的作品重新编排、节选或者以本人的作品为基础进行创作。基于本人的作品创作的所有新作品都要适用同一类型的许可协议，因此适用该项协议则对任何以您的原作为基础创作的演绎作品自然同样<strong> 都不得进行商业性使用</strong>。</p>
+<h2 id="署名方法"><a href="# 署名方法" class="headerlink" title="署名方法"></a>署名方法 </h2><p> 在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“neoFelhz’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证；<br>如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议 </strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external"> 许可证</a></p>
+<h2 id="演绎政策"><a href="# 演绎政策" class="headerlink" title="演绎政策"></a>演绎政策 </h2><p> 本博客属于所有在网络上公开发表的，任何人可访问的作品，故本人在这里明确声明 <strong>所有原创内容均 允许演绎</strong>。</p>
 <blockquote>
 <p>知识共享协议中对 <em>演绎</em> 的定义是：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
 </blockquote>
 <hr>
 <p>你将会在我的博客的每一篇文章结尾，看到如下所示的版权说明：</p>
 
+        
     
 
     
@@ -455,6 +466,89 @@
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #546E7A;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'jinningli.github.io/creativecommons.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'jinningli.github.io/creativecommons.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 2500,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//jinningliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//jinningliblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
                 
             </div>
 
@@ -564,7 +658,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Notes/">Notes<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/异闻堂/">异闻堂<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -620,7 +714,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">1</span>
+                <span class="sidebar-badge">6</span>
             </a>
         </li>
         
@@ -714,12 +808,16 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
+    
+    <!-- V2EX -->
+    
 </div>
 
 
         <!--Copyright-->
         <div id="copyright">
             Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Jinning Li's Blog
+            
         </div>
 
         <!-- Paradox Footer Right Section -->
@@ -742,15 +840,17 @@ It will not impact the appearance and can give developers a lot of support :)
 </footer>
 
 
-                    <!-- Import File -->
+                    <!-- Import JS File -->
 
-
-    <script>lsloader.load("js/lazyload.min.js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==")</script>
-    <script>lsloader.load("js/js.min.js","/js/js.min.js?oAl/+lvaqTFV31JXTmbrNA==")</script>
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
 
 
 
-    <script>lsloader.load("js/nprogress.js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==")</script>
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
 
 
 <script type="text/ls-javascript" id="NProgress-script">
@@ -782,6 +882,9 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+   <!-- 使用 DISQUS js 代码 -->
+
+
 
 
 
@@ -795,15 +898,27 @@ It will not impact the appearance and can give developers a lot of support :)
 	}
 </script>
 
-<!-- Window Load-->
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
 <script type="text/ls-javascript" id="window-load">
     $(window).on('load', function() {
         // Post_Toc parent position fixed
         $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
     });
+
+    
+    
 </script>
 
 <!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
 
 <script type="text/ls-javascript" id="lazy-load">
     // Offer LazyLoad
@@ -821,7 +936,12 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 </script>
 
-<!-- Bing Background -->
+<!-- Custom Footer -->
+
+
+    
+        <script>lsloader.load("sw_js","https://s.nfz.yecdn.com/static/js/sw-reg.js?170910", true)</script>
+    
 
 
 <script>
@@ -833,7 +953,7 @@ It will not impact the appearance and can give developers a lot of support :)
             lsloader.runInlineScript(item.id,item.id);
         }
     })()
-console.log('\n %c © Material Theme | Version: 1.4.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
 </script>
 
                 </main>
