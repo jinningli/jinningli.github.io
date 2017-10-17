@@ -3,9 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[System Note]]></title>
+      <title><![CDATA[Memory Management in Linux]]></title>
       <url>/archives/system_note_1017.html</url>
-      <content type="html"><![CDATA[<h1 id="System-Notes"><a href="#System-Notes" class="headerlink" title="System Notes"></a>System Notes</h1><h2 id="Memory-in-Linux"><a href="#Memory-in-Linux" class="headerlink" title="Memory in Linux"></a>Memory in Linux</h2><h3 id="Page-Allocation"><a href="#Page-Allocation" class="headerlink" title="Page Allocation"></a>Page Allocation</h3><p>Linux uses the <strong>Buddy algorithm</strong> to effectively allocate and deallocate blocks of pages.</p>
+      <content type="html"><![CDATA[<h2 id="Memory-in-Linux"><a href="#Memory-in-Linux" class="headerlink" title="Memory in Linux"></a>Memory in Linux</h2><h3 id="Page-Allocation"><a href="#Page-Allocation" class="headerlink" title="Page Allocation"></a>Page Allocation</h3><p>Linux uses the <strong>Buddy algorithm</strong> to effectively allocate and deallocate blocks of pages.</p>
 <p>The page allocation code attempts to allocate a block of one or more physical pages. Pages are allocated in blocks which are powers of 2 in size. That means that it can allocate a block 1 page, 2 pages, 4 pages and so on. So long as there are enough free pages in the system to grant this request (nr_free_pages &gt; min_free_pages) the allocation code will search the free_area for a block of pages of the size requested. Each element of the free_area has a map of the allocated and free blocks of pages for that sized block. For example, element 2 of the array has a memory map that describes free and allocated blocks each of 4 pages long.</p>
 <p>The allocation algorithm first searches for blocks of pages of the size requested. It follows the chain of free pages that is queued on the list element of the free_area data structure. If no blocks of pages of the requested size are free, blocks of the next size (which is twice that of the size requested) are looked for. This process continues until all of the free_area has been searched or until a block of pages has been found. If the block of pages found is larger than that requested it must be broken down until there is a block of the right size. Because the blocks are each a power of 2 pages big then this breaking down process is easy as you simply break the blocks in half. The free blocks are queued on the appropriate queue and the allocated block of pages is returned to the caller.</p>
 <p><img src="/assets/free-area.gif" alt="free-area"><br>Figure 3.4: The free_area data structure</p>
@@ -38,6 +38,7 @@
 <p>Whenever a page is read from a memory mapped file, for example when it needs to be brought back into memory during demand paging, the page is read through the page cache. If the page is present in the cache, a pointer to the mem_map_t data structure representing it is returned to the page fault handling code. Otherwise the page must be brought into memory from the file system that holds the image. Linux allocates a physical page and reads the page from the file on disk.</p>
 <p>If it is possible, Linux will initiate a read of the next page in the file. This single page read ahead means that if the process is accessing the pages in the file serially, the next page will be waiting in memory for the process.</p>
 <p>Over time the page cache grows as images are read and executed. Pages will be removed from the cache as they are no longer needed, say as an image is no longer being used by any process. As Linux uses memory it can start to run low on physical pages. In this case Linux will reduce the size of the page cache.</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="http://www.tldp.org/LDP/tlk/" target="_blank" rel="external">The Linux Kernel</a></p>
 ]]></content>
       
         <categories>
@@ -61,7 +62,7 @@
     
     <entry>
       <title><![CDATA[TOEFL Note]]></title>
-      <url>/archives/toelf-note-1017.html</url>
+      <url>/archives/toefl-note-1017.html</url>
       <content type="html"><![CDATA[<h1 id="Toelf-Test"><a href="#Toelf-Test" class="headerlink" title="Toelf Test"></a>Toelf Test</h1><p>I have applied for the toefl test on Dec 2 in SEIEE, SJTU.<br>This article is a note for my preparing of it.<br><img src="/assets/toelf_note_1017.jpeg" alt="toelf_note_1017"></p>
 ]]></content>
       
@@ -74,11 +75,11 @@
         
         <tags>
             
-            <tag> TOEFL </tag>
-            
             <tag> Notes </tag>
             
             <tag> English </tag>
+            
+            <tag> TOEFL </tag>
             
         </tags>
         
@@ -97,18 +98,14 @@
       
         <categories>
             
-            <category> essay </category>
+            <category> Essay </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> Hello World! </tag>
-            
-            <tag> First Essay </tag>
-            
-            <tag> Establishment of this blog </tag>
+            <tag> Hello World </tag>
             
         </tags>
         
