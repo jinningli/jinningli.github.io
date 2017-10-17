@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://jinningli.github.io">
-    <img alt="Jinning Li's website" src="https://jinningli.github.io/favicon.png">
+    <img alt="Jinning Li's website" src="https://jinningli.github.io/favicon.png" width = "300">
   </a>
 </p>
 <p align="center">
