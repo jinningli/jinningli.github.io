@@ -149,12 +149,6 @@
   
     
     <entry>
-      <title><![CDATA[标签云]]></title>
-      <url>/tags.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明"><a href="#关于知识共享协议的说明" class="headerlink" title="关于知识共享协议的说明"></a>关于知识共享协议的说明</h1><p><strong>Jinning Li</strong>（以下简称本人），是 <strong>“Jinning Li’s blog”</strong> 博客（以下简称本博客）的拥有者。本博客上创造和发布的内容可用于传播和共享，对于本人发布的原创内容（包含图片、文字、音乐、视频）采用 <strong>CreativeCommons 3.0 Unported</strong> 协议，即 <strong>知识共享许可协议 3.0 未本地化版本</strong> 加以许可保护。作者在发布内容时，如果没有特殊注明，默认将会采用 <strong>知识共享协议 署名-非商业性使用-相同方式共享 3.0 未本地化版本</strong> (<strong>CC BY-NC-SA 3.0 Unported</strong>) 对原创内容进行保护。</p>
@@ -201,6 +195,12 @@
 <p>知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
 </blockquote>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签云]]></title>
+      <url>/tags.html</url>
+      <content type="html"></content>
     </entry>
     
     <entry>

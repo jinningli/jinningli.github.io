@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://docsify.js.org">
+  <a href="https://jinningli.github.io">
     <img alt="Jinning Li's website" src="https://jinningli.github.io/favicon.png">
   </a>
 </p>
