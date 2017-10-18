@@ -26,11 +26,11 @@
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -43,7 +43,7 @@
 <p>My Partners are Siqi Liu and Mengyao Cao. After discussion, we decided our draft topic as:</p>
 <p>A Painting AI based on Cascaded Refinment Network</p>
 <p>The PPT illustrates our scheme:</p>
-<iframe src="../files/Computer Vision.pdf" style="width:718px; height:500px;" frameborder="0"></iframe>
+<iframe src="../files/Computer Vision.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
 
 <p><a href="../files/Computer Vision.pdf">Download File</a></p>
 <p>The final topic will be confirm in tomorrow’s class.</p>
@@ -61,13 +61,13 @@
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
