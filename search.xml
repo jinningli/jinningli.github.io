@@ -26,6 +26,8 @@
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
@@ -63,6 +65,8 @@
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -116,11 +120,13 @@
         
         <tags>
             
-            <tag> Notes </tag>
-            
             <tag> English </tag>
             
             <tag> Operate System </tag>
+            
+            <tag> Memory </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
         
@@ -141,8 +147,6 @@
         
         <tags>
             
-            <tag> Notes </tag>
-            
             <tag> English </tag>
             
             <tag> TOEFL </tag>
@@ -154,11 +158,13 @@
     <entry>
       <title><![CDATA[Hello World!]]></title>
       <url>/archives/hello%20World.html</url>
-      <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>My Website has successfully constructed<br>The URL of my blog is</p>
+      <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>My Website has successfully constructed!</p>
+<p>I will post my diary, class notes, progesses on research, and some essays on my blog.</p>
+<p><a href="jinningli.github.io/blog.html">The URL of my blog is</a></p>
 <pre><code>jinningli.github.io/blog.html
-</code></pre><p>The URL of my website is</p>
+</code></pre><p><a href="jinningli.github.io/index.html">The URL of my website is</a></p>
 <pre><code>jinningli.github.io/index.html
-</code></pre><p>The URL of my CV is</p>
+</code></pre><p><a href="jinningli.github.io/cv/cv.html">The URL of my CV is</a></p>
 <pre><code>jinningli.github.io/cv/cv.html
 </code></pre><h4 id="Welcome-to-my-websites"><a href="#Welcome-to-my-websites" class="headerlink" title="Welcome to my websites!"></a>Welcome to my websites!</h4><h4 id="w"><a href="#w" class="headerlink" title="=w="></a>=w=</h4>]]></content>
       
@@ -179,6 +185,12 @@
     
   
   
+    
+    <entry>
+      <title><![CDATA[标签云]]></title>
+      <url>/tags.html</url>
+      <content type="html"></content>
+    </entry>
     
     <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
@@ -227,12 +239,6 @@
 <p>知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
 </blockquote>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[标签云]]></title>
-      <url>/tags.html</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
