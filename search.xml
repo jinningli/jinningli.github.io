@@ -3,7 +3,39 @@
   
     
     <entry>
-      <title><![CDATA[Computer Vision Project]]></title>
+      <title><![CDATA[Segmentation - Computer Vision]]></title>
+      <url>/archives/Computer-Vision-segmentation.html</url>
+      <content type="html"><![CDATA[<h1 id="Class"><a href="#Class" class="headerlink" title="Class"></a>Class</h1><ul>
+<li>image segmentation (non-semantic)</li>
+<li>graph-cut segmentation (non-semantic)</li>
+<li>semantic segmentation</li>
+<li>instance segmentation</li>
+</ul>
+<p>Object detection is just a bounding box, but segmentation will consider the shape, color, etc.</p>
+<p>segmentation to make semantic partition.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Computer Vision </tag>
+            
+            <tag> Segmentation </tag>
+            
+            <tag> Notes </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Project - Computer Vision]]></title>
       <url>/archives/Computer-Vision-Project.html</url>
       <content type="html"><![CDATA[<h1 id="2017-10-17"><a href="#2017-10-17" class="headerlink" title="2017.10.17"></a>2017.10.17</h1><p>In course CS348, Computer Vision, our coursework is to write a paper and submit it to a conference.</p>
 <p>My Partners are Siqi Liu and Mengyao Cao. After discussion, we decided our draft topic as:</p>
