@@ -26,11 +26,11 @@
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -48,6 +48,26 @@
 <p><a href="../files/Computer Vision.pdf">Download File</a></p>
 <p>The final topic will be confirm in tomorrow’s class.</p>
 <p>Wish our project a brilliant success!</p>
+<h1 id="2017-10-25"><a href="#2017-10-25" class="headerlink" title="2017.10.25"></a>2017.10.25</h1><p>This time, I read a paper named <strong>A Neural Algorithm of Artistic Style</strong>.</p>
+<p>This paper is about generating a picture with given real picture and a Painting. The generated picture will have both the feature of<br>the painting and the initial picture.</p>
+<p>For example, this is the painting used:<br><img src="/assets/rain-princess.jpg" alt="rain-princess"></p>
+<p>Then, the Algorithm will produce a picture like this:</p>
+<p><img src="/assets/dome-afremov.png" alt="dome-afremov"></p>
+<p>It is so amazing!!</p>
+<h3 id="The-paper"><a href="#The-paper" class="headerlink" title="The paper"></a>The paper</h3><p>The method of the paper is:</p>
+<ol>
+<li><p>Use the VGG-19 network to process the initial picture, noted by $\vec{p}$, and the painting, noted by $\vec{a}$, then at each layer, the nerwork will have some feature maps corresponding to $\vec{p}$ and $\vec{a}$.</p>
+</li>
+<li><p>Input a noise picture $\vec{x}$ to the network, also, $\vec{x}$ will also have some featuremaps at every layers.</p>
+</li>
+<li><p>Define a loss function between $\vec{x}$ and $\vec{p}$, called content loss. And a loss function between $\vec{x}$ and $\vec{a}$, called style loss.<br>Then, the author define a compound loss function:</p>
+</li>
+</ol>
+<p>$$L<em>{total}(\vec{p}, \vec{a}, \vec{x})=\alpha L</em>{content}(\vec{x}, \vec{p}) + \beta L_{style}(\vec{x}, \vec{a})$$</p>
+<ol>
+<li>Using the optimization method to maximize the $L_{total}$, and with this process, fix the noise picture $\vec{x}$. Then, the noise picture will become the finally result.</li>
+</ol>
+<p>We can actually change the ratio between $\alpha$ and $\beta$ to change the ratio of content and style.</p>
 ]]></content>
       
         <categories>
@@ -61,13 +81,13 @@
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -188,12 +208,6 @@
   
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明"><a href="#关于知识共享协议的说明" class="headerlink" title="关于知识共享协议的说明"></a>关于知识共享协议的说明</h1><p><strong>Jinning Li</strong>（以下简称本人），是 <strong>“Jinning Li’s blog”</strong> 博客（以下简称本博客）的拥有者。本博客上创造和发布的内容可用于传播和共享，对于本人发布的原创内容（包含图片、文字、音乐、视频）采用 <strong>CreativeCommons 3.0 Unported</strong> 协议，即 <strong>知识共享许可协议 3.0 未本地化版本</strong> 加以许可保护。作者在发布内容时，如果没有特殊注明，默认将会采用 <strong>知识共享协议 署名-非商业性使用-相同方式共享 3.0 未本地化版本</strong> (<strong>CC BY-NC-SA 3.0 Unported</strong>) 对原创内容进行保护。</p>
@@ -240,6 +254,12 @@
 <p>知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
 </blockquote>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
+      <content type="html"></content>
     </entry>
     
     <entry>
