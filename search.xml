@@ -62,15 +62,19 @@
 <p>It is so amazing!!</p>
 <h3 id="the-paper">The paper</h3>
 <p>The method of the paper is:</p>
-<ul>
-<li><p>Use the VGG-19 network to process the initial picture, noted by <span class="math inline">\(\mathbf{p}\)</span>, and the painting, noted by <span class="math inline">\(\mathbf{a}\)</span>, then at each layer, the nerwork will have some feature maps corresponding to <span class="math inline">\(\mathbf{p}\)</span> and <span class="math inline">\(\mathbf{a}\)</span>.</p></li>
-<li><p>Input a noise picture <span class="math inline">\(\mathbf{x}\)</span> to the network, also, <span class="math inline">\(\mathbf{x}\)</span> will also have some featuremaps at every layers.</p></li>
-<li><p>Define a loss function between <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{p}\)</span>, called content loss. And a loss function between <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{a}\)</span>, called style loss. Then, the author define a compound loss function:</p></li>
-</ul>
+<blockquote>
+<p>Use the VGG-19 network to process the initial picture, noted by <span class="math inline">\(\mathbf{p}\)</span>, and the painting, noted by <span class="math inline">\(\mathbf{a}\)</span>, then at each layer, the nerwork will have some feature maps corresponding to <span class="math inline">\(\mathbf{p}\)</span> and <span class="math inline">\(\mathbf{a}\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>Input a noise picture <span class="math inline">\(\mathbf{x}\)</span> to the network, also, <span class="math inline">\(\mathbf{x}\)</span> will also have some featuremaps at every layers.</p>
+</blockquote>
+<blockquote>
+<p>Define a loss function between <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{p}\)</span>, called content loss. And a loss function between <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{a}\)</span>, called style loss.Then, the author define a compound loss function:</p>
+</blockquote>
 <p><span class="math display">\[L_{total}(\mathbf{p}, \mathbf{a}, \mathbf{x})=\alpha L_{content}(\mathbf{x}, \mathbf{p}) + \beta L_{style}(\mathbf{x}, \mathbf{a})\]</span></p>
-<ul>
-<li>Using the optimization method to maximize the <span class="math inline">\(L_{total}\)</span>, and with this process, fix the noise picture <span class="math inline">\(\mathbf{x}\)</span>. Then, the noise picture will become the finally result.</li>
-</ul>
+<blockquote>
+<p>Using the optimization method to maximize the <span class="math inline">\(L_{total}\)</span>, and with this process, fix the noise picture <span class="math inline">\(\mathbf{x}\)</span>. Then, the noise picture will become the finally result.</p>
+</blockquote>
 <p>We can actually change the ratio between <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> to change the ratio of content and style.</p>
 ]]></content>
       
