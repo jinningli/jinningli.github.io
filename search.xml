@@ -13,7 +13,7 @@
 <li>instance segmentation</li>
 </ul>
 <p>Object detection is just a bounding box, but segmentation will consider the shape, color, etc.</p>
-<p>segmentation to make semantic partition.</p>
+<p>segmentation to make semantic partition. # 11.1 - naive: fully connected CRF - CNN - classification-&gt; is a class? / which class? - deconvolution network</p>
 ]]></content>
       
         <categories>
@@ -27,11 +27,11 @@
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -89,13 +89,13 @@
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
