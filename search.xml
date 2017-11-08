@@ -54,11 +54,11 @@
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -116,13 +116,13 @@
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -396,7 +396,7 @@
     
     <entry>
       <title><![CDATA[Hello World!]]></title>
-      <url>/archives/hello%20World.html</url>
+      <url>/archives/hello_World.html</url>
       <content type="html"><![CDATA[<h1 id="hello-world">Hello World!</h1>
 <p>My Website has successfully constructed!</p>
 <p>I will post my diary, class notes, progesses on research, and some essays on my blog.</p>
@@ -467,15 +467,15 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
