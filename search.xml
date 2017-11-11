@@ -19,11 +19,11 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Lecture </tag>
             
             <tag> ANL Lab </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -52,9 +52,9 @@
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
@@ -114,6 +114,8 @@
         
         <tags>
             
+            <tag> English </tag>
+            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -121,8 +123,6 @@
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -467,15 +467,15 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
