@@ -3,6 +3,49 @@
   
     
     <entry>
+      <title><![CDATA[cv_opse_estimate]]></title>
+      <url>/archives/cv-opse-estimate.html</url>
+      <content type="html"><![CDATA[<h1 id="section">2017.11.15</h1>
+<ul>
+<li>CNN based method</li>
+<li>coordination regression</li>
+<li>heatmap</li>
+<li>stacked hourglass networks # 2017.11.22</li>
+<li>Scale</li>
+<li>openpose</li>
+<li>Town-down method</li>
+<li><p>recall 99%</p></li>
+<li>STN: spartial transform network</li>
+<li><span class="math inline">\(\theta\)</span> automatic parameter for bounding box</li>
+<li><span class="math inline">\(\theta^{-1}\)</span> reverse transformation</li>
+<li>Symmetric STN: this network can be lazy. to avoid STN not transform the pose to the center, parallel SPPE</li>
+<li>distribution error differ by the detection tools: fastRCNN, SSD, etc.</li>
+<li><p>RMPE CMUpose</p></li>
+<li>3D pose</li>
+<li></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
+            
+            <tag> Pose Estimation </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Unconstrained Optimization and Neural Network]]></title>
       <url>/archives/Unconstrained_Opt_NN.html</url>
       <content type="html"><![CDATA[<h1 id="my-lecture-at-anl-lab">My lecture at ANL lab</h1>
@@ -19,11 +62,11 @@
         
         <tags>
             
+            <tag> English </tag>
+            
             <tag> Lecture </tag>
             
             <tag> ANL Lab </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -52,13 +95,13 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -114,9 +157,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Deep Learning </tag>
             
@@ -429,6 +472,13 @@
   
     
     <entry>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明">关于知识共享协议的说明</h1>
@@ -469,13 +519,6 @@
     <entry>
       <title><![CDATA[Tags Cloud「标签云」]]></title>
       <url>/tags.html</url>
-      <content type="html"><![CDATA[
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
