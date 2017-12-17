@@ -31,13 +31,13 @@
         
         <tags>
             
-            <tag> WACV2018 </tag>
+            <tag> English </tag>
             
             <tag> Paper </tag>
             
-            <tag> English </tag>
-            
             <tag> Publication </tag>
+            
+            <tag> WACV2018 </tag>
             
         </tags>
         
@@ -64,13 +64,13 @@
         
         <tags>
             
-            <tag> Paper </tag>
-            
             <tag> English </tag>
             
-            <tag> Publication </tag>
-            
             <tag> ICDE2018 </tag>
+            
+            <tag> Paper </tag>
+            
+            <tag> Publication </tag>
             
         </tags>
         
@@ -109,9 +109,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -169,13 +169,13 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -231,9 +231,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Deep Learning </tag>
             
@@ -253,7 +253,7 @@
 <p>Linux uses the <strong>Buddy algorithm</strong> to effectively allocate and deallocate blocks of pages.</p>
 <p>The page allocation code attempts to allocate a block of one or more physical pages. Pages are allocated in blocks which are powers of 2 in size. That means that it can allocate a block 1 page, 2 pages, 4 pages and so on. So long as there are enough free pages in the system to grant this request (nr_free_pages &gt; min_free_pages) the allocation code will search the free_area for a block of pages of the size requested. Each element of the free_area has a map of the allocated and free blocks of pages for that sized block. For example, element 2 of the array has a memory map that describes free and allocated blocks each of 4 pages long.</p>
 <p>The allocation algorithm first searches for blocks of pages of the size requested. It follows the chain of free pages that is queued on the list element of the free_area data structure. If no blocks of pages of the requested size are free, blocks of the next size (which is twice that of the size requested) are looked for. This process continues until all of the free_area has been searched or until a block of pages has been found. If the block of pages found is larger than that requested it must be broken down until there is a block of the right size. Because the blocks are each a power of 2 pages big then this breaking down process is easy as you simply break the blocks in half. The free blocks are queued on the appropriate queue and the allocated block of pages is returned to the caller.</p>
-<p><img src="/assets/free-area.gif" alt="free-area"> Figure 3.4: The free_area data structure</p>
+<p><img src="/assets/free-area.gif"> Figure 3.4: The free_area data structure</p>
 <blockquote>
 <p>4 means 4, 5, 6, 7 is free, size = 4 page</p>
 </blockquote>
