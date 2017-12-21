@@ -31,9 +31,9 @@
         
         <tags>
             
-            <tag> Paper </tag>
-            
             <tag> English </tag>
+            
+            <tag> Paper </tag>
             
             <tag> Publication </tag>
             
@@ -69,11 +69,11 @@
         
         <tags>
             
+            <tag> English </tag>
+            
             <tag> ICDE2018 </tag>
             
             <tag> Paper </tag>
-            
-            <tag> English </tag>
             
             <tag> Publication </tag>
             
@@ -114,9 +114,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -174,9 +174,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Segmentation </tag>
             
@@ -236,8 +236,6 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -245,6 +243,8 @@
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
