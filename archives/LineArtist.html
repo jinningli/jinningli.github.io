@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#455A64">
     <meta name="author" content="Jinning Li">
     <meta name="description" itemprop="description" content="Undergraduate Student major Computer Science">
-    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,WACV2018,Paper,English,Publication">
+    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,English,WACV2018,Paper,Publication">
 
     <!-- Site Verification -->
     
@@ -68,7 +68,7 @@
     <meta property="og:title" content="LINE ARTIST, A Multi-style Sketch to Painting Synthesis Scheme | Jinning Li&#39;s Blog">
     <meta property="og:image" content="favicon.png" />
     <meta property="og:description" content="Undergraduate Student major Computer Science">
-    <meta property="og:article:tag" content="WACV2018"> <meta property="og:article:tag" content="Paper"> <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="Publication"> 
+    <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="WACV2018"> <meta property="og:article:tag" content="Paper"> <meta property="og:article:tag" content="Publication"> 
 
     
         <meta property="article:published_time" content="Jan 13, 2018" />
@@ -325,7 +325,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#line-artist-a-multi-style-sketch-to-painting-synthesis-scheme."><span class="post-toc-number">1.</span> <span class="post-toc-text">LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme.</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#abstract"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">ABSTRACT</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#source-code"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Source Code</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#requirements"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">Requirements</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#generate-dataset-using-sketch-image-extractionsie-model"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">Generate Dataset Using Sketch Image Extraction(SIE) Model:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#synthesize-reality-image-using-detailed-image-synthesisdis-model"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">Synthesize reality image using Detailed Image Synthesis(DIS) Model:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#test"><span class="post-toc-number">1.2.3.1.</span> <span class="post-toc-text">Test</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#stylize-using-adaptive-weighted-artist-style-transferawast-model"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">Stylize using Adaptive Weighted Artist Style Transfer(AWAST) Model:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#reference"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">Reference</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#line-artist-a-multi-style-sketch-to-painting-synthesis-scheme."><span class="post-toc-number">1.</span> <span class="post-toc-text">LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme.</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#video"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Video</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#abstract"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">ABSTRACT</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#source-code"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Source Code</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#requirements"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">Requirements</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#generate-dataset-using-sketch-image-extractionsie-model"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">Generate Dataset Using Sketch Image Extraction(SIE) Model:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#synthesize-reality-image-using-detailed-image-synthesisdis-model"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">Synthesize reality image using Detailed Image Synthesis(DIS) Model:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#test"><span class="post-toc-number">1.3.3.1.</span> <span class="post-toc-text">Test</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#stylize-using-adaptive-weighted-artist-style-transferawast-model"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">Stylize using Adaptive Weighted Artist Style Transfer(AWAST) Model:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#reference"><span class="post-toc-number">1.3.5.</span> <span class="post-toc-text">Reference</span></a></li></ol></li></ol></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -479,6 +479,9 @@
 <img src="/assets/firstPage.png">
 
 </div>
+<h2 id="video">Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZkF9CT9ZZE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
 <h2 id="abstract">ABSTRACT</h2>
 <p>Drawing a beautiful painting is a dream of many people since childhood. In this paper, we propose a novel scheme LINE ARTIST to synthesize artistic style paintings with freehand sketch images, leveraging the power of deep learning and advanced algorithm.</p>
 <p>Our scheme includes three models. The Sketch Image Extraction (SIE) model is applied to generate the train- ing data. It includes smoothing reality images and pen- cil sketch extraction. The Detailed Image Synthesis (DIS) model trains a conditional adversarial net to generate re- ality detailed information. The Adaptively Weighted Artis- tic Style Transfer (AWAST) model is capable to combine multiple style image with content via VGG19 network and PageRank algorithm. The appealing stylized images are then generated by optimization iterations.</p>
