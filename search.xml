@@ -63,13 +63,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> WACV2018 </tag>
+            <tag> English </tag>
             
             <tag> Paper </tag>
             
-            <tag> English </tag>
-            
             <tag> Publication </tag>
+            
+            <tag> WACV2018 </tag>
             
         </tags>
         
@@ -101,13 +101,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Paper </tag>
-            
             <tag> English </tag>
             
-            <tag> Publication </tag>
-            
             <tag> ICDE2018 </tag>
+            
+            <tag> Paper </tag>
+            
+            <tag> Publication </tag>
             
         </tags>
         
@@ -146,9 +146,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -206,9 +206,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Segmentation </tag>
             
@@ -268,8 +268,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -277,6 +275,8 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
