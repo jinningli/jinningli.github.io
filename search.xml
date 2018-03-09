@@ -19,11 +19,11 @@
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
             
             <tag> Presentation </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Data Mining </tag>
             
@@ -94,9 +94,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Paper </tag>
+            
+            <tag> English </tag>
             
             <tag> Publication </tag>
             
@@ -132,11 +132,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> ICDE2018 </tag>
             
             <tag> Paper </tag>
+            
+            <tag> English </tag>
             
             <tag> Publication </tag>
             
@@ -177,9 +177,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -237,9 +237,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
@@ -299,15 +299,15 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
+            <tag> English </tag>
             
             <tag> Deep Learning </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
