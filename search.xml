@@ -21,9 +21,9 @@
             
             <tag> English </tag>
             
-            <tag> Presentation </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> Presentation </tag>
             
             <tag> Data Mining </tag>
             
@@ -100,7 +100,7 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Publication </tag>
             
-            <tag> WACV2018 </tag>
+            <tag> ECCV2018 </tag>
             
         </tags>
         
@@ -301,9 +301,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
-            <tag> Deep Learning </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
