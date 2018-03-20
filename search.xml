@@ -19,9 +19,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> English </tag>
             
             <tag> Presentation </tag>
             
@@ -40,7 +40,7 @@
 <p>Drawing a beautiful painting like what famous painters do is a dream of many people. LineArtist, an interesting system, helps you with drawing a painting only with some semantic sketch.</p>
 <p>What you have to do is to draw a sketch, take a photo of it and give it to our pre-trained model, then you can just wait for the painting to come out.</p>
 <p><strong>Paper: Jinning Li and Siqi Liu, Mengyao Cao. LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme.</strong></p>
-<p><a href="../files/LineArtist.pdf">[Download Paper]</a></p>
+<p><a href="https://arxiv.org/abs/1803.06647" target="_blank" rel="external">[Download Paper]</a></p>
 <div class="figure">
 <img src="/assets/firstPage.png">
 
@@ -94,13 +94,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Paper </tag>
-            
             <tag> English </tag>
             
-            <tag> Publication </tag>
-            
             <tag> ECCV2018 </tag>
+            
+            <tag> Paper </tag>
+            
+            <tag> Publication </tag>
             
         </tags>
         
@@ -114,10 +114,12 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
 <p>In this paper, we design DancingLines, an innovative scheme that captures and quantitatively analyzes event popularity between pairwise text media. It contains two models: TF-SW, a semantic-aware popularity quantification model, based on an integrated weight coefficient leveraging Word2Vec and TextRank; and wDTW-CD, a pairwise event popularity time series alignment model matching different event phases adapted from Dynamic Time Warping. We also propose three metrics to interpret event popularity trends between pairwise social platforms.</p>
 <p>Experimental results on eighteen real-world event datasets from an influential social network and a popular search engine validate the effectiveness and applicability of our scheme. DancingLines is demonstrated to possess broad application potentials for discovering knowledge of various aspects related to events and different media.</p>
 <h2 id="info.">Info.</h2>
-<p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. In ICDE, 2018.</p>
-<p>This paper has been submitted to ICDE 2018 and under review.</p>
+<p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. In DASFAA, 2018.</p>
+<p>This paper has been submitted to DASFAAA 2018 and under review and pre-printed on Arxiv.</p>
+<p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="external">[Download Paper]</a></p>
 <p>Poster: <img src="/assets/dancinglineposter.jpg" alt="dancinglineposter"></p>
-<!-- Poster:
+<!--
+Poster:
 <iframe src="../files/dancinglineposter.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
 
 <a href="../files/dancinglineposter.pdf">Download File</a> -->
@@ -132,13 +134,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> ICDE2018 </tag>
+            <tag> English </tag>
             
             <tag> Paper </tag>
             
-            <tag> English </tag>
-            
             <tag> Publication </tag>
+            
+            <tag> DASFAA2018 </tag>
             
         </tags>
         
@@ -177,9 +179,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -237,9 +239,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Segmentation </tag>
             
@@ -299,8 +301,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -308,6 +308,8 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
