@@ -96,11 +96,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
-            <tag> ECCV2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> ECCV2018 </tag>
             
         </tags>
         
@@ -136,11 +136,11 @@ Poster:
             
             <tag> English </tag>
             
+            <tag> DASFAA2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> DASFAA2018 </tag>
             
         </tags>
         
