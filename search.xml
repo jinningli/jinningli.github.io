@@ -616,6 +616,13 @@ Poster:
   
     
     <entry>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明">关于知识共享协议的说明</h1>
@@ -656,13 +663,6 @@ Poster:
     <entry>
       <title><![CDATA[Timeline「时光轴」]]></title>
       <url>/timeline.html</url>
-      <content type="html"><![CDATA[
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
