@@ -3,6 +3,49 @@
   
     
     <entry>
+      <title><![CDATA[DANCINGLINES, An Analytical Scheme to Depict Cross-Platform Event Popularity]]></title>
+      <url>/archives/DancingLines.html</url>
+      <content type="html"><![CDATA[<h1 id="abstract">ABSTRACT</h1>
+<p>Nowadays, events usually burst and are propagated online through multiple modern media like social networks and search engines. There exists various research discussing the event dissemination trends on individual medium, while few studies focus on event popularity analysis from a cross-platform perspective. Challenges come from the vast diversity of events and media, limited access to aligned datasets across different media and the great deal of noise in the datasets.</p>
+<p>In this paper, we design DancingLines, an innovative scheme that captures and quantitatively analyzes event popularity between pairwise text media. It contains two models: TF-SW, a semantic-aware popularity quantification model, based on an integrated weight coefficient leveraging Word2Vec and TextRank; and wDTW-CD, a pairwise event popularity time series alignment model matching different event phases adapted from Dynamic Time Warping. We also propose three metrics to interpret event popularity trends between pairwise social platforms.</p>
+<p>Experimental results on eighteen real-world event datasets from an influential social network and a popular search engine validate the effectiveness and applicability of our scheme. DancingLines is demonstrated to possess broad application potentials for discovering knowledge of various aspects related to events and different media.</p>
+<h2 id="info.">Info.</h2>
+<p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. International Conference on Database and Expert Systems Applications (DEXA), 2018, 2018.</p>
+<p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="external">[Download Paper]</a></p>
+<p>Here is the poster:</p>
+<div class="figure">
+<img src="/assets/dancinglineposter.jpg" alt="dancinglineposter">
+<p class="caption">dancinglineposter</p>
+</div>
+<!--
+Poster:
+<iframe src="../files/dancinglineposter.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
+
+<a href="../files/dancinglineposter.pdf">Download File</a> -->
+]]></content>
+      
+        <categories>
+            
+            <category> Paper </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> DEXA2018 </tag>
+            
+            <tag> Paper </tag>
+            
+            <tag> Publication </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[KDD2017 Paper Reading]]></title>
       <url>/archives/KDD_Paper_Reading.html</url>
       <content type="html"><![CDATA[<p>After reading <span class="math inline">\(8\)</span> papers of KDD2017, I learn a lot of the advanced knowledge of data mining and machine learning. My finding is that in KDD2017, deep learning is widely used among data mining papers. I think this is a trending.</p>
@@ -101,46 +144,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> Publication </tag>
             
             <tag> ECCV2018 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[DANCINGLINES, An Analytical Scheme to Depict Cross-Platform Event Popularity]]></title>
-      <url>/archives/DancingLines.html</url>
-      <content type="html"><![CDATA[<h1 id="abstract">ABSTRACT</h1>
-<p>Nowadays, events usually burst and are propagated online through multiple modern media like social networks and search engines. There exists various research discussing the event dissemination trends on individual medium, while few studies focus on event popularity analysis from a cross-platform perspective. Challenges come from the vast diversity of events and media, limited access to aligned datasets across different media and the great deal of noise in the datasets.</p>
-<p>In this paper, we design DancingLines, an innovative scheme that captures and quantitatively analyzes event popularity between pairwise text media. It contains two models: TF-SW, a semantic-aware popularity quantification model, based on an integrated weight coefficient leveraging Word2Vec and TextRank; and wDTW-CD, a pairwise event popularity time series alignment model matching different event phases adapted from Dynamic Time Warping. We also propose three metrics to interpret event popularity trends between pairwise social platforms.</p>
-<p>Experimental results on eighteen real-world event datasets from an influential social network and a popular search engine validate the effectiveness and applicability of our scheme. DancingLines is demonstrated to possess broad application potentials for discovering knowledge of various aspects related to events and different media.</p>
-<h2 id="info.">Info.</h2>
-<p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. In DASFAA, 2018.</p>
-<p>This paper has been submitted to DASFAAA 2018 and under review and pre-printed on Arxiv.</p>
-<p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="external">[Download Paper]</a></p>
-<p>Poster: <img src="/assets/dancinglineposter.jpg" alt="dancinglineposter"></p>
-<!--
-Poster:
-<iframe src="../files/dancinglineposter.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
-
-<a href="../files/dancinglineposter.pdf">Download File</a> -->
-]]></content>
-      
-        <categories>
-            
-            <category> Paper </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> DASFAA2018 </tag>
-            
-            <tag> Paper </tag>
-            
-            <tag> Publication </tag>
             
         </tags>
         
@@ -616,6 +619,20 @@ Poster:
   
     
     <entry>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明">关于知识共享协议的说明</h1>
@@ -650,20 +667,6 @@ Poster:
 <p>在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“Jinning Li’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证； 如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议</strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external">许可证</a></p>
 <h2 id="演绎政策">演绎政策</h2>
 <p>本博客属于所有在网络上公开发表的，任何人可访问的作品。本人声明所有原创内容均<strong>允许演绎</strong>。 &gt; 知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
-      <content type="html"><![CDATA[
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
-      <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
