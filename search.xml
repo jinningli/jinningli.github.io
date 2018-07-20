@@ -37,7 +37,8 @@
 <li><code>Deep Interest</code> &gt; https://arxiv.org/abs/1706.06978</li>
 </ul>
 <p><strong>Consider how to combine propensity value</strong></p>
-<h2 id="develop-my-own-propensity-weighted-deep-learning-model">04 Develop my own propensity weighted deep learning model</h2>
+<h2 id="my-own-model">04 My own model</h2>
+<p>Develop my own propensity weighted deep click model</p>
 <h2 id="apply-some-feature-tricks">05 Apply some feature tricks</h2>
 <ul>
 <li>repeated features</li>
@@ -57,9 +58,9 @@
             
             <tag> English </tag>
             
-            <tag> Research Proposal </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Research Proposal </tag>
             
         </tags>
         
@@ -242,9 +243,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -310,9 +311,9 @@ Poster:
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> English </tag>
             
             <tag> Presentation </tag>
             
@@ -492,11 +493,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -554,13 +555,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
