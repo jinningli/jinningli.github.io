@@ -3,6 +3,68 @@
   
     
     <entry>
+      <title><![CDATA[Cornell Research Proposal]]></title>
+      <url>/archives/Cornell-research-proposal-07-19.html</url>
+      <content type="html"><![CDATA[<h1 id="research-starting-plan">Research Starting Plan</h1>
+<blockquote>
+<p>Jinning Li 07/19/2018</p>
+</blockquote>
+<h2 id="code-review-of-crowdai-rank1">Code review of CrowdAI Rank1</h2>
+<ul>
+<li>Use a <code>FTRL</code> model</li>
+<li>Mainly Feature Processing</li>
+<li>delete the first two features</li>
+<li>replace any feature larger than 1 as 1</li>
+<li>process the result using sigmoid function and some other tricks.</li>
+</ul>
+<p>I have successfully run the code.</p>
+<h2 id="try-some-mainstream-linear-models">Try some mainstream linear models</h2>
+<ul>
+<li><code>Simple LR</code></li>
+<li><code>XGBoost</code></li>
+<li><code>LightGBM</code></li>
+<li><code>FFM</code></li>
+</ul>
+<p><strong>Also try to adapt the objective function with propensity value.</strong></p>
+<h2 id="try-some-deep-learning-models">Try some Deep Learning models</h2>
+<ul>
+<li><code>CNN</code></li>
+<li><code>Deep FFM</code> &gt; https://arxiv.org/abs/1703.04247</li>
+<li><code>DCN</code> &gt; https://arxiv.org/abs/1708.05123</li>
+<li><code>Neural FM</code> &gt; https://arxiv.org/abs/1708.05027</li>
+<li><code>Wide &amp; Deep</code> &gt; https://arxiv.org/abs/1606.07792</li>
+<li><code>PNN</code> &gt; https://arxiv.org/abs/1611.00144</li>
+<li><code>Deep Interest</code> &gt; https://arxiv.org/abs/1706.06978</li>
+</ul>
+<p><strong>Consider how to combine propensity value</strong></p>
+<h2 id="apply-some-feature-tricks">Apply some feature tricks</h2>
+<ul>
+<li>repeated features</li>
+<li>feature overlap</li>
+<li>…</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Research Proposal </tag>
+            
+            <tag> Cornell </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Weekly Report [1]]]></title>
       <url>/archives/Cornell-weekly-report-07-08.html</url>
       <content type="html"><![CDATA[<h1 id="weekly-report">Weekly Report</h1>
@@ -179,9 +241,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Weekly Report </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
             
         </tags>
         
