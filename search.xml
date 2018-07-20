@@ -9,7 +9,7 @@
 <blockquote>
 <p>Jinning Li 07/19/2018</p>
 </blockquote>
-<h2 id="code-review-of-crowdai-rank1">Code review of CrowdAI Rank1</h2>
+<h2 id="code-review-of-crowdai-rank1">01 Code review of CrowdAI Rank1</h2>
 <ul>
 <li>Use a <code>FTRL</code> model</li>
 <li>Mainly Feature Processing</li>
@@ -18,7 +18,7 @@
 <li>process the result using sigmoid function and some other tricks.</li>
 </ul>
 <p>I have successfully run the code.</p>
-<h2 id="try-some-mainstream-linear-models">Try some mainstream linear models</h2>
+<h2 id="try-some-mainstream-linear-models">02 Try some mainstream linear models</h2>
 <ul>
 <li><code>Simple LR</code></li>
 <li><code>XGBoost</code></li>
@@ -26,7 +26,7 @@
 <li><code>FFM</code></li>
 </ul>
 <p><strong>Also try to adapt the objective function with propensity value.</strong></p>
-<h2 id="try-some-deep-learning-models">Try some Deep Learning models</h2>
+<h2 id="try-some-deep-learning-models">03 Try some Deep Learning models</h2>
 <ul>
 <li><code>CNN</code></li>
 <li><code>Deep FFM</code> &gt; https://arxiv.org/abs/1703.04247</li>
@@ -37,7 +37,8 @@
 <li><code>Deep Interest</code> &gt; https://arxiv.org/abs/1706.06978</li>
 </ul>
 <p><strong>Consider how to combine propensity value</strong></p>
-<h2 id="apply-some-feature-tricks">Apply some feature tricks</h2>
+<h2 id="develop-my-own-propensity-weighted-deep-learning-model">04 Develop my own propensity weighted deep learning model</h2>
+<h2 id="apply-some-feature-tricks">05 Apply some feature tricks</h2>
 <ul>
 <li>repeated features</li>
 <li>feature overlap</li>
@@ -309,9 +310,9 @@ Poster:
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -491,11 +492,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -553,13 +554,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
