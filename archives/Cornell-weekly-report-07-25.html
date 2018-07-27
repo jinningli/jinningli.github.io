@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#455A64">
     <meta name="author" content="Jinning Li">
     <meta name="description" itemprop="description" content="Undergraduate Student major Computer Science">
-    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,English,Weekly Report,Cornell">
+    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,English,Cornell,Weekly Report">
 
     <!-- Site Verification -->
     
@@ -68,7 +68,7 @@
     <meta property="og:title" content="Weekly Report [2] | Jinning Li&#39;s Blog">
     <meta property="og:image" content="favicon.png" />
     <meta property="og:description" content="Undergraduate Student major Computer Science">
-    <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="Weekly Report"> <meta property="og:article:tag" content="Cornell"> 
+    <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="Cornell"> <meta property="og:article:tag" content="Weekly Report"> 
 
     
         <meta property="article:published_time" content="Jul 25, 2018" />
@@ -514,7 +514,7 @@
 \]</span></p>
 <h2 id="experiment">Experiment</h2>
 <h4 id="try-the-code-of-ftrl">Try the code of FTRL</h4>
-<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge<a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
+<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge <a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
 <h4 id="write-my-own-code-of-lr">Write my own code of LR</h4>
 <p>I write my own code of Logistic Regression (MLP) with Pytorch (GPU). Newest Project Codes can be found here: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">Project Github</a>. This is a well developed frame. It is easy to be extended to other models like FM and deep learning.</p>
 <p>My first logistic regression model receives an <code>one-hot</code> input of size <code>Batch * Dim</code> of a candidate Ad. <code>Dim</code> is the dimension of features. Then go through a linear layer of dimension <code>Dim</code> with ReLU activation, then a linear layer of dimension <code>4096</code>. A sigmoid function is followed. Binary Cross Entropy (BCE) loss is applied.</p>

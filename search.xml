@@ -40,7 +40,7 @@
 \]</span></p>
 <h2 id="experiment">Experiment</h2>
 <h4 id="try-the-code-of-ftrl">Try the code of FTRL</h4>
-<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge<a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
+<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge <a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
 <h4 id="write-my-own-code-of-lr">Write my own code of LR</h4>
 <p>I write my own code of Logistic Regression (MLP) with Pytorch (GPU). Newest Project Codes can be found here: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">Project Github</a>. This is a well developed frame. It is easy to be extended to other models like FM and deep learning.</p>
 <p>My first logistic regression model receives an <code>one-hot</code> input of size <code>Batch * Dim</code> of a candidate Ad. <code>Dim</code> is the dimension of features. Then go through a linear layer of dimension <code>Dim</code> with ReLU activation, then a linear layer of dimension <code>4096</code>. A sigmoid function is followed. Binary Cross Entropy (BCE) loss is applied.</p>
@@ -101,9 +101,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Weekly Report </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
             
         </tags>
         
@@ -166,9 +166,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Research Proposal </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -351,9 +351,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Weekly Report </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
             
         </tags>
         
@@ -392,11 +392,11 @@ Poster:
             
             <tag> English </tag>
             
+            <tag> DEXA2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> DEXA2018 </tag>
             
         </tags>
         
@@ -496,11 +496,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
-            <tag> ECCV2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> ECCV2018 </tag>
             
         </tags>
         
@@ -1014,15 +1014,15 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
     </entry>
     
     <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
