@@ -3,24 +3,135 @@
   
     
     <entry>
+      <title><![CDATA[Weekly Report [2]]]></title>
+      <url>/archives/Cornell-weekly-report-07-25.html</url>
+      <content type="html"><![CDATA[<h1 id="weekly-report">Weekly Report</h1>
+<blockquote>
+<p>Jinning, 07/25/2018</p>
+</blockquote>
+<p><a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external">[Newest Research Proposal]</a> <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">[Project Github]</a></p>
+<h2 id="determined-research-topic">Determined Research Topic</h2>
+<p>My research topic is <code>Criteo Ad Placement</code>. The Criteo dataset has the format: <span class="math inline">\((c, a, \delta, p)\)</span>. This format is the same as BanditNet.</p>
+<ul>
+<li><span class="math inline">\(c\)</span> contextual feature</li>
+<li><span class="math inline">\(a\)</span> action from Criteo policy</li>
+<li><span class="math inline">\(\delta\)</span> loss (click or not)</li>
+<li><span class="math inline">\(p\)</span> propensity. <span class="math inline">\(p(slot1=p)=\frac{f_p}{\sum_{p&#39;\in P_c}f_{p&#39;}}\)</span></li>
+</ul>
+<p>My task: building model <span class="math inline">\(h:c\times a \rightarrow \delta\)</span>. In another word, calculate the score of every candidate ad, then derive <span class="math inline">\(\hat{\pi}\)</span>. For example, <span class="math inline">\(\hat{\pi}=\arg \max_{a\in A}h(c, a)\)</span>.</p>
+<p>I should try to combine propensity infomation to reduce the bias. For example, we can let <span class="math inline">\(\hat{h}=\arg \max_w=\sum\frac{\hat{\pi}(c, a)}{p_i}(w\phi (c, a)-\delta)\)</span>.</p>
+<h2 id="paper-reading">Paper Reading</h2>
+<p>Large-scale Validation of Counterfactual Learning Methods: A Test-Bed</p>
+<blockquote>
+<p><span class="citation">@article</span>{lefortier2016large, title={Large-scale validation of counterfactual learning methods: A test-bed}, author={Lefortier, Damien and Swaminathan, Adith and Gu, Xiaotao and Joachims, Thorsten and de Rijke, Maarten}, journal={arXiv preprint arXiv:1612.00367}, year={2016} }</p>
+</blockquote>
+<p>This paper introduces the criteo dataset’s data format, evaluation metric(IPS) and baselines.</p>
+<h4 id="example-data-format">Example Data format:</h4>
+<pre><code>example 32343877: 57702caea2a35f22a32c43a4b57e2a3057702caf1993e0165eb115f689a5b0bb 0 1.102191e-01 2 17 1:300 2:250 3:0 4:16 5:2 6:1 7:21 8:79 9:31 10:2
+0 exid:32343877 11:1 12:0 13:0 14:0 15:0 16:2 23:20 24:95 25:40 32:26 35:61
+0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:80 24:103 25:43 33:29 35:65
+0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:54 24:103 25:43 33:29 35:65
+0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:63 24:103 25:43 33:29 35:65
+...</code></pre>
+<p>This dataset is multi-slot. In order to simplify the task, I will use the preprocessed <a href="https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files" target="_blank" rel="external">CrowdAI dataset</a>. CrowdAI dataset is one slot based. The size of dataset is still quite large.</p>
+<h4 id="metric">Metric</h4>
+<p>IPS metric: <span class="math display">\[
+\hat{R}(\pi)=\sum_{i=1}^{N}\delta_i\frac{\pi(y_i|x_i)}{q_i}
+\]</span></p>
+<h2 id="experiment">Experiment</h2>
+<h4 id="try-the-code-of-ftrl">Try the code of FTRL</h4>
+<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge<a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
+<h4 id="write-my-own-code-of-lr">Write my own code of LR</h4>
+<p>I write my own code of Logistic Regression (MLP) with Pytorch (GPU). Newest Project Codes can be found here: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">Project Github</a>. This is a well developed frame. It is easy to be extended to other models like FM and deep learning.</p>
+<p>My first logistic regression model receives an <code>one-hot</code> input of size <code>Batch * Dim</code> of a candidate Ad. <code>Dim</code> is the dimension of features. Then go through a linear layer of dimension <code>Dim</code> with ReLU activation, then a linear layer of dimension <code>4096</code>. A sigmoid function is followed. Binary Cross Entropy (BCE) loss is applied.</p>
+<h5 id="result">Result</h5>
+<p>The result really <strong>surprise me !</strong> I got an <strong>IPS=59.249</strong>. Which is much higher than the Rank1 player in CrowdAI challenge! And I only train for <span class="math inline">\(2\)</span> epoch. Even ensemble is not applied.</p>
+<p>I feel regretful that I didn’t attend this challenge last year. Or I should have earned an award of <strong>2000 dollars</strong></p>
+<div class="figure">
+<img src="assets/markdown-img-paste-20180727015828124.png">
+
+</div>
+<p>Other methods and applying of propensity are to be completed.</p>
+<h2 id="usage-of-my-code">Usage of my code</h2>
+<h4 id="get-the-code">Get the code:</h4>
+<pre><code>git clone https://github.com/jinningli/ad-placement-pytorch.git</code></pre>
+<h4 id="requirements">Requirements:</h4>
+<pre><code>CUDA
+pytorch
+scipy
+numpy
+crowdai</code></pre>
+<h4 id="build-dataset">Build dataset</h4>
+<pre><code>Download from https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files
+gunzip criteo_train.txt.gz
+gunzip criteo_test_release.txt.gz
+mkdir datasets/crowdai
+mv criteo_train.txt datasets/crowdai/criteo_train.txt
+mv criteo_test_release.txt datasets/crowdai/test.txt
+cd datasets/crowdai
+python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
+<h4 id="train">Train</h4>
+<pre><code>python3 train.py --dataroot datasets/criteo --name Saved_Name --batchSize 5000 --gpu 0 --no_cache</code></pre>
+<h4 id="test">Test</h4>
+<pre><code>python3 test.py --dataroot datasets/criteo --name Saved_Name --batchSize 5000 --gpu 0 --no_cache</code></pre>
+<p>Checkpoints and Test result will be saved in <code>checkpoints/Saved_Name</code>.</p>
+<h4 id="all-options">All options</h4>
+<p><code>--display_freq</code> Frequency of showing train/test results on screen.</p>
+<p><code>--continue_train</code> Continue training.</p>
+<p><code>--lr_policy</code> Learning rate policy: same|lambda|step|plateau.</p>
+<p><code>--epoch</code> How many epochs.</p>
+<p><code>--save_epoch_freq</code> Epoch frequency of saving model.</p>
+<p><code>--gpu</code> Which gpu device, -1 for CPU.</p>
+<p><code>--dataroot</code> Dataroot path.</p>
+<p><code>--checkpoints_dir</code> Models are saved here.</p>
+<p><code>--name</code> Name for saved directory.</p>
+<p><code>--batchSize</code> Batch size.</p>
+<p><code>--lr</code> Learning rate.</p>
+<p><code>--which_epoch</code> Which epoch to load? default is the latest.</p>
+<p><code>--no_cache</code> Don’t save processed dataset for faster loading next time.</p>
+<p><code>--random</code> Randomize (Shuffle) input data.</p>
+<p><code>--nThreads</code> Number of threads for loading data.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Cornell Research Proposal]]></title>
       <url>/archives/Cornell-research-proposal-07-19.html</url>
       <content type="html"><![CDATA[<h1 id="research-starting-plan">Research Starting Plan</h1>
 <blockquote>
-<p>Jinning Li 07/19/2018</p>
+<p>Jinning Li, 07/24/2018</p>
 </blockquote>
+<p>Code Github: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">https://github.com/jinningli/ad-placement-pytorch</a></p>
 <h2 id="code-review-of-crowdai-rank1">01 Code review of CrowdAI Rank1</h2>
 <ul>
-<li>Use a <code>FTRL</code> model</li>
+<li>Use a <code>FTRL</code> model https://github.com/alexeygrigorev/nips-ad-placement-challenge</li>
 <li>Mainly Feature Processing</li>
 <li>delete the first two features</li>
 <li>replace any feature larger than 1 as 1</li>
 <li>process the result using sigmoid function and some other tricks.</li>
 </ul>
-<p>I have successfully run the code.</p>
+<p><strong>[FINISH]</strong></p>
 <h2 id="try-some-mainstream-linear-models">02 Try some mainstream linear models</h2>
 <ul>
-<li><code>Simple LR</code></li>
+<li><code>Simple LR</code> <strong>[FINISH]</strong></li>
 <li><code>XGBoost</code></li>
 <li><code>LightGBM</code></li>
 <li><code>FFM</code></li>
@@ -58,9 +169,9 @@
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Research Proposal </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -243,9 +354,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Weekly Report </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
             
         </tags>
         
@@ -284,11 +395,11 @@ Poster:
             
             <tag> English </tag>
             
-            <tag> DEXA2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> DEXA2018 </tag>
             
         </tags>
         
@@ -311,9 +422,9 @@ Poster:
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -388,11 +499,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
+            <tag> ECCV2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> ECCV2018 </tag>
             
         </tags>
         
@@ -493,11 +604,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -555,13 +666,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
