@@ -505,7 +505,7 @@
 <p>Clip propensity weighted BCE loss. This means the weight applied to BCE loss is not simply <span class="math inline">\(\frac{1}{p}\)</span>, but <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>, where <span class="math inline">\(c\)</span> is a constant. In my experiment, <span class="math inline">\(c\)</span> is selected as <code>1</code>, <code>5</code>, <code>10</code>, <code>20</code>, <code>50</code>, <code>100</code>, <code>200</code>, <code>300</code>, <code>500</code>.</p>
 <p>When <span class="math inline">\(c=1\)</span>, this is equivalent to unweighted BCE. When <span class="math inline">\(c=500\)</span>, since <span class="math inline">\(\frac{1}{p}\)</span> is less than <span class="math inline">\(500\)</span>, this is equivalent to <span class="math inline">\(\frac{1}{p}\times loss\)</span>.</p>
 <p>Result:</p>
-<p><img src="assets/markdown-img-paste-20180802221920353.png" width="700"></p>
+<p><img src="/assets/markdown-img-paste-20180802221920353.png" width="700"></p>
 <pre><code>Note that this experiment is trained on full training set and test on small test set.
 Not so reliable.</code></pre>
 <p>The highest IPS appears around <span class="math inline">\(c=200\)</span>. So I guess the best <span class="math inline">\(c\)</span> is the average or median of all the propensity values.</p>
