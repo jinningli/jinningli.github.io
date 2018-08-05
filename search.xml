@@ -44,9 +44,9 @@ Not so reliable.</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -156,9 +156,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -221,9 +221,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Research Proposal </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Research Proposal </tag>
             
         </tags>
         
@@ -406,9 +406,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
