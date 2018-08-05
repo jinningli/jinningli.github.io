@@ -44,9 +44,9 @@ Not so reliable.</code></pre>
             
             <tag> English </tag>
             
-            <tag> Weekly Report </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
             
         </tags>
         
@@ -156,9 +156,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Weekly Report </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
             
         </tags>
         
@@ -221,9 +221,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Research Proposal </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -406,9 +406,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Weekly Report </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
             
         </tags>
         
@@ -474,11 +474,11 @@ Poster:
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
             
             <tag> Presentation </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Data Mining </tag>
             
@@ -656,11 +656,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -718,13 +718,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
