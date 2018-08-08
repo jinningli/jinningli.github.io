@@ -3,6 +3,55 @@
   
     
     <entry>
+      <title><![CDATA[Weekly Report [4]]]></title>
+      <url>/archives/Cornell-weekly-report-08-07.html</url>
+      <content type="html"><![CDATA[<h1 id="weekly-report-4">Weekly Report [4]</h1>
+<blockquote>
+<p>Jinning, 08/07/2018</p>
+</blockquote>
+<h4 href="https://github.com/jinningli/ad-placement-pytorch">
+[Project Github]
+</h4>
+<h2 id="clip-experiment-on-large-dataset">Clip experiment on large dataset</h2>
+<p>Got the result of Cliping with <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>. This result is trained and tested on large dataset.</p>
+<p>Loss function (weighted BCE loss):</p>
+<p><span class="math display">\[
+(-  \min\{\frac{1}{p}, c\}\left[ t \cdot \log \sigma(x) + (1 - t) \cdot \log (1 - \sigma(x)) \right])
+\]</span></p>
+<p><span class="math inline">\(c\in\)</span><code>[1, 5, 10, 20, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code></p>
+<h4 id="ips-curve">IPS Curve:</h4>
+<div class="figure">
+<img src="/assets/markdown-img-paste-20180807182858973.png">
+
+</div>
+<h4 id="ips-std-curve">IPS-Std Curve:</h4>
+<div class="figure">
+<img src="/assets/markdown-img-paste-20180807182931555.png">
+
+</div>
+<p>I notice that when <span class="math inline">\(c=50\)</span>, although it got a largest <span class="math inline">\(IPS=60.51\)</span>, its IPS-std is quite large (<span class="math inline">\(15.71\)</span>). I’m training it again.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Cornell </tag>
+            
+            <tag> Weekly Report </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Weekly Report [3]]]></title>
       <url>/archives/Cornell-weekly-report-08-02.html</url>
       <content type="html"><![CDATA[<h1 id="weekly-report-3">Weekly Report [3]</h1>
@@ -474,11 +523,11 @@ Poster:
         
         <tags>
             
+            <tag> Deep Learning </tag>
+            
             <tag> English </tag>
             
             <tag> Presentation </tag>
-            
-            <tag> Deep Learning </tag>
             
             <tag> Data Mining </tag>
             
@@ -656,11 +705,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -718,13 +767,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
