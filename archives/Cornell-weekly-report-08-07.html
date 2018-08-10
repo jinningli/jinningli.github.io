@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#455A64">
     <meta name="author" content="Jinning Li">
     <meta name="description" itemprop="description" content="Undergraduate Student major Computer Science">
-    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,Cornell,English,Weekly Report">
+    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,English,Cornell,Weekly Report">
 
     <!-- Site Verification -->
     
@@ -68,7 +68,7 @@
     <meta property="og:title" content="Weekly Report [4] | Jinning Li&#39;s Blog">
     <meta property="og:image" content="favicon.png" />
     <meta property="og:description" content="Undergraduate Student major Computer Science">
-    <meta property="og:article:tag" content="Cornell"> <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="Weekly Report"> 
+    <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="Cornell"> <meta property="og:article:tag" content="Weekly Report"> 
 
     
         <meta property="article:published_time" content="Aug 07, 2018" />
@@ -327,9 +327,9 @@
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
         <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#weekly-report-4"><span class="post-toc-number">1.</span> <span class="post-toc-text">Weekly Report [4]</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.0.1.</span> <span class="post-toc-text">
 [Project Github]
-</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#clip-experiment-on-large-dataset"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Clip experiment on large dataset</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ips-curve"><span class="post-toc-number">1.1.0.1.</span> <span class="post-toc-text">IPS Curve:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.1.0.2.</span> <span class="post-toc-text">
+</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#clip-experiment-on-large-dataset"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Clip experiment on large dataset</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#distribution-of-inverse-propensity"><span class="post-toc-number">1.1.0.1.</span> <span class="post-toc-text">Distribution of inverse propensity</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ips-curve"><span class="post-toc-number">1.1.0.2.</span> <span class="post-toc-text">IPS Curve:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.1.0.3.</span> <span class="post-toc-text">
 [See Large Figure]
-</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ips-std-curve"><span class="post-toc-number">1.1.0.3.</span> <span class="post-toc-text">IPS-Std Curve:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.1.0.4.</span> <span class="post-toc-text">
+</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ips-std-curve"><span class="post-toc-number">1.1.0.4.</span> <span class="post-toc-text">IPS-Std Curve:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.1.0.5.</span> <span class="post-toc-text">
 [See Large Figure]
 </span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#discussions"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Discussions</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#not-coincidence"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">Not coincidence</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#why-standard-deviation-is-so-high"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">Why standard deviation is so high?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#review-what-i-am-doing"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">Review what I am doing</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#whats-the-best-clipping-value"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">What’s the best clipping value?</span></a></li></ol></li></ol></li></ol>
         <!--
@@ -502,6 +502,7 @@
 \]</span></p>
 <p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
 <p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p>
+<h4 id="distribution-of-inverse-propensity">Distribution of inverse propensity</h4>
 <p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p>
 <div class="figure">
 <img src="/assets/markdown-img-paste-20180809172104497.png">
@@ -527,7 +528,7 @@
 [0.16%] 23365 in 14175476 larger than 5000
 [0.07%] 9505 in 14175476 larger than 10000
 ...</code></pre>
-<p>And the curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p>
+<p>The curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p>
 <h4 id="ips-curve">IPS Curve:</h4>
 <div class="figure">
 <img src="/assets/markdown-img-paste-20180809223512958.png">

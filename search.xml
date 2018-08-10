@@ -22,6 +22,7 @@
 \]</span></p>
 <p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
 <p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p>
+<h4 id="distribution-of-inverse-propensity">Distribution of inverse propensity</h4>
 <p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p>
 <div class="figure">
 <img src="/assets/markdown-img-paste-20180809172104497.png">
@@ -47,7 +48,7 @@
 [0.16%] 23365 in 14175476 larger than 5000
 [0.07%] 9505 in 14175476 larger than 10000
 ...</code></pre>
-<p>And the curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p>
+<p>The curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p>
 <h4 id="ips-curve">IPS Curve:</h4>
 <div class="figure">
 <img src="/assets/markdown-img-paste-20180809223512958.png">
@@ -134,9 +135,9 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
         
         <tags>
             
-            <tag> Cornell </tag>
-            
             <tag> English </tag>
+            
+            <tag> Cornell </tag>
             
             <tag> Weekly Report </tag>
             
@@ -188,9 +189,9 @@ Not so reliable.</code></pre>
         
         <tags>
             
-            <tag> Cornell </tag>
-            
             <tag> English </tag>
+            
+            <tag> Cornell </tag>
             
             <tag> Weekly Report </tag>
             
@@ -304,9 +305,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
-            <tag> Cornell </tag>
-            
             <tag> English </tag>
+            
+            <tag> Cornell </tag>
             
             <tag> Weekly Report </tag>
             
@@ -369,11 +370,11 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
+            <tag> English </tag>
+            
             <tag> Research Proposal </tag>
             
             <tag> Cornell </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -554,9 +555,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> Cornell </tag>
-            
             <tag> English </tag>
+            
+            <tag> Cornell </tag>
             
             <tag> Weekly Report </tag>
             
@@ -624,9 +625,9 @@ Poster:
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> English </tag>
             
             <tag> Presentation </tag>
             
@@ -744,9 +745,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -804,9 +805,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Segmentation </tag>
             
@@ -866,8 +867,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -875,6 +874,8 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
