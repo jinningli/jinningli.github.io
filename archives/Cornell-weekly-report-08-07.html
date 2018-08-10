@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#455A64">
     <meta name="author" content="Jinning Li">
     <meta name="description" itemprop="description" content="Undergraduate Student major Computer Science">
-    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,English,Weekly Report,Cornell">
+    <meta name="keywords" content="黎金宁, Jinning Li, 上海交大, SJTU, 计算机科学, blog, 博客, CS, ACM,Cornell,English,Weekly Report">
 
     <!-- Site Verification -->
     
@@ -68,7 +68,7 @@
     <meta property="og:title" content="Weekly Report [4] | Jinning Li&#39;s Blog">
     <meta property="og:image" content="favicon.png" />
     <meta property="og:description" content="Undergraduate Student major Computer Science">
-    <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="Weekly Report"> <meta property="og:article:tag" content="Cornell"> 
+    <meta property="og:article:tag" content="Cornell"> <meta property="og:article:tag" content="English"> <meta property="og:article:tag" content="Weekly Report"> 
 
     
         <meta property="article:published_time" content="Aug 07, 2018" />
@@ -500,7 +500,7 @@
 <p><span class="math display">\[
 -\min\{\frac{1}{p}~,~c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]
 \]</span></p>
-<p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
+<p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
 <p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p>
 <p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p>
 <div class="figure">
@@ -530,7 +530,7 @@
 <p>And the curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p>
 <h4 id="ips-curve">IPS Curve:</h4>
 <div class="figure">
-<img src="/assets/markdown-img-paste-20180809172624511.png">
+<img src="/assets/markdown-img-paste-20180809223512958.png">
 
 </div>
 <a href="http://jinningli.cn/links/ips" target="_blank" rel="external">
@@ -540,7 +540,7 @@
 <p></p></a><p></p>
 <h4 id="ips-std-curve">IPS-Std Curve:</h4>
 <div class="figure">
-<img src="/assets/markdown-img-paste-20180809172559295.png">
+<img src="/assets/markdown-img-paste-20180809223541563.png">
 
 </div>
 <a href="http://jinningli.cn/links/ips_std" target="_blank" rel="external">
@@ -578,6 +578,7 @@
 <p>So it’s easy to understand after post-processing, standard deviation will be much higher.</p>
 <p>And it clear that post-processing is necessary. Because if not, the expectation of <span class="math inline">\(\pi_w\)</span> will always be close to <span class="math inline">\(\frac{1}{11}\)</span>, no matter how nice the model is.</p>
 <p>I think this is a <strong>BUG</strong> of the evaluation program. It should not use <span class="math inline">\(score=e^{score-\max(score)}\)</span> but something like <span class="math inline">\(score=e^{\frac{score-\max(score)}{\sum score}}\)</span>.</p>
+<p><strong>Question:</strong> Why Standard deviation varies with clipping value? Why higher IPS often accompanies with higher Standard deviation?</p>
 <hr>
 <h3 id="review-what-i-am-doing">Review what I am doing</h3>
 <p>What I am doing is training a network <span class="math inline">\(\sigma\)</span> to minimize the loss function (If clipping is applied)</p>

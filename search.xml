@@ -20,7 +20,7 @@
 <p><span class="math display">\[
 -\min\{\frac{1}{p}~,~c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]
 \]</span></p>
-<p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
+<p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
 <p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p>
 <p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p>
 <div class="figure">
@@ -50,7 +50,7 @@
 <p>And the curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p>
 <h4 id="ips-curve">IPS Curve:</h4>
 <div class="figure">
-<img src="/assets/markdown-img-paste-20180809172624511.png">
+<img src="/assets/markdown-img-paste-20180809223512958.png">
 
 </div>
 <a href="http://jinningli.cn/links/ips" target="_blank" rel="external">
@@ -60,7 +60,7 @@
 <p></p></a><p></p>
 <h4 id="ips-std-curve">IPS-Std Curve:</h4>
 <div class="figure">
-<img src="/assets/markdown-img-paste-20180809172559295.png">
+<img src="/assets/markdown-img-paste-20180809223541563.png">
 
 </div>
 <a href="http://jinningli.cn/links/ips_std" target="_blank" rel="external">
@@ -98,6 +98,7 @@
 <p>So it’s easy to understand after post-processing, standard deviation will be much higher.</p>
 <p>And it clear that post-processing is necessary. Because if not, the expectation of <span class="math inline">\(\pi_w\)</span> will always be close to <span class="math inline">\(\frac{1}{11}\)</span>, no matter how nice the model is.</p>
 <p>I think this is a <strong>BUG</strong> of the evaluation program. It should not use <span class="math inline">\(score=e^{score-\max(score)}\)</span> but something like <span class="math inline">\(score=e^{\frac{score-\max(score)}{\sum score}}\)</span>.</p>
+<p><strong>Question:</strong> Why Standard deviation varies with clipping value? Why higher IPS often accompanies with higher Standard deviation?</p>
 <hr>
 <h3 id="review-what-i-am-doing">Review what I am doing</h3>
 <p>What I am doing is training a network <span class="math inline">\(\sigma\)</span> to minimize the loss function (If clipping is applied)</p>
@@ -133,11 +134,11 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
         
         <tags>
             
+            <tag> Cornell </tag>
+            
             <tag> English </tag>
             
             <tag> Weekly Report </tag>
-            
-            <tag> Cornell </tag>
             
         </tags>
         
@@ -187,11 +188,11 @@ Not so reliable.</code></pre>
         
         <tags>
             
+            <tag> Cornell </tag>
+            
             <tag> English </tag>
             
             <tag> Weekly Report </tag>
-            
-            <tag> Cornell </tag>
             
         </tags>
         
@@ -303,11 +304,11 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
+            <tag> Cornell </tag>
+            
             <tag> English </tag>
             
             <tag> Weekly Report </tag>
-            
-            <tag> Cornell </tag>
             
         </tags>
         
@@ -368,11 +369,11 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
-            <tag> English </tag>
+            <tag> Research Proposal </tag>
             
             <tag> Cornell </tag>
             
-            <tag> Research Proposal </tag>
+            <tag> English </tag>
             
         </tags>
         
@@ -553,11 +554,11 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
+            <tag> Cornell </tag>
+            
             <tag> English </tag>
             
             <tag> Weekly Report </tag>
-            
-            <tag> Cornell </tag>
             
         </tags>
         
@@ -623,9 +624,9 @@ Poster:
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -743,9 +744,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -803,9 +804,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
@@ -865,6 +866,8 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
+            <tag> English </tag>
+            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -872,8 +875,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
