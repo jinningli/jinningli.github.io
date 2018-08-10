@@ -18,11 +18,11 @@
 <p>Got the result of Clipping with <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>. This result is trained and tested on large dataset.</p>
 <p>Loss function used (weighted BCE loss):</p>
 <p><span class="math display">\[
--\min\{\frac{1}{p}, c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]
+-\min\{\frac{1}{p}~,~c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]
 \]</span></p>
 <p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
 <p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p>
-<p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span>, the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p>
+<p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p>
 <div class="figure">
 <img src="/assets/markdown-img-paste-20180809172104497.png">
 
@@ -135,9 +135,9 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -189,9 +189,9 @@ Not so reliable.</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -305,9 +305,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -370,9 +370,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Research Proposal </tag>
-            
             <tag> Cornell </tag>
+            
+            <tag> Research Proposal </tag>
             
         </tags>
         
@@ -555,9 +555,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -596,11 +596,11 @@ Poster:
             
             <tag> English </tag>
             
+            <tag> DEXA2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> DEXA2018 </tag>
             
         </tags>
         
@@ -700,11 +700,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
-            <tag> ECCV2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> ECCV2018 </tag>
             
         </tags>
         
