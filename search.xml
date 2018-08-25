@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[Weekly Report [4]]]></title>
+      <title><![CDATA[Weekly Report [5]]]></title>
       <url>/archives/Cornell-weekly-report-08-21.html</url>
       <content type="html"><![CDATA[<h1 id="weekly-report-5">Weekly Report [5]</h1>
 <blockquote>
@@ -677,11 +677,11 @@ Poster:
             
             <tag> English </tag>
             
-            <tag> DEXA2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> DEXA2018 </tag>
             
         </tags>
         
@@ -781,11 +781,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
+            <tag> ECCV2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> ECCV2018 </tag>
             
         </tags>
         
