@@ -44,10 +44,7 @@
 <h3 id="building-calculation-of-pi_w">2. Building calculation of <span class="math inline">\(\pi_w\)</span></h3>
 <p>Loss: <span class="math inline">\(\frac{\tilde{\pi}(w)}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]\)</span></p>
 <p>The program is running:</p>
-<div class="figure">
-<img src="assets/markdown-img-paste-20180821133642572.png">
-
-</div>
+<p><img src="/assets/markdown-img-paste-20180821133642572.png" width="400"></p>
 <p>The loss decreases. However, the loss can vary distinctly.</p>
 <ul>
 <li>batchSize too small</li>
@@ -56,10 +53,7 @@
 <h3 id="building-calculation-of-pi_w.-adding-propensity-loss">2. Building calculation of <span class="math inline">\(\pi_w\)</span>. Adding propensity loss</h3>
 <p>Loss: <span class="math inline">\(\frac{\tilde{\pi}(w)}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right] + (tanh^2(\frac{1}{\tilde{\pi}(w)})-tanh^2(\frac{1}{\pi_0}))^{\frac{1}{2}}\)</span></p>
 <p>The program is running:</p>
-<div class="figure">
-<img src="assets/markdown-img-paste-2018082113322737.png">
-
-</div>
+<p><img src="/assets/markdown-img-paste-2018082113322737.png" width="400"></p>
 ]]></content>
       
         <categories>
@@ -73,9 +67,9 @@
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -216,9 +210,9 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -270,9 +264,9 @@ Not so reliable.</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -386,9 +380,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -452,8 +446,6 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
             <tag> English </tag>
             
             <tag> Research Proposal </tag>
-            
-            <tag> Cornell </tag>
             
         </tags>
         
@@ -636,9 +628,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
             
             <tag> English </tag>
             
-            <tag> Cornell </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
         
@@ -677,11 +669,11 @@ Poster:
             
             <tag> English </tag>
             
+            <tag> DEXA2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> DEXA2018 </tag>
             
         </tags>
         
@@ -781,11 +773,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
-            <tag> ECCV2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> ECCV2018 </tag>
             
         </tags>
         
