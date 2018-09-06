@@ -1291,15 +1291,15 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
     </entry>
     
     <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
