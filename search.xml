@@ -669,11 +669,11 @@ Poster:
             
             <tag> English </tag>
             
+            <tag> DEXA2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> DEXA2018 </tag>
             
         </tags>
         
@@ -696,9 +696,9 @@ Poster:
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> English </tag>
             
             <tag> Presentation </tag>
             
@@ -773,11 +773,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> English </tag>
             
-            <tag> ECCV2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> ECCV2018 </tag>
             
         </tags>
         
@@ -878,11 +878,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -940,13 +940,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
