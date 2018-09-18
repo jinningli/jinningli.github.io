@@ -3,6 +3,68 @@
   
     
     <entry>
+      <title><![CDATA[Purdue Proposal]]></title>
+      <url>/archives/Purdue-random-learning.html</url>
+      <content type="html"><![CDATA[<h1 id="experiment-proposal">Experiment Proposal</h1>
+<h3 id="hypothesis-1-neural-net-learns-low-level-features-first">hypothesis 1: neural net learns low level features first</h3>
+<h4 id="how-to-set-up">How to set up:</h4>
+<p>train neural network to fit polynomial</p>
+<p>using random sampling and expectation to calculate each coefficient.</p>
+<p>calculate the MSE of coefficient</p>
+<ul>
+<li>if the MSE of low level features are lower, hypothesis is true.</li>
+</ul>
+<h3 id="hypothesis-2-the-more-data-used-the-higher-accuracy-of-a-coefficient-will-be-achieved.">hypothesis 2: the more data used, the higher accuracy of a coefficient will be achieved.</h3>
+<h4 id="how-to-set-up-1">How to set up:</h4>
+<p>using different data scale to train a network</p>
+<p>calculate the MSE of each coefficient</p>
+<p>draw the MSE-coefficient curve for different data scale.</p>
+<p>draw the MSE of an coefficient v.s. different data scale.</p>
+<ul>
+<li>whether a critical behavior appears</li>
+<li>See whether the MSE of a coefficient is incrasing by data scale</li>
+</ul>
+<h3 id="hypothesis-4-with-the-incrase-of-network-parameters-there-will-be-a-critical-behavior.">hypothesis 4: With the incrase of network parameters, there will be a critical behavior.</h3>
+<ul>
+<li>How to set up:</li>
+</ul>
+<p>fixed data scale</p>
+<p>draw the MSE-coefficient curve for different parameter scale.</p>
+<p>draw the MSE of an coefficient v.s. different parameter scale.</p>
+<ul>
+<li>whether a critical behavior appears</li>
+<li>See whether the MSE of a coefficient is incrasing by parameter scale</li>
+</ul>
+<h3 id="hypothesis-3-if-only-degree-one-appears-i.e.-fxa_1x_1a_2x_2-the-coefficient-with-large-scale-will-be-learnt-first.">hypothesis 3: If only degree one appears, i.e. <span class="math inline">\(f(x)=a_1x_1+a_2x_2\)</span>, the coefficient with large scale will be learnt first.</h3>
+<h4 id="how-to-set-up-2">How to set up:</h4>
+<p>using fixed data scale and parameters.</p>
+<p>Set <span class="math inline">\(a_1\)</span> as larger value.</p>
+<p>calculate the MSE of each coefficient</p>
+<ul>
+<li>If the MSE of <span class="math inline">\(a_1\)</span> is larger, the hypothesis is proved</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Weekly Report </tag>
+            
+            <tag> Purdue </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Weekly Report [5]]]></title>
       <url>/archives/Cornell-weekly-report-08-21.html</url>
       <content type="html"><![CDATA[<h1 id="weekly-report-5">Weekly Report [5]</h1>
