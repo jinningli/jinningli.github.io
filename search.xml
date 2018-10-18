@@ -767,7 +767,7 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
 <p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. International Conference on Database and Expert Systems Applications (DEXA), 2018, 2018.</p>
 <p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="external">[Download Paper]</a></p>
 <p>Poster in Zhiyuan Academic Cestival: <!-- ![](/assets/dancinglineposter.jpg) --></p>
-<iframe src="../files/dancinglineposter.pdf" style="width:718px; height:1000px;" frameborder="0">
+<iframe src="../files/dancinglineposter.pdf" style="width:718px; height:1050px;" frameborder="0">
 </iframe>
 <p><a href="../files/dancinglineposter.pdf">Download File</a></p>
 ]]></content>
@@ -810,9 +810,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> English </tag>
             
             <tag> Presentation </tag>
             
@@ -992,11 +992,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -1054,13 +1054,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
