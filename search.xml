@@ -563,9 +563,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Research Proposal </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -766,7 +766,7 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
 <h2 id="info.">Info.</h2>
 <p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. International Conference on Database and Expert Systems Applications (DEXA), 2018, 2018.</p>
 <p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="external">[Download Paper]</a></p>
-<p>Poster in Zhiyuan Academic Cestival: <!-- ![](/assets/dancinglineposter.jpg) --></p>
+<p>Poster in Zhiyuan Academic Festival: <!-- ![](/assets/dancinglineposter.jpg) --></p>
 <iframe src="../files/dancinglineposter.pdf" style="width:718px; height:1080px;" frameborder="0">
 </iframe>
 <p><a href="../files/dancinglineposter.pdf">Download File</a></p>
@@ -810,9 +810,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -861,7 +861,8 @@ Matlab</code></pre>
 $ python3 ./preprocess.py</code></pre>
 <p>Follow the instructions, dataset will be built in the folder <code>./SIE/Datasets</code></p>
 <h3 id="synthesize-reality-image-using-detailed-image-synthesisdis-model">Synthesize reality image using Detailed Image Synthesis(DIS) Model:</h3>
-<p>Please put your dataset inside the folder <code>./DIS/Datasets</code> #### Train</p>
+<p>Please put your dataset inside the folder <code>./DIS/Datasets</code></p>
+<h4 id="train">Train</h4>
 <pre><code>$ cd ./DIS
 $ python3 train.py --dataroot ./Datasets/[NAME] --model pix2pix --which_direction AtoB --name [NAME] --gpu_ids 0</code></pre>
 <h4 id="test">Test</h4>
@@ -930,9 +931,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -990,9 +991,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
@@ -1052,6 +1053,8 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
+            <tag> English </tag>
+            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -1059,8 +1062,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
