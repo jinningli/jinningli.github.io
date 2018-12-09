@@ -54,9 +54,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> English </tag>
             
             <tag> Purdue </tag>
             
@@ -127,11 +127,11 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -270,11 +270,11 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -328,9 +328,9 @@ Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> English </tag>
             
             <tag> Purdue </tag>
             
@@ -382,11 +382,11 @@ Not so reliable.</code></pre>
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -498,11 +498,11 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -746,11 +746,11 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -810,9 +810,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -931,9 +931,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -991,9 +991,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
@@ -1053,6 +1053,8 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
+            <tag> English </tag>
+            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -1060,8 +1062,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
