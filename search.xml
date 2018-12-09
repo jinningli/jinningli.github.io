@@ -810,11 +810,11 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
+            <tag> Deep Learning </tag>
+            
             <tag> English </tag>
             
             <tag> Presentation </tag>
-            
-            <tag> Deep Learning </tag>
             
             <tag> Data Mining </tag>
             
@@ -993,11 +993,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -1055,13 +1055,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -1368,6 +1368,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
   
     
     <entry>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明">关于知识共享协议的说明</h1>
@@ -1402,13 +1409,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
 <p>在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“Jinning Li’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证； 如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议</strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external">许可证</a></p>
 <h2 id="演绎政策">演绎政策</h2>
 <p>本博客属于所有在网络上公开发表的，任何人可访问的作品。本人声明所有原创内容均<strong>允许演绎</strong>。 &gt; 知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
-      <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
