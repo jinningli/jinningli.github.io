@@ -325,11 +325,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#weekly-report-3"><span class="post-toc-number">1.</span> <span class="post-toc-text">Weekly Report [3]</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.0.1.</span> <span class="post-toc-text">
-[Newest Research Proposal]
-</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.0.2.</span> <span class="post-toc-text">
-[Project Github]
-</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#propensity-weighted-bce-loss"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Propensity weighted BCE loss</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#intuition"><span class="post-toc-number">1.1.0.1.</span> <span class="post-toc-text">Intuition:</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#clip-experiment"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Clip Experiment</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Weekly-Report-3"><span class="post-toc-number">1.</span> <span class="post-toc-text">Weekly Report [3]</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.0.1.</span> <span class="post-toc-text">[Newest Research Proposal]</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.0.0.2.</span> <span class="post-toc-text">[Project Github]</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Propensity-weighted-BCE-loss"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Propensity weighted BCE loss</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Intuition"><span class="post-toc-number">1.1.0.1.</span> <span class="post-toc-text">Intuition:</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Clip-Experiment"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Clip Experiment</span></a></li></ol></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -483,36 +479,26 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="weekly-report-3">Weekly Report [3]</h1>
-<blockquote>
+        <h1 id="Weekly-Report-3"><a href="#Weekly-Report-3" class="headerlink" title="Weekly Report [3]"></a>Weekly Report [3]</h1><blockquote>
 <p>Jinning, 08/02/2018</p>
 </blockquote>
-<a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external">
-<h4>
-[Newest Research Proposal]
-</h4>
-<p></p></a><p></p>
-<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
-<h4>
-[Project Github]
-</h4>
-<p></p></a><p></p>
-<h2 id="propensity-weighted-bce-loss">Propensity weighted BCE loss</h2>
-<p>Run experiment with both propensity weighted or not. All the two result are based on same hyperparameters:</p>
+<p><a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external"><h4>[Newest Research Proposal]</h4></a></p>
+<p><a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external"><h4>[Project Github]</h4></a></p>
+<h2 id="Propensity-weighted-BCE-loss"><a href="#Propensity-weighted-BCE-loss" class="headerlink" title="Propensity weighted BCE loss"></a>Propensity weighted BCE loss</h2><p>Run experiment with both propensity weighted or not. All the two result are based on same hyperparameters:</p>
 <ul>
-<li><p>Non-Propensity (weight: 1) Epoch 10: <code>IPS: 54.5463082902</code>, <code>IPS_std: 2.943</code></p></li>
-<li><p>propensity (weight: 1/propensity) Epoch 10: <code>IPS: 55.1079999611</code>, <code>IPS_std: 6.328</code></p></li>
+<li><p>Non-Propensity (weight: 1) Epoch 10: <code>IPS: 54.5463082902</code>, <code>IPS_std: 2.943</code></p>
+</li>
+<li><p>propensity (weight: 1/propensity) Epoch 10: <code>IPS: 55.1079999611</code>, <code>IPS_std: 6.328</code></p>
+</li>
 </ul>
-<h4 id="intuition">Intuition:</h4>
-<p>Introducing propensity can improve the performance of LR model slightly. Overfitting will probably happen at epoch 10. It’s possible that propensity can reduce the bias and relieve overfitting.</p>
-<h2 id="clip-experiment">Clip Experiment</h2>
-<p>Clip propensity weighted BCE loss. This means the weight applied to BCE loss is not simply <span class="math inline">\(\frac{1}{p}\)</span>, but <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>, where <span class="math inline">\(c\)</span> is a constant. In my experiment, <span class="math inline">\(c\)</span> is selected as <code>1</code>, <code>5</code>, <code>10</code>, <code>20</code>, <code>50</code>, <code>100</code>, <code>200</code>, <code>300</code>, <code>500</code>.</p>
-<p>When <span class="math inline">\(c=1\)</span>, this is equivalent to unweighted BCE. When <span class="math inline">\(c=500\)</span>, since <span class="math inline">\(\frac{1}{p}\)</span> is less than <span class="math inline">\(500\)</span>, this is equivalent to <span class="math inline">\(\frac{1}{p}\times loss\)</span>.</p>
+<h4 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition:"></a>Intuition:</h4><p>Introducing propensity can improve the performance of LR model slightly. Overfitting will probably happen at epoch 10. It’s possible that propensity can reduce the bias and relieve overfitting.</p>
+<h2 id="Clip-Experiment"><a href="#Clip-Experiment" class="headerlink" title="Clip Experiment"></a>Clip Experiment</h2><p>Clip propensity weighted BCE loss. This means the weight applied to BCE loss is not simply $\frac{1}{p}$, but $\min{\frac{1}{p}, c}$, where $c$ is a constant. In my experiment, $c$ is selected as <code>1</code>, <code>5</code>, <code>10</code>, <code>20</code>, <code>50</code>, <code>100</code>, <code>200</code>, <code>300</code>, <code>500</code>.</p>
+<p>When $c=1$, this is equivalent to unweighted BCE. When $c=500$, since $\frac{1}{p}$ is less than $500$, this is equivalent to $\frac{1}{p}\times loss$.</p>
 <p>Result:</p>
 <p><img src="/assets/markdown-img-paste-20180802221920353.png" width="700"></p>
 <pre><code>Note that this experiment is trained on full training set and test on small test set.
-Not so reliable.</code></pre>
-<p>The highest IPS appears around <span class="math inline">\(c=200\)</span>. So I guess the best <span class="math inline">\(c\)</span> is the average or median of all the propensity values.</p>
+Not so reliable.
+</code></pre><p>The highest IPS appears around $c=200$. So I guess the best $c$ is the average or median of all the propensity values.</p>
 
     
 
@@ -532,7 +518,7 @@ Not so reliable.</code></pre>
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/archives/Purdue-weekly-report-09-17.html" id="post_nav-newer" class="prev-content">
+        <a href="/archives/Cornell-weekly-report-08-07.html" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
