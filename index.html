@@ -20,7 +20,7 @@
     <meta name=theme-color content="#E0E0E0">
     <meta name=author content="Jinning Li">
     <meta name=description content="Hi, I'm Jinning Li. Nice to meet you!">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif
@@ -35,8 +35,10 @@
 
 <body class="mdui-drawer-body-left">
     <div class="mdui-container-fluid">
-        <div id="main" class="mdui-valign" style="height:90vh">
+        <div id="main" class="mdui-valign">
             <div class="mdui-center">
+              <br>
+              <br>
                 <img class="mdui-center mdui-img-circle" style="width:96px;height:96px" src= "img/avatar.png">
                 <div class="mdui-typo mdui-text-center">
                     <br>
@@ -76,35 +78,69 @@
                 </div>
             </div>
         </div>
-
-        <div id="intro" class="mdui-valign" style="height:50vh">
+        <br>
+        <br>
+        <div id="intro" class="mdui-valign" style="width: 100%">
             <div class="mdui-center">
-                <div class="mdui-card-content mdui-text-center">
-                    <div class="mdui-typo-headline-opacity">About Me</div>
+                <div class="mdui-card-content mdui-text-center" style="width: 100vh">
+                    <div class="mdui-typo-headline-opacity">Research</div>
                     <br>
-                    <span>Senior Undergraduate | <a href='http://en.sjtu.edu.cn'>Shanghai Jiao Tong University</a></span><br>
-                    <span><a href='https://acm.sjtu.edu.cn/home'>ACM Honors Class</a> | <a href='http://zhiyuan.sjtu.edu.cn'>Zhiyuan College</a> | Computer Science</span><br>
+                      <div style="display:inline">
+                        <div style="float:left">
+                        <img src="img/sjtu.png" width=55px hspace=14px>
+                        </div>
+                        <div style="float:center">
+                        <span>Senior Undergraduate | <a href='http://en.sjtu.edu.cn'>Shanghai Jiao Tong University</a></span><br>
+                        <span><a href='https://acm.sjtu.edu.cn/home'>ACM Honors Class</a> | <a href='http://zhiyuan.sjtu.edu.cn'>Zhiyuan College</a> | <a href="http://www.cs.sjtu.edu.cn/en/">Computer Science</a></span>
+                        </div>
+                      </div>
+
                     <br>
-                    <span>Research Assistant | <a href='http://anl.sjtu.edu.cn/en'>Advanced Network Lab</a></span><br>
-                    <span><a href='http://www.cs.sjtu.edu.cn/~gao-xf/'>Prof. Xiaofeng Gao</a> | Data Mining | Social Network | Natural Language Processing</span><br>
+
+                    <div style="display:inline; height:100%">
+                      <div style="float:left" height=50px>
+                      <img src="img/anl.png" width=55px align="middle" hspace=14px vspace=17px>
+                      </div>
+                      <div style="float:center">
+                        <span>Research Assistant | <a href='http://anl.sjtu.edu.cn/en'>Advanced Network Lab</a></span><br>
+                        <span>Advisor: <a href='http://www.cs.sjtu.edu.cn/~gao-xf/'>Prof. Xiaofeng Gao</a> <br> Data Mining | Social Network | Natural Language Processing</span>
+                      </div>
+                    </div>
+
                     <br>
-                    <span>Visiting Research Intern | <a href='https://www.cornell.edu'>Cornell University</a> </span><br>
-                    <span><a href='http://www.cs.cornell.edu/people/tj/'>Prof. Thorsten Joachims</a> | Counterfactual Machine Learning</span><br>
+
+                    <div style="display:inline">
+                      <div style="float:left" height=50px>
+                        <img src="img/cornell.png" width=50px align="middle" hspace=14px vspace=10px>
+                      </div>
+                      <div style="float:center">
+                        <span>Visiting Research Intern | <a href='https://www.cornell.edu'>Cornell University</a> </span><br>
+                        <span>Advisor: <a href='http://www.cs.cornell.edu/people/tj/'>Prof. Thorsten Joachims</a> <br> Counterfactual Machine Learning | Ad Placement</span>
+                      </div>
+                    </div>
+
                     <br>
-                    <span>Visiting Research Intern | <a href='https://www.purdue.edu'>Purdue University</a></span><br>
-                    <span><a href='https://www.cs.purdue.edu/homes/yexiang/'>Prof. Yexiang Xue</a> | Machine Learning | Computer Vision | Computational Sustainability</span><br>
-                    <br>
-                    <span>Finance | Biology | Physics | Art</span><br>
-                    <span>Ivy Symphony Orchestra | Swimming | Photography</span>
+
+                    <div style="display:inline">
+                      <div style="float:left" height=50px>
+                        <img src="img/purdue.png" height=30px align="middle" vspace=20px>
+                      </div>
+                      <div style="float:center">
+                        <span>Visiting Research Intern | <a href='https://www.purdue.edu'>Purdue University</a></span><br>
+                        <span>Advisor: <a href='https://www.cs.purdue.edu/homes/yexiang/'>Prof. Yexiang Xue</a> <br> Machine Learning | Computer Vision | Computational Sustainability</span>
+                      </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <div id="cards" class="mdui-valign section-cards" style="height:90vh">
+        <br>
+        <br>
+        <div id="cards" class="mdui-valign section-cards">
             <div class="mdui-text-center mdui-center mdui-row-xs-2 mdui-row-md-3" style="width: 100%">
-
+                <div class="mdui-typo-headline-opacity">Projects</div>
                 <div class="mdui-col mdui-p-t-1">
-                    <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 40vh">
+                    <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 300px">
                         <div class="mdui-center">
                             <div class="mdui-card-content mdui-typo">
                                 <div class="mdui-center">
@@ -121,7 +157,7 @@
                 </div>
 
                 <div class="mdui-col mdui-p-t-1">
-                    <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 40vh">
+                    <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 300px">
                         <div class="mdui-center">
                             <div class="mdui-card-content mdui-typo">
                                 <div class="mdui-center">
@@ -138,7 +174,7 @@
                 </div>
 
                 <div class="mdui-col mdui-p-t-1">
-                    <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 40vh">
+                    <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 300px">
                         <div class="mdui-center">
                             <div class="mdui-card-content mdui-typo">
                                 <div class="mdui-center">
@@ -155,7 +191,7 @@
                 </div>
 
               <div class="mdui-col mdui-p-t-1">
-                <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 40vh">
+                <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 300px">
                     <div class="mdui-center">
                         <div class="mdui-card-content mdui-typo">
                             <div class="mdui-center">
@@ -172,11 +208,11 @@
               </div>
 
               <div class="mdui-col mdui-p-t-1">
-                <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 40vh">
+                <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 300px">
                     <div class="mdui-center">
                         <div class="mdui-card-content mdui-typo">
                             <div class="mdui-center">
-                                <h3>Maple the Compiler</h3>
+                                <h3>Maple: the Compiler</h3>
                                 <br>
                                 <span>Course Project</span>
                             </div>
@@ -189,17 +225,17 @@
               </div>
 
               <div class="mdui-col mdui-p-t-1">
-                <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 40vh">
+                <div class="mdui-card mdui-valign mdui-shadow-0 mdui-hoverable" style="height: 300px">
                     <div class="mdui-center">
                         <div class="mdui-card-content mdui-typo">
                             <div class="mdui-center">
-                                <h3>Deep Wave</h3>
+                                <h3>Counterfactual Ad Placement</h3>
                                 <br>
-                                <span>Course Project</span>
+                                <span>Project at Cornell</span>
                             </div>
                         </div>
                         <div class="mdui-card-actions mdui-text-center">
-                            <a href="http://jinningli.cn/cv/DeepWavePaper.pdf" target="_blank" rel="nofollow noopener" class="mdui-btn mdui-ripple mdui-button-border">Report</a>
+                            <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="nofollow noopener" class="mdui-btn mdui-ripple mdui-button-border">Github</a>
                         </div>
                     </div>
                 </div>
@@ -293,11 +329,14 @@
 
             </div>
         </div>
-
-        <div class="mdui-valign" style="height:160vh">
+        <br>
+        <div class="mdui-valign">
             <div class="mdui-center">
                 <div class="mdui-card-content mdui-text-center">
-                    <div class="mdui-typo-headline-opacity">Activities</div>
+                    <div class="mdui-typo-headline-opacity">Interests & Activities</div>
+                    <br>
+                    <span>Finance | Biology | Physics | Art</span><br>
+                    <span>Ivy Symphony Orchestra | Swimming | Photography</span>
                     <br>
                     <div align="left"><h3>Swimming</h3></div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/tNkGa410Ew4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -383,7 +422,7 @@
                     <div class="mdui-list-item-text">+86 17621782336</div>
                 </div>
             </a>
-            <li class="mdui-subheader">Know Me More</li>
+            <li class="mdui-subheader">Links</li>
 
             <a href="http://jinningli.cn/cv/NewCV.pdf" target="_blank" rel="nofollow noopener" class="mdui-list-item mdui-ripple">Curriculum Vitae</a>
             <a href="blog.html" target="_blank" rel="nofollow noopener" class="mdui-list-item mdui-ripple">Blog</a>
