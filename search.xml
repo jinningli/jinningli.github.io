@@ -5,13 +5,18 @@
     <entry>
       <title><![CDATA[Purdue Proposal]]></title>
       <url>/archives/Purdue-random-learning.html</url>
-      <content type="html"><![CDATA[<h1 id="Experiment-Proposal"><a href="#Experiment-Proposal" class="headerlink" title="Experiment Proposal"></a>Experiment Proposal</h1><h3 id="hypothesis-1-neural-net-learns-low-level-features-first"><a href="#hypothesis-1-neural-net-learns-low-level-features-first" class="headerlink" title="hypothesis 1: neural net learns low level features first"></a>hypothesis 1: neural net learns low level features first</h3><h4 id="How-to-set-up"><a href="#How-to-set-up" class="headerlink" title="How to set up:"></a>How to set up:</h4><p>train neural network to fit polynomial</p>
+      <content type="html"><![CDATA[<h1 id="experiment-proposal">Experiment Proposal</h1>
+<h3 id="hypothesis-1-neural-net-learns-low-level-features-first">hypothesis 1: neural net learns low level features first</h3>
+<h4 id="how-to-set-up">How to set up:</h4>
+<p>train neural network to fit polynomial</p>
 <p>using random sampling and expectation to calculate each coefficient.</p>
 <p>calculate the MSE of coefficient</p>
 <ul>
 <li>if the MSE of low level features are lower, hypothesis is true.</li>
 </ul>
-<h3 id="hypothesis-2-the-more-data-used-the-higher-accuracy-of-a-coefficient-will-be-achieved"><a href="#hypothesis-2-the-more-data-used-the-higher-accuracy-of-a-coefficient-will-be-achieved" class="headerlink" title="hypothesis 2: the more data used, the higher accuracy of a coefficient will be achieved."></a>hypothesis 2: the more data used, the higher accuracy of a coefficient will be achieved.</h3><h4 id="How-to-set-up-1"><a href="#How-to-set-up-1" class="headerlink" title="How to set up:"></a>How to set up:</h4><p>using different data scale to train a network</p>
+<h3 id="hypothesis-2-the-more-data-used-the-higher-accuracy-of-a-coefficient-will-be-achieved.">hypothesis 2: the more data used, the higher accuracy of a coefficient will be achieved.</h3>
+<h4 id="how-to-set-up-1">How to set up:</h4>
+<p>using different data scale to train a network</p>
 <p>calculate the MSE of each coefficient</p>
 <p>draw the MSE-coefficient curve for different data scale.</p>
 <p>draw the MSE of an coefficient v.s. different data scale.</p>
@@ -19,7 +24,8 @@
 <li>whether a critical behavior appears</li>
 <li>See whether the MSE of a coefficient is incrasing by data scale</li>
 </ul>
-<h3 id="hypothesis-4-With-the-incrase-of-network-parameters-there-will-be-a-critical-behavior"><a href="#hypothesis-4-With-the-incrase-of-network-parameters-there-will-be-a-critical-behavior" class="headerlink" title="hypothesis 4: With the incrase of network parameters, there will be a critical behavior."></a>hypothesis 4: With the incrase of network parameters, there will be a critical behavior.</h3><ul>
+<h3 id="hypothesis-4-with-the-incrase-of-network-parameters-there-will-be-a-critical-behavior.">hypothesis 4: With the incrase of network parameters, there will be a critical behavior.</h3>
+<ul>
 <li>How to set up:</li>
 </ul>
 <p>fixed data scale</p>
@@ -29,11 +35,13 @@
 <li>whether a critical behavior appears</li>
 <li>See whether the MSE of a coefficient is incrasing by parameter scale</li>
 </ul>
-<h3 id="hypothesis-3-If-only-degree-one-appears-i-e-f-x-a-1x-1-a-2x-2-the-coefficient-with-large-scale-will-be-learnt-first"><a href="#hypothesis-3-If-only-degree-one-appears-i-e-f-x-a-1x-1-a-2x-2-the-coefficient-with-large-scale-will-be-learnt-first" class="headerlink" title="hypothesis 3: If only degree one appears, i.e. $f(x)=a_1x_1+a_2x_2$, the coefficient with large scale will be learnt first."></a>hypothesis 3: If only degree one appears, i.e. $f(x)=a_1x_1+a_2x_2$, the coefficient with large scale will be learnt first.</h3><h4 id="How-to-set-up-2"><a href="#How-to-set-up-2" class="headerlink" title="How to set up:"></a>How to set up:</h4><p>using fixed data scale and parameters.</p>
-<p>Set $a_1$ as larger value.</p>
+<h3 id="hypothesis-3-if-only-degree-one-appears-i.e.-fxa_1x_1a_2x_2-the-coefficient-with-large-scale-will-be-learnt-first.">hypothesis 3: If only degree one appears, i.e. <span class="math inline">\(f(x)=a_1x_1+a_2x_2\)</span>, the coefficient with large scale will be learnt first.</h3>
+<h4 id="how-to-set-up-2">How to set up:</h4>
+<p>using fixed data scale and parameters.</p>
+<p>Set <span class="math inline">\(a_1\)</span> as larger value.</p>
 <p>calculate the MSE of each coefficient</p>
 <ul>
-<li>If the MSE of $a_1$ is larger, the hypothesis is proved</li>
+<li>If the MSE of <span class="math inline">\(a_1\)</span> is larger, the hypothesis is proved</li>
 </ul>
 ]]></content>
       
@@ -59,15 +67,22 @@
     <entry>
       <title><![CDATA[Weekly Report [5]]]></title>
       <url>/archives/Cornell-weekly-report-08-21.html</url>
-      <content type="html"><![CDATA[<h1 id="Weekly-Report-5"><a href="#Weekly-Report-5" class="headerlink" title="Weekly Report [5]"></a>Weekly Report [5]</h1><blockquote>
+      <content type="html"><![CDATA[<h1 id="weekly-report-5">Weekly Report [5]</h1>
+<blockquote>
 <p>Jinning, 08/07/2018</p>
 </blockquote>
-<p><a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external"><h4>[Project Github]</h4></a></p>
-<h2 id="Try-validation-on-training-set"><a href="#Try-validation-on-training-set" class="headerlink" title="Try validation on training set"></a>Try validation on training set</h2><p>The result:</p>
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<h4>
+[Project Github]
+</h4>
+<p></p></a><p></p>
+<h2 id="try-validation-on-training-set">Try validation on training set</h2>
+<p>The result:</p>
 <p><code>ips: 110.97455105041419511</code></p>
 <p><code>ips_std: 5.6860887585293482787</code></p>
 <p>I wonder why it gets so large IPS?</p>
-<h3 id="Because-repetition-of-training-data"><a href="#Because-repetition-of-training-data" class="headerlink" title="Because repetition of training data?"></a>Because repetition of training data?</h3><p>I count the impressions having the same features, such as:</p>
+<h3 id="because-repetition-of-training-data">Because repetition of training data?</h3>
+<p>I count the impressions having the same features, such as:</p>
 <pre><code>{&#39;f&#39;: &#39;[0, 9, 10, 11, 12, 19, 112, 226, 227, 230, 234, 272, 273, 958, 959, 960]&#39;, &#39;id&#39;: 50543898}
 {&#39;f&#39;: &#39;[0, 9, 10, 11, 12, 19, 112, 226, 227, 230, 234, 272, 273, 958, 959, 960]&#39;, &#39;id&#39;: 6042332}
 {&#39;f&#39;: &#39;[0, 9, 10, 11, 12, 19, 112, 226, 227, 230, 234, 272, 273, 958, 959, 960]&#39;, &#39;id&#39;: 5226873}
@@ -78,15 +93,18 @@
 {&#39;f&#39;: &#39;[0, 9, 10, 11, 12, 19, 226, 227, 230, 231, 234, 272, 273, 958, 959, 960]&#39;, &#39;id&#39;: 12753081}
 {&#39;f&#39;: &#39;[0, 9, 10, 11, 12, 19, 190, 723, 730, 904, 958, 959, 1673, 1674, 1675, 1676]&#39;, &#39;id&#39;: 30292516}
 {&#39;f&#39;: &#39;[0, 9, 10, 11, 12, 19, 190, 723, 730, 904, 958, 959, 1673, 1674, 1675, 1676]&#39;, &#39;id&#39;: 28541751}
-...
-</code></pre><p>There are <code>5399483</code> impressions are repeated.</p>
+...</code></pre>
+<p>There are <code>5399483</code> impressions are repeated.</p>
 <p>There are about <code>14100000</code> impressions in total.</p>
-<p>So the repetition is about <code>38.3</code>\% impressions being repeated.</p>
+<p>So the repetition is about <code>38.3</code>% impressions being repeated.</p>
 <p>The largest repetition for a same feature is <code>35228</code>.</p>
 <p>Maybe we should clean the training set.</p>
-<h3 id="Adding-current-policy-into-the-weighting-of-loss"><a href="#Adding-current-policy-into-the-weighting-of-loss" class="headerlink" title="Adding current policy into the weighting of loss"></a>Adding current policy into the weighting of loss</h3><h4 id="1-Not-building-computational-graph-of-pi-w"><a href="#1-Not-building-computational-graph-of-pi-w" class="headerlink" title="1. Not building computational graph of $\pi_w$"></a>1. Not building computational graph of $\pi_w$</h4><p>Loss: $\frac{\tilde{\pi}}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]$</p>
+<h3 id="adding-current-policy-into-the-weighting-of-loss">Adding current policy into the weighting of loss</h3>
+<h4 id="not-building-computational-graph-of-pi_w">1. Not building computational graph of <span class="math inline">\(\pi_w\)</span></h4>
+<p>Loss: <span class="math inline">\(\frac{\tilde{\pi}}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]\)</span></p>
 <p>Get a result of <code>IPS=52</code>, <code>IPS_std=5</code> on CrowdAI test.</p>
-<h3 id="2-Building-calculation-of-pi-w"><a href="#2-Building-calculation-of-pi-w" class="headerlink" title="2. Building calculation of $\pi_w$"></a>2. Building calculation of $\pi_w$</h3><p>Loss: $\frac{\tilde{\pi}(w)}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]$</p>
+<h3 id="building-calculation-of-pi_w">2. Building calculation of <span class="math inline">\(\pi_w\)</span></h3>
+<p>Loss: <span class="math inline">\(\frac{\tilde{\pi}(w)}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]\)</span></p>
 <p>The program is running:</p>
 <p><img src="/assets/markdown-img-paste-20180821133642572.png" width="400"></p>
 <p>The loss decreases. However, the loss can vary distinctly.</p>
@@ -94,7 +112,8 @@
 <li>batchSize too small</li>
 <li>model unstable</li>
 </ul>
-<h3 id="2-Building-calculation-of-pi-w-Adding-propensity-loss"><a href="#2-Building-calculation-of-pi-w-Adding-propensity-loss" class="headerlink" title="2. Building calculation of $\pi_w$. Adding propensity loss"></a>2. Building calculation of $\pi_w$. Adding propensity loss</h3><p>Loss: $\frac{\tilde{\pi}(w)}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right] + (tanh^2(\frac{1}{\tilde{\pi}(w)})-tanh^2(\frac{1}{\pi_0}))^{\frac{1}{2}}$</p>
+<h3 id="building-calculation-of-pi_w.-adding-propensity-loss">2. Building calculation of <span class="math inline">\(\pi_w\)</span>. Adding propensity loss</h3>
+<p>Loss: <span class="math inline">\(\frac{\tilde{\pi}(w)}{\pi_0}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right] + (tanh^2(\frac{1}{\tilde{\pi}(w)})-tanh^2(\frac{1}{\pi_0}))^{\frac{1}{2}}\)</span></p>
 <p>The program is running:</p>
 <p><img src="/assets/markdown-img-paste-2018082113322737.png" width="400"></p>
 ]]></content>
@@ -121,17 +140,29 @@
     <entry>
       <title><![CDATA[Weekly Report [4]]]></title>
       <url>/archives/Cornell-weekly-report-08-07.html</url>
-      <content type="html"><![CDATA[<h1 id="Weekly-Report-4"><a href="#Weekly-Report-4" class="headerlink" title="Weekly Report [4]"></a>Weekly Report [4]</h1><blockquote>
+      <content type="html"><![CDATA[<h1 id="weekly-report-4">Weekly Report [4]</h1>
+<blockquote>
 <p>Jinning, 08/07/2018</p>
 </blockquote>
-<p><a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external"><h4>[Project Github]</h4></a></p>
-<h2 id="Clip-experiment-on-large-dataset"><a href="#Clip-experiment-on-large-dataset" class="headerlink" title="Clip experiment on large dataset"></a>Clip experiment on large dataset</h2><p>Got the result of Clipping with $\min{\frac{1}{p}, c}$. This result is trained and tested on large dataset.</p>
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<h4>
+[Project Github]
+</h4>
+<p></p></a><p></p>
+<h2 id="clip-experiment-on-large-dataset">Clip experiment on large dataset</h2>
+<p>Got the result of Clipping with <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>. This result is trained and tested on large dataset.</p>
 <p>Loss function used (weighted BCE loss):</p>
-<script type="math/tex; mode=display">
--\min\{\frac{1}{p}~,~c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]</script><p>$c\in$<code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
-<p>In the training set, the value of $\frac{1}{p}$ varies among $[1, 2917566]$. Its average is $114.57$.</p>
-<h4 id="Distribution-of-inverse-propensity"><a href="#Distribution-of-inverse-propensity" class="headerlink" title="Distribution of inverse propensity"></a>Distribution of inverse propensity</h4><p>In order to survey the distribution of $\frac{1}{p}$ , the following diagram show the percentage of $\frac{1}{p}$ larger than given $c$ (which is clipped):</p>
-<p><img src="/assets/markdown-img-paste-20180809172104497.png" alt=""></p>
+<p><span class="math display">\[
+-\min\{\frac{1}{p}~,~c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]
+\]</span></p>
+<p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p>
+<p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p>
+<h4 id="distribution-of-inverse-propensity">Distribution of inverse propensity</h4>
+<p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p>
+<div class="figure">
+<img src="/assets/markdown-img-paste-20180809172104497.png">
+
+</div>
 <pre><code>[100.00%] 14175476 in 14175476 larger than 1
 [96.52%] 13682662 in 14175476 larger than 5
 [95.78%] 13577934 in 14175476 larger than 10
@@ -151,50 +182,81 @@
 [1.26%] 178423 in 14175476 larger than 1000
 [0.16%] 23365 in 14175476 larger than 5000
 [0.07%] 9505 in 14175476 larger than 10000
-...
-</code></pre><p>The curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus $c$ :</p>
-<h4 id="IPS-Curve"><a href="#IPS-Curve" class="headerlink" title="IPS Curve:"></a>IPS Curve:</h4><p><img src="/assets/markdown-img-paste-20180809223512958.png" alt=""></p>
-<p><a href="http://jinningli.cn/links/ips" target="_blank" rel="external"><h4>[See Large Figure]</h4></a></p>
-<h4 id="IPS-Std-Curve"><a href="#IPS-Std-Curve" class="headerlink" title="IPS-Std Curve:"></a>IPS-Std Curve:</h4><p><img src="/assets/markdown-img-paste-20180809223541563.png" alt=""></p>
-<p><a href="http://jinningli.cn/links/ips_std" target="_blank" rel="external"><h4>[See Large Figure]</h4></a></p>
-<h2 id="Discussions"><a href="#Discussions" class="headerlink" title="Discussions"></a>Discussions</h2><h3 id="Not-coincidence"><a href="#Not-coincidence" class="headerlink" title="Not coincidence"></a>Not coincidence</h3><p>I notice that when $30&lt;c&lt;50$, the IPS is the highest (over $60$). However, the standard deviation is also quite high (over $10$). I train the network again when $c=50$, the IPS is still over $60$. So I think the local peak when $30&lt;c&lt;50$ is not a coincidence.</p>
-<h3 id="Why-standard-deviation-is-so-high"><a href="#Why-standard-deviation-is-so-high" class="headerlink" title="Why standard deviation is so high?"></a>Why standard deviation is so high?</h3><p><strong>In the evaluation process, IPS is calculated by</strong></p>
-<script type="math/tex; mode=display">
-\frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}</script><p>In another word, we calculate $\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}$.</p>
-<p>Assume the output of our network is $\sigma$, then score is calculated by $score=e^{score-\max(score)}$ in the evaluation program.</p>
+...</code></pre>
+<p>The curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p>
+<h4 id="ips-curve">IPS Curve:</h4>
+<div class="figure">
+<img src="/assets/markdown-img-paste-20180809223512958.png">
+
+</div>
+<a href="http://jinningli.cn/links/ips" target="_blank" rel="external">
+<h4>
+[See Large Figure]
+</h4>
+<p></p></a><p></p>
+<h4 id="ips-std-curve">IPS-Std Curve:</h4>
+<div class="figure">
+<img src="/assets/markdown-img-paste-20180809223541563.png">
+
+</div>
+<a href="http://jinningli.cn/links/ips_std" target="_blank" rel="external">
+<h4>
+[See Large Figure]
+</h4>
+<p></p></a><p></p>
+<h2 id="discussions">Discussions</h2>
+<h3 id="not-coincidence">Not coincidence</h3>
+<p>I notice that when <span class="math inline">\(30&lt;c&lt;50\)</span>, the IPS is the highest (over <span class="math inline">\(60\)</span>). However, the standard deviation is also quite high (over <span class="math inline">\(10\)</span>). I train the network again when <span class="math inline">\(c=50\)</span>, the IPS is still over <span class="math inline">\(60\)</span>. So I think the local peak when <span class="math inline">\(30&lt;c&lt;50\)</span> is not a coincidence.</p>
+<h3 id="why-standard-deviation-is-so-high">Why standard deviation is so high?</h3>
+<p><strong>In the evaluation process, IPS is calculated by</strong></p>
+<p><span class="math display">\[
+\frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}
+\]</span></p>
+<p>In another word, we calculate <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>.</p>
+<p>Assume the output of our network is <span class="math inline">\(\sigma\)</span>, then score is calculated by <span class="math inline">\(score=e^{score-\max(score)}\)</span> in the evaluation program.</p>
 <p><strong>The standard deviation is measured by</strong></p>
-<script type="math/tex; mode=display">
-\frac{2.58\times \sqrt{n}}{n^+ + 10n^-}\times Stderr[\delta \frac{\frac{ score(\hat{x})}{\sum score(x_i)}}{\pi_0}]</script><p><strong>Note that we apply a post-process trick that $\sigma’ = \frac{850100}{1+e^{-\sigma +1.1875}}$.</strong></p>
+<p><span class="math display">\[
+\frac{2.58\times \sqrt{n}}{n^+ + 10n^-}\times Stderr[\delta \frac{\frac{ score(\hat{x})}{\sum score(x_i)}}{\pi_0}]
+\]</span></p>
+<p><strong>Note that we apply a post-process trick that <span class="math inline">\(\sigma&#39; = \frac{850100}{1+e^{-\sigma +1.1875}}\)</span>.</strong></p>
 <hr>
-<p>Before post-process $\sigma$:</p>
-<pre><code>896678244; 0:0.011302, 1:0.00727101, 2:0.0111319, 3:0.000752336, 4:0.00235881, 5:0.0131616, 6:0.00344201, 7:0.0268872, 8:0.0108119, 9:0.022044, 10:0.0268872
-</code></pre><p>After post-process $\sigma’$:</p>
-<pre><code>896678244; 0:200400, 1:199783, 2:200374, 3:198788, 4:199033, 5:200685, 6:199198, 7:202811, 8:200325, 9:202049, 10:202796
-</code></pre><hr>
-<p>Before post-process $\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}$:</p>
-<pre><code>896678244; 0:0.984536, 1:0.980575, 2:0.984368, 3:0.974204, 4:0.97577, 5:0.986368, 6:0.976827, 7:1, 8:0.984053, 9:0.995168, 10:1
-</code></pre><p>After post-process $\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}$:</p>
-<pre><code>896678244; 0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:1, 8:0, 9:0, 10:3.05902e-07
-</code></pre><p>So actually our post-processing makes the policy more strict. For example, as shown above, after post-processing, id=896678244 gets a propensity vector $[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 3.05902e-07]$. So, if <code>7</code> is not the selected candidate, $\pi_w$ will be $0$, else $\pi_w$ will be $1$.</p>
-<p>If not post-process, the propensity vector will be $[0.985, 0.981, 0.974, 0.976, 0.986, 0.977, 1, 0.984, 0.995, 1]$. Then $\pi_w$ will be almost $\frac{1}{11}$ no matter which candidate is selected.</p>
+<p>Before post-process <span class="math inline">\(\sigma\)</span>:</p>
+<pre><code>896678244; 0:0.011302, 1:0.00727101, 2:0.0111319, 3:0.000752336, 4:0.00235881, 5:0.0131616, 6:0.00344201, 7:0.0268872, 8:0.0108119, 9:0.022044, 10:0.0268872</code></pre>
+<p>After post-process <span class="math inline">\(\sigma&#39;\)</span>:</p>
+<pre><code>896678244; 0:200400, 1:199783, 2:200374, 3:198788, 4:199033, 5:200685, 6:199198, 7:202811, 8:200325, 9:202049, 10:202796</code></pre>
+<hr>
+<p>Before post-process <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>:</p>
+<pre><code>896678244; 0:0.984536, 1:0.980575, 2:0.984368, 3:0.974204, 4:0.97577, 5:0.986368, 6:0.976827, 7:1, 8:0.984053, 9:0.995168, 10:1</code></pre>
+<p>After post-process <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>:</p>
+<pre><code>896678244; 0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:1, 8:0, 9:0, 10:3.05902e-07</code></pre>
+<p>So actually our post-processing makes the policy more strict. For example, as shown above, after post-processing, id=896678244 gets a propensity vector <span class="math inline">\([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 3.05902e-07]\)</span>. So, if <code>7</code> is not the selected candidate, <span class="math inline">\(\pi_w\)</span> will be <span class="math inline">\(0\)</span>, else <span class="math inline">\(\pi_w\)</span> will be <span class="math inline">\(1\)</span>.</p>
+<p>If not post-process, the propensity vector will be <span class="math inline">\([0.985, 0.981, 0.974, 0.976, 0.986, 0.977, 1, 0.984, 0.995, 1]\)</span>. Then <span class="math inline">\(\pi_w\)</span> will be almost <span class="math inline">\(\frac{1}{11}\)</span> no matter which candidate is selected.</p>
 <p>So it’s easy to understand after post-processing, standard deviation will be much higher.</p>
-<p>And it clear that post-processing is necessary. Because if not, the expectation of $\pi_w$ will always be close to $\frac{1}{11}$, no matter how nice the model is.</p>
-<p>I think this is a <strong>BUG</strong> of the evaluation program. It should not use $score=e^{score-\max(score)}$ but something like $score=e^{\frac{score-\max(score)}{\sum score}}$.</p>
+<p>And it clear that post-processing is necessary. Because if not, the expectation of <span class="math inline">\(\pi_w\)</span> will always be close to <span class="math inline">\(\frac{1}{11}\)</span>, no matter how nice the model is.</p>
+<p>I think this is a <strong>BUG</strong> of the evaluation program. It should not use <span class="math inline">\(score=e^{score-\max(score)}\)</span> but something like <span class="math inline">\(score=e^{\frac{score-\max(score)}{\sum score}}\)</span>.</p>
 <p><strong>Question:</strong> Why Standard deviation varies with clipping value? Why higher IPS often accompanies with higher Standard deviation?</p>
 <hr>
-<h3 id="Review-what-I-am-doing"><a href="#Review-what-I-am-doing" class="headerlink" title="Review what I am doing"></a>Review what I am doing</h3><p>What I am doing is training a network $\sigma$ to minimize the loss function (If clipping is applied)</p>
-<script type="math/tex; mode=display">
--\min\{\frac{1}{p}, c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right],</script><p>An important point is that $y$ is whether this Ad is clicked, instead of whether this Ad is chosen to display. This is the difference between banditNet and my net.</p>
-<p>Then, we use our network $\sigma_{\bar{w}}$ to estimate the probability of clicking of a given Ad, and use this propensity as the propensity to display this Ad.</p>
-<p>This is based on an assumption that $\pi_0$ will always choose Ads with high CTR (reward) to display.</p>
+<h3 id="review-what-i-am-doing">Review what I am doing</h3>
+<p>What I am doing is training a network <span class="math inline">\(\sigma\)</span> to minimize the loss function (If clipping is applied)</p>
+<p><span class="math display">\[
+-\min\{\frac{1}{p}, c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right],
+\]</span></p>
+<p>An important point is that <span class="math inline">\(y\)</span> is whether this Ad is clicked, instead of whether this Ad is chosen to display. This is the difference between banditNet and my net.</p>
+<p>Then, we use our network <span class="math inline">\(\sigma_{\bar{w}}\)</span> to estimate the probability of clicking of a given Ad, and use this propensity as the propensity to display this Ad.</p>
+<p>This is based on an assumption that <span class="math inline">\(\pi_0\)</span> will always choose Ads with high CTR (reward) to display.</p>
 <p>If this assumption is true (of course true), then the IPS:</p>
-<script type="math/tex; mode=display">
-IPS = \frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}</script><p>will be maximized. This is how my net works.</p>
-<p><strong>Question:</strong> Why do we need to add $\min{\frac{1}{p}, c}$ before our BCE loss fuction? Why will this contribute to CTR prediction?</p>
-<p>In the banditNet settings, the network will directly calculate propensity for each candidate, or $\pi_w$, then directly maximize the IPS / SNIPS or minimize its Lagrangian.</p>
-<script type="math/tex; mode=display">
-IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}</script><h3 id="What’s-the-best-clipping-value"><a href="#What’s-the-best-clipping-value" class="headerlink" title="What’s the best clipping value?"></a>What’s the best clipping value?</h3><p>According to the diagram drawn in the beginning, the best clipping value is around $30$ ~ $50$. The percentage of clipped propensities are about $30\%$ ~ $45\%$.</p>
-<p><strong>Question:</strong> Will $30\%$ ~ $45\%$ always be the best percentage? How to find the relationship between the best clipping value and the distribution of propensity?</p>
+<p><span class="math display">\[
+IPS = \frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}
+\]</span></p>
+<p>will be maximized. This is how my net works.</p>
+<p><strong>Question:</strong> Why do we need to add <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span> before our BCE loss fuction? Why will this contribute to CTR prediction?</p>
+<p>In the banditNet settings, the network will directly calculate propensity for each candidate, or <span class="math inline">\(\pi_w\)</span>, then directly maximize the IPS / SNIPS or minimize its Lagrangian.</p>
+<p><span class="math display">\[
+IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
+\]</span></p>
+<h3 id="whats-the-best-clipping-value">What’s the best clipping value?</h3>
+<p>According to the diagram drawn in the beginning, the best clipping value is around <span class="math inline">\(30\)</span> ~ <span class="math inline">\(50\)</span>. The percentage of clipped propensities are about <span class="math inline">\(30\%\)</span> ~ <span class="math inline">\(45\%\)</span>.</p>
+<p><strong>Question:</strong> Will <span class="math inline">\(30\%\)</span> ~ <span class="math inline">\(45\%\)</span> always be the best percentage? How to find the relationship between the best clipping value and the distribution of propensity?</p>
 <p><strong>Question:</strong> Is it true that the more propensities are clipped, the larger bias is and the smaller variance is? What’s the relation between bias-variance-tradeoff and clipping method?</p>
 <p><strong>Question:</strong> Is there better way to find the best clipping value without grid search?</p>
 ]]></content>
@@ -221,25 +283,40 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}</script><h3 id="What’s-the-best
     <entry>
       <title><![CDATA[Purdue Weekly Report [1]]]></title>
       <url>/archives/Purdue-weekly-report-09-17.html</url>
-      <content type="html"><![CDATA[<h1 id="Purdue-Weekly-Report-1"><a href="#Purdue-Weekly-Report-1" class="headerlink" title="Purdue Weekly Report [1]"></a>Purdue Weekly Report [1]</h1><blockquote>
+      <content type="html"><![CDATA[<h1 id="purdue-weekly-report-1">Purdue Weekly Report [1]</h1>
+<blockquote>
 <p>Jinning, 09/17/2018</p>
 </blockquote>
-<h2 id="Method-1-Using-expectation-to-estimate-coefficient"><a href="#Method-1-Using-expectation-to-estimate-coefficient" class="headerlink" title="Method 1: Using expectation to estimate coefficient"></a>Method 1: Using expectation to estimate coefficient</h2><blockquote>
+<h2 id="method-1-using-expectation-to-estimate-coefficient">Method 1: Using expectation to estimate coefficient</h2>
+<blockquote>
 <p>Reference: Some Topics in Analysis of Boolean Functions, Ryan O’Donnell.</p>
 </blockquote>
-<p>Assume $S$ is a subset of the set $[n]$. $|[n]|=2^n$.</p>
-<p>According to the reference, $\hat{f}(S)$ can be expressed as</p>
-<script type="math/tex; mode=display">
-\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]</script><p>We’re going to estimate $\hat{f}(S)$ by</p>
-<script type="math/tex; mode=display">
-\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)</script><p>We use $Var(\tilde{f}(S))$ to estimate the speed of learning.</p>
-<script type="math/tex; mode=display">
-Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))</script><script type="math/tex; mode=display">
-=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))</script><p>where,</p>
-<script type="math/tex; mode=display">
-Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2</script><script type="math/tex; mode=display">
-=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)</script><script type="math/tex; mode=display">
-=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)</script><p>So, the convergence speed is not necessarily decreasing with degree.</p>
+<p>Assume <span class="math inline">\(S\)</span> is a subset of the set <span class="math inline">\([n]\)</span>. <span class="math inline">\(|[n]|=2^n\)</span>.</p>
+<p>According to the reference, <span class="math inline">\(\hat{f}(S)\)</span> can be expressed as</p>
+<p><span class="math display">\[
+\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]
+\]</span></p>
+<p>We’re going to estimate <span class="math inline">\(\hat{f}(S)\)</span> by</p>
+<p><span class="math display">\[
+\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)
+\]</span></p>
+<p>We use <span class="math inline">\(Var(\tilde{f}(S))\)</span> to estimate the speed of learning.</p>
+<p><span class="math display">\[
+Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))
+\]</span></p>
+<p><span class="math display">\[
+=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))
+\]</span></p>
+<p>where, <span class="math display">\[
+Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2
+\]</span></p>
+<p><span class="math display">\[
+=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)
+\]</span></p>
+<p><span class="math display">\[
+=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)
+\]</span></p>
+<p>So, the convergence speed is not necessarily decreasing with degree.</p>
 ]]></content>
       
         <categories>
@@ -264,26 +341,36 @@ Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x
     <entry>
       <title><![CDATA[Weekly Report [3]]]></title>
       <url>/archives/Cornell-weekly-report-08-02.html</url>
-      <content type="html"><![CDATA[<h1 id="Weekly-Report-3"><a href="#Weekly-Report-3" class="headerlink" title="Weekly Report [3]"></a>Weekly Report [3]</h1><blockquote>
+      <content type="html"><![CDATA[<h1 id="weekly-report-3">Weekly Report [3]</h1>
+<blockquote>
 <p>Jinning, 08/02/2018</p>
 </blockquote>
-<p><a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external"><h4>[Newest Research Proposal]</h4></a></p>
-<p><a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external"><h4>[Project Github]</h4></a></p>
-<h2 id="Propensity-weighted-BCE-loss"><a href="#Propensity-weighted-BCE-loss" class="headerlink" title="Propensity weighted BCE loss"></a>Propensity weighted BCE loss</h2><p>Run experiment with both propensity weighted or not. All the two result are based on same hyperparameters:</p>
+<a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external">
+<h4>
+[Newest Research Proposal]
+</h4>
+<p></p></a><p></p>
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<h4>
+[Project Github]
+</h4>
+<p></p></a><p></p>
+<h2 id="propensity-weighted-bce-loss">Propensity weighted BCE loss</h2>
+<p>Run experiment with both propensity weighted or not. All the two result are based on same hyperparameters:</p>
 <ul>
-<li><p>Non-Propensity (weight: 1) Epoch 10: <code>IPS: 54.5463082902</code>, <code>IPS_std: 2.943</code></p>
-</li>
-<li><p>propensity (weight: 1/propensity) Epoch 10: <code>IPS: 55.1079999611</code>, <code>IPS_std: 6.328</code></p>
-</li>
+<li><p>Non-Propensity (weight: 1) Epoch 10: <code>IPS: 54.5463082902</code>, <code>IPS_std: 2.943</code></p></li>
+<li><p>propensity (weight: 1/propensity) Epoch 10: <code>IPS: 55.1079999611</code>, <code>IPS_std: 6.328</code></p></li>
 </ul>
-<h4 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition:"></a>Intuition:</h4><p>Introducing propensity can improve the performance of LR model slightly. Overfitting will probably happen at epoch 10. It’s possible that propensity can reduce the bias and relieve overfitting.</p>
-<h2 id="Clip-Experiment"><a href="#Clip-Experiment" class="headerlink" title="Clip Experiment"></a>Clip Experiment</h2><p>Clip propensity weighted BCE loss. This means the weight applied to BCE loss is not simply $\frac{1}{p}$, but $\min{\frac{1}{p}, c}$, where $c$ is a constant. In my experiment, $c$ is selected as <code>1</code>, <code>5</code>, <code>10</code>, <code>20</code>, <code>50</code>, <code>100</code>, <code>200</code>, <code>300</code>, <code>500</code>.</p>
-<p>When $c=1$, this is equivalent to unweighted BCE. When $c=500$, since $\frac{1}{p}$ is less than $500$, this is equivalent to $\frac{1}{p}\times loss$.</p>
+<h4 id="intuition">Intuition:</h4>
+<p>Introducing propensity can improve the performance of LR model slightly. Overfitting will probably happen at epoch 10. It’s possible that propensity can reduce the bias and relieve overfitting.</p>
+<h2 id="clip-experiment">Clip Experiment</h2>
+<p>Clip propensity weighted BCE loss. This means the weight applied to BCE loss is not simply <span class="math inline">\(\frac{1}{p}\)</span>, but <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>, where <span class="math inline">\(c\)</span> is a constant. In my experiment, <span class="math inline">\(c\)</span> is selected as <code>1</code>, <code>5</code>, <code>10</code>, <code>20</code>, <code>50</code>, <code>100</code>, <code>200</code>, <code>300</code>, <code>500</code>.</p>
+<p>When <span class="math inline">\(c=1\)</span>, this is equivalent to unweighted BCE. When <span class="math inline">\(c=500\)</span>, since <span class="math inline">\(\frac{1}{p}\)</span> is less than <span class="math inline">\(500\)</span>, this is equivalent to <span class="math inline">\(\frac{1}{p}\times loss\)</span>.</p>
 <p>Result:</p>
 <p><img src="/assets/markdown-img-paste-20180802221920353.png" width="700"></p>
 <pre><code>Note that this experiment is trained on full training set and test on small test set.
-Not so reliable.
-</code></pre><p>The highest IPS appears around $c=200$. So I guess the best $c$ is the average or median of all the propensity values.</p>
+Not so reliable.</code></pre>
+<p>The highest IPS appears around <span class="math inline">\(c=200\)</span>. So I guess the best <span class="math inline">\(c\)</span> is the average or median of all the propensity values.</p>
 ]]></content>
       
         <categories>
@@ -308,59 +395,84 @@ Not so reliable.
     <entry>
       <title><![CDATA[Weekly Report [2]]]></title>
       <url>/archives/Cornell-weekly-report-07-25.html</url>
-      <content type="html"><![CDATA[<h1 id="Weekly-Report-2"><a href="#Weekly-Report-2" class="headerlink" title="Weekly Report [2]"></a>Weekly Report [2]</h1><blockquote>
+      <content type="html"><![CDATA[<h1 id="weekly-report-2">Weekly Report [2]</h1>
+<blockquote>
 <p>Jinning, 07/25/2018</p>
 </blockquote>
-<p><a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external"><h4>[Newest Research Proposal]</h4></a></p>
-<p><a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external"><h4>[Project Github]</h4></a></p>
-<h2 id="Determined-Research-Topic"><a href="#Determined-Research-Topic" class="headerlink" title="Determined Research Topic"></a>Determined Research Topic</h2><p>My research topic is <code>Criteo Ad Placement</code>. The Criteo dataset has the format: $(c, a, \delta, p)$. This format is the same as BanditNet.</p>
+<a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external">
+<h4>
+[Newest Research Proposal]
+</h4>
+<p></p></a><p></p>
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<h4>
+[Project Github]
+</h4>
+<p></p></a><p></p>
+<h2 id="determined-research-topic">Determined Research Topic</h2>
+<p>My research topic is <code>Criteo Ad Placement</code>. The Criteo dataset has the format: <span class="math inline">\((c, a, \delta, p)\)</span>. This format is the same as BanditNet.</p>
 <ul>
-<li>$c$ contextual feature</li>
-<li>$a$ action from Criteo policy</li>
-<li>$\delta$ loss (click or not)</li>
-<li>$p$ propensity. $p(slot1=p)=\frac{f<em>p}{\sum</em>{p’\in P<em>c}f</em>{p’}}$</li>
+<li><span class="math inline">\(c\)</span> contextual feature</li>
+<li><span class="math inline">\(a\)</span> action from Criteo policy</li>
+<li><span class="math inline">\(\delta\)</span> loss (click or not)</li>
+<li><span class="math inline">\(p\)</span> propensity. <span class="math inline">\(p(slot1=p)=\frac{f_p}{\sum_{p&#39;\in P_c}f_{p&#39;}}\)</span></li>
 </ul>
-<p>My task: building model $h:c\times a \rightarrow \delta$. In another word, calculate the score of every candidate ad, then derive $\hat{\pi}$. For example, $\hat{\pi}=\arg \max_{a\in A}h(c, a)$.</p>
-<p>I should try to combine propensity infomation to reduce the bias. For example, we can let $\hat{h}=\arg \min_w\sum\frac{\hat{\pi}(c, a)}{p_i}(w\phi (c, a)-\delta)$.</p>
-<h2 id="Paper-Reading"><a href="#Paper-Reading" class="headerlink" title="Paper Reading"></a>Paper Reading</h2><p>Large-scale Validation of Counterfactual Learning Methods: A Test-Bed</p>
+<p>My task: building model <span class="math inline">\(h:c\times a \rightarrow \delta\)</span>. In another word, calculate the score of every candidate ad, then derive <span class="math inline">\(\hat{\pi}\)</span>. For example, <span class="math inline">\(\hat{\pi}=\arg \max_{a\in A}h(c, a)\)</span>.</p>
+<p>I should try to combine propensity infomation to reduce the bias. For example, we can let <span class="math inline">\(\hat{h}=\arg \min_w\sum\frac{\hat{\pi}(c, a)}{p_i}(w\phi (c, a)-\delta)\)</span>.</p>
+<h2 id="paper-reading">Paper Reading</h2>
+<p>Large-scale Validation of Counterfactual Learning Methods: A Test-Bed</p>
 <blockquote>
-<p>@article{lefortier2016large,<br>  title={Large-scale validation of counterfactual learning methods: A test-bed},<br>  author={Lefortier, Damien and Swaminathan, Adith and Gu, Xiaotao and Joachims, Thorsten and de Rijke, Maarten},<br>  journal={arXiv preprint arXiv:1612.00367},<br>  year={2016}<br>}</p>
+<p><span class="citation">@article</span>{lefortier2016large, title={Large-scale validation of counterfactual learning methods: A test-bed}, author={Lefortier, Damien and Swaminathan, Adith and Gu, Xiaotao and Joachims, Thorsten and de Rijke, Maarten}, journal={arXiv preprint arXiv:1612.00367}, year={2016} }</p>
 </blockquote>
 <p>This paper introduces the criteo dataset’s data format, evaluation metric(IPS) and baselines.</p>
-<h4 id="Example-Data-format"><a href="#Example-Data-format" class="headerlink" title="Example Data format:"></a>Example Data format:</h4><pre><code>example 32343877: 57702caea2a35f22a32c43a4b57e2a3057702caf1993e0165eb115f689a5b0bb 0 1.102191e-01 2 17 1:300 2:250 3:0 4:16 5:2 6:1 7:21 8:79 9:31 10:2
+<h4 id="example-data-format">Example Data format:</h4>
+<pre><code>example 32343877: 57702caea2a35f22a32c43a4b57e2a3057702caf1993e0165eb115f689a5b0bb 0 1.102191e-01 2 17 1:300 2:250 3:0 4:16 5:2 6:1 7:21 8:79 9:31 10:2
 0 exid:32343877 11:1 12:0 13:0 14:0 15:0 16:2 23:20 24:95 25:40 32:26 35:61
 0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:80 24:103 25:43 33:29 35:65
 0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:54 24:103 25:43 33:29 35:65
 0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:63 24:103 25:43 33:29 35:65
-...
-</code></pre><p>This dataset is multi-slot. In order to simplify the task, I will use the preprocessed <a href="https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files" target="_blank" rel="external">CrowdAI dataset</a>. CrowdAI dataset is one slot based. The size of dataset is still quite large.</p>
-<h4 id="Metric"><a href="#Metric" class="headerlink" title="Metric"></a>Metric</h4><p>IPS metric:</p>
-<script type="math/tex; mode=display">
-\hat{R}(\pi)=\sum_{i=1}^{N}\delta_i\frac{\pi(y_i|x_i)}{q_i}</script><h2 id="Experiment"><a href="#Experiment" class="headerlink" title="Experiment"></a>Experiment</h2><h4 id="Try-the-code-of-FTRL"><a href="#Try-the-code-of-FTRL" class="headerlink" title="Try the code of FTRL"></a>Try the code of FTRL</h4><p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ‘17 Workshop: Criteo Ad Placement Challenge <a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
-<h4 id="Write-my-own-code-of-LR"><a href="#Write-my-own-code-of-LR" class="headerlink" title="Write my own code of LR"></a>Write my own code of LR</h4><p>I write my own code of Logistic Regression (MLP) with Pytorch (GPU). Newest Project Codes can be found here: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">Project Github</a>. This is a well developed frame. It is easy to be extended to other models like FM and deep learning.</p>
+...</code></pre>
+<p>This dataset is multi-slot. In order to simplify the task, I will use the preprocessed <a href="https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files" target="_blank" rel="external">CrowdAI dataset</a>. CrowdAI dataset is one slot based. The size of dataset is still quite large.</p>
+<h4 id="metric">Metric</h4>
+<p>IPS metric: <span class="math display">\[
+\hat{R}(\pi)=\sum_{i=1}^{N}\delta_i\frac{\pi(y_i|x_i)}{q_i}
+\]</span></p>
+<h2 id="experiment">Experiment</h2>
+<h4 id="try-the-code-of-ftrl">Try the code of FTRL</h4>
+<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge <a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
+<h4 id="write-my-own-code-of-lr">Write my own code of LR</h4>
+<p>I write my own code of Logistic Regression (MLP) with Pytorch (GPU). Newest Project Codes can be found here: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">Project Github</a>. This is a well developed frame. It is easy to be extended to other models like FM and deep learning.</p>
 <p>My first logistic regression model receives an <code>one-hot</code> input of size <code>Batch * Dim</code> of a candidate Ad. <code>Dim</code> is the dimension of features. Then go through a linear layer of dimension <code>Dim</code> with ReLU activation, then a linear layer of dimension <code>4096</code>. A sigmoid function is followed. Binary Cross Entropy (BCE) loss is applied.</p>
-<h5 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h5><p>The result really <strong>surprise me !</strong> I got an <strong>IPS=59.249</strong>. Which is much higher than the Rank1 player in CrowdAI challenge! And I only train for $2$ epoch. Even ensemble is not applied.</p>
+<h5 id="result">Result</h5>
+<p>The result really <strong>surprise me !</strong> I got an <strong>IPS=59.249</strong>. Which is much higher than the Rank1 player in CrowdAI challenge! And I only train for <span class="math inline">\(2\)</span> epoch. Even ensemble is not applied.</p>
 <p>I feel regretful that I didn’t attend this challenge last year. Or I should have earned an award of <strong>2000 dollars</strong></p>
 <p><img src="/assets/markdown-img-paste-20180727015828124.png" width="400"></p>
 <p>Other methods and applying of propensity are to be completed.</p>
-<h2 id="Usage-of-my-code"><a href="#Usage-of-my-code" class="headerlink" title="Usage of my code"></a>Usage of my code</h2><h4 id="Get-the-code"><a href="#Get-the-code" class="headerlink" title="Get the code:"></a>Get the code:</h4><pre><code>git clone https://github.com/jinningli/ad-placement-pytorch.git
-</code></pre><h4 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements:"></a>Requirements:</h4><pre><code>CUDA
+<h2 id="usage-of-my-code">Usage of my code</h2>
+<h4 id="get-the-code">Get the code:</h4>
+<pre><code>git clone https://github.com/jinningli/ad-placement-pytorch.git</code></pre>
+<h4 id="requirements">Requirements:</h4>
+<pre><code>CUDA
 pytorch
 scipy
 numpy
-crowdai
-</code></pre><h4 id="Build-dataset"><a href="#Build-dataset" class="headerlink" title="Build dataset"></a>Build dataset</h4><pre><code>Download from https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files
+crowdai</code></pre>
+<h4 id="build-dataset">Build dataset</h4>
+<pre><code>Download from https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files
 gunzip criteo_train.txt.gz
 gunzip criteo_test_release.txt.gz
 mkdir datasets/crowdai
 mv criteo_train.txt datasets/crowdai/criteo_train.txt
 mv criteo_test_release.txt datasets/crowdai/test.txt
 cd datasets/crowdai
-python3 getFirstLine.py --data criteo_train.txt --result train.txt
-</code></pre><h4 id="Train"><a href="#Train" class="headerlink" title="Train"></a>Train</h4><pre><code>python3 train.py --dataroot datasets/criteo --name Saved_Name --batchSize 5000 --gpu 0 --no_cache
-</code></pre><h4 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h4><pre><code>python3 test.py --dataroot datasets/criteo --name Saved_Name --batchSize 5000 --gpu 0 --no_cache
-</code></pre><p>Checkpoints and Test result will be saved in <code>checkpoints/Saved_Name</code>.</p>
-<h4 id="All-options"><a href="#All-options" class="headerlink" title="All options"></a>All options</h4><p><code>--display_freq</code> Frequency of showing train/test results on screen.</p>
+python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
+<h4 id="train">Train</h4>
+<pre><code>python3 train.py --dataroot datasets/criteo --name Saved_Name --batchSize 5000 --gpu 0 --no_cache</code></pre>
+<h4 id="test">Test</h4>
+<pre><code>python3 test.py --dataroot datasets/criteo --name Saved_Name --batchSize 5000 --gpu 0 --no_cache</code></pre>
+<p>Checkpoints and Test result will be saved in <code>checkpoints/Saved_Name</code>.</p>
+<h4 id="all-options">All options</h4>
+<p><code>--display_freq</code> Frequency of showing train/test results on screen.</p>
 <p><code>--continue_train</code> Continue training.</p>
 <p><code>--lr_policy</code> Learning rate policy: same|lambda|step|plateau.</p>
 <p><code>--epoch</code> How many epochs.</p>
@@ -399,57 +511,43 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt
     <entry>
       <title><![CDATA[Cornell Research Proposal]]></title>
       <url>/archives/Cornell-research-proposal-07-19.html</url>
-      <content type="html"><![CDATA[<h1 id="Research-Starting-Plan"><a href="#Research-Starting-Plan" class="headerlink" title="Research Starting Plan"></a>Research Starting Plan</h1><blockquote>
+      <content type="html"><![CDATA[<h1 id="research-starting-plan">Research Starting Plan</h1>
+<blockquote>
 <p>Jinning Li, 07/24/2018</p>
 </blockquote>
 <p>Code Github: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">https://github.com/jinningli/ad-placement-pytorch</a></p>
-<h2 id="01-Code-review-of-CrowdAI-Rank1"><a href="#01-Code-review-of-CrowdAI-Rank1" class="headerlink" title="01 Code review of CrowdAI Rank1"></a>01 Code review of CrowdAI Rank1</h2><ul>
-<li>Use a <code>FTRL</code> model <a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">https://github.com/alexeygrigorev/nips-ad-placement-challenge</a></li>
-<li>Mainly Feature Processing<ul>
+<h2 id="code-review-of-crowdai-rank1">01 Code review of CrowdAI Rank1</h2>
+<ul>
+<li>Use a <code>FTRL</code> model https://github.com/alexeygrigorev/nips-ad-placement-challenge</li>
+<li>Mainly Feature Processing</li>
 <li>delete the first two features</li>
 <li>replace any feature larger than 1 as 1</li>
-</ul>
-</li>
 <li>process the result using sigmoid function and some other tricks.</li>
 </ul>
 <p><strong>[FINISH]</strong></p>
-<h2 id="02-Try-some-mainstream-linear-models"><a href="#02-Try-some-mainstream-linear-models" class="headerlink" title="02 Try some mainstream linear models"></a>02 Try some mainstream linear models</h2><ul>
+<h2 id="try-some-mainstream-linear-models">02 Try some mainstream linear models</h2>
+<ul>
 <li><code>Simple LR</code> <strong>[FINISH]</strong></li>
 <li><code>XGBoost</code></li>
 <li><code>LightGBM</code></li>
 <li><code>FFM</code></li>
 </ul>
 <p><strong>Also try to adapt the objective function with propensity value.</strong></p>
-<h2 id="03-Try-some-Deep-Learning-models"><a href="#03-Try-some-Deep-Learning-models" class="headerlink" title="03 Try some Deep Learning models"></a>03 Try some Deep Learning models</h2><ul>
+<h2 id="try-some-deep-learning-models">03 Try some Deep Learning models</h2>
+<ul>
 <li><code>CNN</code></li>
-<li><code>Deep FFM</code><blockquote>
-<p><a href="https://arxiv.org/abs/1703.04247" target="_blank" rel="external">https://arxiv.org/abs/1703.04247</a></p>
-</blockquote>
-</li>
-<li><code>DCN</code><blockquote>
-<p><a href="https://arxiv.org/abs/1708.05123" target="_blank" rel="external">https://arxiv.org/abs/1708.05123</a></p>
-</blockquote>
-</li>
-<li><code>Neural FM</code><blockquote>
-<p><a href="https://arxiv.org/abs/1708.05027" target="_blank" rel="external">https://arxiv.org/abs/1708.05027</a></p>
-</blockquote>
-</li>
-<li><code>Wide &amp; Deep</code><blockquote>
-<p><a href="https://arxiv.org/abs/1606.07792" target="_blank" rel="external">https://arxiv.org/abs/1606.07792</a></p>
-</blockquote>
-</li>
-<li><code>PNN</code><blockquote>
-<p><a href="https://arxiv.org/abs/1611.00144" target="_blank" rel="external">https://arxiv.org/abs/1611.00144</a></p>
-</blockquote>
-</li>
-<li><code>Deep Interest</code><blockquote>
-<p><a href="https://arxiv.org/abs/1706.06978" target="_blank" rel="external">https://arxiv.org/abs/1706.06978</a></p>
-</blockquote>
-</li>
+<li><code>Deep FFM</code> &gt; https://arxiv.org/abs/1703.04247</li>
+<li><code>DCN</code> &gt; https://arxiv.org/abs/1708.05123</li>
+<li><code>Neural FM</code> &gt; https://arxiv.org/abs/1708.05027</li>
+<li><code>Wide &amp; Deep</code> &gt; https://arxiv.org/abs/1606.07792</li>
+<li><code>PNN</code> &gt; https://arxiv.org/abs/1611.00144</li>
+<li><code>Deep Interest</code> &gt; https://arxiv.org/abs/1706.06978</li>
 </ul>
 <p><strong>Consider how to combine propensity value</strong></p>
-<h2 id="04-My-own-model"><a href="#04-My-own-model" class="headerlink" title="04 My own model"></a>04 My own model</h2><p>Develop my own propensity weighted deep click model</p>
-<h2 id="05-Apply-some-feature-tricks"><a href="#05-Apply-some-feature-tricks" class="headerlink" title="05 Apply some feature tricks"></a>05 Apply some feature tricks</h2><ul>
+<h2 id="my-own-model">04 My own model</h2>
+<p>Develop my own propensity weighted deep click model</p>
+<h2 id="apply-some-feature-tricks">05 Apply some feature tricks</h2>
+<ul>
 <li>repeated features</li>
 <li>feature overlap</li>
 <li>…</li>
@@ -476,44 +574,42 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt
     <entry>
       <title><![CDATA[Weekly Report [1]]]></title>
       <url>/archives/Cornell-weekly-report-07-08.html</url>
-      <content type="html"><![CDATA[<h1 id="Weekly-Report-1"><a href="#Weekly-Report-1" class="headerlink" title="Weekly Report [1]"></a>Weekly Report [1]</h1><blockquote>
+      <content type="html"><![CDATA[<h1 id="weekly-report-1">Weekly Report [1]</h1>
+<blockquote>
 <p>Jinning, 07/08/2018</p>
 </blockquote>
-<h3 id="Arrive-at-Cornell-on-07-03"><a href="#Arrive-at-Cornell-on-07-03" class="headerlink" title="Arrive at Cornell on 07/03"></a>Arrive at Cornell on 07/03</h3><p>Cornell and Ithaca town are so <code>charming</code>. Blue sky and beautiful buildings here really attracted me.</p>
+<h3 id="arrive-at-cornell-on-0703">Arrive at Cornell on 07/03</h3>
+<p>Cornell and Ithaca town are so <code>charming</code>. Blue sky and beautiful buildings here really attracted me.</p>
 <p><img src="/assets/markdown-img-paste-20180708151634476.png" width="400"></p>
-<h3 id="Book-Reading"><a href="#Book-Reading" class="headerlink" title="Book Reading"></a>Book Reading</h3><p><code>Causal Inference for Statistics Social and Biomedical Sciences</code></p>
-<h5 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h5><ul>
-<li><p><code>concepts</code>:</p>
+<h3 id="book-reading">Book Reading</h3>
+<p><code>Causal Inference for Statistics Social and Biomedical Sciences</code></p>
+<h5 id="chapter-1">Chapter 1</h5>
 <ul>
+<li><code>concepts</code>:</li>
 <li><code>action(manipulation, treatment, intervention)</code></li>
 <li><code>unit</code>: A unit here can be a physical object, a firm, an individual person, or collection of objects or persons, such as a classroom or a market, at a particular point in time.</li>
 <li><code>potential outcomes</code>: Given a unit and a set of actions, we associate each action-unit pair with a potential outcome</li>
 <li><code>causal effect</code>: involves the comparison of these potential outcomes, one realized (and perhaps, though not necessarily, observed), and the others not realized and therefore not observable</li>
 <li><code>alternative action</code>: not chosen action.</li>
-<li><code>counterfactual value</code>: the potential outcome corresponding to the treatment not applied.</li>
-</ul>
-</li>
-<li><p><code>Assumtions</code>:</p>
-<ul>
+<li><p><code>counterfactual value</code>: the potential outcome corresponding to the treatment not applied.</p></li>
+<li><code>Assumtions</code>:</li>
 <li><code>SUTVA</code>: The potential outcomes for any unit do not vary with the treatments assigned to other units, and, for each unit, there are no different forms or versions of each treatment level, which lead to different potential outcomes.</li>
 <li><code>No Inference</code></li>
 <li><code>No Hidden Variations of treatments</code></li>
-</ul>
-</li>
 <li><code>assignment mechanism</code></li>
 <li><code>missing data problem</code>: given any treatment assigned to an individual unit, the poten- tial outcome associated with any alternate treatment is missing.</li>
-<li><code>covariates</code>: presence of unit-specific background <code>attributes</code>, also referred to as <code>pre-treatment variables</code>, or <code>covariates</code> can assist in making these predictions.</li>
+<li><p><code>covariates</code>: presence of unit-specific background <code>attributes</code>, also referred to as <code>pre-treatment variables</code>, or <code>covariates</code> can assist in making these predictions.</p></li>
 </ul>
-<h3 id="Paper-Reading"><a href="#Paper-Reading" class="headerlink" title="Paper Reading"></a>Paper Reading</h3><h4 id="1-Deep-learning-with-logged-bandit-feedback"><a href="#1-Deep-learning-with-logged-bandit-feedback" class="headerlink" title="[1] Deep learning with logged bandit feedback"></a>[1] Deep learning with logged bandit feedback</h4><blockquote>
-<p>@article{joachims2018deep,<br>  title={Deep learning with logged bandit feedback},<br>  author={Joachims, Thorsten and Swaminathan, Adith and de Rijke, Maarten},<br>  year={2018}<br>}</p>
+<h3 id="paper-reading">Paper Reading</h3>
+<h4 id="deep-learning-with-logged-bandit-feedback">[1] Deep learning with logged bandit feedback</h4>
+<blockquote>
+<p><span class="citation">@article</span>{joachims2018deep, title={Deep learning with logged bandit feedback}, author={Joachims, Thorsten and Swaminathan, Adith and de Rijke, Maarten}, year={2018} }</p>
 </blockquote>
 <ul>
-<li><code>log</code>:<ul>
-<li><code>input</code>: e.g. features describing the user, banner ad, and page.</li>
-<li><code>action</code>: the action that was taken by the system e.g. a specific banner ad that was placed.</li>
-<li><code>feedback</code>: the feedback furnished by the user. e.g. clicks on the ad, or monetary payoff.</li>
-</ul>
-</li>
+<li><code>log</code>:</li>
+<li><code>input</code>: e.g. features describing the user, banner ad, and page.</li>
+<li><code>action</code>: the action that was taken by the system e.g. a specific banner ad that was placed.</li>
+<li><code>feedback</code>: the feedback furnished by the user. e.g. clicks on the ad, or monetary payoff.</li>
 </ul>
 <p>The feedback for all <code>other actions</code> the system could have taken is typically <code>not known</code>.</p>
 <p>Opens a new and intriguing pathway for acquiring knowledge at unprecedented scale, giving deep neural networks access to this <code>abundant and ubiquitous</code> type of data.</p>
@@ -523,82 +619,95 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt
 <p>Allow stochastic gradient descent (<code>SGD</code>) optimization.</p>
 <p><code>achieve the same classification performance</code> given sufficient amounts of contextual bandit feedback as ResNet trained with cross-entropy on conventionally (full-information)</p>
 <p>Success with <code>off-policy</code> variants of the REINFORCE</p>
-<h5 id="EQUIVARIANT-COUNTERFACTUAL-RISK-MINIMIZATION"><a href="#EQUIVARIANT-COUNTERFACTUAL-RISK-MINIMIZATION" class="headerlink" title="(EQUIVARIANT) COUNTERFACTUAL RISK MINIMIZATION"></a>(EQUIVARIANT) COUNTERFACTUAL RISK MINIMIZATION</h5><ul>
-<li>loss $\delta (x_i, y)$ arbitrary function</li>
-<li>policy $\pi$</li>
-<li>input $x$</li>
-<li>action $y$</li>
-<li>contexts from fixed &amp; unknown distribution $Pr(X)$</li>
-<li>network $\pi_\omega (Y|x)$</li>
-<li>propensity $p_i\equiv \pi_0(y_i|x_i)$, received loss $\delta \equiv \delta(x_i, y_i)$</li>
+<h5 id="equivariant-counterfactual-risk-minimization">(EQUIVARIANT) COUNTERFACTUAL RISK MINIMIZATION</h5>
+<ul>
+<li>loss <span class="math inline">\(\delta (x_i, y)\)</span> arbitrary function</li>
+<li>policy <span class="math inline">\(\pi\)</span></li>
+<li>input <span class="math inline">\(x\)</span></li>
+<li>action <span class="math inline">\(y\)</span></li>
+<li>contexts from fixed &amp; unknown distribution <span class="math inline">\(Pr(X)\)</span></li>
+<li>network <span class="math inline">\(\pi_\omega (Y|x)\)</span></li>
+<li>propensity <span class="math inline">\(p_i\equiv \pi_0(y_i|x_i)\)</span>, received loss <span class="math inline">\(\delta \equiv \delta(x_i, y_i)\)</span></li>
 </ul>
-<p>Dataset:</p>
-<script type="math/tex; mode=display">
-D=[(x_1, y_1, p_1, \delta_1),\cdots, (x_n, y_n, p_n, \delta_n)]</script><p>IPS estimator:</p>
-<script type="math/tex; mode=display">
-\hat{R}_{IPS}=\frac{1}{n}\sum_{i=1}^{n}\delta_i\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}</script><p>Problem: <code>propensity overfitting</code>. Propensity overfitting is linked to the lack of equivariance of the IPS estimator.</p>
-<p>Self-normalized IPS estimator. <code>equivariant</code> and substantially <code>lower variance</code>:</p>
-<script type="math/tex; mode=display">
-\hat{R}_{SNIPS}=\frac{\frac{1}{n}\sum_{i=1}^{n}\delta_i\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}}{\frac{1}{n}\sum_{i=1}^{n}\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}}</script><h5 id="TRAINING-ALGORITHM"><a href="#TRAINING-ALGORITHM" class="headerlink" title="TRAINING ALGORITHM"></a>TRAINING ALGORITHM</h5><p>Reformulate the problem into a series of constrained optimization problems.</p>
-<script type="math/tex; mode=display">
-\hat{w}=\arg \min_{w\in R^N}\frac{1}{n}\sum_{i=1}^{n}\delta_i\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}~subject~to~\frac{1}{n}\sum_{i=1}^{n}\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}</script><p><code>Lagrangian</code>:</p>
-<script type="math/tex; mode=display">
-L(w, \lambda)=\frac{1}{n}\sum_{i=1}^{n}\frac{(\delta_i-\lambda)\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}</script><p>Constrained optimization problems is transformed to:</p>
-<script type="math/tex; mode=display">
-\hat{w}_j=\arg \min_{w\in R^N}L(w, \lambda_j)</script><h5 id="EMPIRICAL-EVALUATION"><a href="#EMPIRICAL-EVALUATION" class="headerlink" title="EMPIRICAL EVALUATION"></a>EMPIRICAL EVALUATION</h5><p>Use a hand-coded logging policy that achieves about <code>49%</code> error rate on the training data, which is substantially worse than what we hope to achieve after learning.</p>
+<p>Dataset: <span class="math display">\[
+D=[(x_1, y_1, p_1, \delta_1),\cdots, (x_n, y_n, p_n, \delta_n)]
+\]</span></p>
+<p>IPS estimator: <span class="math display">\[
+\hat{R}_{IPS}=\frac{1}{n}\sum_{i=1}^{n}\delta_i\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}
+\]</span> Problem: <code>propensity overfitting</code>. Propensity overfitting is linked to the lack of equivariance of the IPS estimator.</p>
+<p>Self-normalized IPS estimator. <code>equivariant</code> and substantially <code>lower variance</code>: <span class="math display">\[
+\hat{R}_{SNIPS}=\frac{\frac{1}{n}\sum_{i=1}^{n}\delta_i\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}}{\frac{1}{n}\sum_{i=1}^{n}\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}}
+\]</span></p>
+<h5 id="training-algorithm">TRAINING ALGORITHM</h5>
+<p>Reformulate the problem into a series of constrained optimization problems. <span class="math display">\[
+\hat{w}=\arg \min_{w\in R^N}\frac{1}{n}\sum_{i=1}^{n}\delta_i\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}~subject~to~\frac{1}{n}\sum_{i=1}^{n}\frac{\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}
+\]</span> <code>Lagrangian</code>: <span class="math display">\[
+L(w, \lambda)=\frac{1}{n}\sum_{i=1}^{n}\frac{(\delta_i-\lambda)\pi_\omega(y_i|x_i)}{\pi_0(y_i|x_i)}
+\]</span> Constrained optimization problems is transformed to: <span class="math display">\[
+\hat{w}_j=\arg \min_{w\in R^N}L(w, \lambda_j)
+\]</span></p>
+<h5 id="empirical-evaluation">EMPIRICAL EVALUATION</h5>
+<p>Use a hand-coded logging policy that achieves about <code>49%</code> error rate on the training data, which is substantially worse than what we hope to achieve after learning.</p>
 <p>Bandit-ResNet converges to the skyline performance given enough bandit feedback training data, providing strong evidence that our training objective and method can <code>effectively extract</code> the available information provided in the bandit feedback</p>
 <p>The SNIPS estimates in the right-hand plot Figure roughly reflects this optimal range, given empirical support for the SNIPS estimator.</p>
-<h4 id="2-Learning-from-Logged-Bandit-Feedback-of-Multiple-Loggers"><a href="#2-Learning-from-Logged-Bandit-Feedback-of-Multiple-Loggers" class="headerlink" title="[2] Learning from Logged Bandit Feedback of Multiple Loggers"></a>[2] Learning from Logged Bandit Feedback of Multiple Loggers</h4><p>We only observe the outcomes of the deployed action, but not for the alternative ads that could have been presented instead.</p>
+<h4 id="learning-from-logged-bandit-feedback-of-multiple-loggers">[2] Learning from Logged Bandit Feedback of Multiple Loggers</h4>
+<p>We only observe the outcomes of the deployed action, but not for the alternative ads that could have been presented instead.</p>
 <p>This paper makes the case that naively applying <code>CRM</code> to the setting where the log data comes from multiple policies can be highly <code>sub-optimal</code>.</p>
 <ul>
 <li>Weighted inverse propensity score <code>WIPS</code> (Agarwal et al., 2017), is proposed by re-weighting data from different policies by their ”divergence” from the target policy.</li>
-<li>give the <code>smallest</code> variance among all weighted estimators.<ul>
+<li>give the <code>smallest</code> variance among all weighted estimators.</li>
 <li>A major challenge in extending this approach to learning is that the <code>weights depend on the target policy</code></li>
 <li>Another challenge is that the <code>optimal weights depend on the divergences</code> between the target policy and the historical policies,</li>
 </ul>
-</li>
-</ul>
 <p>This paper: Propose a better empirical divergence estimator using control variates.</p>
-<h4 id="WIPS"><a href="#WIPS" class="headerlink" title="WIPS"></a>WIPS</h4><ul>
-<li>re-weighted loss<script type="math/tex; mode=display">
-U_j^i(\pi)=\delta_j^i\frac{\pi(y_j^i|x_j^i)}{\pi_i(y_j^i|x_j^i)}</script></li>
-<li>mean loss<script type="math/tex; mode=display">
-U^i(\pi)=\frac{1}{n_i}\sum_{i=1}^{n}U_j^i(\pi)</script></li>
-<li>weight vector $p$<script type="math/tex; mode=display">
-p_i=\frac{n_i}{\sigma_\delta^2(\pi\|\pi_i)\sum_{j=1}^m\frac{n_j}{\sigma_\delta^2(\pi\|\pi_j)}}</script></li>
-<li>WIPS estimator<script type="math/tex; mode=display">
-\hat{R}(\pi)=\sum_{i=1}^mp^TU(\pi)</script></li>
-<li>divergence<script type="math/tex; mode=display">
-\sigma_\delta^2(\pi\|\pi_i)=\frac{1}{n_i-1}\sum_{j=1}^{n_i}(U_j^i(\pi)-U^i(\pi))^2</script></li>
-</ul>
-<h4 id="Better-Divergence-Estimator"><a href="#Better-Divergence-Estimator" class="headerlink" title="Better Divergence Estimator"></a>Better Divergence Estimator</h4><ul>
-<li>control variate<script type="math/tex; mode=display">
-S^i(\pi)=\frac{1}{n_i}\sum_{j=1}^{n_i}\frac{\pi(y_j^i|x_j^i)}{\pi_i(y_j^i|x_j^i)}</script></li>
-<li>overall mean<script type="math/tex; mode=display">
-\bar{U}(\pi)=\frac{1}{\sum_{i=1}^{m}n_i}\sum_{i=1}^{m}\sum_{j=1}^{n_i}U_j^i(\pi)</script></li>
-<li>self-normalized divergence estimator<script type="math/tex; mode=display">
-\sigma_\delta^2(\pi\|\pi_i)=\frac{1}{n_i-1}\sum_{j=1}^{n_i}(\frac{U_j^i(\pi)}{S_i(\pi)}-\bar{U}(\pi))^2</script></li>
-</ul>
-<p><strong>Intuitions</strong>:<br>Using the overall $\bar{U}(\pi)$ instead of the IPS estimate for each specific logger πi utilizes information from <code>all the data</code> and provides a more informed estimate.</p>
-<h4 id="Weighted-Counterfactual-Risk-Minimization-Principle"><a href="#Weighted-Counterfactual-Risk-Minimization-Principle" class="headerlink" title="Weighted Counterfactual Risk Minimization Principle"></a>Weighted Counterfactual Risk Minimization Principle</h4><p>The learning principle minimizes the WIPS estimator and its empirical standard deviation at the same time.</p>
-<script type="math/tex; mode=display">
-\pi^{WCRM}=\arg \min_{\pi, p}p^TU^M(\pi)+\lambda\sqrt{\frac{\hat{Var}(p_iU_j^i(\pi))}{\sum_{k=1}^{m}n_k}}</script><p>subject to</p>
-<script type="math/tex; mode=display">
-p=\arg\min_{p}Var_{D}(\hat{R}(\pi))</script><h4 id="Experiments"><a href="#Experiments" class="headerlink" title="Experiments"></a>Experiments</h4><ul>
-<li>We chose the multi-label datasets from LibSVM for the experiments.</li>
-<li>we collect bandit dataset by simulating $y_i$ and report the loss $\delta$ associated with this sample by the number of correctly predicted labels compared with the ground truth $y_i^*$</li>
-</ul>
-<p><strong>Two policy to obtain dataset</strong></p>
+<h4 id="wips">WIPS</h4>
 <ul>
-<li>Use two logging policies in the following experiment<ul>
-<li>trained using a CRF on these 20% of data</li>
-<li>trained on the same data with stochastic multiplier to be $1$</li>
+<li>re-weighted loss <span class="math display">\[
+U_j^i(\pi)=\delta_j^i\frac{\pi(y_j^i|x_j^i)}{\pi_i(y_j^i|x_j^i)}
+\]</span></li>
+<li>mean loss <span class="math display">\[
+U^i(\pi)=\frac{1}{n_i}\sum_{i=1}^{n}U_j^i(\pi)
+\]</span></li>
+<li>weight vector <span class="math inline">\(p\)</span> <span class="math display">\[
+p_i=\frac{n_i}{\sigma_\delta^2(\pi\|\pi_i)\sum_{j=1}^m\frac{n_j}{\sigma_\delta^2(\pi\|\pi_j)}}
+\]</span></li>
+<li>WIPS estimator <span class="math display">\[
+\hat{R}(\pi)=\sum_{i=1}^mp^TU(\pi)
+\]</span></li>
+<li>divergence <span class="math display">\[
+\sigma_\delta^2(\pi\|\pi_i)=\frac{1}{n_i-1}\sum_{j=1}^{n_i}(U_j^i(\pi)-U^i(\pi))^2
+\]</span></li>
 </ul>
-</li>
+<h4 id="better-divergence-estimator">Better Divergence Estimator</h4>
+<ul>
+<li>control variate <span class="math display">\[
+S^i(\pi)=\frac{1}{n_i}\sum_{j=1}^{n_i}\frac{\pi(y_j^i|x_j^i)}{\pi_i(y_j^i|x_j^i)}
+\]</span></li>
+<li>overall mean <span class="math display">\[
+\bar{U}(\pi)=\frac{1}{\sum_{i=1}^{m}n_i}\sum_{i=1}^{m}\sum_{j=1}^{n_i}U_j^i(\pi)
+\]</span></li>
+<li>self-normalized divergence estimator <span class="math display">\[
+\sigma_\delta^2(\pi\|\pi_i)=\frac{1}{n_i-1}\sum_{j=1}^{n_i}(\frac{U_j^i(\pi)}{S_i(\pi)}-\bar{U}(\pi))^2
+\]</span></li>
 </ul>
-<p><strong>Baseline: CRM</strong><br><strong>Ours: WCRM</strong><br>For both datasets, <code>WCRM</code> maintains <code>good</code> performance even as the quality of logger 1 is degraded, while the <code>naive CRM</code> approach is severly <code>affected</code>.</p>
-<h3 id="Paper-Survey"><a href="#Paper-Survey" class="headerlink" title="Paper Survey"></a>Paper Survey</h3><h4 id="1-Position-Bias-Estimation-for-Unbiased-Learning-to-Rank-in-Personal-Search"><a href="#1-Position-Bias-Estimation-for-Unbiased-Learning-to-Rank-in-Personal-Search" class="headerlink" title="[1] Position Bias Estimation for Unbiased Learning to Rank in Personal Search"></a>[1] Position Bias Estimation for Unbiased Learning to Rank in Personal Search</h4><blockquote>
-<p>@inproceedings{wang2018position,<br>  title={Position bias estimation for unbiased learning to rank in personal search},<br>  author={Wang, Xuanhui and Golbandi, Nadav and Bendersky, Michael and Metzler, Donald and Najork, Marc},<br>  booktitle={Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining},<br>  pages={610—618},<br>  year={2018},<br>  organization={ACM}<br>}</p>
+<p><strong>Intuitions</strong>: Using the overall <span class="math inline">\(\bar{U}(\pi)\)</span> instead of the IPS estimate for each specific logger πi utilizes information from <code>all the data</code> and provides a more informed estimate.</p>
+<h4 id="weighted-counterfactual-risk-minimization-principle">Weighted Counterfactual Risk Minimization Principle</h4>
+<p>The learning principle minimizes the WIPS estimator and its empirical standard deviation at the same time. <span class="math display">\[
+\pi^{WCRM}=\arg \min_{\pi, p}p^TU^M(\pi)+\lambda\sqrt{\frac{\hat{Var}(p_iU_j^i(\pi))}{\sum_{k=1}^{m}n_k}}
+\]</span> subject to <span class="math display">\[
+p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
+\]</span></p>
+<h4 id="experiments">Experiments</h4>
+<ul>
+<li>We chose the multi-label datasets from LibSVM for the experiments.</li>
+<li>we collect bandit dataset by simulating <span class="math inline">\(y_i\)</span> and report the loss <span class="math inline">\(\delta\)</span> associated with this sample by the number of correctly predicted labels compared with the ground truth <span class="math inline">\(y_i^*\)</span></li>
+</ul>
+<p><strong>Two policy to obtain dataset</strong> - Use two logging policies in the following experiment - trained using a CRF on these 20% of data - trained on the same data with stochastic multiplier to be <span class="math inline">\(1\)</span></p>
+<p><strong>Baseline: CRM</strong> <strong>Ours: WCRM</strong> For both datasets, <code>WCRM</code> maintains <code>good</code> performance even as the quality of logger 1 is degraded, while the <code>naive CRM</code> approach is severly <code>affected</code>.</p>
+<h3 id="paper-survey">Paper Survey</h3>
+<h4 id="position-bias-estimation-for-unbiased-learning-to-rank-in-personal-search">[1] Position Bias Estimation for Unbiased Learning to Rank in Personal Search</h4>
+<blockquote>
+<p><span class="citation">@inproceedings</span>{wang2018position, title={Position bias estimation for unbiased learning to rank in personal search}, author={Wang, Xuanhui and Golbandi, Nadav and Bendersky, Michael and Metzler, Donald and Najork, Marc}, booktitle={Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining}, pages={610–618}, year={2018}, organization={ACM} }</p>
 </blockquote>
 <ul>
 <li>Learning to Rank</li>
@@ -609,16 +718,18 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))</script><h4 id="Experiments"><a href="#Exper
 <li>Evaluate EM algorithm and the extracted bias in the learning-to-rank setting.</li>
 <li>Evaluation: <code>weighted MRR</code> and <code>average log likelihood</code></li>
 </ul>
-<h4 id="2-Risk-Averse-Trees-for-Learning-from-Logged-Bandit-Feedback"><a href="#2-Risk-Averse-Trees-for-Learning-from-Logged-Bandit-Feedback" class="headerlink" title="[2] Risk-Averse Trees for Learning from Logged Bandit Feedback"></a>[2] Risk-Averse Trees for Learning from Logged Bandit Feedback</h4><blockquote>
-<p>@inproceedings{trovo2017risk,<br>  title={Risk-averse trees for learning from logged bandit feedback},<br>  author={Trov{`o}, Francesco and Paladino, Stefano and Simone, Paolo and Restelli, Marcello and Gatti, Nicola},<br>  booktitle={Neural Networks (IJCNN), 2017 International Joint Conference on},<br>  pages={976—983},<br>  year={2017},<br>  organization={IEEE}<br>}</p>
+<h4 id="risk-averse-trees-for-learning-from-logged-bandit-feedback">[2] Risk-Averse Trees for Learning from Logged Bandit Feedback</h4>
+<blockquote>
+<p><span class="citation">@inproceedings</span>{trovo2017risk, title={Risk-averse trees for learning from logged bandit feedback}, author={Trov{`o}, Francesco and Paladino, Stefano and Simone, Paolo and Restelli, Marcello and Gatti, Nicola}, booktitle={Neural Networks (IJCNN), 2017 International Joint Conference on}, pages={976–983}, year={2017}, organization={IEEE} }</p>
 </blockquote>
 <ul>
 <li>RADT is based on a risk-averse learning method which exploits the joint use of regression trees and statistical confidence bounds</li>
 <li>RADT generates policies aiming to maximize a lower bound on the expected reward and provides a clear characterization of those features in the context that influence the process the most.</li>
 <li>RADT algorithm which greedily learns a binary tree to approximate the optimal mapping on the basis of the available dataset and maximizes statistical lower bounds over the expected profit.</li>
 </ul>
-<h4 id="3-Learning-to-Rank-with-Selection-Bias-in-Personal-Search"><a href="#3-Learning-to-Rank-with-Selection-Bias-in-Personal-Search" class="headerlink" title="[3] Learning to Rank with Selection Bias in Personal Search."></a>[3] Learning to Rank with Selection Bias in Personal Search.</h4><blockquote>
-<p>@inproceedings{wang2016learning,<br>  title={Learning to rank with selection bias in personal search},<br>  author={Wang, Xuanhui and Bendersky, Michael and Metzler, Donald and Najork, Marc},<br>  booktitle={Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval},<br>  pages={115—124},<br>  year={2016},<br>  organization={ACM}<br>}</p>
+<h4 id="learning-to-rank-with-selection-bias-in-personal-search.">[3] Learning to Rank with Selection Bias in Personal Search.</h4>
+<blockquote>
+<p><span class="citation">@inproceedings</span>{wang2016learning, title={Learning to rank with selection bias in personal search}, author={Wang, Xuanhui and Bendersky, Michael and Metzler, Donald and Najork, Marc}, booktitle={Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval}, pages={115–124}, year={2016}, organization={ACM} }</p>
 </blockquote>
 <ul>
 <li>Study the problem of how to leverage sparse click data in personal search and introduce a novel selection bias problem and address it in the learning-to-rank framework</li>
@@ -648,14 +759,16 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))</script><h4 id="Experiments"><a href="#Exper
     <entry>
       <title><![CDATA[DANCINGLINES, An Analytical Scheme to Depict Cross-Platform Event Popularity]]></title>
       <url>/archives/DancingLines.html</url>
-      <content type="html"><![CDATA[<h1 id="ABSTRACT"><a href="#ABSTRACT" class="headerlink" title="ABSTRACT"></a>ABSTRACT</h1><p>Nowadays, events usually burst and are propagated online through multiple modern media like social networks and search engines. There exists various research discussing the event dissemination trends on individual medium, while few studies focus on event popularity analysis <code>from a cross-platform perspective</code>. <code>Challenges come from the vast diversity of events and media</code>, limited access to aligned datasets across different media and the great deal of noise in the datasets.</p>
+      <content type="html"><![CDATA[<h1 id="abstract">ABSTRACT</h1>
+<p>Nowadays, events usually burst and are propagated online through multiple modern media like social networks and search engines. There exists various research discussing the event dissemination trends on individual medium, while few studies focus on event popularity analysis <code>from a cross-platform perspective</code>. <code>Challenges come from the vast diversity of events and media</code>, limited access to aligned datasets across different media and the great deal of noise in the datasets.</p>
 <p>In this paper, we design <code>DancingLines, an innovative scheme that captures and quantitatively analyzes event popularity between pairwise text media</code>. It contains two models: <code>TF-SW</code>, a semantic-aware popularity quantification model, based on an integrated weight coefficient leveraging Word2Vec and TextRank; and <code>wDTW-CD</code>, a pairwise event popularity time series alignment model matching different event phases adapted from Dynamic Time Warping. We also propose three metrics to interpret event popularity trends between pairwise social platforms.</p>
 <p>Experimental results on eighteen <code>real-world event datasets from an influential social network and a popular search engine</code> validate the effectiveness and applicability of our scheme. DancingLines is demonstrated to possess broad application potentials for discovering knowledge of various aspects related to events and different media.</p>
-<h2 id="Info"><a href="#Info" class="headerlink" title="Info."></a>Info.</h2><p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. International Conference on Database and Expert Systems Applications (DEXA), 2018, 2018.</p>
+<h2 id="info.">Info.</h2>
+<p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. International Conference on Database and Expert Systems Applications (DEXA), 2018, 2018.</p>
 <p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="external">[Download Paper]</a></p>
-<p>Poster in Zhiyuan Academic Festival:<br><!-- ![](/assets/dancinglineposter.jpg) --></p>
-<iframe src="../files/dancinglineposter.pdf" style="width:718px; height:1080px;" frameborder="0"></iframe>
-
+<p>Poster in Zhiyuan Academic Festival: <!-- ![](/assets/dancinglineposter.jpg) --></p>
+<iframe src="../files/dancinglineposter.pdf" style="width:718px; height:1080px;" frameborder="0">
+</iframe>
 <p><a href="../files/dancinglineposter.pdf">Download File</a></p>
 ]]></content>
       
@@ -683,10 +796,8 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))</script><h4 id="Experiments"><a href="#Exper
     <entry>
       <title><![CDATA[KDD2017 Paper Reading]]></title>
       <url>/archives/KDD_Paper_Reading.html</url>
-      <content type="html"><![CDATA[<p>After reading $8$ papers of KDD2017, I learn a lot of the advanced knowledge of data mining and machine learning. My finding is that in KDD2017, deep learning is widely used among data mining papers. I think this is a trending.</p>
-<p>The PPT I used to give the presentation:</p>
-<iframe src="../files/kdd_paper_intro.pdf" style="width:718px; height:500px;" frameborder="0"></iframe>
-
+      <content type="html"><![CDATA[<p>After reading <span class="math inline">\(8\)</span> papers of KDD2017, I learn a lot of the advanced knowledge of data mining and machine learning. My finding is that in KDD2017, deep learning is widely used among data mining papers. I think this is a trending.</p>
+<p>The PPT I used to give the presentation: <iframe src="../files/kdd_paper_intro.pdf" style="width:718px; height:500px;" frameborder="0"></iframe></p>
 <p><a href="../files/kdd_paper_intro.pdf">Download File</a></p>
 ]]></content>
       
@@ -716,39 +827,53 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))</script><h4 id="Experiments"><a href="#Exper
     <entry>
       <title><![CDATA[LINE ARTIST, A Multi-style Sketch to Painting Synthesis Scheme]]></title>
       <url>/archives/LineArtist.html</url>
-      <content type="html"><![CDATA[<h1 id="LINE-ARTIST-A-Multi-style-Sketch-to-Painting-Synthesis-Scheme"><a href="#LINE-ARTIST-A-Multi-style-Sketch-to-Painting-Synthesis-Scheme" class="headerlink" title="LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme."></a>LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme.</h1><p>Drawing a beautiful painting like what famous painters do is a dream of many people. LineArtist,  an interesting system, helps you with drawing a painting only with some semantic sketch.</p>
+      <content type="html"><![CDATA[<h1 id="line-artist-a-multi-style-sketch-to-painting-synthesis-scheme.">LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme.</h1>
+<p>Drawing a beautiful painting like what famous painters do is a dream of many people. LineArtist, an interesting system, helps you with drawing a painting only with some semantic sketch.</p>
 <p>What you have to do is to draw a sketch, take a photo of it and give it to our pre-trained model, then you can just wait for the painting to come out.</p>
 <p><strong>Paper: Jinning Li and Siqi Liu, Mengyao Cao. LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme.</strong></p>
 <p><a href="https://arxiv.org/abs/1803.06647" target="_blank" rel="external">[Download Paper]</a></p>
-<p><img src="/assets/firstPage.png" alt=""></p>
-<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/-ZkF9CT9ZZE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="figure">
+<img src="/assets/firstPage.png">
 
-<h2 id="ABSTRACT"><a href="#ABSTRACT" class="headerlink" title="ABSTRACT"></a>ABSTRACT</h2><p>Drawing a beautiful painting is a dream of many people since childhood. In this paper, we propose a novel scheme LINE ARTIST to synthesize artistic style paintings with freehand sketch images, leveraging the power of deep learning and advanced algorithm.</p>
+</div>
+<h2 id="video">Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZkF9CT9ZZE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<h2 id="abstract">ABSTRACT</h2>
+<p>Drawing a beautiful painting is a dream of many people since childhood. In this paper, we propose a novel scheme LINE ARTIST to synthesize artistic style paintings with freehand sketch images, leveraging the power of deep learning and advanced algorithm.</p>
 <p>Our scheme includes three models. The Sketch Image Extraction (SIE) model is applied to generate the train- ing data. It includes smoothing reality images and pen- cil sketch extraction. The Detailed Image Synthesis (DIS) model trains a conditional adversarial net to generate re- ality detailed information. The Adaptively Weighted Artis- tic Style Transfer (AWAST) model is capable to combine multiple style image with content via VGG19 network and PageRank algorithm. The appealing stylized images are then generated by optimization iterations.</p>
 <p>Experiments are operated on the Kaggle Cats dataset and The Oxford Buildings Dataset. Our synthesis results are artistic, beautiful and steadier. Real sketch tests prove that our scheme performs very well on reality environments. With different artist styles, our scheme can generate paintings of various styles. With our scheme, everyone can draw a beautiful picture only by drawing a sketch and then feeding it into our system.</p>
 <!-- ![](/assets/ourgoldbridge.jpg) -->
-<p> <img src="/assets/contentgoldbridge.jpg" width="300" alt="contentgoldbridge" align="center/"><img src="/assets/ourgoldbridge.jpg" width="300" alt="ourgoldbridge" align="center/"></p>
-<h2 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a>Source Code</h2><p>The code is published in github: <a href="https://github.com/jinningli/LineArtist" target="_blank" rel="external">https://github.com/jinningli/LineArtist</a></p>
-<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><pre><code>Python 3
+<p><img src="/assets/contentgoldbridge.jpg" width="300" alt="contentgoldbridge" align="center/"><img src="/assets/ourgoldbridge.jpg" width="300" alt="ourgoldbridge" align="center/"></p>
+<h2 id="source-code">Source Code</h2>
+<p>The code is published in github: <a href="https://github.com/jinningli/LineArtist" target="_blank" rel="external">https://github.com/jinningli/LineArtist</a></p>
+<h3 id="requirements">Requirements</h3>
+<pre><code>Python 3
 Pillow (4.2.1)
 numpy (1.13.3)
 scipy (0.19.0)
 opencv-python (3.3.0.10)
 tensorflow (1.3.0)
-Matlab
-</code></pre><h3 id="Generate-Dataset-Using-Sketch-Image-Extraction-SIE-Model"><a href="#Generate-Dataset-Using-Sketch-Image-Extraction-SIE-Model" class="headerlink" title="Generate Dataset Using Sketch Image Extraction(SIE) Model:"></a>Generate Dataset Using Sketch Image Extraction(SIE) Model:</h3><p>Put your image in the folder ./SIE/SourceImage, then run these command:</p>
+Matlab</code></pre>
+<h3 id="generate-dataset-using-sketch-image-extractionsie-model">Generate Dataset Using Sketch Image Extraction(SIE) Model:</h3>
+<p>Put your image in the folder ./SIE/SourceImage, then run these command:</p>
 <pre><code>$ cd ./SIE
-$ python3 ./preprocess.py
-</code></pre><p>Follow the instructions, dataset will be built in the folder <code>./SIE/Datasets</code></p>
-<h3 id="Synthesize-reality-image-using-Detailed-Image-Synthesis-DIS-Model"><a href="#Synthesize-reality-image-using-Detailed-Image-Synthesis-DIS-Model" class="headerlink" title="Synthesize reality image using Detailed Image Synthesis(DIS) Model:"></a>Synthesize reality image using Detailed Image Synthesis(DIS) Model:</h3><p>Please put your dataset inside the folder <code>./DIS/Datasets</code></p>
-<h4 id="Train"><a href="#Train" class="headerlink" title="Train"></a>Train</h4><pre><code>$ cd ./DIS
-$ python3 train.py --dataroot ./Datasets/[NAME] --model pix2pix --which_direction AtoB --name [NAME] --gpu_ids 0
-</code></pre><h4 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h4><pre><code>$ cd ./DIS
-$ python3 test.py --dataroot ./Datasets/[NAME] --model pix2pix --which_direction AtoB --name [NAME] --gpu_ids 0
-</code></pre><p>All the checkpoints will be saved in <code>./DIS/checkpoints</code>. The result will be saved in <code>./DIS/Results</code>.</p>
-<h3 id="Stylize-using-Adaptive-Weighted-Artist-Style-Transfer-AWAST-Model"><a href="#Stylize-using-Adaptive-Weighted-Artist-Style-Transfer-AWAST-Model" class="headerlink" title="Stylize using Adaptive Weighted Artist Style Transfer(AWAST) Model:"></a>Stylize using Adaptive Weighted Artist Style Transfer(AWAST) Model:</h3><pre><code>$ cd ./AWAST
-$ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
-</code></pre><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank" rel="external">junyanz/pix2pix</a></p>
+$ python3 ./preprocess.py</code></pre>
+<p>Follow the instructions, dataset will be built in the folder <code>./SIE/Datasets</code></p>
+<h3 id="synthesize-reality-image-using-detailed-image-synthesisdis-model">Synthesize reality image using Detailed Image Synthesis(DIS) Model:</h3>
+<p>Please put your dataset inside the folder <code>./DIS/Datasets</code></p>
+<h4 id="train">Train</h4>
+<pre><code>$ cd ./DIS
+$ python3 train.py --dataroot ./Datasets/[NAME] --model pix2pix --which_direction AtoB --name [NAME] --gpu_ids 0</code></pre>
+<h4 id="test">Test</h4>
+<pre><code>$ cd ./DIS
+$ python3 test.py --dataroot ./Datasets/[NAME] --model pix2pix --which_direction AtoB --name [NAME] --gpu_ids 0</code></pre>
+<p>All the checkpoints will be saved in <code>./DIS/checkpoints</code>. The result will be saved in <code>./DIS/Results</code>.</p>
+<h3 id="stylize-using-adaptive-weighted-artist-style-transferawast-model">Stylize using Adaptive Weighted Artist Style Transfer(AWAST) Model:</h3>
+<pre><code>$ cd ./AWAST
+$ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code></pre>
+<h3 id="reference">Reference</h3>
+<p><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank" rel="external">junyanz/pix2pix</a></p>
 <p><a href="https://github.com/anishathalye/neural-style" target="_blank" rel="external">anishathalye/neural-style</a></p>
 ]]></content>
       
@@ -776,31 +901,24 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[cv_opse_estimate]]></title>
       <url>/archives/cv-opse-estimate.html</url>
-      <content type="html"><![CDATA[<h1 id="2017-11-15"><a href="#2017-11-15" class="headerlink" title="2017.11.15"></a>2017.11.15</h1><ul>
-<li>CNN based method<ul>
+      <content type="html"><![CDATA[<h1 id="section">2017.11.15</h1>
+<ul>
+<li>CNN based method</li>
 <li>coordination regression</li>
 <li>heatmap</li>
-<li>stacked hourglass networks<h1 id="2017-11-22"><a href="#2017-11-22" class="headerlink" title="2017.11.22"></a>2017.11.22</h1></li>
-</ul>
-</li>
-<li><p>Scale</p>
-<ul>
+<li>stacked hourglass networks # 2017.11.22</li>
+<li>Scale</li>
 <li>openpose</li>
 <li>Town-down method</li>
-<li>recall 99%</li>
-</ul>
-</li>
-<li><p>STN: spartial transform network</p>
-<ul>
-<li>$\theta$ automatic parameter for bounding box</li>
-<li>$\theta^{-1}$ reverse transformation</li>
+<li><p>recall 99%</p></li>
+<li>STN: spartial transform network</li>
+<li><span class="math inline">\(\theta\)</span> automatic parameter for bounding box</li>
+<li><span class="math inline">\(\theta^{-1}\)</span> reverse transformation</li>
 <li>Symmetric STN: this network can be lazy. to avoid STN not transform the pose to the center, parallel SPPE</li>
 <li>distribution error differ by the detection tools: fastRCNN, SSD, etc.</li>
-<li>RMPE CMUpose</li>
-</ul>
-</li>
-<li><p>3D pose<br>-</p>
-</li>
+<li><p>RMPE CMUpose</p></li>
+<li>3D pose</li>
+<li></li>
 </ul>
 ]]></content>
       
@@ -826,9 +944,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[Unconstrained Optimization and Neural Network]]></title>
       <url>/archives/Unconstrained_Opt_NN.html</url>
-      <content type="html"><![CDATA[<h1 id="My-lecture-at-ANL-lab"><a href="#My-lecture-at-ANL-lab" class="headerlink" title="My lecture at ANL lab"></a>My lecture at ANL lab</h1><p>I give a lecture on the Chapter 13 of $An$ $Introductuon$ $to$ $Optimization$, <strong>Unconstrained Optimization and Neural Network</strong></p>
-<p>The pdf of my lecture:</p>
-<p><iframe src="../files/Chapter_13.pdf" style="width:718px; height:700px;" frameborder="0"></iframe><br><a href="../files/Chapter_13.pdf">Download File</a></p>
+      <content type="html"><![CDATA[<h1 id="my-lecture-at-anl-lab">My lecture at ANL lab</h1>
+<p>I give a lecture on the Chapter 13 of <span class="math inline">\(An\)</span> <span class="math inline">\(Introductuon\)</span> <span class="math inline">\(to\)</span> <span class="math inline">\(Optimization\)</span>, <strong>Unconstrained Optimization and Neural Network</strong></p>
+<p>The pdf of my lecture: <iframe src="../files/Chapter_13.pdf" style="width:718px; height:700px;" frameborder="0"></iframe> <a href="../files/Chapter_13.pdf">Download File</a></p>
 ]]></content>
       
         <categories>
@@ -853,20 +971,15 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[Segmentation - Computer Vision]]></title>
       <url>/archives/Computer-Vision-segmentation.html</url>
-      <content type="html"><![CDATA[<h1 id="Class"><a href="#Class" class="headerlink" title="Class"></a>Class</h1><ul>
+      <content type="html"><![CDATA[<h1 id="class">Class</h1>
+<ul>
 <li>image segmentation (non-semantic)</li>
 <li>graph-cut segmentation (non-semantic)</li>
 <li>semantic segmentation</li>
 <li>instance segmentation</li>
 </ul>
 <p>Object detection is just a bounding box, but segmentation will consider the shape, color, etc.</p>
-<p>segmentation to make semantic partition.</p>
-<h1 id="11-1"><a href="#11-1" class="headerlink" title="11.1"></a>11.1</h1><ul>
-<li>naive: fully connected CRF</li>
-<li>CNN</li>
-<li>classification-&gt; is a class? / which class?</li>
-<li>deconvolution network</li>
-</ul>
+<p>segmentation to make semantic partition. # 11.1 - naive: fully connected CRF - CNN - classification-&gt; is a class? / which class? - deconvolution network</p>
 ]]></content>
       
         <categories>
@@ -893,31 +1006,42 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[Project - Computer Vision]]></title>
       <url>/archives/Computer-Vision-Project.html</url>
-      <content type="html"><![CDATA[<h1 id="2017-10-17"><a href="#2017-10-17" class="headerlink" title="2017.10.17"></a>2017.10.17</h1><p>In course CS348, Computer Vision, our coursework is to write a paper and submit it to a conference.</p>
+      <content type="html"><![CDATA[<h1 id="section">2017.10.17</h1>
+<p>In course CS348, Computer Vision, our coursework is to write a paper and submit it to a conference.</p>
 <p>My Partners are Siqi Liu and Mengyao Cao. After discussion, we decided our draft topic as:</p>
 <p>A Painting AI based on Cascaded Refinment Network</p>
 <p>The PPT illustrates our scheme:</p>
-<iframe src="../files/Computer Vision.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
-
+<iframe src="../files/Computer Vision.pdf" style="width:718px; height:700px;" frameborder="0">
+</iframe>
 <p><a href="../files/Computer Vision.pdf">Download File</a></p>
 <p>The final topic will be confirm in tomorrow’s class.</p>
 <p>Wish our project a brilliant success!</p>
-<h1 id="2017-10-25"><a href="#2017-10-25" class="headerlink" title="2017.10.25"></a>2017.10.25</h1><p>This time, I read a paper named <strong>A Neural Algorithm of Artistic Style</strong>.</p>
-<p>This paper is about generating a picture with given real picture and a Painting. The generated picture will have both the feature of<br>the painting and the initial picture.</p>
-<p>For example, this is the painting used:<br><img src="/assets/rain-princess.jpg" alt="rain-princess"></p>
+<h1 id="section-1">2017.10.25</h1>
+<p>This time, I read a paper named <strong>A Neural Algorithm of Artistic Style</strong>.</p>
+<p>This paper is about generating a picture with given real picture and a Painting. The generated picture will have both the feature of the painting and the initial picture.</p>
+<p>For example, this is the painting used: <img src="/assets/rain-princess.jpg" alt="rain-princess"></p>
 <p>Then, the Algorithm will produce a picture like this:</p>
-<p><img src="/assets/dome-afremov.png" alt="dome-afremov"></p>
+<div class="figure">
+<img src="/assets/dome-afremov.png" alt="dome-afremov">
+<p class="caption">dome-afremov</p>
+</div>
 <p>It is so amazing!!</p>
-<h3 id="The-paper"><a href="#The-paper" class="headerlink" title="The paper"></a>The paper</h3><p>The method of the paper is:</p>
+<h3 id="the-paper">The paper</h3>
+<p>The method of the paper is:</p>
 <blockquote>
-<p>Use the VGG-19 network to process the initial picture, noted by $\mathbf{p}$, and the painting, noted by $\mathbf{a}$, then at each layer, the nerwork will have some feature maps corresponding to $\mathbf{p}$ and $\mathbf{a}$.</p>
-<p>Input a noise picture $\mathbf{x}$ to the network, also, $\mathbf{x}$ will also have some featuremaps at every layers.</p>
-<p>Define a loss function between $\mathbf{x}$ and $\mathbf{p}$, called content loss. And a loss function between $\mathbf{x}$ and $\mathbf{a}$, called style loss.Then, the author define a compound loss function:</p>
+<p>Use the VGG-19 network to process the initial picture, noted by <span class="math inline">\(\mathbf{p}\)</span>, and the painting, noted by <span class="math inline">\(\mathbf{a}\)</span>, then at each layer, the nerwork will have some feature maps corresponding to <span class="math inline">\(\mathbf{p}\)</span> and <span class="math inline">\(\mathbf{a}\)</span>.</p>
 </blockquote>
-<script type="math/tex; mode=display">L_{total}(\mathbf{p}, \mathbf{a}, \mathbf{x})=\alpha L_{content}(\mathbf{x}, \mathbf{p}) + \beta L_{style}(\mathbf{x}, \mathbf{a})</script><blockquote>
-<p>Using the optimization method to maximize the $L_{total}$, and with this process, fix the noise picture $\mathbf{x}$. Then, the noise picture will become the finally result.</p>
+<blockquote>
+<p>Input a noise picture <span class="math inline">\(\mathbf{x}\)</span> to the network, also, <span class="math inline">\(\mathbf{x}\)</span> will also have some featuremaps at every layers.</p>
 </blockquote>
-<p>We can actually change the ratio between $\alpha$ and $\beta$ to change the ratio of content and style.</p>
+<blockquote>
+<p>Define a loss function between <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{p}\)</span>, called content loss. And a loss function between <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{a}\)</span>, called style loss.Then, the author define a compound loss function:</p>
+</blockquote>
+<p><span class="math display">\[L_{total}(\mathbf{p}, \mathbf{a}, \mathbf{x})=\alpha L_{content}(\mathbf{x}, \mathbf{p}) + \beta L_{style}(\mathbf{x}, \mathbf{a})\]</span></p>
+<blockquote>
+<p>Using the optimization method to maximize the <span class="math inline">\(L_{total}\)</span>, and with this process, fix the noise picture <span class="math inline">\(\mathbf{x}\)</span>. Then, the noise picture will become the finally result.</p>
+</blockquote>
+<p>We can actually change the ratio between <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> to change the ratio of content and style.</p>
 ]]></content>
       
         <categories>
@@ -946,40 +1070,38 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[Memory Management in Linux]]></title>
       <url>/archives/system_note_1017.html</url>
-      <content type="html"><![CDATA[<h2 id="Memory-in-Linux"><a href="#Memory-in-Linux" class="headerlink" title="Memory in Linux"></a>Memory in Linux</h2><h3 id="Page-Allocation"><a href="#Page-Allocation" class="headerlink" title="Page Allocation"></a>Page Allocation</h3><p>Linux uses the <strong>Buddy algorithm</strong> to effectively allocate and deallocate blocks of pages.</p>
+      <content type="html"><![CDATA[<h2 id="memory-in-linux">Memory in Linux</h2>
+<h3 id="page-allocation">Page Allocation</h3>
+<p>Linux uses the <strong>Buddy algorithm</strong> to effectively allocate and deallocate blocks of pages.</p>
 <p>The page allocation code attempts to allocate a block of one or more physical pages. Pages are allocated in blocks which are powers of 2 in size. That means that it can allocate a block 1 page, 2 pages, 4 pages and so on. So long as there are enough free pages in the system to grant this request (nr_free_pages &gt; min_free_pages) the allocation code will search the free_area for a block of pages of the size requested. Each element of the free_area has a map of the allocated and free blocks of pages for that sized block. For example, element 2 of the array has a memory map that describes free and allocated blocks each of 4 pages long.</p>
 <p>The allocation algorithm first searches for blocks of pages of the size requested. It follows the chain of free pages that is queued on the list element of the free_area data structure. If no blocks of pages of the requested size are free, blocks of the next size (which is twice that of the size requested) are looked for. This process continues until all of the free_area has been searched or until a block of pages has been found. If the block of pages found is larger than that requested it must be broken down until there is a block of the right size. Because the blocks are each a power of 2 pages big then this breaking down process is easy as you simply break the blocks in half. The free blocks are queued on the appropriate queue and the allocated block of pages is returned to the caller.</p>
-<p><img src="/assets/free-area.gif" alt=""><br>Figure 3.4: The free_area data structure</p>
+<p><img src="/assets/free-area.gif"> Figure 3.4: The free_area data structure</p>
 <blockquote>
 <p>4 means 4, 5, 6, 7 is free, size = 4 page</p>
+</blockquote>
+<blockquote>
 <p>if page_1 become free, combine with page_0 to be size of 2, page_1 and page_0 is good buddy instead of page_2</p>
+</blockquote>
+<blockquote>
 <p>use map to judge if they’re buddy</p>
 </blockquote>
-<p>For example, in Figure 3.4 if a block of 2 pages was requested, the first block of 4 pages (starting at page frame number 4) would be broken into two 2 page blocks. The first, starting at page frame number 4 would be returned to the caller as the allocated pages and the second block, starting at page frame number 6 would be queued as a free block of 2 pages onto element 1 of the free_area array.</p>
-<h3 id="3-5-Memory-Mapping"><a href="#3-5-Memory-Mapping" class="headerlink" title="3.5  Memory Mapping"></a>3.5  Memory Mapping</h3><blockquote>
-<p>who need virtual?</p>
-<ul>
-<li>loading program</li>
-<li>malloc</li>
-<li>stack</li>
-<li>code dynamic linking</li>
-<li>mmap</li>
-</ul>
-</blockquote>
+<p>For example, in Figure 3.4 if a block of 2 pages was requested, the first block of 4 pages (starting at page frame number 4) would be broken into two 2 page blocks. The first, starting at page frame number 4 would be returned to the caller as the allocated pages and the second block, starting at page frame number 6 would be queued as a free block of 2 pages onto element 1 of the free_area array. ### 3.5 Memory Mapping &gt; who need virtual? &gt; - loading program &gt; - malloc &gt; - stack &gt; - code dynamic linking &gt; - mmap</p>
 <ul>
 <li>Find : task_struct -&gt; mm_struct -&gt; vm_area_struct -&gt; page table(页表) -&gt; page</li>
 </ul>
 <p>When an image is executed, the contents of the executable image must be brought into the processes virtual address space. The same is also true of any shared libraries that the executable image has been linked to use. The executable file is not actually brought into physical memory, instead it is merely linked into the processes virtual memory. Then, as the parts of the program are referenced by the running application, the image is brought into memory from the executable image. This linking of an image into a processes virtual address space is known as memory mapping.</p>
-<p><img src="/assets/vm_area.gif" alt="vm_area"><br>Figure 3.5: Areas of Virtual Memory</p>
+<p><img src="/assets/vm_area.gif" alt="vm_area"> Figure 3.5: Areas of Virtual Memory</p>
 <p>Every processes virtual memory is represented by an mm_struct data structure. This contains information about the image that it is currently executing (for example bash) and also has pointers to a number of vm_area_struct data structures. Each vm_area_struct data structure describes the start and end of the area of virtual memory, the processes access rights to that memory and a set of operations for that memory. These operations are a set of routines that Linux must use when manipulating this area of virtual memory. For example, one of the virtual memory operations performs the correct actions when the process has attempted to access this virtual memory but finds (via a page fault) that the memory is not actually in physical memory. This operation is the nopage operation. The nopage operation is used when Linux demand pages the pages of an executable image into memory.</p>
 <p>When an executable image is mapped into a processes virtual address a set of vm_area_struct data structures is generated. Each vm_area_struct data structure represents a part of the executable image; the executable code, initialized data (variables), unitialized data and so on. Linux supports a number of standard virtual memory operations and as the vm_area_struct data structures are created, the correct set of virtual memory operations are associated with them.</p>
-<h3 id="The-Linux-Page-Cache"><a href="#The-Linux-Page-Cache" class="headerlink" title="The Linux Page Cache"></a>The Linux Page Cache</h3><p><img src="/assets/page-cache.gif" alt="page-cache"><br>Figure 3.6: The Linux Page Cache</p>
-<p>The role of the Linux page cache is to speed up access to files on disk. Memory mapped files are read a page at a time and these pages are stored in the page cache. Figure  3.6 shows that the page cache consists of the page_hash_table, a vector of pointers to mem_map_t data structures.</p>
-<p>Each file in Linux is identified by a VFS inode data structure (described in Chapter  filesystem-chapter) and each VFS inode is unique and fully describes one and only one file. The index into the page table is derived from the file’s VFS inode and the offset into the file.</p>
+<h3 id="the-linux-page-cache">The Linux Page Cache</h3>
+<p><img src="/assets/page-cache.gif" alt="page-cache"> Figure 3.6: The Linux Page Cache</p>
+<p>The role of the Linux page cache is to speed up access to files on disk. Memory mapped files are read a page at a time and these pages are stored in the page cache. Figure 3.6 shows that the page cache consists of the page_hash_table, a vector of pointers to mem_map_t data structures.</p>
+<p>Each file in Linux is identified by a VFS inode data structure (described in Chapter filesystem-chapter) and each VFS inode is unique and fully describes one and only one file. The index into the page table is derived from the file’s VFS inode and the offset into the file.</p>
 <p>Whenever a page is read from a memory mapped file, for example when it needs to be brought back into memory during demand paging, the page is read through the page cache. If the page is present in the cache, a pointer to the mem_map_t data structure representing it is returned to the page fault handling code. Otherwise the page must be brought into memory from the file system that holds the image. Linux allocates a physical page and reads the page from the file on disk.</p>
 <p>If it is possible, Linux will initiate a read of the next page in the file. This single page read ahead means that if the process is accessing the pages in the file serially, the next page will be waiting in memory for the process.</p>
 <p>Over time the page cache grows as images are read and executed. Pages will be removed from the cache as they are no longer needed, say as an image is no longer being used by any process. As Linux uses memory it can start to run low on physical pages. In this case Linux will reduce the size of the page cache.</p>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="http://www.tldp.org/LDP/tlk/" target="_blank" rel="external">The Linux Kernel</a></p>
+<h3 id="reference">Reference</h3>
+<p><a href="http://www.tldp.org/LDP/tlk/" target="_blank" rel="external">The Linux Kernel</a></p>
 ]]></content>
       
         <categories>
@@ -1006,190 +1128,192 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[TOEFL Note]]></title>
       <url>/archives/toefl-note-1017.html</url>
-      <content type="html"><![CDATA[<h1 id="Toelf-Test"><a href="#Toelf-Test" class="headerlink" title="Toelf Test"></a>Toelf Test</h1><p>I have applied for the toefl test on Dec 2 in SEIEE, SJTU.<br>This article is a note for my preparing of it.<br><!-- !(toelf_note_1017)(/assets/toelf_note_1017.jpeg) --></p>
-<h1 id="Vocabulary-Book"><a href="#Vocabulary-Book" class="headerlink" title="Vocabulary Book"></a>Vocabulary Book</h1><p>abrupt           adj. 生硬的；突然的；唐突的；陡峭的</p>
-<p>erupt            vi. 爆发；喷出；发疹；长牙<br>                 vt. 爆发；喷出</p>
-<p>rupture          n. 破裂；决裂；疝气<br>                 vt. 使破裂；断绝；发生疝<br>                 vi. 破裂；发疝气</p>
-<p>confess          vi. 承认；坦白；忏悔；供认<br>                 vt. 承认；坦白；忏悔；供认</p>
-<p>accelerate       vt. 使……加快；使……增速<br>                 vi. 加速；促进；增加</p>
-<p>hang on          坚持下去；不挂断；握住不放</p>
-<p>abscond          vi. 逃匿，潜逃；避债</p>
-<p>appealing        v. 恳求（appeal的ing形式）；将…上诉<br>                 adj. 吸引人的；动人的；引起兴趣的；恳求似的</p>
-<p>adjacent         adj. 邻近的，毗连的</p>
-<p>adverse          adj. 不利的；相反的；敌对的（名词adverseness，副词adversely）</p>
-<p>agglomerate      n. 团块；[岩] 集块岩；附聚物<br>                 adj. 凝聚的；成团的，结块的<br>                 vt. 使结块；使成团</p>
-<p>arrogant         adj. 自大的，傲慢的</p>
-<p>minister         n. 部长；大臣；牧师<br>                 vi. 执行牧师职务；辅助或伺候某人</p>
-<p>additive         n. 添加剂，添加物<br>                 adj. 附加的；[数] 加法的</p>
-<p>aggravate        vt. 加重；使恶化；激怒</p>
-<p>unfavorable      adj. 不宜的；令人不快的；不顺利的</p>
-<p>alteration       n. 修改，改变；变更</p>
-<p>altercation      n. 争执</p>
-<p>loathsome        adj. 令人憎恶的；令人呕吐的</p>
-<p>excessively      adv. 过分地；极度</p>
-<p>exclusively      adv. 唯一地；专有地；排外地</p>
-<p>amount to        相当于，总计为</p>
-<p>banner           n. 横幅图片的广告模式<br>                 n. 旗帜，横幅,标语<br>                 n. 人名(英、德、罗)班纳</p>
-<p>gadget           n. 小玩意；小器具；小配件；诡计</p>
-<p>obstruction      n. 障碍；阻碍；妨碍</p>
-<p>open up          打开；开发；开始；展示，揭露</p>
-<p>bode             vt. 预示；为…的兆头<br>                 v. 停留；继续；遭到（bide的过去式）<br>                 vi. 预示<br>                 n. (Bode)人名；(英、法、德、意、俄、尼日利、瑞典)博德</p>
-<p>abundant         adj. 丰富的；充裕的；盛产</p>
-<p>abound           vi. 富于；充满</p>
-<p>calcification    n. 钙化；石灰化</p>
-<p>circulation      n. 流通，传播；循环；发行量</p>
-<p>collide          vi. 碰撞；抵触，冲突<br>                 vt. 使碰撞；使相撞</p>
-<p>cohesion         n. 凝聚；结合；[力] 内聚力</p>
-<p>adherence        n. 坚持；依附；忠诚</p>
-<p>compensation     n. 补偿；报酬；赔偿金</p>
-<p>reprehend        n. 责备<br>                 vt. 申斥；指责</p>
-<p>concede          vi. 让步<br>                 vt. 承认；退让；给予，容许</p>
-<p>compromise       n. 妥协，和解；折衷<br>                 vt. 妥协；危害<br>                 vi. 妥协；让步</p>
-<p>diffusion        n. 扩散，传播；[光] 漫射</p>
-<p>distraction      n. 注意力分散；消遣；心烦意乱</p>
-<p>discern          vt. 识别；领悟，认识<br>                 vi. 看清楚，辨别</p>
-<p>confined         v. 限制（confine的过去式和过去分词）<br>                 adj. 狭窄的；幽禁的；有限制的；在分娩中的</p>
-<p>rectified        v. 调整；矫正；精馏（rectify的过去分词形式）<br>                 adj. 改正的，整流的；精馏过的</p>
-<p>refined          adj. [油气][化工][冶] 精炼的；精确的；微妙的；有教养的</p>
-<p>inconspicuous    adj. 不显眼的；不引人注意的；（花）不显著的</p>
-<p>considerate      adj. 体贴的；体谅的；考虑周到的</p>
-<p>excessive        adj. 过多的，极度的；过分的</p>
-<p>persist          vi. 存留，坚持；持续，固执<br>                 vt. 坚持说，反复说</p>
-<p>divert           vt. 转移；使…欢娱；使…转向<br>                 vi. 转移<br>                 n. (Divert)人名；(法)迪韦尔</p>
-<p>vertigo          n. 晕头转向，[临床] 眩晕</p>
-<p>decay            n. 衰退，[核] 衰减；腐烂，腐朽<br>                 vt. 使腐烂，使腐败；使衰退，使衰落<br>                 vi. 衰退，[核] 衰减；腐烂，腐朽<br>                 n. (Decay)人名；(法)德凯</p>
-<p>embellish        vt. 修饰；装饰；润色<br>                 vi. 装饰起来；加以润色</p>
-<p>depletion        n. 消耗；损耗；放血</p>
-<p>completion       n. 完成，结束；实现</p>
-<p>deposit          n. 存款；押金；订金；保证金；沉淀物<br>                 vt. 使沉积；存放<br>                 vi. 沉淀</p>
-<p>sediment         n. 沉积；沉淀物</p>
-<p>impose           vt. 强加；征税；以…欺骗<br>                 vi. 利用；欺骗；施加影响</p>
-<p>postulate        n. 基本条件；假定<br>                 vt. 假定；要求；视…为理所当然</p>
-<p>deprive of       vt. 剥夺；失去</p>
-<p>strip            n. 带；条状；脱衣舞<br>                 vt. 剥夺；剥去；脱去衣服<br>                 vi. 脱去衣服</p>
-<p>diffused         adj. 散布的，扩散的；普及的<br>                 v. 散布，传播（diffuse的过去分词）；使分散</p>
-<p>fusion           n. 融合；熔化；熔接；融合物；[物] 核聚变</p>
-<p>dispersed        v. 分散；传播（disperse的过去分词）<br>                 adj. 散布的；被分散的；被驱散的</p>
-<p>disclaim         vt. 否认，拒绝；放弃，弃权；拒绝承认<br>                 vi. 否认；放弃；弃权</p>
-<p>exclaim          vt. 大声说出<br>                 vi. 呼喊，惊叫；大声叫嚷</p>
-<p>proclaim         vt. 宣告，公布；声明；表明；赞扬</p>
-<p>disdain          n. 蔑视<br>                 vt. 鄙弃</p>
-<p>scorn            n. 轻蔑；嘲笑；藐视的对象<br>                 vt. 轻蔑；藐视；不屑做<br>                 vi. 表示轻蔑；表示鄙视</p>
-<p>disruption       n. 破坏，毁坏；分裂，瓦解</p>
-<p>diverse          adj. 不同的；多种多样的；变化多的</p>
-<p>eliminate        vt. 消除；排除</p>
-<p>subliminal       n. 潜意识；阈下意识<br>                 adj. [生理] 阈下的；潜在意识的；微小得难以察觉的</p>
-<p>immerge          vi. 浸入；埋头；隐没</p>
-<p>submerge         vt. 淹没；把…浸入；沉浸<br>                 vi. 淹没；潜入水中；湮没</p>
-<p>encroach         vi. 蚕食，侵占</p>
-<p>extruded         adj. 压出的；受挤压的<br>                 v. 使…喷出；使伸出；驱逐（extrude的过去分词）</p>
-<p>invade           vt. 侵略；侵袭；侵扰；涌入<br>                 vi. 侵略；侵入；侵袭；侵犯</p>
-<p>preface          n. 前言；引语<br>                 vt. 为…加序言；以…开始<br>                 vi. 作序</p>
-<p>refusal          n. 拒绝；优先取舍权；推却；取舍权</p>
-<p>discharge        n. 排放；卸货；解雇<br>                 vt. 解雇；卸下；放出；免除<br>                 vi. 排放；卸货；流出</p>
-<p>improvise        vt. 即兴创作；即兴表演；临时做；临时提供<br>                 vi. 即兴创作；即兴表演；临时凑合</p>
-<p>excavate         vt. 挖掘；开凿<br>                 vi. 发掘；细查</p>
-<p>expedite         vt. 加快；促进；发出<br>                 adj. 畅通的；迅速的；方便的</p>
-<p>adversely        adv. 不利地；逆地；反对地</p>
-<p>expedition       n. 远征；探险队；迅速</p>
-<p>ordinance        n. 条例；法令；圣餐礼</p>
-<p>grant            n. 拨款；[法] 授予物<br>                 vt. 授予；允许；承认<br>                 vi. 同意<br>                 n. (Grant)人名；(瑞典、葡、西、俄、罗、英、塞、德、意)格兰特；(法)格朗</p>
-<p>prominence       n. 突出；显著；突出物；卓越</p>
-<p>estate           n. 房地产；财产；身份</p>
-<p>far-reaching     adj. 深远的；广泛的；伸至远处的</p>
-<p>fertility        n. 多产；肥沃；[农经] 生产力；丰饶</p>
-<p>sterility        n. [泌尿] 不育；[妇产] 不孕；无菌；不毛；内容贫乏</p>
-<p>flourish         n. 兴旺；茂盛；挥舞；炫耀；华饰<br>                 vi. 繁荣，兴旺；茂盛；活跃；处于旺盛时期<br>                 vt. 夸耀；挥舞</p>
-<p>fluctuate        vi. 波动；涨落；动摇<br>                 vt. 使波动；使动摇</p>
-<p>prosperous       adj. 繁荣的；兴旺的</p>
-<p>actuate          vt. 开动（机器等）；促使，驱使；激励（人等）</p>
-<p>demote           vt. 使降级；使降职</p>
-<p>swing            n. 摇摆；摆动；秋千；音律；涨落<br>                 adj. 旋转的；悬挂的；强节奏爵士音乐的<br>                 vt. 使旋转；挥舞；悬挂<br>                 vi. 摇摆；转向；悬挂；大摇大摆地行走<br>                 n. (Swing)人名；(英、瑞典)斯温</p>
-<p>distinct from    vt. 与……不同</p>
-<p>draw upon        利用；开出；总结</p>
-<p>early on         在早期；从事，经营；继续下去</p>
-<p>bidden           v. [贸易] 出价（bid的过去分词）</p>
-<p>forebode         v. 预示；预感；预兆</p>
-<p>foul             n. 犯规；缠绕<br>                 adj. 犯规的；邪恶的；污秽的；淤塞的<br>                 vt. 犯规；弄脏；淤塞；缠住，妨害<br>                 adv. 违反规则地，不正当地<br>                 vi. 犯规；腐烂；缠结</p>
-<p>disgusting       adj. 令人厌恶的<br>                 令人极不能接受的</p>
-<p>frontier         n. 前沿；边界；国境<br>                 adj. 边界的；开拓的<br>                 n. (Frontier)人名；(法)弗龙捷</p>
-<p>preface          n. 前言；引语<br>                 vt. 为…加序言；以…开始<br>                 vi. 作序</p>
-<p>exaggerate       vt. 使扩大；使增大<br>                 vi. 夸大；夸张</p>
-<p>get through to   使理解；打通电话</p>
-<p>haul             n. 拖，拉；用力拖拉；努力得到的结果；捕获物；一网捕获的鱼量；拖运距离<br>                 vt. 拖运；拖拉<br>                 vi. 拖，拉；改变主意；改变方向<br>                 n. (Haul)人名；(德)豪尔</p>
-<p>drought          n. 干旱；缺乏<br>                 n. (Drought)人名；(英)德劳特</p>
-<p>headquarter      vt. 在…设总部<br>                 vi. 设立总部</p>
-<p>account for      对…负有责任；对…做出解释；说明……的原因；导致；（比例）占</p>
-<p>open up          打开；开发；开始；展示，揭露</p>
-<p>hypothesize      vt. 假设，假定<br>                 vi. 假设，假定</p>
-<p>hypotension      n. 低血压，血压过低</p>
-<p>ceased           v. 停止（cease的过去式及过去分词形式）；中止；中断</p>
-<p>industrialize    vt. 使工业化<br>                 vi. 实现工业化</p>
-<p>gratify          vt. 使满足；使满意，使高兴</p>
-<p>rectify          vt. 改正；精馏；整流</p>
-<p>immaturity       n. 未成熟；粗糙；未臻完美；不完全</p>
-<p>immaculate       adj. 完美的；洁净的；无瑕疵的</p>
-<p>incompatibility  n. 不相容；不协调；不一致</p>
-<p>landscape        n. 风景；风景画；景色；山水画；乡村风景画；地形；（文件的）横向打印格式<br>                 vt. 对…做景观美化，给…做园林美化；从事庭园设计<br>                 vi. 美化（环境等），使景色宜人；从事景观美化工作，做庭园设计师</p>
-<p>scratch          n. 擦伤；抓痕；刮擦声；乱写<br>                 vt. 抓；刮；挖出；乱涂<br>                 adj. 打草稿用的；凑合的；碰巧的<br>                 vi. 抓；搔；发刮擦声；勉强糊口；退出比赛</p>
-<p>autonomously     adv. 自治地；独立自主地</p>
-<p>incrementally    adv. 递增地；增值地</p>
-<p>flaw             n. 瑕疵，缺点；一阵狂风；短暂的风暴；裂缝，裂纹<br>                 v. 使生裂缝，使有裂纹；使无效；使有缺陷<br>                 vi. 生裂缝；变的有缺陷</p>
-<p>colossal         adj. 巨大的；异常的，非常的</p>
-<p>anticipate       vt. 预期，期望；占先，抢先；提前使用</p>
-<p>trajectory       n. [物] 轨道，轨线；[航][军] 弹道</p>
-<p>relevance        n. 关联；适当；中肯</p>
-<p>archaeology      n. 考古学<br>                 考古学的</p>
-<p>sheer            n. 偏航；透明薄织物<br>                 adj. 绝对的；透明的；峻峭的；纯粹的<br>                 vt. 使偏航；使急转向<br>                 adv. 完全；陡峭地<br>                 vi. 偏航</p>
-<p>measurable       adj. 可测量的；重要的；重大的</p>
-<p>conversely       adv. 相反地</p>
-<p>silts            n. 砂浆；泥浆（silt的复数）<br>                 v. 淤积；使…淤塞（silt的第三人称单数）</p>
-<p>deposite         放置<br>                 沉积<br>                 存款</p>
-<p>erosion          n. 侵蚀，腐蚀</p>
-<p>crucial          adj. 重要的；决定性的；定局的；决断的</p>
-<p>liberty          n. 自由；许可；冒失<br>                 n. (Liberty)人名；(英)利伯蒂</p>
-<p>autonomy         n. 自治，自治权</p>
-<p>competent        adj. 胜任的；有能力的；能干的；足够的</p>
-<p>chaos            abbr. 恐惧邀请综合征（Can’t Have Anyone Over Syndrome）</p>
-<p>discipline       n. 学科；纪律；训练；惩罚<br>                 vt. 训练，训导；惩戒</p>
-<p>manipulative     adj. 巧妙处理的；操纵的，用手控制的</p>
-<p>interfere        vi. 干涉；妨碍；打扰<br>                 vt. 冲突；介入</p>
-<p>monitors         n. [自] 监视器，监控器；情况通报（monitor复数形式）</p>
-<p>sensorial        adj. 知觉的；感觉的</p>
-<p>fascinating      adj. 迷人的；吸引人的；使人神魂颠倒的<br>                 v. 使…着迷；使…陶醉（fascinate的ing形式）</p>
-<p>mud              n. 泥；诽谤的话；无价值的东西<br>                 vt. 弄脏；用泥涂<br>                 vi. 钻入泥中</p>
-<p>contract         n. 合同；婚约<br>                 vt. 感染；订约；使缩短<br>                 vi. 收缩；感染；订约</p>
-<p>shrink           vi. 收缩；畏缩<br>                 n. 收缩；畏缩；&lt;俚&gt;精神病学家<br>                 vt. 使缩小，使收缩</p>
-<p>slump            vt. 使降低；使衰落；使倒下<br>                 n. 衰退；暴跌；消沉<br>                 vi. 下降，衰落；倒下；大幅度下降，暴跌</p>
-<p>incline          n. 倾斜；斜面；斜坡<br>                 vt. 使倾斜；使倾向于<br>                 vi. 倾斜；倾向；易于</p>
-<p>gently           adv. 轻轻地；温柔地，温和地</p>
-<p>terrain          n. [地理] 地形，地势；领域；地带</p>
-<p>trek             n. 艰苦跋涉<br>                 vi. 艰苦跋涉<br>                 vt. （牛）拉（货车）；搬运<br>                 n. (Trek)人名；(阿拉伯)特里克</p>
-<p>surmise          n. 推测；猜度<br>                 vt. 猜测；推测<br>                 vi. 猜测；认为</p>
-<p>dump             n. 垃圾场；仓库；无秩序地累积<br>                 vt. 倾倒；倾卸；丢下，卸下；摆脱，扔弃；倾销<br>                 vi. 倒垃圾；突然跌倒或落下；卸货；转嫁（责任等）<br>                 n. （英）邓普（人名，男子教名Humphrey、Humphry的昵称）</p>
-<p>skeuomorphs      n. (与原物同形但材料不同的)同形物</p>
-<p>suitability      n. 适合；适当；相配</p>
-<p>problematic      adj. 问题的；有疑问的；不确定的</p>
-<p>spectacular      adj. 壮观的，惊人的；公开展示的</p>
-<p>portion          n. 部分；一份；命运<br>                 vt. 分配；给…嫁妆</p>
-<p>beverages        n. 饮料；酒水；饮料类（beverage的复数形式）</p>
-<p>spices           n. 香味料，调味料（spice的复数）</p>
-<p>Internally       adv. 内部地；国内地；内在地</p>
-<p>endowed          v. 赋予；捐赠</p>
-<p>domestic         n. 国货；佣人<br>                 adj. 国内的；家庭的；驯养的；一心只管家务的</p>
-<p>rural            adj. 农村的，乡下的；田园的，有乡村风味的</p>
-<p>cottage          n. 小屋；村舍；（农舍式的）小别墅</p>
-<p>peasants         农民</p>
-<p>conducive        adj. 有益的；有助于…的</p>
-<p>entrepreneurs    n. 企业家（entrepreneur的复数）</p>
-<p>precursor        n. 先驱，前导</p>
-<p>diversification  n. 多样化；变化</p>
-<p>breed            n. [生物] 品种；种类，类型<br>                 vt. 繁殖；饲养；养育，教育；引起<br>                 vi. 繁殖；饲养；产生<br>                 n. (Breed)人名；(英)布里德</p>
-<p>livestock        n. 牲畜；家畜</p>
-<p>burgeon          vt. 萌芽, 发芽<br>                 n. 芽, 嫩枝<br>                 vi. 萌芽, 发芽</p>
-<p>pastures         牧草</p>
-<p>parcels          [邮] 包裹<br>                 小包（parcel的名词复数）<br>                 打包<br>                 捆扎（parcel的第三人称单数）</p>
-<p>enclosures       n. 附件（enclosure的复数）；音箱；[建] 围墙；围绕</p>
+      <content type="html"><![CDATA[<h1 id="toelf-test">Toelf Test</h1>
+<p>I have applied for the toefl test on Dec 2 in SEIEE, SJTU. This article is a note for my preparing of it. <!-- !(toelf_note_1017)(/assets/toelf_note_1017.jpeg) --></p>
+<h1 id="vocabulary-book">Vocabulary Book</h1>
+<p>abrupt adj. 生硬的；突然的；唐突的；陡峭的</p>
+<p>erupt vi. 爆发；喷出；发疹；长牙 vt. 爆发；喷出</p>
+<p>rupture n. 破裂；决裂；疝气 vt. 使破裂；断绝；发生疝 vi. 破裂；发疝气</p>
+<p>confess vi. 承认；坦白；忏悔；供认 vt. 承认；坦白；忏悔；供认</p>
+<p>accelerate vt. 使……加快；使……增速 vi. 加速；促进；增加</p>
+<p>hang on 坚持下去；不挂断；握住不放</p>
+<p>abscond vi. 逃匿，潜逃；避债</p>
+<p>appealing v. 恳求（appeal的ing形式）；将…上诉 adj. 吸引人的；动人的；引起兴趣的；恳求似的</p>
+<p>adjacent adj. 邻近的，毗连的</p>
+<p>adverse adj. 不利的；相反的；敌对的（名词adverseness，副词adversely）</p>
+<p>agglomerate n. 团块；[岩] 集块岩；附聚物 adj. 凝聚的；成团的，结块的 vt. 使结块；使成团</p>
+<p>arrogant adj. 自大的，傲慢的</p>
+<p>minister n. 部长；大臣；牧师 vi. 执行牧师职务；辅助或伺候某人</p>
+<p>additive n. 添加剂，添加物 adj. 附加的；[数] 加法的</p>
+<p>aggravate vt. 加重；使恶化；激怒</p>
+<p>unfavorable adj. 不宜的；令人不快的；不顺利的</p>
+<p>alteration n. 修改，改变；变更</p>
+<p>altercation n. 争执</p>
+<p>loathsome adj. 令人憎恶的；令人呕吐的</p>
+<p>excessively adv. 过分地；极度</p>
+<p>exclusively adv. 唯一地；专有地；排外地</p>
+<p>amount to 相当于，总计为</p>
+<p>banner n. 横幅图片的广告模式 n. 旗帜，横幅,标语 n. 人名(英、德、罗)班纳</p>
+<p>gadget n. 小玩意；小器具；小配件；诡计</p>
+<p>obstruction n. 障碍；阻碍；妨碍</p>
+<p>open up 打开；开发；开始；展示，揭露</p>
+<p>bode vt. 预示；为…的兆头 v. 停留；继续；遭到（bide的过去式） vi. 预示 n. (Bode)人名；(英、法、德、意、俄、尼日利、瑞典)博德</p>
+<p>abundant adj. 丰富的；充裕的；盛产</p>
+<p>abound vi. 富于；充满</p>
+<p>calcification n. 钙化；石灰化</p>
+<p>circulation n. 流通，传播；循环；发行量</p>
+<p>collide vi. 碰撞；抵触，冲突 vt. 使碰撞；使相撞</p>
+<p>cohesion n. 凝聚；结合；[力] 内聚力</p>
+<p>adherence n. 坚持；依附；忠诚</p>
+<p>compensation n. 补偿；报酬；赔偿金</p>
+<p>reprehend n. 责备 vt. 申斥；指责</p>
+<p>concede vi. 让步 vt. 承认；退让；给予，容许</p>
+<p>compromise n. 妥协，和解；折衷 vt. 妥协；危害 vi. 妥协；让步</p>
+<p>diffusion n. 扩散，传播；[光] 漫射</p>
+<p>distraction n. 注意力分散；消遣；心烦意乱</p>
+<p>discern vt. 识别；领悟，认识 vi. 看清楚，辨别</p>
+<p>confined v. 限制（confine的过去式和过去分词） adj. 狭窄的；幽禁的；有限制的；在分娩中的</p>
+<p>rectified v. 调整；矫正；精馏（rectify的过去分词形式） adj. 改正的，整流的；精馏过的</p>
+<p>refined adj. [油气][化工][冶] 精炼的；精确的；微妙的；有教养的</p>
+<p>inconspicuous adj. 不显眼的；不引人注意的；（花）不显著的</p>
+<p>considerate adj. 体贴的；体谅的；考虑周到的</p>
+<p>excessive adj. 过多的，极度的；过分的</p>
+<p>persist vi. 存留，坚持；持续，固执 vt. 坚持说，反复说</p>
+<p>divert vt. 转移；使…欢娱；使…转向 vi. 转移 n. (Divert)人名；(法)迪韦尔</p>
+<p>vertigo n. 晕头转向，[临床] 眩晕</p>
+<p>decay n. 衰退，[核] 衰减；腐烂，腐朽 vt. 使腐烂，使腐败；使衰退，使衰落 vi. 衰退，[核] 衰减；腐烂，腐朽 n. (Decay)人名；(法)德凯</p>
+<p>embellish vt. 修饰；装饰；润色 vi. 装饰起来；加以润色</p>
+<p>depletion n. 消耗；损耗；放血</p>
+<p>completion n. 完成，结束；实现</p>
+<p>deposit n. 存款；押金；订金；保证金；沉淀物 vt. 使沉积；存放 vi. 沉淀</p>
+<p>sediment n. 沉积；沉淀物</p>
+<p>impose vt. 强加；征税；以…欺骗 vi. 利用；欺骗；施加影响</p>
+<p>postulate n. 基本条件；假定 vt. 假定；要求；视…为理所当然</p>
+<p>deprive of vt. 剥夺；失去</p>
+<p>strip n. 带；条状；脱衣舞 vt. 剥夺；剥去；脱去衣服 vi. 脱去衣服</p>
+<p>diffused adj. 散布的，扩散的；普及的 v. 散布，传播（diffuse的过去分词）；使分散</p>
+<p>fusion n. 融合；熔化；熔接；融合物；[物] 核聚变</p>
+<p>dispersed v. 分散；传播（disperse的过去分词） adj. 散布的；被分散的；被驱散的</p>
+<p>disclaim vt. 否认，拒绝；放弃，弃权；拒绝承认 vi. 否认；放弃；弃权</p>
+<p>exclaim vt. 大声说出 vi. 呼喊，惊叫；大声叫嚷</p>
+<p>proclaim vt. 宣告，公布；声明；表明；赞扬</p>
+<p>disdain n. 蔑视 vt. 鄙弃</p>
+<p>scorn n. 轻蔑；嘲笑；藐视的对象 vt. 轻蔑；藐视；不屑做 vi. 表示轻蔑；表示鄙视</p>
+<p>disruption n. 破坏，毁坏；分裂，瓦解</p>
+<p>diverse adj. 不同的；多种多样的；变化多的</p>
+<p>eliminate vt. 消除；排除</p>
+<p>subliminal n. 潜意识；阈下意识 adj. [生理] 阈下的；潜在意识的；微小得难以察觉的</p>
+<p>immerge vi. 浸入；埋头；隐没</p>
+<p>submerge vt. 淹没；把…浸入；沉浸 vi. 淹没；潜入水中；湮没</p>
+<p>encroach vi. 蚕食，侵占</p>
+<p>extruded adj. 压出的；受挤压的 v. 使…喷出；使伸出；驱逐（extrude的过去分词）</p>
+<p>invade vt. 侵略；侵袭；侵扰；涌入 vi. 侵略；侵入；侵袭；侵犯</p>
+<p>preface n. 前言；引语 vt. 为…加序言；以…开始 vi. 作序</p>
+<p>refusal n. 拒绝；优先取舍权；推却；取舍权</p>
+<p>discharge n. 排放；卸货；解雇 vt. 解雇；卸下；放出；免除 vi. 排放；卸货；流出</p>
+<p>improvise vt. 即兴创作；即兴表演；临时做；临时提供 vi. 即兴创作；即兴表演；临时凑合</p>
+<p>excavate vt. 挖掘；开凿 vi. 发掘；细查</p>
+<p>expedite vt. 加快；促进；发出 adj. 畅通的；迅速的；方便的</p>
+<p>adversely adv. 不利地；逆地；反对地</p>
+<p>expedition n. 远征；探险队；迅速</p>
+<p>ordinance n. 条例；法令；圣餐礼</p>
+<p>grant n. 拨款；[法] 授予物 vt. 授予；允许；承认 vi. 同意 n. (Grant)人名；(瑞典、葡、西、俄、罗、英、塞、德、意)格兰特；(法)格朗</p>
+<p>prominence n. 突出；显著；突出物；卓越</p>
+<p>estate n. 房地产；财产；身份</p>
+<p>far-reaching adj. 深远的；广泛的；伸至远处的</p>
+<p>fertility n. 多产；肥沃；[农经] 生产力；丰饶</p>
+<p>sterility n. [泌尿] 不育；[妇产] 不孕；无菌；不毛；内容贫乏</p>
+<p>flourish n. 兴旺；茂盛；挥舞；炫耀；华饰 vi. 繁荣，兴旺；茂盛；活跃；处于旺盛时期 vt. 夸耀；挥舞</p>
+<p>fluctuate vi. 波动；涨落；动摇 vt. 使波动；使动摇</p>
+<p>prosperous adj. 繁荣的；兴旺的</p>
+<p>actuate vt. 开动（机器等）；促使，驱使；激励（人等）</p>
+<p>demote vt. 使降级；使降职</p>
+<p>swing n. 摇摆；摆动；秋千；音律；涨落 adj. 旋转的；悬挂的；强节奏爵士音乐的 vt. 使旋转；挥舞；悬挂 vi. 摇摆；转向；悬挂；大摇大摆地行走 n. (Swing)人名；(英、瑞典)斯温</p>
+<p>distinct from vt. 与……不同</p>
+<p>draw upon 利用；开出；总结</p>
+<p>early on 在早期；从事，经营；继续下去</p>
+<p>bidden v. [贸易] 出价（bid的过去分词）</p>
+<p>forebode v. 预示；预感；预兆</p>
+<p>foul n. 犯规；缠绕 adj. 犯规的；邪恶的；污秽的；淤塞的 vt. 犯规；弄脏；淤塞；缠住，妨害 adv. 违反规则地，不正当地 vi. 犯规；腐烂；缠结</p>
+<p>disgusting adj. 令人厌恶的 令人极不能接受的</p>
+<p>frontier n. 前沿；边界；国境 adj. 边界的；开拓的 n. (Frontier)人名；(法)弗龙捷</p>
+<p>preface n. 前言；引语 vt. 为…加序言；以…开始 vi. 作序</p>
+<p>exaggerate vt. 使扩大；使增大 vi. 夸大；夸张</p>
+<p>get through to 使理解；打通电话</p>
+<p>haul n. 拖，拉；用力拖拉；努力得到的结果；捕获物；一网捕获的鱼量；拖运距离 vt. 拖运；拖拉 vi. 拖，拉；改变主意；改变方向 n. (Haul)人名；(德)豪尔</p>
+<p>drought n. 干旱；缺乏 n. (Drought)人名；(英)德劳特</p>
+<p>headquarter vt. 在…设总部 vi. 设立总部</p>
+<p>account for 对…负有责任；对…做出解释；说明……的原因；导致；（比例）占</p>
+<p>open up 打开；开发；开始；展示，揭露</p>
+<p>hypothesize vt. 假设，假定 vi. 假设，假定</p>
+<p>hypotension n. 低血压，血压过低</p>
+<p>ceased v. 停止（cease的过去式及过去分词形式）；中止；中断</p>
+<p>industrialize vt. 使工业化 vi. 实现工业化</p>
+<p>gratify vt. 使满足；使满意，使高兴</p>
+<p>rectify vt. 改正；精馏；整流</p>
+<p>immaturity n. 未成熟；粗糙；未臻完美；不完全</p>
+<p>immaculate adj. 完美的；洁净的；无瑕疵的</p>
+<p>incompatibility n. 不相容；不协调；不一致</p>
+<p>landscape n. 风景；风景画；景色；山水画；乡村风景画；地形；（文件的）横向打印格式 vt. 对…做景观美化，给…做园林美化；从事庭园设计 vi. 美化（环境等），使景色宜人；从事景观美化工作，做庭园设计师</p>
+<p>scratch n. 擦伤；抓痕；刮擦声；乱写 vt. 抓；刮；挖出；乱涂 adj. 打草稿用的；凑合的；碰巧的 vi. 抓；搔；发刮擦声；勉强糊口；退出比赛</p>
+<p>autonomously adv. 自治地；独立自主地</p>
+<p>incrementally adv. 递增地；增值地</p>
+<p>flaw n. 瑕疵，缺点；一阵狂风；短暂的风暴；裂缝，裂纹 v. 使生裂缝，使有裂纹；使无效；使有缺陷 vi. 生裂缝；变的有缺陷</p>
+<p>colossal adj. 巨大的；异常的，非常的</p>
+<p>anticipate vt. 预期，期望；占先，抢先；提前使用</p>
+<p>trajectory n. [物] 轨道，轨线；[航][军] 弹道</p>
+<p>relevance n. 关联；适当；中肯</p>
+<p>archaeology n. 考古学 考古学的</p>
+<p>sheer n. 偏航；透明薄织物 adj. 绝对的；透明的；峻峭的；纯粹的 vt. 使偏航；使急转向 adv. 完全；陡峭地 vi. 偏航</p>
+<p>measurable adj. 可测量的；重要的；重大的</p>
+<p>conversely adv. 相反地</p>
+<p>silts n. 砂浆；泥浆（silt的复数） v. 淤积；使…淤塞（silt的第三人称单数）</p>
+<p>deposite 放置 沉积 存款</p>
+<p>erosion n. 侵蚀，腐蚀</p>
+<p>crucial adj. 重要的；决定性的；定局的；决断的</p>
+<p>liberty n. 自由；许可；冒失 n. (Liberty)人名；(英)利伯蒂</p>
+<p>autonomy n. 自治，自治权</p>
+<p>competent adj. 胜任的；有能力的；能干的；足够的</p>
+<p>chaos abbr. 恐惧邀请综合征（Can’t Have Anyone Over Syndrome）</p>
+<p>discipline n. 学科；纪律；训练；惩罚 vt. 训练，训导；惩戒</p>
+<p>manipulative adj. 巧妙处理的；操纵的，用手控制的</p>
+<p>interfere vi. 干涉；妨碍；打扰 vt. 冲突；介入</p>
+<p>monitors n. [自] 监视器，监控器；情况通报（monitor复数形式）</p>
+<p>sensorial adj. 知觉的；感觉的</p>
+<p>fascinating adj. 迷人的；吸引人的；使人神魂颠倒的 v. 使…着迷；使…陶醉（fascinate的ing形式）</p>
+<p>mud n. 泥；诽谤的话；无价值的东西 vt. 弄脏；用泥涂 vi. 钻入泥中</p>
+<p>contract n. 合同；婚约 vt. 感染；订约；使缩短 vi. 收缩；感染；订约</p>
+<p>shrink vi. 收缩；畏缩 n. 收缩；畏缩；<俚>精神病学家 vt. 使缩小，使收缩</俚></p>
+<p>slump vt. 使降低；使衰落；使倒下 n. 衰退；暴跌；消沉 vi. 下降，衰落；倒下；大幅度下降，暴跌</p>
+<p>incline n. 倾斜；斜面；斜坡 vt. 使倾斜；使倾向于 vi. 倾斜；倾向；易于</p>
+<p>gently adv. 轻轻地；温柔地，温和地</p>
+<p>terrain n. [地理] 地形，地势；领域；地带</p>
+<p>trek n. 艰苦跋涉 vi. 艰苦跋涉 vt. （牛）拉（货车）；搬运 n. (Trek)人名；(阿拉伯)特里克</p>
+<p>surmise n. 推测；猜度 vt. 猜测；推测 vi. 猜测；认为</p>
+<p>dump n. 垃圾场；仓库；无秩序地累积 vt. 倾倒；倾卸；丢下，卸下；摆脱，扔弃；倾销 vi. 倒垃圾；突然跌倒或落下；卸货；转嫁（责任等） n. （英）邓普（人名，男子教名Humphrey、Humphry的昵称）</p>
+<p>skeuomorphs n. (与原物同形但材料不同的)同形物</p>
+<p>suitability n. 适合；适当；相配</p>
+<p>problematic adj. 问题的；有疑问的；不确定的</p>
+<p>spectacular adj. 壮观的，惊人的；公开展示的</p>
+<p>portion n. 部分；一份；命运 vt. 分配；给…嫁妆</p>
+<p>beverages n. 饮料；酒水；饮料类（beverage的复数形式）</p>
+<p>spices n. 香味料，调味料（spice的复数）</p>
+<p>Internally adv. 内部地；国内地；内在地</p>
+<p>endowed v. 赋予；捐赠</p>
+<p>domestic n. 国货；佣人 adj. 国内的；家庭的；驯养的；一心只管家务的</p>
+<p>rural adj. 农村的，乡下的；田园的，有乡村风味的</p>
+<p>cottage n. 小屋；村舍；（农舍式的）小别墅</p>
+<p>peasants 农民</p>
+<p>conducive adj. 有益的；有助于…的</p>
+<p>entrepreneurs n. 企业家（entrepreneur的复数）</p>
+<p>precursor n. 先驱，前导</p>
+<p>diversification n. 多样化；变化</p>
+<p>breed n. [生物] 品种；种类，类型 vt. 繁殖；饲养；养育，教育；引起 vi. 繁殖；饲养；产生 n. (Breed)人名；(英)布里德</p>
+<p>livestock n. 牲畜；家畜</p>
+<p>burgeon vt. 萌芽, 发芽 n. 芽, 嫩枝 vi. 萌芽, 发芽</p>
+<p>pastures 牧草</p>
+<p>parcels [邮] 包裹 小包（parcel的名词复数） 打包 捆扎（parcel的第三人称单数）</p>
+<p>enclosures n. 附件（enclosure的复数）；音箱；[建] 围墙；围绕</p>
 ]]></content>
       
         <categories>
@@ -1212,15 +1336,18 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[Hello World!]]></title>
       <url>/archives/hello_World.html</url>
-      <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>My Website has successfully constructed!</p>
+      <content type="html"><![CDATA[<h1 id="hello-world">Hello World!</h1>
+<p>My Website has successfully constructed!</p>
 <p>I will post my diary, class notes, progesses on research, and some essays on my blog.</p>
 <p><a href="jinningli.cn/blog.html">The URL of my blog is</a></p>
-<pre><code>jinningli.cn/blog.html
-</code></pre><p><a href="jinningli.cn">The URL of my website is</a></p>
-<pre><code>jinningli.cn
-</code></pre><p><a href="jinningli.cn/cv/cv.html">The URL of my CV is</a></p>
-<pre><code>jinningli.cn/cv/cv.html
-</code></pre><h4 id="Welcome-to-my-websites"><a href="#Welcome-to-my-websites" class="headerlink" title="Welcome to my websites!"></a>Welcome to my websites!</h4><h4 id="w"><a href="#w" class="headerlink" title="=w="></a>=w=</h4>]]></content>
+<pre><code>jinningli.cn/blog.html</code></pre>
+<p><a href="jinningli.cn">The URL of my website is</a></p>
+<pre><code>jinningli.cn</code></pre>
+<p><a href="jinningli.cn/cv/cv.html">The URL of my CV is</a></p>
+<pre><code>jinningli.cn/cv/cv.html</code></pre>
+<h4 id="welcome-to-my-websites">Welcome to my websites!</h4>
+<h4 id="w">=w=</h4>
+]]></content>
       
         <categories>
             
@@ -1243,62 +1370,53 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]
     <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
-      <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明"><a href="#关于知识共享协议的说明" class="headerlink" title="关于知识共享协议的说明"></a>关于知识共享协议的说明</h1><p><strong>Jinning Li</strong>（以下简称本人），是 <strong>“Jinning Li’s blog”</strong> 博客（以下简称本博客）的拥有者。本博客上创造和发布的内容可用于传播和共享，对于本人发布的原创内容（包含图片、文字、音乐、视频）采用 <strong>CreativeCommons 3.0 Unported</strong> 协议，即 <strong>知识共享许可协议 3.0 未本地化版本</strong> 加以许可保护。作者在发布内容时，如果没有特殊注明，默认将会采用 <strong>知识共享协议 署名-非商业性使用-相同方式共享 3.0 未本地化版本</strong> (<strong>CC BY-NC-SA 3.0 Unported</strong>) 对原创内容进行保护。</p>
-<h1 id="关于知识共享协议的补充说明"><a href="#关于知识共享协议的补充说明" class="headerlink" title="关于知识共享协议的补充说明"></a>关于知识共享协议的补充说明</h1><h2 id="侵权相关"><a href="#侵权相关" class="headerlink" title="侵权相关"></a>侵权相关</h2><p>如个人或单位发现本博客上存在侵犯其自身合法权益的内容，请及时与本人取得联系，并提供具有法律效力的证明材料，以便本人作出处理。</p>
-<h2 id="非原创作品商业使用相关"><a href="#非原创作品商业使用相关" class="headerlink" title="非原创作品商业使用相关"></a>非原创作品商业使用相关</h2><p>任何被本博客划收录的非原创作品，原作者依然持有商业使用其作品的权利。<br>如果您希望商业使用这些被收录的内容，请与所有 <strong>参与此作品创作的原作者</strong> 和/或 <strong>版权持有者</strong> 进行协商。在与所有人达成协议后，方可商业使用。<br>（本博客及其本人不进行任何商业接洽工作，请自行与作者联系）</p>
-<h1 id="CC-3-0-Unported-协议"><a href="#CC-3-0-Unported-协议" class="headerlink" title="CC 3.0 Unported 协议"></a>CC 3.0 Unported 协议</h1><h2 id="语言：中文"><a href="#语言：中文" class="headerlink" title="语言：中文"></a><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank" rel="external">语言：中文</a></h2><p><strong>您可以自由地：</strong></p>
-<ul>
-<li><strong>分享</strong> — 在任何媒介以任何形式复制、发行本作品</li>
-<li><strong>演绎</strong> — 修改、转换或以本作品为基础进行创作</li>
-<li>只要你遵守许可协议条款，许可人就无法收回你的这些权利。</li>
-</ul>
-<p><strong>惟须遵守下列条件：</strong></p>
-<ul>
-<li><strong>署名</strong> — 你必须遵守信用，注明来源链接和演绎内容，并提供一个通往与 <strong>原作所用协议并不冲突的知识共享协议</strong> 许可证页面的链接。你可以用任何合适的方式实现这个，但这并不暗示许可证拥有者和原作者认可该分享方式。</li>
-<li><strong>非商业性使用</strong> — 您不得将本作品用于商业目的。</li>
-<li><strong>相同方式共享</strong> — 如果你节选、翻译、重排版，或基于本作品二次创作，你必须将你的贡献用 <strong>相同的协议</strong> 进行分享，并分别注明原作者与你的贡献。</li>
-<li><strong>没有附加限制</strong> — 虽然您可能依旧不适用那些法律上限制的任何关于知识产权的法律条款或技术措施，即使你的行为符合知识共享协议。</li>
-</ul>
-<h2 id="Language-English"><a href="#Language-English" class="headerlink" title="Language: English"></a><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed" target="_blank" rel="external">Language: English</a></h2><p><strong>You are free to:</strong></p>
-<ul>
-<li><strong>Share</strong> — copy and redistribute the material in any medium or format</li>
-<li><strong>Adapt</strong> — remix, transform, and build upon the material</li>
-<li>The licensor cannot revoke these freedoms as long as you follow the license terms.</li>
-</ul>
-<p><strong>Under the following terms:</strong></p>
-<ul>
-<li><strong>Attribution</strong> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
-<li><strong>NonCommercial</strong> — You may not use the material for commercial purposes.</li>
-<li><strong>ShareAlike</strong> — If you remix, transform, or build upon the material, you must distribute your contributions under the <strong>same license</strong> as the original.</li>
-<li><strong>No additional restrictions</strong> — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</li>
-</ul>
+      <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明">关于知识共享协议的说明</h1>
+<p><strong>Jinning Li</strong>（以下简称本人），是 <strong>“Jinning Li’s blog”</strong> 博客（以下简称本博客）的拥有者。本博客上创造和发布的内容可用于传播和共享，对于本人发布的原创内容（包含图片、文字、音乐、视频）采用 <strong>CreativeCommons 3.0 Unported</strong> 协议，即 <strong>知识共享许可协议 3.0 未本地化版本</strong> 加以许可保护。作者在发布内容时，如果没有特殊注明，默认将会采用 <strong>知识共享协议 署名-非商业性使用-相同方式共享 3.0 未本地化版本</strong> (<strong>CC BY-NC-SA 3.0 Unported</strong>) 对原创内容进行保护。</p>
+<h1 id="关于知识共享协议的补充说明">关于知识共享协议的补充说明</h1>
+<h2 id="侵权相关">侵权相关</h2>
+<p>如个人或单位发现本博客上存在侵犯其自身合法权益的内容，请及时与本人取得联系，并提供具有法律效力的证明材料，以便本人作出处理。</p>
+<h2 id="非原创作品商业使用相关">非原创作品商业使用相关</h2>
+<p>任何被本博客划收录的非原创作品，原作者依然持有商业使用其作品的权利。<br>
+如果您希望商业使用这些被收录的内容，请与所有 <strong>参与此作品创作的原作者</strong> 和/或 <strong>版权持有者</strong> 进行协商。在与所有人达成协议后，方可商业使用。<br>
+（本博客及其本人不进行任何商业接洽工作，请自行与作者联系）</p>
+<h1 id="cc-3.0-unported-协议">CC 3.0 Unported 协议</h1>
+<h2 id="语言中文"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank" rel="external">语言：中文</a></h2>
+<p><strong>您可以自由地：</strong> - <strong>分享</strong> — 在任何媒介以任何形式复制、发行本作品 - <strong>演绎</strong> — 修改、转换或以本作品为基础进行创作 - 只要你遵守许可协议条款，许可人就无法收回你的这些权利。</p>
+<p><strong>惟须遵守下列条件：</strong> - <strong>署名</strong> — 你必须遵守信用，注明来源链接和演绎内容，并提供一个通往与 <strong>原作所用协议并不冲突的知识共享协议</strong> 许可证页面的链接。你可以用任何合适的方式实现这个，但这并不暗示许可证拥有者和原作者认可该分享方式。 - <strong>非商业性使用</strong> — 您不得将本作品用于商业目的。 - <strong>相同方式共享</strong> — 如果你节选、翻译、重排版，或基于本作品二次创作，你必须将你的贡献用 <strong>相同的协议</strong> 进行分享，并分别注明原作者与你的贡献。 - <strong>没有附加限制</strong> — 虽然您可能依旧不适用那些法律上限制的任何关于知识产权的法律条款或技术措施，即使你的行为符合知识共享协议。</p>
+<h2 id="language-english"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed" target="_blank" rel="external">Language: English</a></h2>
+<p><strong>You are free to:</strong> - <strong>Share</strong> — copy and redistribute the material in any medium or format - <strong>Adapt</strong> — remix, transform, and build upon the material - The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
+<p><strong>Under the following terms:</strong> - <strong>Attribution</strong> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. - <strong>NonCommercial</strong> — You may not use the material for commercial purposes. - <strong>ShareAlike</strong> — If you remix, transform, or build upon the material, you must distribute your contributions under the <strong>same license</strong> as the original. - <strong>No additional restrictions</strong> — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</p>
 <blockquote>
-<p>商业目的指的是通过使用分享来的内容用于商业活动当中或用于获得经济上的补偿。<br>Commercial purposes refers to the use of shared content to be used in business or to obtain economic compensation.</p>
+<p>商业目的指的是通过使用分享来的内容用于商业活动当中或用于获得经济上的补偿。 Commercial purposes refers to the use of shared content to be used in business or to obtain economic compensation.</p>
 </blockquote>
-<h1 id="CC-3-0-Unported-完整协议"><a href="#CC-3-0-Unported-完整协议" class="headerlink" title="CC 3.0 Unported 完整协议"></a>CC 3.0 Unported 完整协议</h1><h2 id="Language-English-1"><a href="#Language-English-1" class="headerlink" title="Language:English"></a>Language:English</h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank" rel="external">CC by-nc-sa 3.0 Unported Legalcode</a></p>
-<h2 id="语言：中文-1"><a href="#语言：中文-1" class="headerlink" title="语言：中文"></a>语言：中文</h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode" target="_blank" rel="external">知识共享协议署名-非商业性使用-相同方式共享 3.0 中国大陆 许可协议</a></p>
+<h1 id="cc-3.0-unported-完整协议">CC 3.0 Unported 完整协议</h1>
+<h2 id="languageenglish">Language:English</h2>
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank" rel="external">CC by-nc-sa 3.0 Unported Legalcode</a> ## 语言：中文 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode" target="_blank" rel="external">知识共享协议署名-非商业性使用-相同方式共享 3.0 中国大陆 许可协议</a></p>
 <blockquote>
 <p>请注意， <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议由于其与本博客使用的 <strong>CC 3.0 BY-NC-SA Unported</strong> 协议仅具有相同要素(BY-NC-SA)而非同一司法管辖区（互相不适用两个地区分别的著作权保护有关的法律），<strong>故属于不同协议</strong>，但 <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议可作为 <strong>CC 3.0 BY-NC-SA Unported</strong> 的翻译进行参考阅读。</p>
 </blockquote>
-<h1 id="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"><a href="#您如何在不违反知识共享协议条约的基础上使用本博客的原创内容" class="headerlink" title="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容"></a>您如何在不违反知识共享协议条约的基础上使用本博客的原创内容</h1><h2 id="商业使用"><a href="#商业使用" class="headerlink" title="商业使用"></a>商业使用</h2><p><strong>CC 3.0 BY-NC-SA Unported</strong> 协议规定，只要他人注明本人的姓名并在以本人的作品为基础创作的新作品上适用同一类型的许可协议，该他人就可基于非商业目的对您的作品重新编排、节选或者以本人的作品为基础进行创作。基于本人的作品创作的所有新作品都要适用同一类型的许可协议，因此适用该项协议则对任何以您的原作为基础创作的演绎作品<strong>均不得进行商业性使用</strong>。</p>
-<h2 id="署名方法"><a href="#署名方法" class="headerlink" title="署名方法"></a>署名方法</h2><p>在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“Jinning Li’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证；<br>如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议</strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external">许可证</a></p>
-<h2 id="演绎政策"><a href="#演绎政策" class="headerlink" title="演绎政策"></a>演绎政策</h2><p>本博客属于所有在网络上公开发表的，任何人可访问的作品。本人声明所有原创内容均<strong>允许演绎</strong>。</p>
-<blockquote>
-<p>知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
-</blockquote>
+<h1 id="您如何在不违反知识共享协议条约的基础上使用本博客的原创内容">您如何在不违反知识共享协议条约的基础上使用本博客的原创内容</h1>
+<h2 id="商业使用">商业使用</h2>
+<p><strong>CC 3.0 BY-NC-SA Unported</strong> 协议规定，只要他人注明本人的姓名并在以本人的作品为基础创作的新作品上适用同一类型的许可协议，该他人就可基于非商业目的对您的作品重新编排、节选或者以本人的作品为基础进行创作。基于本人的作品创作的所有新作品都要适用同一类型的许可协议，因此适用该项协议则对任何以您的原作为基础创作的演绎作品<strong>均不得进行商业性使用</strong>。</p>
+<h2 id="署名方法">署名方法</h2>
+<p>在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“Jinning Li’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证； 如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议</strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external">许可证</a></p>
+<h2 id="演绎政策">演绎政策</h2>
+<p>本博客属于所有在网络上公开发表的，任何人可访问的作品。本人声明所有原创内容均<strong>允许演绎</strong>。 &gt; 知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
 ]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Tags Cloud「标签云」]]></title>
       <url>/tags.html</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[
+]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Timeline「时光轴」]]></title>
       <url>/timeline.html</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[
+]]></content>
     </entry>
     
   
