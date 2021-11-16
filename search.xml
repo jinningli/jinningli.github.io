@@ -138,64 +138,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Purdue Weekly Report [1]]]></title>
-      <url>/archives/Purdue-weekly-report-09-17.html</url>
-      <content type="html"><![CDATA[<h1 id="purdue-weekly-report-1">Purdue Weekly Report [1]</h1>
-<blockquote>
-<p>Jinning, 09/17/2018</p>
-</blockquote>
-<h2 id="method-1-using-expectation-to-estimate-coefficient">Method 1: Using expectation to estimate coefficient</h2>
-<blockquote>
-<p>Reference: Some Topics in Analysis of Boolean Functions, Ryan O’Donnell.</p>
-</blockquote>
-<p>Assume <span class="math inline">\(S\)</span> is a subset of the set <span class="math inline">\([n]\)</span>. <span class="math inline">\(|[n]|=2^n\)</span>.</p>
-<p>According to the reference, <span class="math inline">\(\hat{f}(S)\)</span> can be expressed as</p>
-<p><span class="math display">\[
-\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]
-\]</span></p>
-<p>We’re going to estimate <span class="math inline">\(\hat{f}(S)\)</span> by</p>
-<p><span class="math display">\[
-\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)
-\]</span></p>
-<p>We use <span class="math inline">\(Var(\tilde{f}(S))\)</span> to estimate the speed of learning.</p>
-<p><span class="math display">\[
-Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))
-\]</span></p>
-<p><span class="math display">\[
-=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))
-\]</span></p>
-<p>where, <span class="math display">\[
-Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2
-\]</span></p>
-<p><span class="math display">\[
-=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)
-\]</span></p>
-<p><span class="math display">\[
-=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)
-\]</span></p>
-<p>So, the convergence speed is not necessarily decreasing with degree.</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Notes </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> Weekly Report </tag>
-            
-            <tag> Purdue </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[Weekly Report [4]]]></title>
       <url>/archives/Cornell-weekly-report-08-07.html</url>
       <content type="html"><![CDATA[<h1 id="weekly-report-4">Weekly Report [4]</h1>
@@ -333,6 +275,64 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Purdue Weekly Report [1]]]></title>
+      <url>/archives/Purdue-weekly-report-09-17.html</url>
+      <content type="html"><![CDATA[<h1 id="purdue-weekly-report-1">Purdue Weekly Report [1]</h1>
+<blockquote>
+<p>Jinning, 09/17/2018</p>
+</blockquote>
+<h2 id="method-1-using-expectation-to-estimate-coefficient">Method 1: Using expectation to estimate coefficient</h2>
+<blockquote>
+<p>Reference: Some Topics in Analysis of Boolean Functions, Ryan O’Donnell.</p>
+</blockquote>
+<p>Assume <span class="math inline">\(S\)</span> is a subset of the set <span class="math inline">\([n]\)</span>. <span class="math inline">\(|[n]|=2^n\)</span>.</p>
+<p>According to the reference, <span class="math inline">\(\hat{f}(S)\)</span> can be expressed as</p>
+<p><span class="math display">\[
+\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]
+\]</span></p>
+<p>We’re going to estimate <span class="math inline">\(\hat{f}(S)\)</span> by</p>
+<p><span class="math display">\[
+\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)
+\]</span></p>
+<p>We use <span class="math inline">\(Var(\tilde{f}(S))\)</span> to estimate the speed of learning.</p>
+<p><span class="math display">\[
+Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))
+\]</span></p>
+<p><span class="math display">\[
+=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))
+\]</span></p>
+<p>where, <span class="math display">\[
+Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2
+\]</span></p>
+<p><span class="math display">\[
+=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)
+\]</span></p>
+<p><span class="math display">\[
+=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)
+\]</span></p>
+<p>So, the convergence speed is not necessarily decreasing with degree.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Weekly Report </tag>
+            
+            <tag> Purdue </tag>
             
         </tags>
         
@@ -563,9 +563,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
-            <tag> Research Proposal </tag>
-            
             <tag> English </tag>
+            
+            <tag> Research Proposal </tag>
             
         </tags>
         
@@ -810,9 +810,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> English </tag>
             
             <tag> Presentation </tag>
             
@@ -931,9 +931,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -991,9 +991,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Segmentation </tag>
             
@@ -1053,8 +1053,6 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -1062,6 +1060,8 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -1406,15 +1406,15 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
     </entry>
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
