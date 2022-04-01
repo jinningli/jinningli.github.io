@@ -54,9 +54,9 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> English </tag>
             
             <tag> Purdue </tag>
             
@@ -127,11 +127,11 @@
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -185,9 +185,9 @@ Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
+            
+            <tag> English </tag>
             
             <tag> Purdue </tag>
             
@@ -328,11 +328,11 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -382,11 +382,11 @@ Not so reliable.</code></pre>
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -498,11 +498,11 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -563,9 +563,9 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
         
         <tags>
             
-            <tag> Research Proposal </tag>
-            
             <tag> English </tag>
+            
+            <tag> Research Proposal </tag>
             
         </tags>
         
@@ -746,11 +746,11 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -1406,15 +1406,15 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
     </entry>
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
       <content type="html"><![CDATA[
 ]]></content>
     </entry>
