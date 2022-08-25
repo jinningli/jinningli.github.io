@@ -1,10 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1648854122 "CV_en.tex" "CV_en.pdf" "CV_en" 1648854124
+["pdflatex"] 1661468642 "CV_en.tex" "CV_en.pdf" "CV_en" 1661468772
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
+  "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
@@ -70,12 +72,12 @@
   "/usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf" 1463093894 31953 b9489e6e586f798610c60aec1f5ec548 ""
   "/usr/local/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1484564749 3520379 7f8677240a18cf89b3ea071db3083e49 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "CV_en.aux" 1648854123 723 c43ea9d0751e3a7ab078642e0b0c921a ""
-  "CV_en.out" 1648854123 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "CV_en.tex" 1648854121 20269 428132dea9546a71e205a6941b5abd9b ""
+  "CV_en.aux" 1661468643 723 c43ea9d0751e3a7ab078642e0b0c921a ""
+  "CV_en.out" 1661468642 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "CV_en.tex" 1661468771 21404 93370696d0a7b22a827a264f09b1a8a4 ""
   "fontawesome5.sty" 1542239384 94491 08d074077600bdf8147a6a6f9942bd45 ""
   (generated)
-  "CV_en.aux"
   "CV_en.log"
-  "CV_en.out"
   "CV_en.pdf"
+  "CV_en.aux"
+  "CV_en.out"

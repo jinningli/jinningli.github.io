@@ -71,7 +71,7 @@
 <blockquote>
 <p>Jinning, 08/07/2018</p>
 </blockquote>
-<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="noopener">
 <h4>
 [Project Github]
 </h4>
@@ -144,7 +144,7 @@
 <blockquote>
 <p>Jinning, 08/07/2018</p>
 </blockquote>
-<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="noopener">
 <h4>
 [Project Github]
 </h4>
@@ -189,7 +189,7 @@
 <img src="/assets/markdown-img-paste-20180809223512958.png">
 
 </div>
-<a href="http://jinningli.cn/links/ips" target="_blank" rel="external">
+<a href="http://jinningli.cn/links/ips" target="_blank" rel="noopener">
 <h4>
 [See Large Figure]
 </h4>
@@ -199,7 +199,7 @@
 <img src="/assets/markdown-img-paste-20180809223541563.png">
 
 </div>
-<a href="http://jinningli.cn/links/ips_std" target="_blank" rel="external">
+<a href="http://jinningli.cn/links/ips_std" target="_blank" rel="noopener">
 <h4>
 [See Large Figure]
 </h4>
@@ -345,12 +345,12 @@ Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x
 <blockquote>
 <p>Jinning, 08/02/2018</p>
 </blockquote>
-<a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external">
+<a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="noopener">
 <h4>
 [Newest Research Proposal]
 </h4>
 <p></p></a><p></p>
-<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="noopener">
 <h4>
 [Project Github]
 </h4>
@@ -399,12 +399,12 @@ Not so reliable.</code></pre>
 <blockquote>
 <p>Jinning, 07/25/2018</p>
 </blockquote>
-<a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="external">
+<a href="http://jinningli.cn/archives/Cornell-research-proposal-07-19.html" target="_blank" rel="noopener">
 <h4>
 [Newest Research Proposal]
 </h4>
 <p></p></a><p></p>
-<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">
+<a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="noopener">
 <h4>
 [Project Github]
 </h4>
@@ -432,16 +432,16 @@ Not so reliable.</code></pre>
 0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:54 24:103 25:43 33:29 35:65
 0 exid:32343877 11:0 12:1 13:0 14:1 15:0 17:2 21:10 22:63 24:103 25:43 33:29 35:65
 ...</code></pre>
-<p>This dataset is multi-slot. In order to simplify the task, I will use the preprocessed <a href="https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files" target="_blank" rel="external">CrowdAI dataset</a>. CrowdAI dataset is one slot based. The size of dataset is still quite large.</p>
+<p>This dataset is multi-slot. In order to simplify the task, I will use the preprocessed <a href="https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge/dataset_files" target="_blank" rel="noopener">CrowdAI dataset</a>. CrowdAI dataset is one slot based. The size of dataset is still quite large.</p>
 <h4 id="metric">Metric</h4>
 <p>IPS metric: <span class="math display">\[
 \hat{R}(\pi)=\sum_{i=1}^{N}\delta_i\frac{\pi(y_i|x_i)}{q_i}
 \]</span></p>
 <h2 id="experiment">Experiment</h2>
 <h4 id="try-the-code-of-ftrl">Try the code of FTRL</h4>
-<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge <a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="external">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
+<p>Try the code using Online Learning model <code>FTRL</code>, which is the rank1 in NIPS ’17 Workshop: Criteo Ad Placement Challenge <a href="https://github.com/alexeygrigorev/nips-ad-placement-challenge" target="_blank" rel="noopener">His Github</a>. I reproduce his result: <strong>IPS=55.725</strong>.</p>
 <h4 id="write-my-own-code-of-lr">Write my own code of LR</h4>
-<p>I write my own code of Logistic Regression (MLP) with Pytorch (GPU). Newest Project Codes can be found here: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">Project Github</a>. This is a well developed frame. It is easy to be extended to other models like FM and deep learning.</p>
+<p>I write my own code of Logistic Regression (MLP) with Pytorch (GPU). Newest Project Codes can be found here: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="noopener">Project Github</a>. This is a well developed frame. It is easy to be extended to other models like FM and deep learning.</p>
 <p>My first logistic regression model receives an <code>one-hot</code> input of size <code>Batch * Dim</code> of a candidate Ad. <code>Dim</code> is the dimension of features. Then go through a linear layer of dimension <code>Dim</code> with ReLU activation, then a linear layer of dimension <code>4096</code>. A sigmoid function is followed. Binary Cross Entropy (BCE) loss is applied.</p>
 <h5 id="result">Result</h5>
 <p>The result really <strong>surprise me !</strong> I got an <strong>IPS=59.249</strong>. Which is much higher than the Rank1 player in CrowdAI challenge! And I only train for <span class="math inline">\(2\)</span> epoch. Even ensemble is not applied.</p>
@@ -515,7 +515,7 @@ python3 getFirstLine.py --data criteo_train.txt --result train.txt</code></pre>
 <blockquote>
 <p>Jinning Li, 07/24/2018</p>
 </blockquote>
-<p>Code Github: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="external">https://github.com/jinningli/ad-placement-pytorch</a></p>
+<p>Code Github: <a href="https://github.com/jinningli/ad-placement-pytorch" target="_blank" rel="noopener">https://github.com/jinningli/ad-placement-pytorch</a></p>
 <h2 id="code-review-of-crowdai-rank1">01 Code review of CrowdAI Rank1</h2>
 <ul>
 <li>Use a <code>FTRL</code> model https://github.com/alexeygrigorev/nips-ad-placement-challenge</li>
@@ -765,7 +765,7 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
 <p>Experimental results on eighteen <code>real-world event datasets from an influential social network and a popular search engine</code> validate the effectiveness and applicability of our scheme. DancingLines is demonstrated to possess broad application potentials for discovering knowledge of various aspects related to events and different media.</p>
 <h2 id="info.">Info.</h2>
 <p>Tianxiang Gao, Weiming Bao, Jinning Li, Xiaofeng Gao, Boyuan Kong, Yan Tang, Guihai Chen, Xuan Li. DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity. International Conference on Database and Expert Systems Applications (DEXA), 2018, 2018.</p>
-<p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="external">[Download Paper]</a></p>
+<p><a href="https://arxiv.org/abs/1712.08550" target="_blank" rel="noopener">[Download Paper]</a></p>
 <p>Poster in Zhiyuan Academic Festival: <!-- ![](/assets/dancinglineposter.jpg) --></p>
 <iframe src="../files/dancinglineposter.pdf" style="width:718px; height:1080px;" frameborder="0">
 </iframe>
@@ -810,9 +810,9 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
         
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -831,7 +831,7 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
 <p>Drawing a beautiful painting like what famous painters do is a dream of many people. LineArtist, an interesting system, helps you with drawing a painting only with some semantic sketch.</p>
 <p>What you have to do is to draw a sketch, take a photo of it and give it to our pre-trained model, then you can just wait for the painting to come out.</p>
 <p><strong>Paper: Jinning Li and Siqi Liu, Mengyao Cao. LINE ARTIST: A Multi-style Sketch to Painting Synthesis Scheme.</strong></p>
-<p><a href="https://arxiv.org/abs/1803.06647" target="_blank" rel="external">[Download Paper]</a></p>
+<p><a href="https://arxiv.org/abs/1803.06647" target="_blank" rel="noopener">[Download Paper]</a></p>
 <div class="figure">
 <img src="/assets/firstPage.png">
 
@@ -846,7 +846,7 @@ p=\arg\min_{p}Var_{D}(\hat{R}(\pi))
 <!-- ![](/assets/ourgoldbridge.jpg) -->
 <p><img src="/assets/contentgoldbridge.jpg" width="300" alt="contentgoldbridge" align="center/"><img src="/assets/ourgoldbridge.jpg" width="300" alt="ourgoldbridge" align="center/"></p>
 <h2 id="source-code">Source Code</h2>
-<p>The code is published in github: <a href="https://github.com/jinningli/LineArtist" target="_blank" rel="external">https://github.com/jinningli/LineArtist</a></p>
+<p>The code is published in github: <a href="https://github.com/jinningli/LineArtist" target="_blank" rel="noopener">https://github.com/jinningli/LineArtist</a></p>
 <h3 id="requirements">Requirements</h3>
 <pre><code>Python 3
 Pillow (4.2.1)
@@ -873,8 +873,8 @@ $ python3 test.py --dataroot ./Datasets/[NAME] --model pix2pix --which_direction
 <pre><code>$ cd ./AWAST
 $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code></pre>
 <h3 id="reference">Reference</h3>
-<p><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank" rel="external">junyanz/pix2pix</a></p>
-<p><a href="https://github.com/anishathalye/neural-style" target="_blank" rel="external">anishathalye/neural-style</a></p>
+<p><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank" rel="noopener">junyanz/pix2pix</a></p>
+<p><a href="https://github.com/anishathalye/neural-style" target="_blank" rel="noopener">anishathalye/neural-style</a></p>
 ]]></content>
       
         <categories>
@@ -993,11 +993,11 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
         
@@ -1055,13 +1055,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
         
@@ -1101,7 +1101,7 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
 <p>If it is possible, Linux will initiate a read of the next page in the file. This single page read ahead means that if the process is accessing the pages in the file serially, the next page will be waiting in memory for the process.</p>
 <p>Over time the page cache grows as images are read and executed. Pages will be removed from the cache as they are no longer needed, say as an image is no longer being used by any process. As Linux uses memory it can start to run low on physical pages. In this case Linux will reduce the size of the page cache.</p>
 <h3 id="reference">Reference</h3>
-<p><a href="http://www.tldp.org/LDP/tlk/" target="_blank" rel="external">The Linux Kernel</a></p>
+<p><a href="http://www.tldp.org/LDP/tlk/" target="_blank" rel="noopener">The Linux Kernel</a></p>
 ]]></content>
       
         <categories>
@@ -1368,6 +1368,13 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
   
     
     <entry>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明">关于知识共享协议的说明</h1>
@@ -1380,10 +1387,10 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
 如果您希望商业使用这些被收录的内容，请与所有 <strong>参与此作品创作的原作者</strong> 和/或 <strong>版权持有者</strong> 进行协商。在与所有人达成协议后，方可商业使用。<br>
 （本博客及其本人不进行任何商业接洽工作，请自行与作者联系）</p>
 <h1 id="cc-3.0-unported-协议">CC 3.0 Unported 协议</h1>
-<h2 id="语言中文"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank" rel="external">语言：中文</a></h2>
+<h2 id="语言中文"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank" rel="noopener">语言：中文</a></h2>
 <p><strong>您可以自由地：</strong> - <strong>分享</strong> — 在任何媒介以任何形式复制、发行本作品 - <strong>演绎</strong> — 修改、转换或以本作品为基础进行创作 - 只要你遵守许可协议条款，许可人就无法收回你的这些权利。</p>
 <p><strong>惟须遵守下列条件：</strong> - <strong>署名</strong> — 你必须遵守信用，注明来源链接和演绎内容，并提供一个通往与 <strong>原作所用协议并不冲突的知识共享协议</strong> 许可证页面的链接。你可以用任何合适的方式实现这个，但这并不暗示许可证拥有者和原作者认可该分享方式。 - <strong>非商业性使用</strong> — 您不得将本作品用于商业目的。 - <strong>相同方式共享</strong> — 如果你节选、翻译、重排版，或基于本作品二次创作，你必须将你的贡献用 <strong>相同的协议</strong> 进行分享，并分别注明原作者与你的贡献。 - <strong>没有附加限制</strong> — 虽然您可能依旧不适用那些法律上限制的任何关于知识产权的法律条款或技术措施，即使你的行为符合知识共享协议。</p>
-<h2 id="language-english"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed" target="_blank" rel="external">Language: English</a></h2>
+<h2 id="language-english"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed" target="_blank" rel="noopener">Language: English</a></h2>
 <p><strong>You are free to:</strong> - <strong>Share</strong> — copy and redistribute the material in any medium or format - <strong>Adapt</strong> — remix, transform, and build upon the material - The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
 <p><strong>Under the following terms:</strong> - <strong>Attribution</strong> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. - <strong>NonCommercial</strong> — You may not use the material for commercial purposes. - <strong>ShareAlike</strong> — If you remix, transform, or build upon the material, you must distribute your contributions under the <strong>same license</strong> as the original. - <strong>No additional restrictions</strong> — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</p>
 <blockquote>
@@ -1391,7 +1398,7 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
 </blockquote>
 <h1 id="cc-3.0-unported-完整协议">CC 3.0 Unported 完整协议</h1>
 <h2 id="languageenglish">Language:English</h2>
-<p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank" rel="external">CC by-nc-sa 3.0 Unported Legalcode</a> ## 语言：中文 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode" target="_blank" rel="external">知识共享协议署名-非商业性使用-相同方式共享 3.0 中国大陆 许可协议</a></p>
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank" rel="noopener">CC by-nc-sa 3.0 Unported Legalcode</a> ## 语言：中文 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode" target="_blank" rel="noopener">知识共享协议署名-非商业性使用-相同方式共享 3.0 中国大陆 许可协议</a></p>
 <blockquote>
 <p>请注意， <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议由于其与本博客使用的 <strong>CC 3.0 BY-NC-SA Unported</strong> 协议仅具有相同要素(BY-NC-SA)而非同一司法管辖区（互相不适用两个地区分别的著作权保护有关的法律），<strong>故属于不同协议</strong>，但 <strong>CC 3.0 BY-NC-SA 中国大陆</strong> 版本协议可作为 <strong>CC 3.0 BY-NC-SA Unported</strong> 的翻译进行参考阅读。</p>
 </blockquote>
@@ -1399,16 +1406,9 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
 <h2 id="商业使用">商业使用</h2>
 <p><strong>CC 3.0 BY-NC-SA Unported</strong> 协议规定，只要他人注明本人的姓名并在以本人的作品为基础创作的新作品上适用同一类型的许可协议，该他人就可基于非商业目的对您的作品重新编排、节选或者以本人的作品为基础进行创作。基于本人的作品创作的所有新作品都要适用同一类型的许可协议，因此适用该项协议则对任何以您的原作为基础创作的演绎作品<strong>均不得进行商业性使用</strong>。</p>
 <h2 id="署名方法">署名方法</h2>
-<p>在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“Jinning Li’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证； 如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议</strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="external">许可证</a></p>
+<p>在转载本博客中任何内容时必须给出原页面的 URL 链接，并注明文章（全文，部分）从“Jinning Li’s Blog” 或转载，并提供一个与 CC 3.0 BY-NC-SA Unported 不相违背的知识共享协议的许可证； 如果你对本博客的原创内容进行了演绎，则必须注明演绎的内容；并提供 <strong>CC 3.0 BY-NC-SA 协议</strong> 的<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=cn&amp;version=3.0&amp;lang=zh" target="_blank" rel="noopener">许可证</a></p>
 <h2 id="演绎政策">演绎政策</h2>
 <p>本博客属于所有在网络上公开发表的，任何人可访问的作品。本人声明所有原创内容均<strong>允许演绎</strong>。 &gt; 知识共享协议中对 <em>演绎</em> 的定义为：在不改变原作者的原创内容的含义和内涵的基础上，对原创内容进行 节选、翻译、重排版，或将原作者的原创内容作为论据和素材，或基于原作者的原创内容进行二次创作。</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
-      <content type="html"><![CDATA[
 ]]></content>
     </entry>
     
