@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.1.16)  9 SEP 2022 07:59
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.1.16)  14 SEP 2022 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -712,11 +712,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--205
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 226.
+(Font)              <10.95> on input line 256.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 226.
+(Font)              <8> on input line 256.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 226.
+(Font)              <6> on input line 256.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
@@ -927,28 +927,28 @@ Package microtype Info: Character `\textgreater ' is missing
 (microtype)             in font `\EU1/FontAwesome5Brands-Regular-400(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (5.08421pt too wide) in paragraph at lines 238--242
+Overfull \hbox (5.08421pt too wide) in paragraph at lines 268--272
 []\EU1/AdobeGaramondPro(0)/bx/n/12 Dissecting Cross-Layer Dependency Inference on Multi-Layered Inter-Dependent Nets 
  []
 
 [1
 
 ]
-Overfull \hbox (2.1348pt too wide) in paragraph at lines 442--442
+Overfull \hbox (2.1348pt too wide) in paragraph at lines 457--457
 []\EU1/AdobeGaramondPro(1)/m/n/10.95 Programming 
  []
 
 
-Overfull \hbox (1.07265pt too wide) in paragraph at lines 442--442
+Overfull \hbox (1.07265pt too wide) in paragraph at lines 457--457
 \EU1/AdobeGaramondPro(1)/m/n/10.95 Proficiencies 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 449.
+(Font)              <12> on input line 464.
 
 AED: lastpage setting LastPage
 LaTeX Font Info:    Font shape `EU1/AdobeGaramondPro(0)/m/sl' in size <12> not available
-(Font)              Font shape `EU1/AdobeGaramondPro(0)/m/it' tried instead on input line 465.
+(Font)              Font shape `EU1/AdobeGaramondPro(0)/m/it' tried instead on input line 480.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -956,19 +956,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 465.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 465.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 480.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 480.
  (./CV_en.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 465.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 465.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 465.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 480.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 480.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 480.
  ) 
 Here is how much of TeX's memory you used:
- 23996 strings out of 493591
- 437243 string characters out of 6143546
- 479068 words of memory out of 5000000
- 27225 multiletter control sequences out of 15000+600000
- 7972 words of font info for 67 fonts, out of 8000000 for 9000
+ 23991 strings out of 493591
+ 437035 string characters out of 6143546
+ 477863 words of memory out of 5000000
+ 27223 multiletter control sequences out of 15000+600000
+ 7948 words of font info for 64 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  74i,11n,66p,10377b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 
