@@ -138,6 +138,64 @@
     </entry>
     
     <entry>
+      <title><![CDATA[Purdue Weekly Report [1]]]></title>
+      <url>/archives/Purdue-weekly-report-09-17.html</url>
+      <content type="html"><![CDATA[<h1 id="purdue-weekly-report-1">Purdue Weekly Report [1]</h1>
+<blockquote>
+<p>Jinning, 09/17/2018</p>
+</blockquote>
+<h2 id="method-1-using-expectation-to-estimate-coefficient">Method 1: Using expectation to estimate coefficient</h2>
+<blockquote>
+<p>Reference: Some Topics in Analysis of Boolean Functions, Ryan O’Donnell.</p>
+</blockquote>
+<p>Assume <span class="math inline">\(S\)</span> is a subset of the set <span class="math inline">\([n]\)</span>. <span class="math inline">\(|[n]|=2^n\)</span>.</p>
+<p>According to the reference, <span class="math inline">\(\hat{f}(S)\)</span> can be expressed as</p>
+<p><span class="math display">\[
+\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]
+\]</span></p>
+<p>We’re going to estimate <span class="math inline">\(\hat{f}(S)\)</span> by</p>
+<p><span class="math display">\[
+\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)
+\]</span></p>
+<p>We use <span class="math inline">\(Var(\tilde{f}(S))\)</span> to estimate the speed of learning.</p>
+<p><span class="math display">\[
+Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))
+\]</span></p>
+<p><span class="math display">\[
+=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))
+\]</span></p>
+<p>where, <span class="math display">\[
+Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2
+\]</span></p>
+<p><span class="math display">\[
+=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)
+\]</span></p>
+<p><span class="math display">\[
+=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)
+\]</span></p>
+<p>So, the convergence speed is not necessarily decreasing with degree.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Weekly Report </tag>
+            
+            <tag> Purdue </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Weekly Report [4]]]></title>
       <url>/archives/Cornell-weekly-report-08-07.html</url>
       <content type="html"><![CDATA[<h1 id="weekly-report-4">Weekly Report [4]</h1>
@@ -275,64 +333,6 @@ IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}
             <tag> Weekly Report </tag>
             
             <tag> Cornell </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Purdue Weekly Report [1]]]></title>
-      <url>/archives/Purdue-weekly-report-09-17.html</url>
-      <content type="html"><![CDATA[<h1 id="purdue-weekly-report-1">Purdue Weekly Report [1]</h1>
-<blockquote>
-<p>Jinning, 09/17/2018</p>
-</blockquote>
-<h2 id="method-1-using-expectation-to-estimate-coefficient">Method 1: Using expectation to estimate coefficient</h2>
-<blockquote>
-<p>Reference: Some Topics in Analysis of Boolean Functions, Ryan O’Donnell.</p>
-</blockquote>
-<p>Assume <span class="math inline">\(S\)</span> is a subset of the set <span class="math inline">\([n]\)</span>. <span class="math inline">\(|[n]|=2^n\)</span>.</p>
-<p>According to the reference, <span class="math inline">\(\hat{f}(S)\)</span> can be expressed as</p>
-<p><span class="math display">\[
-\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]
-\]</span></p>
-<p>We’re going to estimate <span class="math inline">\(\hat{f}(S)\)</span> by</p>
-<p><span class="math display">\[
-\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)
-\]</span></p>
-<p>We use <span class="math inline">\(Var(\tilde{f}(S))\)</span> to estimate the speed of learning.</p>
-<p><span class="math display">\[
-Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))
-\]</span></p>
-<p><span class="math display">\[
-=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))
-\]</span></p>
-<p>where, <span class="math display">\[
-Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2
-\]</span></p>
-<p><span class="math display">\[
-=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)
-\]</span></p>
-<p><span class="math display">\[
-=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)
-\]</span></p>
-<p>So, the convergence speed is not necessarily decreasing with degree.</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Notes </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> Weekly Report </tag>
-            
-            <tag> Purdue </tag>
             
         </tags>
         
@@ -1368,6 +1368,20 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
   
     
     <entry>
+      <title><![CDATA[Tags Cloud「标签云」]]></title>
+      <url>/tags.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Timeline「时光轴」]]></title>
+      <url>/timeline.html</url>
+      <content type="html"><![CDATA[
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[本博客的知识共享协议说明]]></title>
       <url>/creativecommons.html</url>
       <content type="html"><![CDATA[<h1 id="关于知识共享协议的说明">关于知识共享协议的说明</h1>
@@ -1406,16 +1420,338 @@ $ python3 AWAST.py --content [Path] --folder_styles [Path] --output [Path]</code
     </entry>
     
     <entry>
-      <title><![CDATA[Tags Cloud「标签云」]]></title>
-      <url>/tags.html</url>
-      <content type="html"><![CDATA[
+      <title></title>
+      <url>/files/bkg/index.html</url>
+      <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>黑猫iPhone14ProMax背景图 高清重制版</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><h1>黑猫 iPhone14 Pro Max 背景图 高清重制版</h1><br>
+  长按保存哦！ <br>
+  <h3> 声明 </h3>
+  黑猫图案和创意均来自：小红书用户 plusoooone (小红书 id: 418500753)<br>
+  本人(Jerry不能再熬夜了)在原作者的基础上，进行部分优化，包括超分辨率高清重制、改色、适配锁屏界面，并进行非商业化分享<br>
+  一切版权仍归原作者所有<br>
+  2022.10.1
+  >> 小红书: Jerry不能再熬夜了 (小红书 id: 1451883750) <br>
+  >> Instagram: jinning.jpg <br>
+  >> 微博: Jerry不能再熬夜了 <br>
+  >> 欢迎关注！<br>
+  <br>
+  ----------------------------------------------------------<br>
+  <br>
+  <br>
+  <br>
+  <a>[No.1] 	 Color:white</a>
+  <br>
+  <img src="Slide1.jpeg" alt="Slide1.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.2] 	 Color:#3E5C7A</a>
+  <br>
+  <img src="Slide2.jpeg" alt="Slide2.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.3] 	 Color:dark grey</a>
+  <br>
+  <img src="Slide3.jpeg" alt="Slide3.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.4] 	 Color:Apple purple</a>
+  <br>
+  <img src="Slide4.jpeg" alt="Slide4.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.5] 	 Color:Apple Gold</a>
+  <br>
+  <img src="Slide5.jpeg" alt="Slide5.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.6] 	 Color:Apple Silver</a>
+  <br>
+  <img src="Slide6.jpeg" alt="Slide6.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.7] 	 Color:Apple Black</a>
+  <br>
+  <img src="Slide7.jpeg" alt="Slide7.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.8] 	 Color:#F9A647</a>
+  <br>
+  <img src="Slide8.jpeg" alt="Slide8.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.9] 	 Color:#185864</a>
+  <br>
+  <img src="Slide9.jpeg" alt="Slide9.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.10] 	 Color:#E2DBD0</a>
+  <br>
+  <img src="Slide10.jpeg" alt="Slide10.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.11] 	 Color:#515792</a>
+  <br>
+  <img src="Slide11.jpeg" alt="Slide11.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.12] 	 Color:#515792</a>
+  <br>
+  <img src="Slide12.jpeg" alt="Slide12.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.13] 	 Color:#E4A5B3</a>
+  <br>
+  <img src="Slide13.jpeg" alt="Slide13.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.14] 	 Color:#93C9EF</a>
+  <br>
+  <img src="Slide14.jpeg" alt="Slide14.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.15] 	 Color:#D7E4F4</a>
+  <br>
+  <img src="Slide15.jpeg" alt="Slide15.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.16] 	 Color:#E9CAA6</a>
+  <br>
+  <img src="Slide16.jpeg" alt="Slide16.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.17] 	 Color:#013E29</a>
+  <br>
+  <img src="Slide17.jpeg" alt="Slide17.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.18] 	 Color:#729955</a>
+  <br>
+  <img src="Slide18.jpeg" alt="Slide18.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.19] 	 Color:#729955</a>
+  <br>
+  <img src="Slide19.jpeg" alt="Slide19.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.20] 	 Color:#9F9C9A</a>
+  <br>
+  <img src="Slide20.jpeg" alt="Slide20.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.21] 	 Color:#9F9C9A</a>
+  <br>
+  <img src="Slide21.jpeg" alt="Slide21.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.22] 	 Color:#2F364A</a>
+  <br>
+  <img src="Slide22.jpeg" alt="Slide22.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.23] 	 Color:#525D6D</a>
+  <br>
+  <img src="Slide23.jpeg" alt="Slide23.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.24] 	 Color:#794E42</a>
+  <br>
+  <img src="Slide24.jpeg" alt="Slide24.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.25] 	 Color:#794E42</a>
+  <br>
+  <img src="Slide25.jpeg" alt="Slide25.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.26] 	 Color:#467398</a>
+  <br>
+  <img src="Slide26.jpeg" alt="Slide26.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.27] 	 Color:#516536</a>
+  <br>
+  <img src="Slide27.jpeg" alt="Slide27.jpeg" width="128">
+  <br>
+  <br><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Timeline「时光轴」]]></title>
-      <url>/timeline.html</url>
-      <content type="html"><![CDATA[
+      <title></title>
+      <url>/files/bkglock/index.html</url>
+      <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>黑猫iPhone14ProMax背景图 高清重制锁屏版</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><h1>黑猫 iPhone14 Pro Max 背景图 (高清重制锁屏版)</h1><br>
+  这个版本是因为，锁屏的时候faceid会有一个锁的图案导致灵动岛变长，加长了顶部的猫<br>
+  可以和普通版配合使用<br>
+  长按保存哦！ <br>
+  <h3> 声明 </h3>
+  黑猫图案和创意均来自：小红书用户 plusoooone (小红书 id: 418500753)<br>
+  本人(Jerry不能再熬夜了)在原作者的基础上，进行部分优化，包括超分辨率高清重制、改色、适配锁屏界面，并进行非商业化分享<br>
+  一切版权仍归原作者所有<br>
+  2022.10.1
+  >> 小红书: Jerry不能再熬夜了 (小红书 id: 1451883750) <br>
+  >> Instagram: jinning.jpg <br>
+  >> 微博: Jerry不能再熬夜了 <br>
+  >> 欢迎关注！<br>
+  <br>
+  ----------------------------------------------------------<br>
+  <br>
+  <br>
+  <br>
+  <a>[No.1] 	 Color:white</a>
+  <br>
+  <img src="Slide1.jpeg" alt="Slide1.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.2] 	 Color:#3E5C7A</a>
+  <br>
+  <img src="Slide2.jpeg" alt="Slide2.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.3] 	 Color:dark grey</a>
+  <br>
+  <img src="Slide3.jpeg" alt="Slide3.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.4] 	 Color:Apple purple</a>
+  <br>
+  <img src="Slide4.jpeg" alt="Slide4.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.5] 	 Color:Apple Gold</a>
+  <br>
+  <img src="Slide5.jpeg" alt="Slide5.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.6] 	 Color:Apple Silver</a>
+  <br>
+  <img src="Slide6.jpeg" alt="Slide6.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.7] 	 Color:Apple Black</a>
+  <br>
+  <img src="Slide7.jpeg" alt="Slide7.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.8] 	 Color:#F9A647</a>
+  <br>
+  <img src="Slide8.jpeg" alt="Slide8.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.9] 	 Color:#185864</a>
+  <br>
+  <img src="Slide9.jpeg" alt="Slide9.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.10] 	 Color:#E2DBD0</a>
+  <br>
+  <img src="Slide10.jpeg" alt="Slide10.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.11] 	 Color:#515792</a>
+  <br>
+  <img src="Slide11.jpeg" alt="Slide11.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.12] 	 Color:#515792</a>
+  <br>
+  <img src="Slide12.jpeg" alt="Slide12.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.13] 	 Color:#E4A5B3</a>
+  <br>
+  <img src="Slide13.jpeg" alt="Slide13.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.14] 	 Color:#93C9EF</a>
+  <br>
+  <img src="Slide14.jpeg" alt="Slide14.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.15] 	 Color:#D7E4F4</a>
+  <br>
+  <img src="Slide15.jpeg" alt="Slide15.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.16] 	 Color:#E9CAA6</a>
+  <br>
+  <img src="Slide16.jpeg" alt="Slide16.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.17] 	 Color:#013E29</a>
+  <br>
+  <img src="Slide17.jpeg" alt="Slide17.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.18] 	 Color:#729955</a>
+  <br>
+  <img src="Slide18.jpeg" alt="Slide18.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.19] 	 Color:#729955</a>
+  <br>
+  <img src="Slide19.jpeg" alt="Slide19.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.20] 	 Color:#9F9C9A</a>
+  <br>
+  <img src="Slide20.jpeg" alt="Slide20.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.21] 	 Color:#9F9C9A</a>
+  <br>
+  <img src="Slide21.jpeg" alt="Slide21.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.22] 	 Color:#2F364A</a>
+  <br>
+  <img src="Slide22.jpeg" alt="Slide22.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.23] 	 Color:#525D6D</a>
+  <br>
+  <img src="Slide23.jpeg" alt="Slide23.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.24] 	 Color:#794E42</a>
+  <br>
+  <img src="Slide24.jpeg" alt="Slide24.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.25] 	 Color:#794E42</a>
+  <br>
+  <img src="Slide25.jpeg" alt="Slide25.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.26] 	 Color:#467398</a>
+  <br>
+  <img src="Slide26.jpeg" alt="Slide26.jpeg" width="128">
+  <br>
+  <br><br>
+  <a>[No.27] 	 Color:#516536</a>
+  <br>
+  <img src="Slide27.jpeg" alt="Slide27.jpeg" width="128">
+  <br>
+  <br><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>
 ]]></content>
     </entry>
     

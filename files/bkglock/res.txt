@@ -1,0 +1,136 @@
+<br>
+<a>[No.1] 	 Color:white</a>
+<br>
+<img src="Slide1.jpeg" alt="Slide1.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.2] 	 Color:#3E5C7A</a>
+<br>
+<img src="Slide2.jpeg" alt="Slide2.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.3] 	 Color:dark grey</a>
+<br>
+<img src="Slide3.jpeg" alt="Slide3.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.4] 	 Color:Apple purple</a>
+<br>
+<img src="Slide4.jpeg" alt="Slide4.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.5] 	 Color:Apple Gold</a>
+<br>
+<img src="Slide5.jpeg" alt="Slide5.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.6] 	 Color:Apple Silver</a>
+<br>
+<img src="Slide6.jpeg" alt="Slide6.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.7] 	 Color:Apple Black</a>
+<br>
+<img src="Slide7.jpeg" alt="Slide7.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.8] 	 Color:#F9A647</a>
+<br>
+<img src="Slide8.jpeg" alt="Slide8.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.9] 	 Color:#185864</a>
+<br>
+<img src="Slide9.jpeg" alt="Slide9.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.10] 	 Color:#E2DBD0</a>
+<br>
+<img src="Slide10.jpeg" alt="Slide10.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.11] 	 Color:#515792</a>
+<br>
+<img src="Slide11.jpeg" alt="Slide11.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.12] 	 Color:#515792</a>
+<br>
+<img src="Slide12.jpeg" alt="Slide12.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.13] 	 Color:#E4A5B3</a>
+<br>
+<img src="Slide13.jpeg" alt="Slide13.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.14] 	 Color:#93C9EF</a>
+<br>
+<img src="Slide14.jpeg" alt="Slide14.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.15] 	 Color:#D7E4F4</a>
+<br>
+<img src="Slide15.jpeg" alt="Slide15.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.16] 	 Color:#E9CAA6</a>
+<br>
+<img src="Slide16.jpeg" alt="Slide16.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.17] 	 Color:#013E29</a>
+<br>
+<img src="Slide17.jpeg" alt="Slide17.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.18] 	 Color:#729955</a>
+<br>
+<img src="Slide18.jpeg" alt="Slide18.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.19] 	 Color:#729955</a>
+<br>
+<img src="Slide19.jpeg" alt="Slide19.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.20] 	 Color:#9F9C9A</a>
+<br>
+<img src="Slide20.jpeg" alt="Slide20.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.21] 	 Color:#9F9C9A</a>
+<br>
+<img src="Slide21.jpeg" alt="Slide21.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.22] 	 Color:#2F364A</a>
+<br>
+<img src="Slide22.jpeg" alt="Slide22.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.23] 	 Color:#525D6D</a>
+<br>
+<img src="Slide23.jpeg" alt="Slide23.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.24] 	 Color:#794E42</a>
+<br>
+<img src="Slide24.jpeg" alt="Slide24.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.25] 	 Color:#794E42</a>
+<br>
+<img src="Slide25.jpeg" alt="Slide25.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.26] 	 Color:#467398</a>
+<br>
+<img src="Slide26.jpeg" alt="Slide26.jpeg" width="128">
+<br>
+<br><br>
+<a>[No.27] 	 Color:#516536</a>
+<br>
+<img src="Slide27.jpeg" alt="Slide27.jpeg" width="128">
+<br>
+<br>
