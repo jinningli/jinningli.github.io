@@ -1,0 +1,489 @@
+\documentclass[12pt, letterpaper]{article}
+
+
+\newcommand{\interests}{Social Sensing, Data Mining, Computer Vision, NLP}
+
+\def\myauthor{Jinning Li}
+\def\mytitle{CV_en}
+\def\myemail{jinning4@illinois.edu}
+\def\myweb{www.jinningli.cn}
+\def\myphone{+86-17621782336}
+\def\mykeywords{
+  jinning li,
+  resume,
+  curriculum,
+  vita,
+  curriculum vita,
+  cv,
+  jinning,
+  li
+}
+
+\setlength\parindent{0pt}
+
+\newenvironment{itemize*}%
+{\begin{itemize}%
+  \setlength{\itemsep}{0pt}}%
+{\end{itemize}}
+
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+%\usepackage{ocgtools}
+\usepackage{enumitem}
+\setlist{nolistsep,leftmargin=0.15in}
+\usepackage[log-declarations=false]{xparse}
+\usepackage{fontspec}
+% \defaultfontfeatures{
+%     Path = /usr/local/texlive/2013/texmf-dist/fonts/opentype/public/fontawesome/ }
+\usepackage{fontawesome5}
+\usepackage{microtype}
+\usepackage[margin=1in,right=0.9in,left=1.9in, bottom=0.8in, top=0.8in]{geometry}
+\usepackage[strict]{changepage}
+\usepackage[
+  ocgcolorlinks,
+  urlcolor={[rgb]{0,0,0.54}},
+  unicode,
+  plainpages=false,
+  pdfpagelabels,
+  pdftitle={\mytitle},
+  pdfauthor={\myauthor},
+  pdfkeywords={\mykeywords}
+]{hyperref}
+\usepackage{color}
+\definecolor{alizarin}{rgb}{0.82, 0.1, 0.26}
+\definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
+% fix ocgcolor link breaking; thanks due to Benjamin Lerner (http://goo.gl/VZKR7M)
+\makeatletter
+\AtBeginDocument{%
+  \newlength{\temp@x}%
+  \newlength{\temp@y}%
+  \newlength{\temp@w}%
+  \newlength{\temp@h}%
+  \def\my@coords#1#2#3#4{%
+    \setlength{\temp@x}{#1}%
+    \setlength{\temp@y}{#2}%
+    \setlength{\temp@w}{#3}%
+    \setlength{\temp@h}{#4}%
+    \adjustlengths{}%
+    \my@pdfliteral{\strip@pt\temp@x\space\strip@pt\temp@y\space\strip@pt\temp@w\space\strip@pt\temp@h\space re}}%
+  \ifpdf
+    \typeout{In PDF mode}%
+    \def\my@pdfliteral#1{\pdfliteral page{#1}}% I don't know why % this command...
+    \def\adjustlengths{}%
+  \fi
+  \ifxetex
+    \def\my@pdfliteral #1{\special{pdf: literal direct #1}}% isn't equivalent to this one
+    \def\adjustlengths{\setlength{\temp@h}{-\temp@h}\addtolength{\temp@y}{1in}\addtolength{\temp@x}{-1in}}%
+  \fi%
+  \def\Hy@colorlink#1{%
+    \begingroup
+      \ifHy@ocgcolorlinks
+        \def\Hy@ocgcolor{#1}%
+        \my@pdfliteral{q}%
+        \my@pdfliteral{7 Tr}% Set text mode to clipping-only
+      \else
+        \HyColor@UseColor#1%
+      \fi
+  }%
+  \def\Hy@endcolorlink{%
+    \ifHy@ocgcolorlinks%
+      \my@pdfliteral{/OC/OCPrint BDC}%
+      \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+      \my@pdfliteral{F}% Fill clipping path (the url's text) with current color
+      \my@pdfliteral{EMC/OC/OCView BDC}%
+      \begingroup%
+        \expandafter\HyColor@UseColor\Hy@ocgcolor%
+        \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+        \my@pdfliteral{F}% Fill clipping path (the url's text) with \Hy@ocgcolor
+      \endgroup%
+      \my@pdfliteral{EMC}%
+      \my@pdfliteral{0 Tr}% Reset text to normal mode
+      \my@pdfliteral{Q}%
+    \fi
+    \endgroup
+  }%
+}
+\makeatother
+% end fixes
+
+\newcommand{\ML}{\textsc{Matlab}}
+\newcommand{\Simu}{Simulink}
+\newcommand{\MLS}{\ML{}/\Simu{}}
+\newcommand{\apdl}{\textsc{APDL}}
+\newcommand{\ansys}{\textsc{Ansys}}
+\newcommand{\fluent}{\textsc{Fluent}}
+\newcommand\CPP{C/C\ensuremath{+}\ensuremath{+}}
+\newcommand{\Star}{\textsc{Star-CCM\ensuremath{+}}}
+
+\newcommand{\mhead}[1]{\leavevmode\marginpar{\sffamily\footnotesize #1}}
+\newcommand{\rdate}[1]{{\addfontfeature{Numbers=OldStyle} \hfill #1}}
+\renewcommand{\date}[1]{{\addfontfeature{Numbers=OldStyle} #1}}
+\renewcommand{\labelitemi}{-}
+
+
+\makeatletter
+\DeclareRobustCommand{\etc}{%
+    \@ifnextchar{.}%
+        {etc}%
+        {etc.\@\xspace}%
+}
+\makeatother
+
+\setmainfont[
+  Ligatures={TeX,Common},
+  BoldFont={Adobe Garamond Pro Bold},
+]{Adobe Garamond Pro}
+\setsansfont[
+  Ligatures={TeX,Common},
+  Letters=SmallCaps,
+  Color=660000,
+]{Adobe Garamond Pro}
+% \setmonofont{FontAwesome}
+% \setmonofont{FontAwesome}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\begin{document}
+\pagestyle{fancy} \setlength\headwidth{6.5in}
+\rhead{\textsc{Jinning Li, Department of Computer Science, UIUC}} \cfoot{}
+\thispagestyle{empty}
+\begin{adjustwidth}{-1in}{}
+%{\Huge{
+%  {\textsc{%
+%    {\addfontfeature{Style=TitlingCaps}Y}\kern-1.5pt urong
+%    {\addfontfeature{Style=TitlingCaps}Y}\kern-2pt ou}
+%  }}
+%%  \\
+%%  \big{test}
+%}
+\begin{minipage}[b]{4.9 in}
+	%\setlength{\parskip}{0.5\baselineskip}
+    \flushleft
+    {\Huge
+    	\textsc{%
+	    {\addfontfeature{Style=TitlingCaps}J}\kern-0.5pt inning
+	    {\addfontfeature{Style=TitlingCaps}L}\kern-0.5pt i
+	    }
+	}
+	\par
+	\vspace{0.1 em}
+	\textsc{\small PhD in Computer Science, University of Illinois at Urbana-Champaign}
+\end{minipage}
+\hfill\hfill\hfill
+{
+  \hfill
+  \begin{minipage}[b]{1.5in}
+    \flushright \footnotesize
+    % Shanghai Jiao Tong University \\
+\href{http://\myweb}{\myweb} \\
+% \myphone\\
+% \href{mailto:\myemail}{\myemail}\\
+\href{mailto:\myemail}{\myemail}\\
+%    \href{https://www.github.com/Yurongyou}{\texttt{} Yurong You}
+%    	~\href{https://www.linkedin.com/in/\myweb}{\texttt{}
+%    	~\myweb}
+
+  \end{minipage}
+}\par
+\hrulefill
+\end{adjustwidth}
+\reversemarginpar
+\setlength\marginparwidth{0.85in}
+\medskip
+\mhead{\normalsize{Education}}%
+\textbf{University of Illinois at Urbana-Champaign} \rdate{Aug 2020 - Present}\\
+\emph{Ph.D. Student in Computer Science}, \href{https://cs.illinois.edu}{Department of Computer Science}, \href{https://grainger.illinois.edu}{The Grainger College of Engineering}. Advisor: Prof.~\href{http://abdelzaher.cs.illinois.edu}{Tarek Abdelzaher}
+\smallskip
+
+\textbf{Shanghai Jiao Tong University} \rdate{Sep 2015 - Jun 2019}\\
+\emph{B.S. in Computer Science} (\href{https://en.zhiyuan.sjtu.edu.cn}{Zhiyuan Honors Degree}), \href{https://acm.sjtu.edu.cn/home}{ACM Honors Class}, \href{http://www.cs.sjtu.edu.cn/en/}{Department of Computer Science}. Advisors: Prof.~\href{https://scholar.google.com/citations?user=-84M1m0AAAAJ&hl=en}{Yong Yu} and Prof.~\href{https://scholar.google.com/citations?hl=en&user=YfMPjhAAAAAJ}{Xiaofeng Gao}
+\smallskip
+
+\mhead{\normalsize{Research Interests}}%
+Data Mining, Graph Mining, Natural Language Processing, Social Networks,\\
+Computer Vision, Autonomous Driving.
+
+% \begin{itemize*}
+% 	% \item Advisors: Prof.~\href{https://scholar.google.com/citations?user=-84M1m0AAAAJ&hl=en}{Yong Yu} and Prof.~\href{https://scholar.google.com/citations?hl=en&user=YfMPjhAAAAAJ}{Xiaofeng Gao}
+%   \item Research Interests:  % Move to top
+% \end{itemize*}
+
+% \textbf{Cornell University} \rdate{Aug 2018 - Present}\\
+% \emph{Ph.D.} Student, Computer Science
+% %\begin{itemize*}
+% %	\item \textbf{GPA}: 4.01/4.30, \textbf{Score Average}: 92.22/100 (3/27)
+% %	\item Advisors: Prof.~\href{http://apex.sjtu.edu.cn/members/yyu}{Yong Yu} and Prof.~\href{https://cvsjtu.wordpress.com/}{Cewu Lu}
+% %\end{itemize*}
+% \medskip
+
+\medskip
+\mhead{\normalsize{Industry\newline Experience}}%
+\textbf{Twitter Inc. (Cortex)}~|~\textbf{Research Intern} \emph{Knowledge Graph, NLP} \rdate{May 2022 - Aug 2022}
+\begin{itemize*}
+	\item Knowledge Enhanced Language Model\newline
+  Develop a large-scale knowledge embedding for non-textual units (mentions, hashtags, urls, media) and use it to enhance the tweet representation learning of language model.
+\end{itemize*}
+
+\smallskip
+\textbf{Pony.ai Inc.}~|~\textbf{Machine Learning Engineer} \emph{Perception Team} \rdate{Jul 2019 - Aug 2020}
+\begin{itemize*}
+	\item Fused Road Obstacle Classification\newline
+   Develop obstacle classification system to recognize cars, pedestrian, cyclists with camera and 3D point cloud, helping Autonomous Driving Cars recognize the environment.
+\end{itemize*}
+\begin{itemize*}
+	\item Trajectory Prediction\newline
+  Develop a real-time algorithm to predict the moving trajectory of obstacles.
+\end{itemize*}
+
+\smallskip
+\textbf{YITU Tech Inc.}~|~\textbf{Research Intern} \emph{Face Recognition, Super Resolution} \rdate{Feb - Jun 2019}
+\begin{itemize*}
+	\item Improve Face Recognition with Super-Resolution Algorithm\newline
+  Develop a super-resolution algorithm to restore low-resolution facial images while preserving the identification, and therefore improve the face recognition task.
+\end{itemize*}
+
+
+\medskip
+\mhead{\normalsize{Publications}}%
+
+\normalsize
+\textbf{\small{Unsupervised Belief Representation Learning with InfoVGAE}}\href{https://arxiv.org/abs/2110.00210}{\faicon{file-pdf}}\href{https://github.com/happydeadline/InfoVGAE}{\faicon{github}}\newline
+\small{\textbf{Jinning Li}, Huajie Shao, Dachun Sun, R. Wang, Y. Yan, J. Li, S. Liu, H. Tong, T. Abdelzaher}\\
+\small{In \emph{International ACM SIGIR Conference} (\textbf{SIGIR}) 2022}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{NTULM: Enriching Social Media Text Representations with Non-Textual Units}}\newline
+\small{\textbf{Jinning Li}$^*$, Shubhanshu Mishra$^*$, Ahmed El-Kishky, Sneha Mehta, Vivek Kulkarni}\\
+\small{In W-NUT Workshop at \emph{International Conference on
+Computational Linguistics} (\textbf{COLING}) 2022}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{Learning to Sample and Aggregate: Few-shot Reasoning over Temporal Knowledge Graph}}\newline
+\small{Ruijie Wang, zheng li, Dachun Sun, Shengzhong Liu, \textbf{Jinning Li}, Bing Yin, Tarek Abdelzaher}\\
+\small{In \emph{Thirty-sixth Conference on Neural Information Processing Systems} (\textbf{NIPS}) 2022}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{Cost Function Learning in Memorized Social Nets with Cognitive Behavioral Asymmetry}}\href{https://ieeexplore.ieee.org/document/9945909}{\faicon{file-pdf}}\newline
+\small{Yanbing Mao, \textbf{Jinning Li}, Naira Hovakimyan, Tarek Abdelzaher, Christian Lebiere}\\
+\small{In \emph{IEEE Transactions on Computational Social Systems} (\textbf{TCSS}) 2022}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{Dissecting Cross-Layer Dependency Inference on Multi-Layered Inter-Dependent Networks}}\newline
+\small{Yuchen Yan, Qinghai Zhou, \textbf{Jinning Li}, Tarek Abdelzaher, and Hanghang Tong}\\
+\small{In \emph{International Conference on Information and Knowledge Management} (\textbf{CIKM}) 2022}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{Scribble-to-Painting Transformation with Multi-Task Generative Adversarial Networks}}\href{https://www.ijcai.org/proceedings/2019/820}{\faicon{file-pdf}}\href{https://github.com/jinningli/DSP-Net}{\faicon{github}}\newline
+\small{\textbf{Jinning Li}, Yexiang Xue}\\
+\small{In \emph{International Joint Conference on Artificial Intelligence} (\textbf{IJCAI}) 2019}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{Senti2Pop: Sentiment-Aware Topic Popularity Prediction on Social Media}}\href{http://jinningli.cn/cv/Senti2Pop.pdf}{\faicon{file-pdf}}\newline
+\small{\textbf{Jinning Li}, Yirui Gao, Xiaofeng Gao, Yan Shi, Guihai Chen}\\
+\small{In \emph{IEEE International Conference on Data Mining} (\textbf{ICDM}) 2019}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{DancingLines: An Analytical Scheme to Depict Cross-Platform Event Popularity}}\href{http://jinningli.cn/cv/dancinglines.pdf}{\faicon{file-pdf}}\href{https://github.com/jinningli/dancinglines}{\faicon{github}}\newline
+\small{Tianxiang Gao, Weiming Bao, \textbf{Jinning Li}, X. Gao, B. Kong, Y. Tang, G. Chen, X. Li}\\
+\small{In \emph{International Conference on Database and Expert Systems Applications} (\textbf{DEXA}) 2018}
+\vspace{2pt}
+
+\normalsize
+\textbf{\small{ID Preserving Face Super-Resolution Generative Adversarial Networks}}\href{https://ieeexplore.ieee.org/document/9146819}{\faicon{file-pdf}}\href{https://github.com/jinningli/IP-FSRGAN}{\faicon{github}}\newline
+\small{\textbf{Jinning Li}, Yichen Zhou, Jie Ding, Cen Chen, Xulei Yang}\\
+\small{In \emph{IEEE Access} 2020}
+
+% \medskip
+% \mhead{Manuscripts}%
+% \normalsize
+% \textbf{The Paradox of Information Access: Modeling Polarization in the Age
+% of Information}\newline
+% \small{C. Xu, J. Li, D. Sun, \textbf{J. Li}, T. Abdelzaher, J. Graham, M. Macy, C. Lebiere, and B. Szymanski}\\
+% % \small{Chao Xu, Jinyang Li, Dachun Sun, \textbf{Jinning Li}, T. Abdelzaher, J. Graham, M. Macy, C. Lebiere, and
+% % Boleslaw Szymanski}\\
+% \small{Submission to \emph{IEEE Transactions on Control of Network
+% Systems} (\textbf{TCNS})}
+% \vspace{2pt}
+%
+% \normalsize
+% \textbf{Cost Func Learning in Memorized Social Nets with Cognitive Behavioral Asymmetry}\newline
+% \small{Yanbing Mao, \textbf{Jinning Li}, Naira Hovakimyan, Tarek Abdelzaher, and ChristianLebiere}\\
+% \small{Submission to \emph{IEEE Transactions on Computational Social Systems} (\textbf{TCSS}) }
+
+
+% \vspace{2pt}
+
+\medskip
+\mhead{\normalsize{Research \newline Experience}}%
+\normalsize
+\textbf{University of Illinois at Urbana-Champaign} \emph{Social Sensing, Data Mining, NLP}\newline
+\textbf{Ph.D. Student}. Advisor: Prof.~\href{https://cs.illinois.edu/about/people/faculty/zaher}{Tarek Abdelzaher} \rdate{Aug 2020 - Present}
+\begin{itemize*}
+  \item Unsupervised Belief Representation Learning in Polarized Networks\\
+  We develop an information-theoretical graph variational autoencoders to learn and disentangle the belief representation from heterogenous polarized social networks.
+  \item Influence Campaign Awareness and SenseMaking (INCAS)\\
+  Develop a system to detect social influence compaign and predict people's response with text/graph mining and NLP techniques, cooperating with teams from DARPA, Lockheed Martin, USC, and UIUC \small{(Prof. Jiawei Han, Prof. Heng Ji, and Prof. Hanghang Tong)}.
+\end{itemize*}
+
+\smallskip
+\textbf{Purdue University} \emph{Computer Vision, GANs}\newline
+\textbf{Research Intern}. Advisor: Prof.~\href{https://www.cs.purdue.edu/homes/yexiang/}{Yexiang Xue} \rdate{Sep - Dec 2018}
+\begin{itemize*}
+	\item Transform Scribbles to Oil Paintings with Multi-Task GANs\\
+  We introduced Multi-Task Learning to the settings of Generative Adversarial Networks to address the sparsity problem when transforming scribbles into artistic oil paintings.
+  % We use \emph{semantic segmentation task} to assist the primary task by sharing network parameters.
+  % \item \textbf{Hierarchical Learning for High-Dimensional Polynomials}.\\
+  % Developing learning-rate adjustment algorithms and new network structures to balance the bias and variance for polynomial components with different degrees.
+  %
+  %
+  % Due to bias-variance tradeoff, performance of neural networks on differently correlated components, such as the terms in high-dimensional polynomial, may varies. We studied this phenomenon and proposed  to solve the problem.
+\end{itemize*}
+
+% \smallskip
+\textbf{Cornell University} \emph{Counterfactual Machine Learning, Recommendation Systems} \newline
+\textbf{Research Intern}. Advisor: Prof.~\href{http://www.cs.cornell.edu/people/tj/}{Thorsten Joachims} \rdate{Jul - Aug 2018}
+\begin{itemize*}
+  \item Ad Placement Challenge on Criteo Dataset\href{https://github.com/jinningli/ad-placement-pytorch}{\faicon{github}}\href{http://jinningli.cn/cv/cornell_writeup.pdf}{\faicon{file-pdf}}\href{http://jinningli.cn/cv/cornell_presentation.pdf}{\faicon{file-powerpoint}}\\
+  We develop a joint method of Counterfactual Risk Minimization and MLE. Our score places \textbf{Rank 1} in \href{https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge}{NIPS 2017 Workshop: Criteo Ad Placement Challenge}.
+
+  % \textbf{Ad Placement on Criteo Dataset}.\\ Using logged bandit feedback to learn an Ad placement policy.
+  % We got \emph{Rank 1} in \href{https://www.crowdai.org/challenges/nips-17-workshop-criteo-ad-placement-challenge}{\emph{NIPS '17 Workshop: Criteo Ad Placement Challenge}} (post-challenge).
+  % \item \textbf{A Hybrid Framework of Counterfactual Risk Minimization and Supervised Learning on Logged Bandit Feedbacks}.\\
+  % Propose a hybrid framework combining the advantages of CRM and supervised learning. Both the difference between the observed feedbacks and predictions, and policy propensity are optimized.
+\end{itemize*}
+
+\smallskip
+\textbf{Advanced Network Lab, Shanghai Jiao Tong University} \emph{Data Mining for Social Networks}\newline
+\textbf{Research Assistant}. Advisor: Prof.~\href{http://www.cs.sjtu.edu.cn/~gao-xf/}{Xiaofeng Gao} \rdate{Jul 2017 - Jun 2019}
+\begin{itemize*}
+	\item Cross-Platform Popularity Analysis\\ Developed a scheme to quantify topic popularity and analyzed the mechanisms through which an event propagates among multiple social media.
+  % cross-platform popularity between two social media.
+  % We proposed \emph{TF-SW} for event popularity quantification and \emph{$\omega$DTW-CD} for \emph{Event Popularity Time Series} alignment.
+  \item Sentiment-Aware Topic Popularity Prediction on Short Text based Social Media\\
+  Developed a novel neural network to estimate public sentiment and integrated it with time series analysis to improve popularity prediction.
+  % Proposed a new \emph{Branch-Net} to estimate public sentiment utilizing texts and emojis in tweets. \emph{Time Series Analysis} between popularity and sentiment was applied to improve the performance of prediction.
+\end{itemize*}
+
+%
+%\medskip
+%\textbf{\href{http://www.nii.ac.jp/en/}{National Institute of Informatics of Japan}}\newline
+%\emph{Short-term Exchange Student} (2 weeks) \rdate{Aug 2016}
+%\begin{itemize*}
+%	\item \textbf{Reinforcement Learning on Video Games}.\\ Developed a policy gradient model for Atari \textit{Pong} game, which was trained from scratch and achieved human performance.
+%\end{itemize*}
+%
+% \medskip
+% \medskip
+%
+% % \medskip
+%
+% \textbf{Topic Detection and Dissemination Trend Analysis on Social Network}\href{http://jinningli.cn/cv/TopicDetection.pdf}{\faicon{file-pdf}}\newline
+% Jiadong Chen, Tianxiang Gao, Xiaofeng Gao, Peng He, \textbf{Jinning Li}, Guihai Chen\\
+% \emph{Submitted} to \emph{SIAM International Conference on Data Mining} (SDM) 2019
+%
+% \textbf{Resource Aware Person Re-identification across Multiple Resolutions} \newline
+% 	Yan~Wang$^*$, Lequn~Wang$^*$, \textbf{Yurong~You}$^*$, Xu~Zou, Vincent~Chen, Serena~Li, \\Bharath~Hariharan, Gao~Huang, Kilian~Q.~Weinberger\\
+% 	\emph{Conference on Computer Vision and Pattern Recognition} (CVPR) 2018 \let\thefootnote\relax\footnotetext{\hspace{-1.5em}$^*$ indicates equal contribution}
+%\newpage
+
+
+% \medskip
+%
+% \mhead{Highlighted \\ Course \\ Projects}%
+% \textbf{DeepWave: Learning to Simulate Water Wave in Real-time \href{https://github.com/jinningli/DeepWave}{\faicon{github}}}\href{http://jinningli.cn/cv/DeepWavePaper.pdf}{\faicon{file-pdf}}\newline
+% CS230 \emph{Virtual Reality and Interactive 3D Graphics}, \textbf{96/100} \rdate{Jun 2018}\newline
+% Developed a method to learn the physical law of water-wave propagation and simulate the scene in real-time utilizing deep learning and wave packet theory.
+%
+% \medskip
+%
+% \textbf{Convolutional BiMPM for Natural Language Inference \href{https://github.com/jinningli/CBiMPM}{\faicon{github}}}\href{http://jinningli.cn/cv/BiMPMReport.pdf}{\faicon{file-pdf}}\newline
+% CS229 \emph{Natural Language Processing}, \textbf{93/100}\rdate{May 2018}\newline
+% Proposed a novel convolutional bilateral multi-perspective matching model for natural language inference task on SNLI dataset, improving the accuracy to $86.7\%$.
+%
+% % \medskip
+% %
+% % \textbf{}\newline
+% % Open-source for facilitating further research. \rdate{Jan 2018}
+% % \begin{itemize*}
+% % 	\item Caltulate the time series of event popularity of different social media and apply temporal alignment to find their relationship.
+% % \end{itemize*}
+%
+% \medskip
+%
+% \textbf{LineArtist: A Multi-style Sketch to Painting Synthesis Scheme \href{https://github.com/jinningli/LineArtist}{\faicon{github}}}\href{http://jinningli.cn/archives/LineArtist.html}{\faicon{file-video}}\href{https://arxiv.org/pdf/1803.06647.pdf}{\faicon{file-pdf}} \newline
+% CS348 \emph{Computer Vision}, \textbf{92/100} \rdate{Dec 2017}\newline
+% Developd a scheme to synthesize beautiful paintings with only some semantic sketches, including three procedures: \emph{Sketch Image Extraction}, \emph{Details Synthesis}, and \emph{Style Transfer}.
+%
+% % https://arxiv.org/pdf/1803.06647.pdf
+% \medskip
+% \textbf{Compiler \textit{Maple} \href{https://github.com/jinningli/Complier-2017}{\faicon{github}}} \newline
+% MS208 \emph{Compiler Design and Implementation}, \textbf{Outperforms GCC -O1} \rdate{May 2017}\newline
+% Designed and implemented a compiler from \emph{Lexical Analysis} to \emph{Register Allocation} with graph-coloring optimization, translating Mx* (a hybrid of C and Java) to x86 Assembly.
+
+
+
+% TODO Computer Vision
+%\medskip
+%\textbf{AI ``KingCobra'' for Antagonistic ``Snake'' Game}\newline
+%\emph{Principle and Practice of Computer Algorithms Course Project}, \href{http://botzone.org/game/ranklist/550183b60003e25477128460}{KingCobra} \rdate{2015}
+%\begin{itemize*}
+%	\item Designed and implemented a dexterous AI for a two-player ``Snake'' game, utilizing Nash Equilibrium and Dynamic Search
+%	\item Ranked \textbf{top 2} in class, \textbf{top 5} on Internet score board.
+%\end{itemize*}
+
+\medskip
+\mhead{\normalsize{Honors \\ and \\ Awards}}%
+% Lixin Tang Scholarship of Shanghai Jiao Tong Univ. \textbf{(Top 1\%)}      \rdate{2017, 2016}\newline
+%2$^\textrm{nd}$ Prize, Deep Learning and Security Innovation Hackathon @ Singapore \rdate{2017}\newline
+Zhiyuan International Research Scholarship  \emph{(First Prize)}. \rdate{2019}\newline
+Han-Ying-Ju-Hua Scholarship. \rdate{2018}\newline
+Academic Excellence Scholarship of SJTU \emph{(First Prize)}.  \rdate{2017, 2018}\newline
+International Interdisciplinary Contest in Modeling \emph{(Meritorious Winner)}. \rdate{2017}\newline
+Zhiyuan Honorary Scholarship. \rdate{2016, 2017}\newline
+International Mathematical Contest in Modeling \emph{(Outstanding Winner)}. \rdate{2015}\newline
+Dongrun-Yau International High School Science Award. \rdate{2015}
+%``Three Good Student'' of Shanghai Jiao Tong Univ. \rdate{2015}\newline
+%A-type Privilege Pre-admission for Shanghai Jiao Tong University in \\ Advanced Assessment for Admission \rdate{2014} \newline
+%\textbf{1$^\textrm{st}$ Prize} at the Provincial Level (Fujian) of China Physics Olympiads \rdate{2013}
+
+\medskip
+\mhead{\normalsize{Academic \newline Services}}%
+\emph{Teaching Assistant} at CS122: Programming \newline
+\emph{Teaching Assistant} at CS307: Operating System \newline
+\emph{Program Committee} at AAAI Conference
+
+\medskip
+\mhead{\small{Programming \newline Proficiencies}}%
+%\emph{Experienced}\newline
+C, C++,
+Java,
+Python (TensorFlow, PyTorch, MXNet)\\
+HTML \& Javascript,
+\ML,
+\LaTeX{},
+
+%\bigskip
+%\mhead{Language \newline Skill}%
+%\textbf{GRE: 325 + 3.5}, Verbal 155, Quantitative 170, Analytical Writing 3.5\\
+%\textbf{TOEFL iBT: 105}, Reading 29, Listening 28, Speaking 23, Writing 25
+%
+% \medskip
+% \mhead{Interests, \newline Activities}%
+% Finance, Biology, Art, and Physics\newline
+% Member of Ivy Symphony Orchestra
+% Philosophy, Psychology, Physics \newline Debate (Former Vice-captain of Zhiyuan College Debate Team) \newline Half-Marathon Finisher (2:06:27) of Shanghai International Marathon 2016
+
+% \bigskip
+% \mhead{}
+% \emph{Last Update: \today}
+\end{document}
