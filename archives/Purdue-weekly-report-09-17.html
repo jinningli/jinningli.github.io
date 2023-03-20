@@ -325,7 +325,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#purdue-weekly-report-1"><span class="post-toc-number">1.</span> <span class="post-toc-text">Purdue Weekly Report [1]</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#method-1-using-expectation-to-estimate-coefficient"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Method 1: Using expectation to estimate coefficient</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Purdue-Weekly-Report-1"><span class="post-toc-number">1.</span> <span class="post-toc-text">Purdue Weekly Report [1]</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Method-1-Using-expectation-to-estimate-coefficient"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Method 1: Using expectation to estimate coefficient</span></a></li></ol></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -479,40 +479,25 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="purdue-weekly-report-1">Purdue Weekly Report [1]</h1>
-<blockquote>
+        <h1 id="Purdue-Weekly-Report-1"><a href="#Purdue-Weekly-Report-1" class="headerlink" title="Purdue Weekly Report [1]"></a>Purdue Weekly Report [1]</h1><blockquote>
 <p>Jinning, 09/17/2018</p>
 </blockquote>
-<h2 id="method-1-using-expectation-to-estimate-coefficient">Method 1: Using expectation to estimate coefficient</h2>
-<blockquote>
+<h2 id="Method-1-Using-expectation-to-estimate-coefficient"><a href="#Method-1-Using-expectation-to-estimate-coefficient" class="headerlink" title="Method 1: Using expectation to estimate coefficient"></a>Method 1: Using expectation to estimate coefficient</h2><blockquote>
 <p>Reference: Some Topics in Analysis of Boolean Functions, Ryan O’Donnell.</p>
 </blockquote>
-<p>Assume <span class="math inline">\(S\)</span> is a subset of the set <span class="math inline">\([n]\)</span>. <span class="math inline">\(|[n]|=2^n\)</span>.</p>
-<p>According to the reference, <span class="math inline">\(\hat{f}(S)\)</span> can be expressed as</p>
-<p><span class="math display">\[
-\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]
-\]</span></p>
-<p>We’re going to estimate <span class="math inline">\(\hat{f}(S)\)</span> by</p>
-<p><span class="math display">\[
-\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)
-\]</span></p>
-<p>We use <span class="math inline">\(Var(\tilde{f}(S))\)</span> to estimate the speed of learning.</p>
-<p><span class="math display">\[
-Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))
-\]</span></p>
-<p><span class="math display">\[
-=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))
-\]</span></p>
-<p>where, <span class="math display">\[
-Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2
-\]</span></p>
-<p><span class="math display">\[
-=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)
-\]</span></p>
-<p><span class="math display">\[
-=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)
-\]</span></p>
-<p>So, the convergence speed is not necessarily decreasing with degree.</p>
+<p>Assume $S$ is a subset of the set $[n]$. $|[n]|=2^n$.</p>
+<p>According to the reference, $\hat{f}(S)$ can be expressed as</p>
+<script type="math/tex; mode=display">
+\hat{f}(S)=\mathbb{E}_x[f(x)\mathcal{X}_S(x)]</script><p>We’re going to estimate $\hat{f}(S)$ by</p>
+<script type="math/tex; mode=display">
+\tilde{f}(S)=\frac{1}{N}\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i)</script><p>We use $Var(\tilde{f}(S))$ to estimate the speed of learning.</p>
+<script type="math/tex; mode=display">
+Var(\tilde{f}(S))=\frac{1}{N^2}Var(\sum_{i=1}^{N}f(x_i)\mathcal{X}_{S}(x_i))</script><script type="math/tex; mode=display">
+=\frac{1}{N}Var(f(x)\mathcal{X}_{S}(x))</script><p>where,</p>
+<script type="math/tex; mode=display">
+Var(f(x)\mathcal{X}_{S}(x))=\mathbb{E}_x[f^2(x)\mathcal{X}_S^2(x)]-[\mathbb{E}_x[f(x)\mathcal{X}_S(x)]]^2</script><script type="math/tex; mode=display">
+=\mathbb{E}_x[f^2(x)]-\hat{f}^2(S)</script><script type="math/tex; mode=display">
+=\frac{1}{N}\sum_{S_i\in [n]}\hat{f}^2(S_i)-\hat{f}^2(S)</script><p>So, the convergence speed is not necessarily decreasing with degree.</p>
 
     
 
