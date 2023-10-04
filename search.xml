@@ -194,9 +194,9 @@
       
         <tags>
             
-            <tag> Research Proposal </tag>
-            
             <tag> English </tag>
+            
+            <tag> Research Proposal </tag>
             
         </tags>
       
@@ -281,9 +281,9 @@
       
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Deep Learning </tag>
+            
+            <tag> English </tag>
             
             <tag> Presentation </tag>
             
@@ -345,9 +345,9 @@
       
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -403,9 +403,9 @@
       
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
+            
+            <tag> English </tag>
             
             <tag> Segmentation </tag>
             
@@ -434,8 +434,6 @@
       
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -443,6 +441,8 @@
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
+            
+            <tag> English </tag>
             
         </tags>
       
@@ -548,9 +548,9 @@
     
     
     <entry>
-      <title>Tags Cloud「标签云」</title>
-      <link href="/tags.html"/>
-      <url>/tags.html</url>
+      <title>Timeline「时光轴」</title>
+      <link href="/timeline.html"/>
+      <url>/timeline.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -559,9 +559,9 @@
     
     
     <entry>
-      <title>Timeline「时光轴」</title>
-      <link href="/timeline.html"/>
-      <url>/timeline.html</url>
+      <title>Tags Cloud「标签云」</title>
+      <link href="/tags.html"/>
+      <url>/tags.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
