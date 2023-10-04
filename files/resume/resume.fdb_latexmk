@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1696397762 "resume.tex" "resume.pdf" "resume" 1696397763
+["pdflatex"] 1696398867 "resume.tex" "resume.pdf" "resume" 1696399041
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -72,11 +72,11 @@
   "/usr/local/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1484564749 3520379 7f8677240a18cf89b3ea071db3083e49 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
   "fontawesome5.sty" 1542239384 94491 08d074077600bdf8147a6a6f9942bd45 ""
-  "resume.aux" 1696397763 723 1780b8a418fdd35f135d6dfee4682409 ""
-  "resume.out" 1696397763 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "resume.tex" 1696397761 27531 ce6945885f024f9511e85515024104de ""
+  "resume.aux" 1696398868 723 1780b8a418fdd35f135d6dfee4682409 ""
+  "resume.out" 1696398868 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "resume.tex" 1696398889 27541 85ba5cdfe1ed981ede4055b2ac2142bc ""
   (generated)
-  "resume.out"
-  "resume.pdf"
   "resume.aux"
   "resume.log"
+  "resume.out"
+  "resume.pdf"
