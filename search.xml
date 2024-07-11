@@ -194,9 +194,9 @@
       
         <tags>
             
-            <tag> English </tag>
-            
             <tag> Research Proposal </tag>
+            
+            <tag> English </tag>
             
         </tags>
       
@@ -281,9 +281,9 @@
       
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -345,9 +345,9 @@
       
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Pose Estimation </tag>
             
@@ -403,9 +403,9 @@
       
         <tags>
             
-            <tag> Computer Vision </tag>
-            
             <tag> English </tag>
+            
+            <tag> Computer Vision </tag>
             
             <tag> Segmentation </tag>
             
@@ -434,6 +434,8 @@
       
         <tags>
             
+            <tag> English </tag>
+            
             <tag> Computer Vision </tag>
             
             <tag> Deep Learning </tag>
@@ -441,8 +443,6 @@
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
       
