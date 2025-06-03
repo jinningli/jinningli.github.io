@@ -62,35 +62,6 @@
     
     
     <entry>
-      <title>Weekly Report [4]</title>
-      <link href="/archives/Cornell-weekly-report-08-07.html"/>
-      <url>/archives/Cornell-weekly-report-08-07.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="weekly-report-4">Weekly Report [4]</h1><blockquote><p>Jinning, 08/07/2018</p></blockquote><a href='https://github.com/jinningli/ad-placement-pytorch'><h4>[Project Github]</h4><p></a></p><h2 id="clip-experiment-on-large-dataset">Clip experiment on large dataset</h2><p>Got the result of Clipping with <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>. This result is trained and tested on large dataset.</p><p>Loss function used (weighted BCE loss):</p><p><span class="math display">\[-\min\{\frac{1}{p}~,~c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]\]</span></p><p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p><p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p><h4 id="distribution-of-inverse-propensity">Distribution of inverse propensity</h4><p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p><div class="figure"><img src="/assets/markdown-img-paste-20180809172104497.png" /></div><pre><code>[100.00%] 14175476 in 14175476 larger than 1[96.52%] 13682662 in 14175476 larger than 5[95.78%] 13577934 in 14175476 larger than 10[56.56%] 8018069 in 14175476 larger than 20[45.15%] 6400434 in 14175476 larger than 30[32.50%] 4606483 in 14175476 larger than 50[18.09%] 2564603 in 14175476 larger than 100[11.79%] 1671481 in 14175476 larger than 150[8.55%] 1212462 in 14175476 larger than 200[6.62%] 938342 in 14175476 larger than 250[5.35%] 758935 in 14175476 larger than 300[4.45%] 631364 in 14175476 larger than 350[3.80%] 538490 in 14175476 larger than 400[3.30%] 467660 in 14175476 larger than 450[2.91%] 412324 in 14175476 larger than 500[2.59%] 367630 in 14175476 larger than 550[1.26%] 178423 in 14175476 larger than 1000[0.16%] 23365 in 14175476 larger than 5000[0.07%] 9505 in 14175476 larger than 10000...</code></pre><p>The curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p><h4 id="ips-curve">IPS Curve:</h4><div class="figure"><img src="/assets/markdown-img-paste-20180809223512958.png" /></div><a href='http://jinningli.cn/links/ips'><h4>[See Large Figure]</h4><p></a></p><h4 id="ips-std-curve">IPS-Std Curve:</h4><div class="figure"><img src="/assets/markdown-img-paste-20180809223541563.png" /></div><a href='http://jinningli.cn/links/ips_std'><h4>[See Large Figure]</h4><p></a></p><h2 id="discussions">Discussions</h2><h3 id="not-coincidence">Not coincidence</h3><p>I notice that when <span class="math inline">\(30&lt;c&lt;50\)</span>, the IPS is the highest (over <span class="math inline">\(60\)</span>). However, the standard deviation is also quite high (over <span class="math inline">\(10\)</span>). I train the network again when <span class="math inline">\(c=50\)</span>, the IPS is still over <span class="math inline">\(60\)</span>. So I think the local peak when <span class="math inline">\(30&lt;c&lt;50\)</span> is not a coincidence.</p><h3 id="why-standard-deviation-is-so-high">Why standard deviation is so high?</h3><p><strong>In the evaluation process, IPS is calculated by</strong></p><p><span class="math display">\[\frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}\]</span></p><p>In another word, we calculate <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>.</p><p>Assume the output of our network is <span class="math inline">\(\sigma\)</span>, then score is calculated by <span class="math inline">\(score=e^{score-\max(score)}\)</span> in the evaluation program.</p><p><strong>The standard deviation is measured by</strong></p><p><span class="math display">\[\frac{2.58\times \sqrt{n}}{n^+ + 10n^-}\times Stderr[\delta \frac{\frac{ score(\hat{x})}{\sum score(x_i)}}{\pi_0}]\]</span></p><p><strong>Note that we apply a post-process trick that <span class="math inline">\(\sigma&#39; = \frac{850100}{1+e^{-\sigma +1.1875}}\)</span>.</strong></p><hr /><p>Before post-process <span class="math inline">\(\sigma\)</span>:</p><pre><code>896678244; 0:0.011302, 1:0.00727101, 2:0.0111319, 3:0.000752336, 4:0.00235881, 5:0.0131616, 6:0.00344201, 7:0.0268872, 8:0.0108119, 9:0.022044, 10:0.0268872</code></pre><p>After post-process <span class="math inline">\(\sigma&#39;\)</span>:</p><pre><code>896678244; 0:200400, 1:199783, 2:200374, 3:198788, 4:199033, 5:200685, 6:199198, 7:202811, 8:200325, 9:202049, 10:202796</code></pre><hr /><p>Before post-process <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>:</p><pre><code>896678244; 0:0.984536, 1:0.980575, 2:0.984368, 3:0.974204, 4:0.97577, 5:0.986368, 6:0.976827, 7:1, 8:0.984053, 9:0.995168, 10:1</code></pre><p>After post-process <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>:</p><pre><code>896678244; 0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:1, 8:0, 9:0, 10:3.05902e-07</code></pre><p>So actually our post-processing makes the policy more strict. For example, as shown above, after post-processing, id=896678244 gets a propensity vector <span class="math inline">\([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 3.05902e-07]\)</span>. So, if <code>7</code> is not the selected candidate, <span class="math inline">\(\pi_w\)</span> will be <span class="math inline">\(0\)</span>, else <span class="math inline">\(\pi_w\)</span> will be <span class="math inline">\(1\)</span>.</p><p>If not post-process, the propensity vector will be <span class="math inline">\([0.985, 0.981, 0.974, 0.976, 0.986, 0.977, 1, 0.984, 0.995, 1]\)</span>. Then <span class="math inline">\(\pi_w\)</span> will be almost <span class="math inline">\(\frac{1}{11}\)</span> no matter which candidate is selected.</p><p>So it’s easy to understand after post-processing, standard deviation will be much higher.</p><p>And it clear that post-processing is necessary. Because if not, the expectation of <span class="math inline">\(\pi_w\)</span> will always be close to <span class="math inline">\(\frac{1}{11}\)</span>, no matter how nice the model is.</p><p>I think this is a <strong>BUG</strong> of the evaluation program. It should not use <span class="math inline">\(score=e^{score-\max(score)}\)</span> but something like <span class="math inline">\(score=e^{\frac{score-\max(score)}{\sum score}}\)</span>.</p><p><strong>Question:</strong> Why Standard deviation varies with clipping value? Why higher IPS often accompanies with higher Standard deviation?</p><hr /><h3 id="review-what-i-am-doing">Review what I am doing</h3><p>What I am doing is training a network <span class="math inline">\(\sigma\)</span> to minimize the loss function (If clipping is applied)</p><p><span class="math display">\[-\min\{\frac{1}{p}, c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right],\]</span></p><p>An important point is that <span class="math inline">\(y\)</span> is whether this Ad is clicked, instead of whether this Ad is chosen to display. This is the difference between banditNet and my net.</p><p>Then, we use our network <span class="math inline">\(\sigma_{\bar{w}}\)</span> to estimate the probability of clicking of a given Ad, and use this propensity as the propensity to display this Ad.</p><p>This is based on an assumption that <span class="math inline">\(\pi_0\)</span> will always choose Ads with high CTR (reward) to display.</p><p>If this assumption is true (of course true), then the IPS:</p><p><span class="math display">\[IPS = \frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}\]</span></p><p>will be maximized. This is how my net works.</p><p><strong>Question:</strong> Why do we need to add <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span> before our BCE loss fuction? Why will this contribute to CTR prediction?</p><p>In the banditNet settings, the network will directly calculate propensity for each candidate, or <span class="math inline">\(\pi_w\)</span>, then directly maximize the IPS / SNIPS or minimize its Lagrangian.</p><p><span class="math display">\[IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}\]</span></p><h3 id="whats-the-best-clipping-value">What’s the best clipping value?</h3><p>According to the diagram drawn in the beginning, the best clipping value is around <span class="math inline">\(30\)</span> ~ <span class="math inline">\(50\)</span>. The percentage of clipped propensities are about <span class="math inline">\(30\%\)</span> ~ <span class="math inline">\(45\%\)</span>.</p><p><strong>Question:</strong> Will <span class="math inline">\(30\%\)</span> ~ <span class="math inline">\(45\%\)</span> always be the best percentage? How to find the relationship between the best clipping value and the distribution of propensity?</p><p><strong>Question:</strong> Is it true that the more propensities are clipped, the larger bias is and the smaller variance is? What’s the relation between bias-variance-tradeoff and clipping method?</p><p><strong>Question:</strong> Is there better way to find the best clipping value without grid search?</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Notes </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> Weekly Report </tag>
-            
-            <tag> Cornell </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Purdue Weekly Report [1]</title>
       <link href="/archives/Purdue-weekly-report-09-17.html"/>
       <url>/archives/Purdue-weekly-report-09-17.html</url>
@@ -112,6 +83,35 @@
             <tag> Weekly Report </tag>
             
             <tag> Purdue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Weekly Report [4]</title>
+      <link href="/archives/Cornell-weekly-report-08-07.html"/>
+      <url>/archives/Cornell-weekly-report-08-07.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="weekly-report-4">Weekly Report [4]</h1><blockquote><p>Jinning, 08/07/2018</p></blockquote><a href='https://github.com/jinningli/ad-placement-pytorch'><h4>[Project Github]</h4><p></a></p><h2 id="clip-experiment-on-large-dataset">Clip experiment on large dataset</h2><p>Got the result of Clipping with <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span>. This result is trained and tested on large dataset.</p><p>Loss function used (weighted BCE loss):</p><p><span class="math display">\[-\min\{\frac{1}{p}~,~c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right]\]</span></p><p><span class="math inline">\(c\in\)</span><code>[1, 2, 5, 10, 15, 20, 30, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550]</code>.</p><p>In the training set, the value of <span class="math inline">\(\frac{1}{p}\)</span> varies among <span class="math inline">\([1, 2917566]\)</span>. Its average is <span class="math inline">\(114.57\)</span>.</p><h4 id="distribution-of-inverse-propensity">Distribution of inverse propensity</h4><p>In order to survey the distribution of <span class="math inline">\(\frac{1}{p}\)</span> , the following diagram show the percentage of <span class="math inline">\(\frac{1}{p}\)</span> larger than given <span class="math inline">\(c\)</span> (which is clipped):</p><div class="figure"><img src="/assets/markdown-img-paste-20180809172104497.png" /></div><pre><code>[100.00%] 14175476 in 14175476 larger than 1[96.52%] 13682662 in 14175476 larger than 5[95.78%] 13577934 in 14175476 larger than 10[56.56%] 8018069 in 14175476 larger than 20[45.15%] 6400434 in 14175476 larger than 30[32.50%] 4606483 in 14175476 larger than 50[18.09%] 2564603 in 14175476 larger than 100[11.79%] 1671481 in 14175476 larger than 150[8.55%] 1212462 in 14175476 larger than 200[6.62%] 938342 in 14175476 larger than 250[5.35%] 758935 in 14175476 larger than 300[4.45%] 631364 in 14175476 larger than 350[3.80%] 538490 in 14175476 larger than 400[3.30%] 467660 in 14175476 larger than 450[2.91%] 412324 in 14175476 larger than 500[2.59%] 367630 in 14175476 larger than 550[1.26%] 178423 in 14175476 larger than 1000[0.16%] 23365 in 14175476 larger than 5000[0.07%] 9505 in 14175476 larger than 10000...</code></pre><p>The curve of <code>IPS</code> and <code>Standard deviation of IPS</code> versus <span class="math inline">\(c\)</span> :</p><h4 id="ips-curve">IPS Curve:</h4><div class="figure"><img src="/assets/markdown-img-paste-20180809223512958.png" /></div><a href='http://jinningli.cn/links/ips'><h4>[See Large Figure]</h4><p></a></p><h4 id="ips-std-curve">IPS-Std Curve:</h4><div class="figure"><img src="/assets/markdown-img-paste-20180809223541563.png" /></div><a href='http://jinningli.cn/links/ips_std'><h4>[See Large Figure]</h4><p></a></p><h2 id="discussions">Discussions</h2><h3 id="not-coincidence">Not coincidence</h3><p>I notice that when <span class="math inline">\(30&lt;c&lt;50\)</span>, the IPS is the highest (over <span class="math inline">\(60\)</span>). However, the standard deviation is also quite high (over <span class="math inline">\(10\)</span>). I train the network again when <span class="math inline">\(c=50\)</span>, the IPS is still over <span class="math inline">\(60\)</span>. So I think the local peak when <span class="math inline">\(30&lt;c&lt;50\)</span> is not a coincidence.</p><h3 id="why-standard-deviation-is-so-high">Why standard deviation is so high?</h3><p><strong>In the evaluation process, IPS is calculated by</strong></p><p><span class="math display">\[\frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}\]</span></p><p>In another word, we calculate <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>.</p><p>Assume the output of our network is <span class="math inline">\(\sigma\)</span>, then score is calculated by <span class="math inline">\(score=e^{score-\max(score)}\)</span> in the evaluation program.</p><p><strong>The standard deviation is measured by</strong></p><p><span class="math display">\[\frac{2.58\times \sqrt{n}}{n^+ + 10n^-}\times Stderr[\delta \frac{\frac{ score(\hat{x})}{\sum score(x_i)}}{\pi_0}]\]</span></p><p><strong>Note that we apply a post-process trick that <span class="math inline">\(\sigma&#39; = \frac{850100}{1+e^{-\sigma +1.1875}}\)</span>.</strong></p><hr /><p>Before post-process <span class="math inline">\(\sigma\)</span>:</p><pre><code>896678244; 0:0.011302, 1:0.00727101, 2:0.0111319, 3:0.000752336, 4:0.00235881, 5:0.0131616, 6:0.00344201, 7:0.0268872, 8:0.0108119, 9:0.022044, 10:0.0268872</code></pre><p>After post-process <span class="math inline">\(\sigma&#39;\)</span>:</p><pre><code>896678244; 0:200400, 1:199783, 2:200374, 3:198788, 4:199033, 5:200685, 6:199198, 7:202811, 8:200325, 9:202049, 10:202796</code></pre><hr /><p>Before post-process <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>:</p><pre><code>896678244; 0:0.984536, 1:0.980575, 2:0.984368, 3:0.974204, 4:0.97577, 5:0.986368, 6:0.976827, 7:1, 8:0.984053, 9:0.995168, 10:1</code></pre><p>After post-process <span class="math inline">\(\pi_w=\frac{score(\hat{x})}{\sum score(x_i)}\)</span>:</p><pre><code>896678244; 0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:1, 8:0, 9:0, 10:3.05902e-07</code></pre><p>So actually our post-processing makes the policy more strict. For example, as shown above, after post-processing, id=896678244 gets a propensity vector <span class="math inline">\([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 3.05902e-07]\)</span>. So, if <code>7</code> is not the selected candidate, <span class="math inline">\(\pi_w\)</span> will be <span class="math inline">\(0\)</span>, else <span class="math inline">\(\pi_w\)</span> will be <span class="math inline">\(1\)</span>.</p><p>If not post-process, the propensity vector will be <span class="math inline">\([0.985, 0.981, 0.974, 0.976, 0.986, 0.977, 1, 0.984, 0.995, 1]\)</span>. Then <span class="math inline">\(\pi_w\)</span> will be almost <span class="math inline">\(\frac{1}{11}\)</span> no matter which candidate is selected.</p><p>So it’s easy to understand after post-processing, standard deviation will be much higher.</p><p>And it clear that post-processing is necessary. Because if not, the expectation of <span class="math inline">\(\pi_w\)</span> will always be close to <span class="math inline">\(\frac{1}{11}\)</span>, no matter how nice the model is.</p><p>I think this is a <strong>BUG</strong> of the evaluation program. It should not use <span class="math inline">\(score=e^{score-\max(score)}\)</span> but something like <span class="math inline">\(score=e^{\frac{score-\max(score)}{\sum score}}\)</span>.</p><p><strong>Question:</strong> Why Standard deviation varies with clipping value? Why higher IPS often accompanies with higher Standard deviation?</p><hr /><h3 id="review-what-i-am-doing">Review what I am doing</h3><p>What I am doing is training a network <span class="math inline">\(\sigma\)</span> to minimize the loss function (If clipping is applied)</p><p><span class="math display">\[-\min\{\frac{1}{p}, c\}\left[ y \cdot \log \sigma(x) + (1 - y) \cdot \log (1 - \sigma(x)) \right],\]</span></p><p>An important point is that <span class="math inline">\(y\)</span> is whether this Ad is clicked, instead of whether this Ad is chosen to display. This is the difference between banditNet and my net.</p><p>Then, we use our network <span class="math inline">\(\sigma_{\bar{w}}\)</span> to estimate the probability of clicking of a given Ad, and use this propensity as the propensity to display this Ad.</p><p>This is based on an assumption that <span class="math inline">\(\pi_0\)</span> will always choose Ads with high CTR (reward) to display.</p><p>If this assumption is true (of course true), then the IPS:</p><p><span class="math display">\[IPS = \frac{10^4}{n^+ + 10n^-}\sum\delta\frac{\frac{score(\hat{x})}{\sum score(x_i)}}{\pi_0}\]</span></p><p>will be maximized. This is how my net works.</p><p><strong>Question:</strong> Why do we need to add <span class="math inline">\(\min\{\frac{1}{p}, c\}\)</span> before our BCE loss fuction? Why will this contribute to CTR prediction?</p><p>In the banditNet settings, the network will directly calculate propensity for each candidate, or <span class="math inline">\(\pi_w\)</span>, then directly maximize the IPS / SNIPS or minimize its Lagrangian.</p><p><span class="math display">\[IPS = \frac{1}{n}\sum\delta\frac{\pi_w}{\pi_0}\]</span></p><h3 id="whats-the-best-clipping-value">What’s the best clipping value?</h3><p>According to the diagram drawn in the beginning, the best clipping value is around <span class="math inline">\(30\)</span> ~ <span class="math inline">\(50\)</span>. The percentage of clipped propensities are about <span class="math inline">\(30\%\)</span> ~ <span class="math inline">\(45\%\)</span>.</p><p><strong>Question:</strong> Will <span class="math inline">\(30\%\)</span> ~ <span class="math inline">\(45\%\)</span> always be the best percentage? How to find the relationship between the best clipping value and the distribution of propensity?</p><p><strong>Question:</strong> Is it true that the more propensities are clipped, the larger bias is and the smaller variance is? What’s the relation between bias-variance-tradeoff and clipping method?</p><p><strong>Question:</strong> Is there better way to find the best clipping value without grid search?</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Weekly Report </tag>
+            
+            <tag> Cornell </tag>
             
         </tags>
       
@@ -252,11 +252,11 @@
             
             <tag> English </tag>
             
+            <tag> DEXA2018 </tag>
+            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
-            
-            <tag> DEXA2018 </tag>
             
         </tags>
       
@@ -281,9 +281,9 @@
       
         <tags>
             
-            <tag> Deep Learning </tag>
-            
             <tag> English </tag>
+            
+            <tag> Deep Learning </tag>
             
             <tag> Presentation </tag>
             
@@ -316,11 +316,11 @@
             
             <tag> English </tag>
             
-            <tag> ECCV2018 </tag>
-            
             <tag> Paper </tag>
             
             <tag> Publication </tag>
+            
+            <tag> ECCV2018 </tag>
             
         </tags>
       
@@ -405,11 +405,11 @@
             
             <tag> Computer Vision </tag>
             
-            <tag> English </tag>
-            
             <tag> Segmentation </tag>
             
             <tag> Notes </tag>
+            
+            <tag> English </tag>
             
         </tags>
       
@@ -436,13 +436,13 @@
             
             <tag> Computer Vision </tag>
             
+            <tag> English </tag>
+            
             <tag> Deep Learning </tag>
             
             <tag> CS348 </tag>
             
             <tag> Coursework </tag>
-            
-            <tag> English </tag>
             
         </tags>
       
@@ -537,17 +537,6 @@
     
     
     <entry>
-      <title>Timeline「时光轴」</title>
-      <link href="/timeline.html"/>
-      <url>/timeline.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>本博客的知识共享协议说明</title>
       <link href="/creativecommons.html"/>
       <url>/creativecommons.html</url>
@@ -562,6 +551,17 @@
       <title>Tags Cloud「标签云」</title>
       <link href="/tags.html"/>
       <url>/tags.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Timeline「时光轴」</title>
+      <link href="/timeline.html"/>
+      <url>/timeline.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
